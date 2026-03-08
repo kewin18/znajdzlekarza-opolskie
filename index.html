@@ -24,13 +24,71 @@
   animation: fadeUp .24s ease-out both;
 }
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVZM8C85VW"></script>
 <script>
+  const GA_MEASUREMENT_ID = "G-QVZM8C85VW";
+  const COOKIE_CONSENT_KEY = "zl_cookie_consent_v1";
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QVZM8C85VW');
+
+  function loadGoogleAnalytics(){
+    if(window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+  }
+
+  function hideCookieBanner(){
+    const banner = document.getElementById("cookieBanner");
+    if(!banner) return;
+    banner.classList.add("hidden");
+  }
+
+  function showCookieBanner(){
+    const banner = document.getElementById("cookieBanner");
+    if(!banner) return;
+    banner.classList.remove("hidden");
+  }
+
+  function setCookieConsent(state){
+    localStorage.setItem(COOKIE_CONSENT_KEY, state);
+    if(state === "accepted"){
+      loadGoogleAnalytics();
+    } else {
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+    }
+    hideCookieBanner();
+  }
+
+  function initCookieConsent(){
+    const saved = localStorage.getItem(COOKIE_CONSENT_KEY);
+    if(saved === "accepted"){
+      loadGoogleAnalytics();
+      hideCookieBanner();
+      return;
+    }
+
+    if(saved === "rejected"){
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+      hideCookieBanner();
+      return;
+    }
+
+    showCookieBanner();
+  }
+
+  window.showCookieBanner = showCookieBanner;
+  window.acceptCookies = ()=> setCookieConsent("accepted");
+  window.rejectCookies = ()=> setCookieConsent("rejected");
+
+  document.addEventListener("DOMContentLoaded", initCookieConsent);
 </script>
 
 </head>
@@ -56,10 +114,15 @@
 <p class="font-semibold text-white mb-2">Informacja i prywatność</p>
 <p class="text-slate-300">Dane mają charakter informacyjny i mogą się zmieniać. Przed wizytą potwierdź telefonicznie aktualność numeru, adresu i zakresu świadczeń.</p>
 <p class="text-slate-300 mt-2">Serwis nie zbiera danych medycznych użytkowników.</p>
+<div class="mt-3 space-y-1">
+<a href="privacy.html" class="block text-cyan-300 hover:text-cyan-200 hover:underline">Polityka prywatności</a>
+<a href="cookies.html" class="block text-cyan-300 hover:text-cyan-200 hover:underline">Polityka cookies</a>
+<button type="button" onclick="showCookieBanner()" class="text-cyan-300 hover:text-cyan-200 hover:underline">Ustawienia cookies</button>
+</div>
 </div>
 <div>
 <p class="font-semibold text-white mb-2">Kontakt</p>
-<a href="mailto:kontakt@znajdzlekarza-opolskie.pl" class="text-cyan-300 hover:text-cyan-200 hover:underline break-all">
+<a href="mailto:znajdzlekarzaopolskie@gmail.com" class="text-cyan-300 hover:text-cyan-200 hover:underline break-all">
 znajdzlekarzaopolskie@gmail.com
 </a>
 </div>
@@ -69,6 +132,22 @@ znajdzlekarzaopolskie@gmail.com
 </div>
 </div>
 </footer>
+
+<div id="cookieBanner" class="hidden fixed left-4 right-4 bottom-4 z-[60]">
+<div class="mx-auto max-w-4xl bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 sm:p-5">
+<p class="font-semibold text-slate-900 mb-1">Pliki cookies</p>
+<p class="text-sm text-slate-600">Używamy cookies do działania statystyk odwiedzin (Google Analytics). Możesz zaakceptować albo odrzucić analityczne cookies.</p>
+<div class="mt-4 flex flex-col sm:flex-row gap-2 sm:justify-end">
+<button type="button" onclick="rejectCookies()" class="h-10 px-4 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50">
+Odrzuć
+</button>
+<button type="button" onclick="acceptCookies()" class="h-10 px-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700">
+Akceptuję
+</button>
+</div>
+<p class="mt-3 text-xs text-slate-500">Szczegóły: <a href="cookies.html" class="text-blue-700 hover:underline">Polityka cookies</a>.</p>
+</div>
+</div>
 
 <script>
 const app = document.getElementById("app");
