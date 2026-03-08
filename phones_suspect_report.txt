@@ -1,0 +1,407 @@
+﻿TOTAL_ROWS=921
+PLACEHOLDER_OR_EMPTY=292
+HIGH_REUSE_PHONES=13
+
+HIGH_REUSE_LIST:
+33	77 443 31 00
+30	77 453 21 10
+26	77 454 54 27
+24	77 423 26 60
+23	536 508 501
+19	77 474 32 09
+19	77 707 70 70
+19	77 441 60 04
+18	77 452 07 45
+14	22 332 28 88
+13	77 401 11 00
+13	690 346 214
+11	77 887 21 21
+
+SUSPECT_ENTRIES_COUNT=385
+
+reason	city	name	phone
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Oddział Medycyny Paliatywnej / Hospicjum	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Oddział Neonatologiczny	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Alergologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Chirurgii Naczyniowej	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Chirurgii Ogólnej	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Diabetologiczna / Edukacja dietetyczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Gastroenterologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Ginekologiczno-Położnicza	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Kardiologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Nefrologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Neurologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Okulistyczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Otolaryngologiczna (Laryngologiczna)	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Pediatryczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Pulmonologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Reumatologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Stomatologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Urazowo-Ortopedyczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Urologiczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Poradnia Zdrowia Psychicznego	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – POZ / Poradnia Lekarza Rodzinnego	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Rehabilitacja Medyczna	
+empty_or_placeholder	Brzeg	Brzeskie Centrum Medyczne – Zakład Diagnostyki Obrazowej	
+empty_or_placeholder	Brzeg	Centrum Medyczne ARS-MED	
+empty_or_placeholder	Brzeg	Centrum Medyczne ARS-MED – Rehabilitacja	
+empty_or_placeholder	Brzeg	Centrum Stomatologii Ars-Dent	
+empty_or_placeholder	Brzeg	Gabinet alergologiczny – lek. Katarzyna Bryk-Żakowicz	
+empty_or_placeholder	Brzeg	Gabinet Ginekologiczno-Położniczy	
+empty_or_placeholder	Brzeg	Stomatologia Kaczmarek	
+empty_or_placeholder	Brzeg	Stomatologia Rodzinna – lek. dent. A. Borys	
+empty_or_placeholder	Głubczyce	Gabinet Stomatologiczny – lek. dent. A. Krawczyk	
+empty_or_placeholder	Głubczyce	NZOZ Medycyna Pracy	
+empty_or_placeholder	Głubczyce	Punkt Pobrań ALAB Laboratoria	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Laboratorium Analityczne	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Oddział Medycyny Paliatywnej / Hospicjum	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Chirurgii Ogólnej	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Dermatologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Endokrynologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Ginekologiczno-Położnicza	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Kardiologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Neurologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Okulistyczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Otolaryngologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Pediatryczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Stomatologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Urazowo-Ortopedyczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Urologiczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Poradnia Zdrowia Psychicznego	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – POZ / Poradnia Lekarza Rodzinnego	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Rehabilitacja Medyczna	
+empty_or_placeholder	Głubczyce	SP ZOZ w Głubczycach – Zakład Diagnostyki Obrazowej	
+empty_or_placeholder	Głubczyce	Stomatologia Rodzinna – lek. dent. M. Nowak	
+empty_or_placeholder	Kluczbork	Centrum Medyczne Salus	
+empty_or_placeholder	Kluczbork	Centrum Medyczne Salus – Medycyna Pracy	
+empty_or_placeholder	Kluczbork	Centrum Stomatologii Estetica	
+empty_or_placeholder	Kluczbork	Gabinet Ginekologiczno-Położniczy – lek. med. A. Nowak	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Oddział Medycyny Paliatywnej / Hospicjum	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Alergologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Chirurgiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Chirurgii Ogólnej	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Dermatologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Diabetologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Endokrynologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Gastroenterologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Ginekologiczno-Położnicza	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Kardiologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Nefrologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Neurologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Okulistyczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Otolaryngologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Pediatryczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Pulmonologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Reumatologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Stomatologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Urazowo-Ortopedyczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Urologiczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Poradnia Zdrowia Psychicznego	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – POZ / Poradnia Lekarza Rodzinnego	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Rehabilitacja Medyczna	
+empty_or_placeholder	Kluczbork	Kluczborskie Centrum Medyczne – Zakład Diagnostyki Obrazowej	
+empty_or_placeholder	Kluczbork	NZOZ „MEDYK” – Poradnia Alergologiczna	
+empty_or_placeholder	Kluczbork	Stomatologia Rodzinna – lek. dent. M. Kaczmarek	
+empty_or_placeholder	Nysa	AUDIKA – Aparaty słuchowe Nysa	
+empty_or_placeholder	Nysa	Audiofon – badanie słuchu i aparaty słuchowe	
+empty_or_placeholder	Nysa	Bartczyszyn Stomatologia	
+empty_or_placeholder	Nysa	Centrum Zdrowia Psychicznego – konsultacje psychiatryczne	
+empty_or_placeholder	Nysa	Centrum Zdrowia Psychicznego – Poradnia Psychiatryczna	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – badania diagnostyki obrazowej	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – konsultacje chirurgii ogólnej	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – konsultacje chirurgii urazowo-ortopedycznej	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – konsultacje ginekologiczne	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – konsultacje ortopedyczne	
+empty_or_placeholder	Nysa	City Hospital Health Care Center – Rehabilitacja	
+empty_or_placeholder	Nysa	Gabinet Chirurgii Naczyniowej – Jacek Polewiak	
+empty_or_placeholder	Nysa	Gabinet Laryngologiczny VERTIGO – konsultacje laryngologiczne	
+empty_or_placeholder	Nysa	Gabinet stomatologiczny Małgorzata Ignerska	
+empty_or_placeholder	Nysa	M. Łuczak – Aparaty Słuchowe	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje dermatologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje diabetologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje endokrynologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje ginekologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje internistyczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje kardiologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje laryngologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje lekarza rodzinnego	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje neurologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje okulistyczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje ortopedyczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje pediatryczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje psychiatryczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje pulmonologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – konsultacje urologiczne	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Medycyna Pracy	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Poradnia Dermatologiczna	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Poradnia Endokrynologiczna	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Poradnia Pediatryczna	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Poradnia POZ	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Poradnia Pulmonologiczna	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – poradnia stomatologiczna	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – POZ	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Pracownia Diagnostyki Obrazowej	
+empty_or_placeholder	Nysa	NZOZ Nowa-Med – Rehabilitacja	
+empty_or_placeholder	Nysa	Polsko-Amerykańskie Kliniki Serca – Centrum Kardiologiczne	
+empty_or_placeholder	Nysa	Polsko-Amerykańskie Kliniki Serca – Poradnia Kardiologiczna	
+empty_or_placeholder	Nysa	Poradnia Chirurgiczna – konsultacje chirurgii ogólnej	
+empty_or_placeholder	Nysa	ProDent – gabinet stomatologiczny	
+empty_or_placeholder	Nysa	Przychodnia Marcinkowskiego – konsultacje alergologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – badania medycyny pracy	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – chirurg urazowo-ortopedyczny	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje alergologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje dermatologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje endokrynologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje ginekologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje internistyczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje kardiologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje laryngologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje lekarza rodzinnego	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje neurologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje okulistyczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje ortopedyczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje pediatryczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – konsultacje urologiczne	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – Rehabilitacja	
+empty_or_placeholder	Nysa	Przychodnia Rondo Nysa – USG diagnostyczne	
+empty_or_placeholder	Nysa	Tomasz Chudy Stomatologia	
+empty_or_placeholder	Nysa	VisionOptyk – Gabinet Okulistyczny	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Chirurgii (chirurgia naczyniowa)	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Chirurgii Ogólnej	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Ginekologiczno-Położnicza	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Kardiologiczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Laryngologiczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Lekarza Rodzinnego	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Neurologiczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Okulistyczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Pediatryczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Stomatologiczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Urazowo-Ortopedyczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Poradnia Urologiczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – POZ	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Rehabilitacja Medyczna	
+empty_or_placeholder	Nysa	Zespół Opieki Zdrowotnej w Nysie – Zakład Diagnostyki Obrazowej	
+empty_or_placeholder	Opole	Adenta	77 000 00 08
+empty_or_placeholder	Opole	Ambasada Uśmiechu	
+empty_or_placeholder	Opole	Ambasada Uśmiechu	77 000 00 02
+empty_or_placeholder	Opole	Aneta Machnicka-Rusek – ginekolog	
+empty_or_placeholder	Opole	Bartczyszyn Stomatologia i Implantologia	
+empty_or_placeholder	Opole	Bogumił Strzelecki – Gabinet Lekarski	—
+empty_or_placeholder	Opole	Bogusław Mróz – Gabinet ginekologiczno-położniczy	
+empty_or_placeholder	Opole	Bożena Samborska – ginekolog położnik	
+empty_or_placeholder	Opole	Czerw Kamila – konsultacje onkologiczne	
+empty_or_placeholder	Opole	Dariusz Kowalczyk Cabinet Gynecology – Ultrasound	
+empty_or_placeholder	Opole	Dentistar	
+empty_or_placeholder	Opole	Dentistar	77 000 00 06
+empty_or_placeholder	Opole	Dr Alicja Piątkowska-Pawlica – Gabinet Ginekologiczny	
+empty_or_placeholder	Opole	dr n. med. Wojciech Ilków – neurochirurg	
+empty_or_placeholder	Opole	FizjoMOVE	
+empty_or_placeholder	Opole	FizjoPunkt Katarzyna Pikos-Weihs	
+empty_or_placeholder	Opole	Gabinet Ortopedyczny Grzegorz Piernik	—
+empty_or_placeholder	Opole	Galeria Uśmiechu Opole	
+empty_or_placeholder	Opole	Galeria Uśmiechu Opole	77 000 00 10
+empty_or_placeholder	Opole	GMW – Centrum Diagnostyki Ginekologiczno-Położniczej	
+empty_or_placeholder	Opole	Grzegorz Piernik – Gabinet Ortopedyczny	
+empty_or_placeholder	Opole	Hanna Żwirska-Drochomirecka – Gabinet ginekologiczny	
+empty_or_placeholder	Opole	Jakub Bednarek – Gabinet Ortopedyczny	
+empty_or_placeholder	Opole	Jakub Bednarek – Ortopeda	—
+empty_or_placeholder	Opole	Joanna Tomiczek-Szwiec – Gabinet ginekologiczno-położniczy	
+empty_or_placeholder	Opole	Kamilla Pustelnik – Gabinet Okulistyczny	
+empty_or_placeholder	Opole	Klinika Silesia	
+empty_or_placeholder	Opole	Klinika Silesia	
+empty_or_placeholder	Opole	Klinika Silesia	—
+empty_or_placeholder	Opole	Krzysztof Starzyk – Gabinet Okulistyczny	
+empty_or_placeholder	Opole	Laserdent	
+empty_or_placeholder	Opole	LASERDENT	77 000 00 07
+empty_or_placeholder	Opole	lek. Monika Dalach – Prywatny Gabinet Okulistyczny	
+empty_or_placeholder	Opole	Mariusz Ciszewski – Gabinety MedArt	
+empty_or_placeholder	Opole	Mariusz Ciszewski – Ortopeda (MedArt)	—
+empty_or_placeholder	Opole	Mateusz Froelich – Ortopeda	
+empty_or_placeholder	Opole	Mateusz Froelich ORTOPEDA	—
+empty_or_placeholder	Opole	Medicinae Stomatologia	77 000 00 04
+empty_or_placeholder	Opole	MEDICLINICA – Centrum Medyczne	77 000 00 00
+empty_or_placeholder	Opole	Medin Klinika	77 000 00 01
+empty_or_placeholder	Opole	OneDayClinic Opole – Centrum Okulistyczno-Optyczne	
+empty_or_placeholder	Opole	Opolskie Centrum Stomatologiczne Tańczak	77 000 00 05
+empty_or_placeholder	Opole	Opolskie Centrum Stomatologiczne Tańczak i S-ka	
+empty_or_placeholder	Opole	PANACEUM Centrum Implantologii i Stomatologii	77 000 00 03
+empty_or_placeholder	Opole	PARENS / GMW Opole	
+empty_or_placeholder	Opole	Piotr Lontkowski – Gabinet ginekologiczny	
+empty_or_placeholder	Opole	Poradnia Okulistyczna Rondo	
+empty_or_placeholder	Opole	Praxi-Dent	
+empty_or_placeholder	Opole	PRAXI-DENT	77 000 00 09
+empty_or_placeholder	Opole	R. Pławszewski – Gabinet Okulistyczny	
+empty_or_placeholder	Opole	Rafał Swaton – Gabinet Ortopedyczny	
+empty_or_placeholder	Opole	Rafał Swaton – Gabinet Ortopedyczny	—
+empty_or_placeholder	Opole	Teresa Lontkowska – Gabinet Okulistyczny	
+empty_or_placeholder	Opole	Tomasz Grzybek – Praktyka Lekarska	
+empty_or_placeholder	Opole	Tomasz Grzybek – Praktyka Lekarska	—
+empty_or_placeholder	Prudnik	Gabinet Stomatologiczny – lek. dent. M. Nowak	
+empty_or_placeholder	Prudnik	NZOZ Medycyna Pracy	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Oddział Medycyny Paliatywnej / Hospicjum	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Chirurgii Ogólnej	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Dermatologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Endokrynologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Gastroenterologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Ginekologiczno-Położnicza	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Kardiologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Nefrologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Neurologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Okulistyczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Otolaryngologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Pediatryczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Pulmonologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Reumatologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Stomatologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Urazowo-Ortopedyczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Urologiczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Poradnia Zdrowia Psychicznego	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – POZ / Poradnia Lekarza Rodzinnego	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Rehabilitacja Medyczna	
+empty_or_placeholder	Prudnik	SP ZOZ w Prudniku – Zakład Diagnostyki Obrazowej	
+empty_or_placeholder	Prudnik	Stomatologia Rodzinna – lek. dent. A. Kaczmarek	
+high_reuse_11	Opole	Optima Medycyna	77 887 21 21
+high_reuse_11	Opole	Optima Medycyna – konsultacje alergologiczne	77 887 21 21
+high_reuse_11	Opole	OPTIMA Medycyna – poradnia chirurgiczna	77 887 21 21
+high_reuse_11	Opole	Optima Medycyna – poradnia laryngologiczna NFZ	77 887 21 21
+high_reuse_11	Opole	OPTIMA Medycyna – rehabilitacja	77 887 21 21
+high_reuse_13	Opole	PanMedica	690 346 214
+high_reuse_13	Opole	PanMedica – chirurg dziecięcy	690 346 214
+high_reuse_13	Opole	PanMedica – konsultacje chirurgiczne	690 346 214
+high_reuse_13	Opole	PanMedica – konsultacje naczyniowe	690 346 214
+high_reuse_13	Opole	PanMedica – konsultacje onkologiczne	690 346 214
+high_reuse_13	Opole	SPZOZ MSWiA – Oddział Chorób Wewnętrznych (Diabetologia)	77 401 11 00
+high_reuse_13	Opole	SPZOZ MSWiA w Opolu	77 401 11 00
+high_reuse_13	Opole	SPZOZ MSWiA w Opolu – Chirurgia	77 401 11 00
+high_reuse_13	Opole	SPZOZ MSWiA w Opolu – chirurgia naczyniowa	77 401 11 00
+high_reuse_13	Opole	SPZOZ MSWiA w Opolu – Ortopedia i Traumatologia	77 401 11 00
+high_reuse_13	Opole	SPZOZ MSWiA w Opolu – Poradnia Chorób Wewnętrznych	77 401 11 00
+high_reuse_14	Opole	LUX MED – Centrum Medyczne (Chabrów)	22 332 28 88
+high_reuse_14	Opole	LUX MED – Centrum Medyczne (Fieldorfa)	22 332 28 88
+high_reuse_14	Opole	LUX MED – Centrum Medyczne Opole	22 332 28 88
+high_reuse_14	Opole	LUX MED – Centrum Medyczne Opole Fieldorfa	22 332 28 88
+high_reuse_14	Opole	LUX MED – szybka pomoc lekarska	22 332 28 88
+high_reuse_14	Opole	LUX MED | Centrum Medyczne Opole	22 332 28 88
+high_reuse_14	Opole	LUX MED Opole – Fieldorfa	22 332 28 88
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny – Poradnia Dermatologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny – Poradnia Diabetologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Pediatria	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Endokrynologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Kardiologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Nefrologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Okulistyczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Ortopedyczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – poradnia pulmonologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Rehabilitacyjna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Reumatologiczna	77 452 07 45
+high_reuse_18	Opole	Uniwersytecki Szpital Kliniczny w Opolu – Poradnia Urologiczna	77 452 07 45
+high_reuse_18	Opole	Zespół Poradni Specjalistycznych – USK Opole	77 452 07 45
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – chirurgia	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – chirurgia dziecięca	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – chirurgia naczyniowa	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – chirurgia onkologiczna	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – Diabetolog	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – Ortopedia NFZ	77 474 32 09
+high_reuse_19	Opole	Centrum Medyczne Na Dobre i Na Złe – Rehabilitacja	77 474 32 09
+high_reuse_19	Opole	Klinika Silesia	77 474 32 09
+high_reuse_19	Opole	Medin Klinika	77 707 70 70
+high_reuse_19	Opole	Medin Klinika – chirurgia dziecięca	77 707 70 70
+high_reuse_19	Opole	Medin Klinika – chirurgia naczyniowa	77 707 70 70
+high_reuse_19	Opole	Medin Klinika – chirurgia ogólna	77 707 70 70
+high_reuse_19	Opole	Medin Klinika – chirurgia onkologiczna	77 707 70 70
+high_reuse_19	Opole	Medin Klinika – pilna pomoc lekarska	77 707 70 70
+high_reuse_19	Opole	Medin Klinika Sp. z o.o.	77 707 70 70
+high_reuse_19	Opole	Oddział Radioterapii – Opolskie Centrum Onkologii	77 441 60 04
+high_reuse_19	Opole	Opolskie Centrum Onkologii	77 441 60 04
+high_reuse_19	Opole	Opolskie Centrum Onkologii – Diagnostyka Obrazowa	77 441 60 04
+high_reuse_19	Opole	Opolskie Centrum Onkologii – Endokrynologia Onkologiczna	77 441 60 04
+high_reuse_19	Opole	Opolskie Centrum Onkologii – konsultacje naczyniowe	77 441 60 04
+high_reuse_19	Opole	Opolskie Centrum Onkologii im. prof. Tadeusza Koszarowskiego	77 441 60 04
+high_reuse_19	Opole	Poradnia Chirurgii Onkologicznej – Opolskie Centrum Onkologii	77 441 60 04
+high_reuse_19	Opole	Poradnia Onkologiczna – Opolskie Centrum Onkologii	77 441 60 04
+high_reuse_19	Opole	Poradnia Onkologii – Centrum Onkologii	77 441 60 04
+high_reuse_23	Opole	Bogumił Strzelecki – EndoPractica	536 508 501
+high_reuse_23	Opole	dr n. med. Jacek Hobot – chirurg naczyniowy	536 508 501
+high_reuse_23	Opole	dr n. med. Paweł Mielczarek – EndoPractica	536 508 501
+high_reuse_23	Opole	EndoPractica Specjalistyczne Centrum Medyczne	536 508 501
+high_reuse_23	Opole	EndoPractica Specjalistyczne Centrum Medyczne – alergologia	536 508 501
+high_reuse_23	Opole	EndoPractica Specjalistyczne Centrum Medyczne – Diabetologia	536 508 501
+high_reuse_23	Opole	ESMED – Endokrynologia dziecięca	536 508 501
+high_reuse_23	Opole	lek. Katarzyna Kapeluszna – alergolog	536 508 501
+high_reuse_23	Opole	prof. Grzegorz Oszkinis – chirurg naczyniowy	536 508 501
+high_reuse_24	Opole	MEDREM-Poliklinika	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – alergolog NFZ	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – chirurg prywatnie	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – chirurgia naczyniowa	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – Diabetolog	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – konsultacje naczyniowe NFZ	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – poradnia chirurgiczna	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – pulmonolog	77 423 26 60
+high_reuse_24	Opole	MEDREM-Poliklinika – rehabilitacja	77 423 26 60
+high_reuse_24	Opole	NZOZ MEDREM-Poliklinika	77 423 26 60
+high_reuse_26	Opole	NZOZ Specjalistyka	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – chirurg ogólny	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – chirurgia dziecięca	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – poradnia alergologiczna	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – poradnia chirurgii naczyniowej	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – Poradnia Diabetologiczna	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – Poradnia Kardiologiczna	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – poradnia naczyniowa	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – Poradnia Nefrologiczna	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – Poradnia Ortopedyczna	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – pulmonolog NFZ	77 454 54 27
+high_reuse_26	Opole	NZOZ Specjalistyka – rehabilitacja	77 454 54 27
+high_reuse_26	Opole	Poradnia Nefrologiczna – Ozimska 20	77 454 54 27
+high_reuse_30	Opole	AKDERM – Aleksandra Kapuśniak	77 453 21 10
+high_reuse_30	Opole	BWS-MEDIC – Chirurgia Ogólna i Onkologiczna	77 453 21 10
+high_reuse_30	Opole	Centrum Zdrowia Kręgosłupa	77 453 21 10
+high_reuse_30	Opole	Danuta Mielczarek – EndoPractica	77 453 21 10
+high_reuse_30	Opole	Dental Opole Clinic	77 453 21 10
+high_reuse_30	Opole	Dermatolog Kęcki – Gabinet medycyny estetycznej	77 453 21 10
+high_reuse_30	Opole	Estena Derm – A. Czernecka	77 453 21 10
+high_reuse_30	Opole	Gabinet Psychiatria Opole	77 453 21 10
+high_reuse_30	Opole	Katarzyna Pałuchowska – Gabinet dermatologii	77 453 21 10
+high_reuse_30	Opole	Krystyna Suchińska – Gabinet dermatologii	77 453 21 10
+high_reuse_30	Opole	lek. Bartosz Ptak – Dermatolog	77 453 21 10
+high_reuse_30	Opole	lek. Jarosław Struzik – EndoPractica	77 453 21 10
+high_reuse_30	Opole	lek. Wojciech Beker – EndoPractica	77 453 21 10
+high_reuse_30	Opole	MEDSKIN Dermatologia	77 453 21 10
+high_reuse_30	Opole	Neuromed Opole	77 453 21 10
+high_reuse_30	Opole	NOVUM – Instytut Dermatologii Leczniczej i Estetycznej	77 453 21 10
+high_reuse_30	Opole	Oddział Dermatologii – Szpital w Opolu	77 453 21 10
+high_reuse_30	Opole	Opolskie Centrum Medyczne	77 453 21 10
+high_reuse_30	Opole	Paulina Ciszewska-Hołda – gastroenterolog dziecięcy	77 453 21 10
+high_reuse_30	Opole	Poradnia dermatologiczna SPZOZ	77 453 21 10
+high_reuse_30	Opole	Poradnia gastroenterologiczna – Katowicka 66	77 453 21 10
+high_reuse_30	Opole	Poradnia Gastroenterologiczna – SPZOZ Kościuszki 2	77 453 21 10
+high_reuse_30	Opole	Poradnia gastrologiczna SPZOZ	77 453 21 10
+high_reuse_30	Opole	Poradnia Proktologii i Gastroenterologii	77 453 21 10
+high_reuse_30	Opole	Praktyka Lekarska Janusz Stasiak	77 453 21 10
+high_reuse_30	Opole	Prywatna Praktyka Gastrologiczna lek. Robert Okuniewicz	77 453 21 10
+high_reuse_30	Opole	Przychodnia Zdrowie Opole	77 453 21 10
+high_reuse_30	Opole	Qderm – Dagmara Bartosik	77 453 21 10
+high_reuse_30	Opole	Rekucka B. – Gabinet dermatologiczny	77 453 21 10
+high_reuse_30	Opole	Specjalistyczny Gabinet Dermatologii Leczniczej i Estetycznej	77 453 21 10
+high_reuse_33	Opole	Nocna i Świąteczna Opieka Zdrowotna – Szpital Wojewódzki	77 443 31 00
+high_reuse_33	Opole	SOR – Szpital Wojewódzki	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki – Konsultacje diabetologiczne	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – chirurgia naczyniowa	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Chirurgia Ogólna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – konsultacje chirurgiczne NFZ	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – konsultacje chirurgii dziecięcej	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – konsultacje nefrologiczne	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Oddział Chorób Wewnętrznych	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Oddział Noworodkowy	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Pediatria	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Kardiologiczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Laryngologiczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Okulistyczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Ortopedyczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Otolaryngologiczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – poradnia pulmonologiczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Poradnia Urologiczna	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Pracownia Radiologii	77 443 31 00
+high_reuse_33	Opole	Szpital Wojewódzki w Opolu – Rehabilitacja	77 443 31 00
