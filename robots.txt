@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kewin18.github.io/znajdzlekarza-opolskie/sitemap.xml
