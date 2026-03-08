@@ -22247,12 +22247,14 @@ const phoneHtml = telPhone
   : "📞 Brak numeru";
 
 box.innerHTML = `
-<div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-[2px] p-3 pt-[max(12px,env(safe-area-inset-top))] sm:p-6 flex items-start sm:items-center justify-center z-50">
+<div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-[2px] p-3 pt-[max(12px,env(safe-area-inset-top))] sm:p-6 flex items-center justify-center z-50">
 
-<div onclick="event.stopPropagation()" class="bg-white max-w-3xl w-full rounded-2xl shadow-2xl overflow-hidden relative">
+<div onclick="event.stopPropagation()" class="bg-white max-w-3xl w-full max-h-[92vh] rounded-2xl shadow-2xl overflow-y-auto relative">
 
+<div class="sticky top-0 z-20 flex justify-end p-2 bg-white/95 backdrop-blur border-b border-slate-200">
 <button onclick="closeFacility()"
-class="absolute right-3 top-4 sm:top-5 h-10 w-10 inline-flex items-center justify-center rounded-full bg-white/95 text-slate-700 hover:bg-white shadow z-10">✕</button>
+class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white text-slate-700 hover:bg-slate-100 shadow">✕</button>
+</div>
 
 <div class="bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-700 p-5 sm:p-6">
 <p class="text-xs uppercase tracking-wide font-semibold text-blue-200 mb-1">Placówka medyczna</p>
