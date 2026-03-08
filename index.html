@@ -21852,6 +21852,32 @@ function getMapsSearchLink(item){
 
   return `https://www.google.com/maps/search/?api=1&query=${query}`;
 }
+function trackGaEvent(eventName, params = {}){
+  if(typeof gtag !== "function") return;
+  gtag("event", eventName, params);
+}
+function safeDecodeURIComponent(value){
+  try{
+    return decodeURIComponent(String(value || ""));
+  }
+  catch(e){
+    return String(value || "");
+  }
+}
+function trackPhoneClick(source, facilityNameEncoded, cityEncoded){
+  trackGaEvent("click_phone", {
+    source: source || "unknown",
+    facility_name: safeDecodeURIComponent(facilityNameEncoded),
+    city: safeDecodeURIComponent(cityEncoded)
+  });
+}
+function trackMapsClick(source, facilityNameEncoded, cityEncoded){
+  trackGaEvent("click_maps", {
+    source: source || "unknown",
+    facility_name: safeDecodeURIComponent(facilityNameEncoded),
+    city: safeDecodeURIComponent(cityEncoded)
+  });
+}
 function isHospitalLikeName(name){
   const n = normalize(String(name || ""));
   return (
@@ -22084,10 +22110,12 @@ resultsDiv.innerHTML = results.map((d,index)=>{
 let mapsLink = getMapsSearchLink(d);
 let phoneText = (d.phone || "").trim();
 let telPhone = normalizePhoneForTel(phoneText);
+let facilityNameEncoded = encodeURIComponent(String(d.name || ""));
+let cityEncoded = encodeURIComponent(String(d.city || ""));
 let phoneHtml = telPhone
-? `<a href="tel:${telPhone}" onclick="event.stopPropagation()" class="text-blue-700 hover:underline">📞 ${phoneText}</a>`
+? `<a href="tel:${telPhone}" onclick="event.stopPropagation(); trackPhoneClick('result_card','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phoneText}</a>`
 : `📞 Brak numeru`;
-let mapAction = `<a href="${mapsLink}" target="_blank" onclick="event.stopPropagation()"
+let mapAction = `<a href="${mapsLink}" target="_blank" onclick="event.stopPropagation(); trackMapsClick('result_card','${facilityNameEncoded}','${cityEncoded}')"
 class="h-10 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 rounded-lg text-sm font-semibold shadow-sm transition text-center">
 Mapa
 </a>`;
@@ -22242,9 +22270,17 @@ const phone = main.phone;
 const city = main.city;
 const mapsLink = getMapsSearchLink(main);
 const telPhone = normalizePhoneForTel(phone);
+const facilityNameEncoded = encodeURIComponent(String(name || ""));
+const cityEncoded = encodeURIComponent(String(city || ""));
 const phoneHtml = telPhone
-  ? `<a href="tel:${telPhone}" class="text-blue-700 hover:underline">📞 ${phone}</a>`
+  ? `<a href="tel:${telPhone}" onclick="trackPhoneClick('facility_modal','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phone}</a>`
   : "📞 Brak numeru";
+
+trackGaEvent("open_facility", {
+  source: "results",
+  facility_name: name || "",
+  city: city || ""
+});
 
 box.innerHTML = `
 <div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-[2px] p-3 pt-[max(12px,env(safe-area-inset-top))] sm:p-6 flex items-center justify-center z-50">
@@ -22283,6 +22319,7 @@ ${name}
 <p class="text-sm text-slate-700 mb-3">Otwórz dokładny punkt placówki w mapach.</p>
 <a target="_blank"
 href="${mapsLink}"
+onclick="trackMapsClick('facility_modal','${facilityNameEncoded}','${cityEncoded}')"
 class="w-full inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition">
 🗺️ Otwórz w Google Maps
 </a>
