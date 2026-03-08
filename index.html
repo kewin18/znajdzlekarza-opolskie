@@ -27,6 +27,7 @@
 <script>
   const GA_MEASUREMENT_ID = "G-QVZM8C85VW";
   const COOKIE_CONSENT_KEY = "zl_cookie_consent_v1";
+  const FEEDBACK_FORM_URL = "";
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -87,6 +88,13 @@
   window.showCookieBanner = showCookieBanner;
   window.acceptCookies = ()=> setCookieConsent("accepted");
   window.rejectCookies = ()=> setCookieConsent("rejected");
+  window.openFeedbackForm = ()=>{
+    if(FEEDBACK_FORM_URL && /^https?:\/\//.test(FEEDBACK_FORM_URL)){
+      window.open(FEEDBACK_FORM_URL, "_blank", "noopener,noreferrer");
+      return;
+    }
+    window.location.href = "mailto:znajdzlekarzaopolskie@gmail.com?subject=Opinia%20o%20stronie%20ZnajdzLekarza%20Opolskie";
+  };
 
   document.addEventListener("DOMContentLoaded", initCookieConsent);
 </script>
@@ -124,6 +132,9 @@
 <a href="mailto:znajdzlekarzaopolskie@gmail.com" class="mt-1 inline-block text-blue-700 hover:text-blue-800 hover:underline break-all">
 znajdzlekarzaopolskie@gmail.com
 </a>
+<button type="button" onclick="openFeedbackForm()" class="mt-2 inline-flex items-center h-9 px-3 rounded-lg border border-blue-200 text-blue-700 hover:bg-blue-50 text-sm font-medium">
+Zgłoś błąd / Oceń stronę
+</button>
 </div>
 </div>
 <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500">
@@ -21774,6 +21785,15 @@ Znajdź lekarza
 <p class="relative text-sm sm:text-base text-blue-100 mt-1">
 Sprawdź specjalistów, telefony i mapę placówki w jednym miejscu.
 </p>
+</div>
+
+<div class="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+<p class="text-sm text-amber-900">
+Widzisz błąd w danych albo chcesz ocenić stronę? Daj znać.
+</p>
+<button onclick="openFeedbackForm()" class="h-10 px-4 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold shadow-sm">
+Zgłoś błąd / Oceń stronę
+</button>
 </div>
 
 <div id="specButtons"
