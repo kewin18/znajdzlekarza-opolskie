@@ -206,6 +206,8 @@ Akceptuję
 </div>
 </div>
 
+<div id="modalRoot"></div>
+
 <script>
 const app = document.getElementById("app");
 
@@ -22461,7 +22463,7 @@ openFacility(base.name);
 
 function openFacility(name){
 
-const box = document.getElementById("facilityProfile");
+const box = document.getElementById("modalRoot");
 
 /* wszystkie wpisy tej placówki */
 const facilityDoctors =
@@ -22567,7 +22569,10 @@ ${reviews.map(r=>`
 }
 
 function closeFacility(){
-  document.getElementById("facilityProfile").innerHTML = "";
+  const modalRoot = document.getElementById("modalRoot");
+  if(modalRoot) modalRoot.innerHTML = "";
+  const facilityProfile = document.getElementById("facilityProfile");
+  if(facilityProfile) facilityProfile.innerHTML = "";
 }
 
 /* START */
