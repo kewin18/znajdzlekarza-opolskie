@@ -263,6 +263,9 @@ Akceptuję
 
 <script>
 const app = document.getElementById("app");
+const RESULTS_BATCH_SIZE = 60;
+let lastSearchResults = [];
+let renderedResultsCount = 0;
 
 
 let doctors = [
@@ -22271,6 +22274,131 @@ function initCityDropdown(){
     }
   });
 }
+
+function buildResultCard(d,index){
+  let mapsLink = getMapsSearchLink(d);
+  let phoneText = (d.phone || "").trim();
+  let telPhone = normalizePhoneForTel(phoneText);
+  let facilityNameEncoded = encodeURIComponent(String(d.name || ""));
+  let cityEncoded = encodeURIComponent(String(d.city || ""));
+  let phoneHtml = telPhone
+  ? `<a href="tel:${telPhone}" onclick="event.stopPropagation(); trackPhoneClick('result_card','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phoneText}</a>`
+  : `📞 Brak numeru`;
+  let mapAction = `<a href="${mapsLink}" target="_blank" onclick="event.stopPropagation(); trackMapsClick('result_card','${facilityNameEncoded}','${cityEncoded}')"
+  class="btn-primary text-sm w-full">
+  Mapa
+  </a>`;
+
+  let visitBadge = "";
+  if(d.nfz && d.privateVisit)
+    visitBadge = `<span class="inline-flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold border border-blue-200">NFZ + Prywatnie</span>`;
+  else if(d.nfz)
+    visitBadge = `<span class="inline-flex items-center bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold border border-emerald-200">NFZ</span>`;
+  else
+    visitBadge = `<span class="inline-flex items-center bg-violet-100 text-violet-800 px-3 py-1 rounded-full text-xs font-bold border border-violet-200">Prywatnie</span>`;
+
+  let rank = "";
+  if(index === 0) rank = "🥇 Najlepszy wybór";
+  else if(index === 1) rank = "🥈 Popularny";
+  else if(index === 2) rank = "🥉 Polecany";
+
+  return `
+  <div onclick="openFacilityById(${Number(d.id)})"
+  class="result-card bg-white/95 border border-slate-200 p-5 rounded-3xl shadow-[0_18px_44px_-26px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_48px_-24px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
+  style="animation-delay:${Math.min(index*35,280)}ms">
+  <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 lg:gap-5">
+  <div class="flex-1 min-w-0">
+
+  <div class="flex flex-wrap items-center gap-2 mb-2">
+  ${visitBadge}
+  ${rank ? `<span class="inline-flex items-center bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-200">${rank}</span>` : ""}
+  ${d.featured ? `<span class="inline-flex items-center bg-yellow-100 text-yellow-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-yellow-200">⭐ Polecane</span>` : ""}
+  </div>
+
+  <h3 class="font-bold text-xl text-slate-900 leading-tight">
+  ${d.name}
+  </h3>
+
+  <p class="text-sm text-slate-600 mt-1">
+  ${d.specialization} • ${d.city}
+  </p>
+
+  <div class="mt-3 flex flex-wrap items-center gap-2">
+  <span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  ⭐ ${d.rating ?? "-"}
+  </span>
+  ${d.distance ? `
+  <span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  📍 ${d.distance} km
+  </span>` : ""}
+  ${d.price != null ?
+  `<span class="inline-flex items-center bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  💰 od ${d.price} zł
+  </span>` : ""}
+  </div>
+
+  <p class="text-sm text-slate-600 italic mt-3">
+  "${d.reviews?.[0] || 'Brak opinii'}"
+  </p>
+
+  <p class="text-sm text-slate-700 mt-2">
+  ${phoneHtml}
+  </p>
+  </div>
+
+  <div class="flex flex-col sm:flex-row lg:flex-col gap-2 lg:w-[190px]">
+  ${mapAction}
+
+  <button onclick="event.stopPropagation(); openFacilityById(${Number(d.id)})" class="btn-secondary text-sm w-full">
+  Zobacz placówkę
+  </button>
+
+  </div>
+  </div>
+  </div>
+  `;
+}
+
+function renderResultsBatch(reset = false){
+  const resultsDiv = document.getElementById("results");
+  const resultsInfo = document.getElementById("resultsInfo");
+  if(!resultsDiv) return;
+
+  if(reset){
+    renderedResultsCount = 0;
+  }
+
+  const nextCount = Math.min(
+    renderedResultsCount + RESULTS_BATCH_SIZE,
+    lastSearchResults.length
+  );
+  const chunk = lastSearchResults.slice(0,nextCount);
+  renderedResultsCount = nextCount;
+
+  if(resultsInfo){
+    const baseInfo = resultsInfo.innerHTML;
+    const cleanBaseInfo = baseInfo.replace(/<span class="text-slate-500 text-sm">[\s\S]*?<\/span>/g,"").trim();
+    if(lastSearchResults.length > RESULTS_BATCH_SIZE){
+      resultsInfo.innerHTML = `${cleanBaseInfo} <span class="text-slate-500 text-sm">(pokazano ${renderedResultsCount} z ${lastSearchResults.length})</span>`;
+    }
+    else{
+      resultsInfo.innerHTML = cleanBaseInfo;
+    }
+  }
+
+  let moreButton = "";
+  if(renderedResultsCount < lastSearchResults.length){
+    moreButton = `
+    <div class="mt-3 flex justify-center">
+      <button type="button" onclick="renderResultsBatch(false)" class="btn-secondary text-sm">
+        Pokaż więcej (${lastSearchResults.length - renderedResultsCount} pozostało)
+      </button>
+    </div>`;
+  }
+
+  resultsDiv.innerHTML = chunk.map((d,index)=>buildResultCard(d,index)).join("") + moreButton;
+}
+
 async function search(){
 
 const resultsDiv = document.getElementById("results");
@@ -22379,6 +22507,8 @@ return scoreB - scoreA;
 });
 
 if(!results.length){
+lastSearchResults = [];
+renderedResultsCount = 0;
 resultsDiv.innerHTML = `
 <div class="bg-white border border-slate-200 rounded-xl p-7 text-center shadow-sm">
 <p class="text-lg font-semibold text-slate-800 mb-1">Brak wyników dla wybranych filtrów</p>
@@ -22387,93 +22517,8 @@ resultsDiv.innerHTML = `
 `;
 return;
 }
-
-resultsDiv.innerHTML = results.map((d,index)=>{
-
-let mapsLink = getMapsSearchLink(d);
-let phoneText = (d.phone || "").trim();
-let telPhone = normalizePhoneForTel(phoneText);
-let facilityNameEncoded = encodeURIComponent(String(d.name || ""));
-let cityEncoded = encodeURIComponent(String(d.city || ""));
-let phoneHtml = telPhone
-? `<a href="tel:${telPhone}" onclick="event.stopPropagation(); trackPhoneClick('result_card','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phoneText}</a>`
-: `📞 Brak numeru`;
-let mapAction = `<a href="${mapsLink}" target="_blank" onclick="event.stopPropagation(); trackMapsClick('result_card','${facilityNameEncoded}','${cityEncoded}')"
-class="btn-primary text-sm w-full">
-Mapa
-</a>`;
-
-/* BADGES */
-let visitBadge = "";
-if(d.nfz && d.privateVisit)
-  visitBadge = `<span class="inline-flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold border border-blue-200">NFZ + Prywatnie</span>`;
-else if(d.nfz)
-  visitBadge = `<span class="inline-flex items-center bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold border border-emerald-200">NFZ</span>`;
-else
-  visitBadge = `<span class="inline-flex items-center bg-violet-100 text-violet-800 px-3 py-1 rounded-full text-xs font-bold border border-violet-200">Prywatnie</span>`;
-
-/* RANKING LABEL */
-let rank = "";
-if(index === 0) rank = "🥇 Najlepszy wybór";
-else if(index === 1) rank = "🥈 Popularny";
-else if(index === 2) rank = "🥉 Polecany";
-
-return `
-<div onclick="openFacilityById(${Number(d.id)})"
-class="result-card bg-white/95 border border-slate-200 p-5 rounded-3xl shadow-[0_18px_44px_-26px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_48px_-24px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
-style="animation-delay:${Math.min(index*35,280)}ms">
-<div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 lg:gap-5">
-<div class="flex-1 min-w-0">
-
-<div class="flex flex-wrap items-center gap-2 mb-2">
-${visitBadge}
-${rank ? `<span class="inline-flex items-center bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-200">${rank}</span>` : ""}
-${d.featured ? `<span class="inline-flex items-center bg-yellow-100 text-yellow-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-yellow-200">⭐ Polecane</span>` : ""}
-</div>
-
-<h3 class="font-bold text-xl text-slate-900 leading-tight">
-${d.name}
-</h3>
-
-<p class="text-sm text-slate-600 mt-1">
-${d.specialization} • ${d.city}
-</p>
-
-<div class="mt-3 flex flex-wrap items-center gap-2">
-<span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
-⭐ ${d.rating ?? "-"}
-</span>
-${d.distance ? `
-<span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
-📍 ${d.distance} km
-</span>` : ""}
-${d.price != null ?
-`<span class="inline-flex items-center bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full text-sm font-semibold">
-💰 od ${d.price} zł
-</span>` : ""}
-</div>
-
-<p class="text-sm text-slate-600 italic mt-3">
-"${d.reviews?.[0] || 'Brak opinii'}"
-</p>
-
-<p class="text-sm text-slate-700 mt-2">
-${phoneHtml}
-</p>
-</div>
-
-<div class="flex flex-col sm:flex-row lg:flex-col gap-2 lg:w-[190px]">
-${mapAction}
-
-<button onclick="event.stopPropagation(); openFacilityById(${Number(d.id)})" class="btn-secondary text-sm w-full">
-Zobacz placówkę
-</button>
-
-</div>
-</div>
-</div>
-`;
-}).join("");
+lastSearchResults = results;
+renderResultsBatch(true);
 }
 /* =========================
  SPECJALIZACJE AUTO
