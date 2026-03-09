@@ -22338,7 +22338,7 @@ else if(index === 1) rank = "🥈 Popularny";
 else if(index === 2) rank = "🥉 Polecany";
 
 return `
-<div onclick="openFacility('${d.name}')"
+<div onclick="openFacilityById(${Number(d.id)})"
 class="result-card bg-white/95 border border-slate-200 p-5 rounded-3xl shadow-[0_18px_44px_-26px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_48px_-24px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
 style="animation-delay:${Math.min(index*35,280)}ms">
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
@@ -22384,7 +22384,7 @@ ${phoneHtml}
 <div class="flex lg:flex-col gap-2 lg:w-[170px]">
 ${mapAction}
 
-<button onclick="event.stopPropagation(); openFacility('${d.name}')" class="h-10 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 rounded-xl text-sm font-semibold shadow-sm transition">
+<button onclick="event.stopPropagation(); openFacilityById(${Number(d.id)})" class="h-10 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 rounded-xl text-sm font-semibold shadow-sm transition">
 Zobacz placówkę
 </button>
 
@@ -22451,6 +22451,14 @@ function chooseSuggestion(spec){
   document.getElementById("specSuggestions").classList.add("hidden");
   search();
 }
+function openFacilityById(facilityId){
+const numericId = Number(facilityId);
+if(Number.isNaN(numericId)) return;
+const base = doctors.find(d => Number(d.id) === numericId);
+if(!base) return;
+openFacility(base.name);
+}
+
 function openFacility(name){
 
 const box = document.getElementById("facilityProfile");
@@ -22458,6 +22466,10 @@ const box = document.getElementById("facilityProfile");
 /* wszystkie wpisy tej placówki */
 const facilityDoctors =
   doctors.filter(d => d.name === name);
+if(!facilityDoctors.length){
+  box.innerHTML = "";
+  return;
+}
 
 /* unikalne specjalizacje */
 const specs =
