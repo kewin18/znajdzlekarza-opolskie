@@ -22,6 +22,7 @@
 :root{
   --brand-ink:#0f172a;
   --brand-blue:#2563eb;
+  --brand-cyan:#0891b2;
   --brand-surface:#f6f8fc;
 }
 html,body{
@@ -32,7 +33,7 @@ body{
   background:
     radial-gradient(1200px 420px at 15% -5%, #dbeafe 0%, transparent 55%),
     radial-gradient(1000px 420px at 85% -10%, #ccfbf1 0%, transparent 55%),
-    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 40%, #f1f5f9 100%);
   color:var(--brand-ink);
 }
 @keyframes fadeUp {
@@ -41,10 +42,18 @@ body{
 }
 .result-card {
   animation: fadeUp .24s ease-out both;
+  transform:translateY(0);
+}
+.result-card:hover{
+  transform:translateY(-2px);
 }
 .glass-panel{
   background:rgba(255,255,255,.82);
   backdrop-filter:blur(8px);
+}
+.brand-logo{
+  background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));
+  color:#fff;
 }
 </style>
 <script>
@@ -130,14 +139,24 @@ body{
 <body>
 
 <header class="sticky top-0 z-40 border-b border-slate-200/70 glass-panel">
-<div class="max-w-6xl mx-auto px-4 py-3 font-extrabold text-xl tracking-tight text-blue-700">
-🩺 ZnajdźLekarza Opolskie
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<span class="brand-logo h-10 w-10 rounded-xl inline-flex items-center justify-center text-lg shadow-md">+</span>
+<div class="min-w-0">
+<p class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 truncate">ZnajdźLekarza Opolskie</p>
+<p class="text-xs text-slate-500 hidden sm:block">Lekarze i placówki medyczne w województwie opolskim</p>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-2 text-xs">
+<a href="miasta-opolskie.html" class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:text-blue-700">Miasta</a>
+<a href="poradnik-zdrowia.html" class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:text-blue-700">Poradnik</a>
+</div>
 </div>
 </header>
 
-<main id="app" class="w-full max-w-none mx-auto p-0 sm:max-w-6xl sm:px-5 sm:py-6"></main>
+<main id="app" class="w-full max-w-none mx-auto p-0 sm:max-w-6xl sm:px-5 sm:py-7"></main>
 
-<footer class="mt-8 border-t border-slate-200 bg-white/90 backdrop-blur">
+<footer class="mt-10 border-t border-slate-200/70 bg-white/90 backdrop-blur">
 <div class="max-w-6xl mx-auto px-4 py-6 sm:px-6">
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-sm">
 <div class="lg:col-span-1">
@@ -21802,17 +21821,23 @@ return R * 2 * Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
 
 function home(){
 app.innerHTML=`
-<div class="glass-panel border border-white/70 p-4 sm:p-6 sm:rounded-3xl shadow-[0_16px_60px_-28px_rgba(15,23,42,.35)]">
+<div class="glass-panel border border-white/70 p-4 sm:p-6 sm:rounded-3xl shadow-[0_20px_64px_-32px_rgba(15,23,42,.35)]">
 
-<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-950 via-blue-900 to-cyan-700 p-5 sm:p-7 mb-5">
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-950 via-blue-900 to-cyan-700 p-5 sm:p-8 mb-5">
 <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-white/10"></div>
 <div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-cyan-200/20"></div>
-<h2 class="relative text-2xl sm:text-3xl font-bold text-white">
-Znajdź lekarza
-</h2>
-<p class="relative text-sm sm:text-base text-blue-100 mt-1">
-Sprawdź specjalistów, telefony i mapę placówki w jednym miejscu.
+<div class="absolute right-8 bottom-6 hidden lg:block text-7xl text-white/15 font-black select-none">OPOLSKIE</div>
+<h1 class="relative text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+Znajdź lekarza i placówkę w Opolskiem
+</h1>
+<p class="relative text-sm sm:text-base text-blue-100 mt-2 max-w-2xl">
+Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojazd do placówki.
 </p>
+<div class="relative mt-4 flex flex-wrap gap-2 text-xs sm:text-sm">
+<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">Aktualizowane dane</span>
+<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">NFZ i prywatnie</span>
+<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">Najważniejsze miasta regionu</span>
+</div>
 </div>
 
 <div class="mb-4 rounded-2xl border border-amber-200 bg-amber-50 p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
@@ -21824,13 +21849,28 @@ Zgłoś błąd
 </button>
 </div>
 
+<section class="mb-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Szybkie wyszukiwanie</p>
+<p class="mt-1 text-sm text-slate-700">Wpisz specjalizację, wybierz miasto i od razu sprawdź dostępne placówki.</p>
+</article>
+<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Kontakt i dojazd</p>
+<p class="mt-1 text-sm text-slate-700">Każdy wynik ma telefon i przycisk mapy prowadzący bezpośrednio do placówki.</p>
+</article>
+<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Opolskie lokalnie</p>
+<p class="mt-1 text-sm text-slate-700">Serwis skupia się na województwie opolskim, więc wyniki są konkretne i lokalne.</p>
+</article>
+</section>
+
 <div id="specButtons"
 class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 </div>
 
 <div class="mb-5">
 <div class="-mx-1 px-1">
-<div class="rounded-2xl border border-slate-200/90 bg-white p-3 sm:p-4 shadow-[0_10px_30px_-20px_rgba(15,23,42,.35)] space-y-3">
+<div class="rounded-2xl border border-slate-200/90 bg-white/95 p-3 sm:p-4 shadow-[0_16px_38px_-26px_rgba(15,23,42,.35)] space-y-3">
 
 <!-- GŁÓWNA WYSZUKIWARKA -->
 <div class="flex flex-col md:flex-row md:items-end gap-3">
@@ -21841,7 +21881,7 @@ Specjalizacja
 </label>
 <input id="spec"
 oninput="showSpecSuggestions()"
-class="border border-slate-300 bg-white px-3 py-3 rounded-lg w-full text-sm font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400"
+class="border border-slate-300 bg-white px-3 py-3 rounded-xl w-full text-sm font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400"
 placeholder="Jakiego specjalisty szukasz?">
 
 <div id="specSuggestions"
@@ -21856,7 +21896,7 @@ Miasto
   <option value="">Wszystkie miasta</option>
 </select>
 <button id="cityDropdownButton" type="button" onclick="toggleCityDropdown()"
-class="w-full border border-slate-300 bg-white pl-9 pr-10 py-3 rounded-lg text-sm font-medium text-left text-slate-700 shadow-sm hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400">
+class="w-full border border-slate-300 bg-white pl-9 pr-10 py-3 rounded-xl text-sm font-medium text-left text-slate-700 shadow-sm hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400">
 Wszystkie miasta
 </button>
 <span class="pointer-events-none absolute left-3 top-[35px] text-slate-400">📍</span>
@@ -21866,14 +21906,14 @@ Wszystkie miasta
 </div>
 
 <button onclick="search()"
-class="h-[46px] w-full md:w-auto inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 rounded-lg font-semibold shadow transition">
+class="h-[46px] w-full md:w-auto inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 rounded-xl font-semibold shadow transition">
 Szukaj
 </button>
 
 </div>
 
 <!-- FILTRY -->
-<div class="bg-slate-50 border border-slate-200 p-3 sm:p-4 rounded-xl space-y-3">
+<div class="bg-slate-50/80 border border-slate-200 p-3 sm:p-4 rounded-2xl space-y-3">
 
 <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
 Filtry wyników
@@ -21882,7 +21922,7 @@ Filtry wyników
 <div class="flex flex-col lg:flex-row gap-3 lg:items-center">
 
 <select id="visitType"
-class="border border-slate-300 bg-white px-3 py-2 rounded-lg text-sm font-medium text-slate-700 shadow-sm">
+class="border border-slate-300 bg-white px-3 py-2 rounded-xl text-sm font-medium text-slate-700 shadow-sm">
 <option value="all">NFZ + Prywatnie</option>
 <option value="nfz">Tylko NFZ</option>
 <option value="private">Tylko prywatnie</option>
@@ -21925,13 +21965,13 @@ class="border border-slate-300 bg-white px-3 py-2 rounded-lg text-sm font-medium
   <a href="lekarz-nysa.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Nysa</a>
   <a href="lekarz-brzeg.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Brzeg</a>
   <a href="lekarz-kedzierzyn-kozle.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Kędzierzyn-Koźle</a>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Kluczbork</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Prudnik</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Głubczyce</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Namysłów</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Strzelce Opolskie</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Krapkowice</span>
-  <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700">Olesno</span>
+  <a href="lekarz-kluczbork.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Kluczbork</a>
+  <a href="lekarz-prudnik.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Prudnik</a>
+  <a href="lekarz-glubczyce.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Głubczyce</a>
+  <a href="lekarz-namyslow.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Namysłów</a>
+  <a href="lekarz-strzelce-opolskie.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Strzelce Opolskie</a>
+  <a href="lekarz-krapkowice.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Krapkowice</a>
+  <a href="lekarz-olesno.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Olesno</a>
 </div>
 
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500 mt-4 mb-2">Frazy</p>
@@ -22278,7 +22318,7 @@ let phoneHtml = telPhone
 ? `<a href="tel:${telPhone}" onclick="event.stopPropagation(); trackPhoneClick('result_card','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phoneText}</a>`
 : `📞 Brak numeru`;
 let mapAction = `<a href="${mapsLink}" target="_blank" onclick="event.stopPropagation(); trackMapsClick('result_card','${facilityNameEncoded}','${cityEncoded}')"
-class="h-10 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 rounded-lg text-sm font-semibold shadow-sm transition text-center">
+class="h-10 inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-4 rounded-xl text-sm font-semibold shadow-sm transition text-center">
 Mapa
 </a>`;
 
@@ -22299,7 +22339,7 @@ else if(index === 2) rank = "🥉 Polecany";
 
 return `
 <div onclick="openFacility('${d.name}')"
-class="result-card bg-white/95 border border-slate-200 p-5 rounded-2xl shadow-[0_16px_38px_-24px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_46px_-26px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
+class="result-card bg-white/95 border border-slate-200 p-5 rounded-3xl shadow-[0_18px_44px_-26px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_48px_-24px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
 style="animation-delay:${Math.min(index*35,280)}ms">
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
 <div class="flex-1 min-w-0">
@@ -22344,7 +22384,7 @@ ${phoneHtml}
 <div class="flex lg:flex-col gap-2 lg:w-[170px]">
 ${mapAction}
 
-<button onclick="event.stopPropagation(); openFacility('${d.name}')" class="h-10 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 rounded-lg text-sm font-semibold shadow-sm transition">
+<button onclick="event.stopPropagation(); openFacility('${d.name}')" class="h-10 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 rounded-xl text-sm font-semibold shadow-sm transition">
 Zobacz placówkę
 </button>
 
@@ -22445,13 +22485,13 @@ trackGaEvent("open_facility", {
 });
 
 box.innerHTML = `
-<div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-[2px] p-3 pt-[max(12px,env(safe-area-inset-top))] sm:p-6 flex items-center justify-center z-50">
+<div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/65 backdrop-blur-[3px] p-3 pt-[max(12px,env(safe-area-inset-top))] sm:p-6 flex items-center justify-center z-50">
 
-<div onclick="event.stopPropagation()" class="bg-white max-w-3xl w-full max-h-[92vh] rounded-2xl shadow-2xl overflow-y-auto relative">
+<div onclick="event.stopPropagation()" class="bg-white max-w-3xl w-full max-h-[92vh] rounded-3xl shadow-2xl overflow-y-auto relative border border-slate-200">
 
 <div class="sticky top-0 z-20 flex justify-end p-2 bg-white/95 backdrop-blur border-b border-slate-200">
 <button onclick="closeFacility()"
-class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white text-slate-700 hover:bg-slate-100 shadow">✕</button>
+class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-white text-slate-700 hover:bg-slate-100 shadow border border-slate-200">✕</button>
 </div>
 
 <div class="bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-700 p-5 sm:p-6">
@@ -22465,7 +22505,7 @@ ${name}
 <div class="p-5 sm:p-6 space-y-5">
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-<div class="bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-xl p-4">
+<div class="bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 inline-flex items-center justify-center text-sm">📞</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-blue-700">Kontakt</p>
@@ -22473,7 +22513,7 @@ ${name}
 <p class="text-slate-800 text-lg font-semibold leading-tight">${phoneHtml}</p>
 <p class="text-xs text-slate-500 mt-2">Kliknij numer, aby od razu zadzwonić.</p>
 </div>
-<div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-xl p-4">
+<div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center justify-center text-sm">📍</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-emerald-700">Lokalizacja</p>
@@ -22482,7 +22522,7 @@ ${name}
 <a target="_blank"
 href="${mapsLink}"
 onclick="trackMapsClick('facility_modal','${facilityNameEncoded}','${cityEncoded}')"
-class="w-full inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition">
+class="w-full inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold transition">
 🗺️ Otwórz w Google Maps
 </a>
 </div>
