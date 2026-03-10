@@ -36,6 +36,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-do-lekarza-rodzinnego.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-do-specjalisty.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-jak-przygotowac-sie-do-wizyty.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-na-sor.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-jak-sprawdzic-placowke.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-badania-profilaktyczne.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/lekarz-brzeg.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
