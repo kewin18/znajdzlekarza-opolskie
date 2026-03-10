@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Wizyta lekarska">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="120" y="90" width="530" height="450" rx="30" fill="#ffffff"/>
+  <rect x="180" y="160" width="350" height="18" rx="9" fill="#d1fae5"/>
+  <rect x="180" y="202" width="410" height="14" rx="7" fill="#bbf7d0"/>
+  <rect x="180" y="238" width="390" height="14" rx="7" fill="#bbf7d0"/>
+  <rect x="180" y="274" width="430" height="14" rx="7" fill="#bbf7d0"/>
+  <rect x="180" y="420" width="180" height="54" rx="14" fill="#2563eb"/>
+  <text x="222" y="455" font-size="24" font-family="Arial, sans-serif" font-weight="700" fill="#ffffff">Wizyta</text>
+  <circle cx="880" cy="315" r="155" fill="#ffffff"/>
+  <circle cx="880" cy="275" r="46" fill="#bfdbfe"/>
+  <rect x="820" y="330" width="120" height="90" rx="26" fill="#bfdbfe"/>
+  <path d="M880 240v70M845 275h70" stroke="#1d4ed8" stroke-width="16" stroke-linecap="round"/>
+</svg>
