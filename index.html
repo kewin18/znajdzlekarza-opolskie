@@ -109,6 +109,56 @@ body{
   flex-direction:column;
   gap:8px;
 }
+.badge{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid transparent;
+}
+.badge-nfz-private{
+  background:#dbeafe;
+  color:#1e40af;
+  border-color:#bfdbfe;
+}
+.badge-nfz{
+  background:#dcfce7;
+  color:#166534;
+  border-color:#bbf7d0;
+}
+.badge-private{
+  background:#f3e8ff;
+  color:#6b21a8;
+  border-color:#e9d5ff;
+}
+.badge-rank{
+  background:#fef3c7;
+  color:#92400e;
+  border-color:#fde68a;
+}
+.badge-featured{
+  background:#fef9c3;
+  color:#854d0e;
+  border-color:#fde68a;
+}
+.meta-pill{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:14px;
+  font-weight:600;
+}
+.meta-neutral{
+  background:#f1f5f9;
+  color:#334155;
+}
+.meta-price{
+  background:#ecfdf5;
+  color:#047857;
+}
 @media (max-width:1024px){
   .result-main{
     flex-direction:column;
@@ -22510,11 +22560,11 @@ function buildResultCard(d,index){
 
   let visitBadge = "";
   if(d.nfz && d.privateVisit)
-    visitBadge = `<span class="inline-flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold border border-blue-200">NFZ + Prywatnie</span>`;
+    visitBadge = `<span class="badge badge-nfz-private">NFZ + Prywatnie</span>`;
   else if(d.nfz)
-    visitBadge = `<span class="inline-flex items-center bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold border border-emerald-200">NFZ</span>`;
+    visitBadge = `<span class="badge badge-nfz">NFZ</span>`;
   else
-    visitBadge = `<span class="inline-flex items-center bg-violet-100 text-violet-800 px-3 py-1 rounded-full text-xs font-bold border border-violet-200">Prywatnie</span>`;
+    visitBadge = `<span class="badge badge-private">Prywatnie</span>`;
 
   let rank = "";
   if(index === 0) rank = "🥇 Najlepszy wybór";
@@ -22529,8 +22579,8 @@ function buildResultCard(d,index){
 
   <div class="result-head">
   ${visitBadge}
-  ${rank ? `<span class="inline-flex items-center bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-200">${rank}</span>` : ""}
-  ${d.featured ? `<span class="inline-flex items-center bg-yellow-100 text-yellow-800 px-2.5 py-1 rounded-full text-xs font-semibold border border-yellow-200">⭐ Polecane</span>` : ""}
+  ${rank ? `<span class="badge badge-rank">${rank}</span>` : ""}
+  ${d.featured ? `<span class="badge badge-featured">⭐ Polecane</span>` : ""}
   </div>
 
   <h3 class="result-title">
@@ -22542,15 +22592,15 @@ function buildResultCard(d,index){
   </p>
 
   <div class="result-meta">
-  <span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  <span class="meta-pill meta-neutral">
   ⭐ ${d.rating ?? "-"}
   </span>
   ${d.distance ? `
-  <span class="inline-flex items-center bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  <span class="meta-pill meta-neutral">
   📍 ${d.distance} km
   </span>` : ""}
   ${d.price != null ?
-  `<span class="inline-flex items-center bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full text-sm font-semibold">
+  `<span class="meta-pill meta-price">
   💰 od ${d.price} zł
   </span>` : ""}
   </div>
