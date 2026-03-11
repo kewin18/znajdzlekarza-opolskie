@@ -284,6 +284,7 @@ let doctorsByFacility = new Map();
 let specializationList = [];
 let facilityRecords = [];
 let searchCache = new Map();
+let activeSearchRunId = 0;
 
 
 let doctors = [
@@ -21981,7 +21982,7 @@ Wszystkie miasta
 <div id="cityDropdownMenu" class="hidden absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-lg shadow-lg z-20 max-h-56 overflow-auto"></div>
 </div>
 
-<button onclick="search()"
+<button id="searchBtn" onclick="search()"
 class="btn-primary h-[46px] w-full md:w-auto px-6">
 Szukaj
 </button>
@@ -22187,6 +22188,23 @@ function buildDoctorIndexes(){
       _specNormList: specNormJoined
     });
   });
+}
+function nextFrame(){
+  return new Promise((resolve)=>requestAnimationFrame(()=>resolve()));
+}
+function setSearchBusy(isBusy){
+  const searchBtn = document.getElementById("searchBtn");
+  if(!searchBtn) return;
+  if(isBusy){
+    searchBtn.disabled = true;
+    searchBtn.classList.add("opacity-70","cursor-not-allowed");
+    searchBtn.textContent = "Szukam...";
+  }
+  else{
+    searchBtn.disabled = false;
+    searchBtn.classList.remove("opacity-70","cursor-not-allowed");
+    searchBtn.textContent = "Szukaj";
+  }
 }
 function buildMapsQuery(item){
   const rawQuery =
@@ -22461,131 +22479,110 @@ function renderResultsBatch(reset = false){
 }
 
 async function search(){
+const runId = ++activeSearchRunId;
+setSearchBusy(true);
+try{
 
 const resultsDiv = document.getElementById("results");
-
 const resultsInfo = document.getElementById("resultsInfo");
 const resultsTitle = document.getElementById("resultsTitle");
 const specVal = document.getElementById("spec").value.trim().toLowerCase();
 const specNorm = normalize(specVal);
 const cityVal = normalize(document.getElementById("city").value);
-let visit = document.getElementById("visitType").value;
+const visit = document.getElementById("visitType").value;
 const sortBest = document.getElementById("sortBest").checked;
 const sortDistance = document.getElementById("sortDistance").checked;
 const sortPrice = document.getElementById("sortPrice").checked;
 const cacheKey = `${specNorm}__${cityVal}__${visit}__${sortBest ? 1 : 0}${sortDistance ? 1 : 0}${sortPrice ? 1 : 0}`;
 
+resultsDiv.innerHTML = `
+<div class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-sm">
+  <p class="text-base font-semibold text-slate-800 mb-1">Trwa wyszukiwanie...</p>
+  <p class="text-sm text-slate-500">Przy dużej liczbie danych może to potrwać chwilę.</p>
+</div>`;
+
 if(searchCache.has(cacheKey)){
+  if(runId !== activeSearchRunId) return;
   lastSearchResults = searchCache.get(cacheKey);
+}
+else{
+  const results = [];
 
-  let nfzCount = lastSearchResults.filter(d => d.nfz).length;
-  let privateCount = lastSearchResults.filter(d => d.privateVisit).length;
+  for(let i = 0; i < facilityRecords.length; i++){
+    const d = facilityRecords[i];
+    if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
+    if(visit === "nfz" && !d.nfz) continue;
+    if(visit === "private" && !d.privateVisit) continue;
+    if(cityVal && d._cityNorm !== cityVal) continue;
+    results.push(d);
 
-  let specNameCached = specVal ? specVal : "lekarze";
-  let visitLabelCached = "";
-  if(visit === "nfz") visitLabelCached = " NFZ";
-  else if(visit === "private") visitLabelCached = " prywatnie";
-  resultsTitle.innerHTML = `Najlepsi ${specNameCached}${visitLabelCached}`;
+    if(i % 120 === 0){
+      await nextFrame();
+      if(runId !== activeSearchRunId) return;
+    }
+  }
 
-  if(visit === "nfz"){
-    resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
-  }
-  else if(visit === "private"){
-    resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
-  }
-  else{
-    resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> lekarzy (NFZ + prywatnie)`;
-  }
-  renderResultsBatch(true);
+  results.sort((a,b)=>{
+    let scoreA = 0;
+    let scoreB = 0;
+
+    if(sortBest){
+      scoreA += a.rating || 0;
+      scoreB += b.rating || 0;
+    }
+    if(sortDistance){
+      scoreA -= Number(a.distance ?? 9999);
+      scoreB -= Number(b.distance ?? 9999);
+    }
+    if(sortPrice){
+      scoreA -= (a.price ?? 9999);
+      scoreB -= (b.price ?? 9999);
+    }
+    return scoreB - scoreA;
+  });
+
+  searchCache.set(cacheKey, results);
+  lastSearchResults = results;
+}
+
+if(runId !== activeSearchRunId) return;
+
+const specName = specVal ? specVal : "lekarze";
+let visitLabel = "";
+if(visit === "nfz") visitLabel = " NFZ";
+else if(visit === "private") visitLabel = " prywatnie";
+resultsTitle.innerHTML = `Najlepsi ${specName}${visitLabel}`;
+
+const nfzCount = lastSearchResults.filter(d => d.nfz).length;
+const privateCount = lastSearchResults.filter(d => d.privateVisit).length;
+if(visit === "nfz"){
+  resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
+}
+else if(visit === "private"){
+  resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
+}
+else{
+  resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> lekarzy (NFZ + prywatnie)`;
+}
+
+if(!lastSearchResults.length){
+  renderedResultsCount = 0;
+  resultsDiv.innerHTML = `
+  <div class="bg-white border border-slate-200 rounded-xl p-7 text-center shadow-sm">
+  <p class="text-lg font-semibold text-slate-800 mb-1">Brak wyników dla wybranych filtrów</p>
+  <p class="text-sm text-slate-500">Spróbuj wybrać inne miasto, specjalizację albo odznaczyć część filtrów.</p>
+  </div>
+  `;
   return;
 }
 
-let results = [];
-
-for(const doctor of facilityRecords){
-const d = doctor;
-if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
-
-/* NFZ / PRIVATE */
-if(visit==="nfz" && !d.nfz) continue;
-
-if(visit==="private" && !d.privateVisit) continue;
-
-/* CITY FILTER */
-if(cityVal && d._cityNorm !== cityVal) continue;
-
-results.push(d);
-}
-
-/* ===== DYNAMICZNY TYTUŁ ===== */
-
-let specName = specVal ? specVal : "lekarze";
-
-let visitLabel = "";
-
-if(visit === "nfz") visitLabel = " NFZ";
-else if(visit === "private") visitLabel = " prywatnie";
-
-resultsTitle.innerHTML =
-`Najlepsi ${specName}${visitLabel}`;
-
-/* ===== LICZNIK WYNIKÓW ===== */
-
-let nfzCount = results.filter(d => d.nfz).length;
-let privateCount = results.filter(d => d.privateVisit).length;
-
-if(visit === "nfz"){
-  resultsInfo.innerHTML =
-  `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
-}
-else if(visit === "private"){
-  resultsInfo.innerHTML =
-  `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
-}
-else{
-  resultsInfo.innerHTML =
-  `Znaleziono <b>${results.length}</b> lekarzy (NFZ + prywatnie)`;
-}
-
-/* ===== SORTOWANIE ===== */
-
-results.sort((a,b)=>{
-
-let scoreA = 0;
-let scoreB = 0;
-
-if(sortBest){
-  scoreA += a.rating || 0;
-  scoreB += b.rating || 0;
-}
-
-if(sortDistance){
-scoreA -= Number(a.distance ?? 9999);
-scoreB -= Number(b.distance ?? 9999);  
-}
-
-if(sortPrice){
-  scoreA -= (a.price ?? 9999);
-  scoreB -= (b.price ?? 9999);
-}
-
-return scoreB - scoreA;
-});
-
-if(!results.length){
-lastSearchResults = [];
-renderedResultsCount = 0;
-resultsDiv.innerHTML = `
-<div class="bg-white border border-slate-200 rounded-xl p-7 text-center shadow-sm">
-<p class="text-lg font-semibold text-slate-800 mb-1">Brak wyników dla wybranych filtrów</p>
-<p class="text-sm text-slate-500">Spróbuj wybrać inne miasto, specjalizację albo odznaczyć część filtrów.</p>
-</div>
-`;
-return;
-}
-searchCache.set(cacheKey, results);
-lastSearchResults = results;
 renderResultsBatch(true);
+}
+finally{
+  if(runId === activeSearchRunId){
+    setSearchBusy(false);
+  }
+}
 }
 /* =========================
  SPECJALIZACJE AUTO
