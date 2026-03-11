@@ -1019,7 +1019,8 @@ function withSearchContext(results, specNorm){
   if(!specNorm) return results;
 
   return results.map((item)=>{
-    const variants = doctorsByFacility.get(item.name) || [];
+    const facilityKey = item.__facilityKey || `${item.name}__${item.city}`;
+    const variants = doctorsByFacility.get(facilityKey) || [];
     const matched = variants.find((v)=>(v._specNorm || "") === specNorm)
       || variants.find((v)=>(v._specNorm || "").includes(specNorm));
     if(!matched) return item;
@@ -1052,10 +1053,11 @@ function buildDoctorIndexes(){
 
     doctorsById.set(Number(enriched.id), enriched);
 
-    if(!doctorsByFacility.has(enriched.name)){
-      doctorsByFacility.set(enriched.name, []);
+    const facilityKey = enriched.__facilityKey;
+    if(!doctorsByFacility.has(facilityKey)){
+      doctorsByFacility.set(facilityKey, []);
     }
-    doctorsByFacility.get(enriched.name).push(enriched);
+    doctorsByFacility.get(facilityKey).push(enriched);
 
     return enriched;
   });
@@ -1068,15 +1070,19 @@ function buildDoctorIndexes(){
     })[0];
   };
 
-  doctorsByFacility.forEach((list, name)=>{
+  doctorsByFacility.forEach((list, facilityKey)=>{
     if(!list.length) return;
     const best = pickBestDoctor(list);
     const specs = [...new Set(list.map((d)=>d.specialization).filter(Boolean))];
     const specNormJoined = `|${specs.map((s)=>normalize(s)).join("|")}|`;
+    const city = best.city || "";
+    const name = best.name || "";
 
     const record = {
       ...best,
       name,
+      city,
+      __facilityKey: facilityKey,
       nfz: list.some((d)=>Boolean(d.nfz)),
       privateVisit: list.some((d)=>Boolean(d.privateVisit)),
       price: list.reduce((acc, d)=>{
@@ -1666,15 +1672,15 @@ const numericId = Number(facilityId);
 if(Number.isNaN(numericId)) return;
 const base = doctorsById.get(numericId);
 if(!base) return;
-openFacility(base.name);
+openFacility(base.__facilityKey || `${base.name}__${base.city}`);
 }
 
-function openFacility(name){
+function openFacility(facilityKey){
 
 const box = document.getElementById("modalRoot");
 
 /* wszystkie wpisy tej placówki */
-const facilityDoctors = doctorsByFacility.get(name) || [];
+const facilityDoctors = doctorsByFacility.get(facilityKey) || [];
 if(!facilityDoctors.length){
   box.innerHTML = "";
   return;
@@ -1689,6 +1695,7 @@ const reviews =
   facilityDoctors.flatMap(d => d.reviews).slice(0,5);
 
 const main = facilityDoctors[0];
+const name = main.name;
 const phone = main.phone;
 const city = main.city;
 const mapsLink = getMapsSearchLink(main);
