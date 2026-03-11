@@ -278,8 +278,13 @@ let doctorsById = new Map();
 let doctorsByFacility = new Map();
 let specializationList = [];
 let facilityRecords = [];
+let facilityById = new Map();
 let searchCache = new Map();
 let activeSearchRunId = 0;
+let searchWorker = null;
+let searchWorkerReadyPromise = null;
+let searchWorkerRequestSeq = 0;
+const searchWorkerPending = new Map();
 
 
 let doctors = [
@@ -22134,6 +22139,7 @@ function buildDoctorIndexes(){
   doctorsById = new Map();
   doctorsByFacility = new Map();
   facilityRecords = [];
+  facilityById = new Map();
   searchCache = new Map();
   specializationList = [...new Set(doctors.map(d => d.specialization))].sort((a,b)=>a.localeCompare(b,"pl"));
 
@@ -22169,7 +22175,7 @@ function buildDoctorIndexes(){
     const specs = [...new Set(list.map((d)=>d.specialization).filter(Boolean))];
     const specNormJoined = specs.map((s)=>normalize(s)).join("|");
 
-    facilityRecords.push({
+    const record = {
       ...best,
       name,
       nfz: list.some((d)=>Boolean(d.nfz)),
@@ -22181,11 +22187,94 @@ function buildDoctorIndexes(){
       rating: list.reduce((acc,d)=>acc + Number(d.rating || 0), 0) / list.length,
       reviews: best.reviews || [],
       _specNormList: specNormJoined
-    });
+    };
+    facilityRecords.push(record);
+    facilityById.set(Number(record.id), record);
   });
+
+  if(searchWorker){
+    searchWorker.terminate();
+    searchWorker = null;
+  }
+  searchWorkerReadyPromise = null;
+  searchWorkerPending.clear();
 }
 function nextFrame(){
   return new Promise((resolve)=>requestAnimationFrame(()=>resolve()));
+}
+function initSearchWorker(){
+  if(!("Worker" in window)) return Promise.resolve(false);
+  if(searchWorkerReadyPromise) return searchWorkerReadyPromise;
+
+  searchWorkerReadyPromise = new Promise((resolve)=>{
+    let settled = false;
+    const finish = (ok)=>{
+      if(settled) return;
+      settled = true;
+      resolve(ok);
+    };
+
+    try{
+      searchWorker = new Worker("assets/search-worker.js");
+    }
+    catch(e){
+      finish(false);
+      return;
+    }
+
+    searchWorker.onmessage = (event)=>{
+      const msg = event.data || {};
+
+      if(msg.type === "ready"){
+        finish(true);
+        return;
+      }
+
+      if(msg.type === "result"){
+        const pending = searchWorkerPending.get(msg.requestId);
+        if(!pending) return;
+        searchWorkerPending.delete(msg.requestId);
+        pending.resolve(msg);
+      }
+    };
+
+    searchWorker.onerror = ()=>{
+      finish(false);
+    };
+
+    const slimRecords = facilityRecords.map((d)=>({
+      id: Number(d.id),
+      specNormList: d._specNormList || "",
+      cityNorm: d._cityNorm || "",
+      nfz: Boolean(d.nfz),
+      privateVisit: Boolean(d.privateVisit),
+      rating: Number(d.rating || 0),
+      distance: d.distance ?? null,
+      price: d.price ?? null
+    }));
+
+    searchWorker.postMessage({ type: "init", records: slimRecords });
+    setTimeout(()=>finish(false), 2200);
+  });
+
+  return searchWorkerReadyPromise;
+}
+async function searchWithWorker(params){
+  const ready = await initSearchWorker();
+  if(!ready || !searchWorker) return null;
+
+  return await new Promise((resolve)=>{
+    const requestId = ++searchWorkerRequestSeq;
+    searchWorkerPending.set(requestId, { resolve });
+    searchWorker.postMessage({ type: "search", requestId, ...params });
+
+    setTimeout(()=>{
+      const pending = searchWorkerPending.get(requestId);
+      if(!pending) return;
+      searchWorkerPending.delete(requestId);
+      resolve(null);
+    }, 4200);
+  });
 }
 function setSearchBusy(isBusy){
   const searchBtn = document.getElementById("searchBtn");
@@ -22504,43 +22593,56 @@ if(searchCache.has(cacheKey)){
   lastSearchResults = searchCache.get(cacheKey);
 }
 else{
-  const results = [];
+  const workerResult = await searchWithWorker({
+    specNorm,
+    cityNorm: cityVal,
+    visit,
+    sortBest,
+    sortDistance,
+    sortPrice
+  });
+  if(runId !== activeSearchRunId) return;
 
-  for(let i = 0; i < facilityRecords.length; i++){
-    const d = facilityRecords[i];
-    if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
-    if(visit === "nfz" && !d.nfz) continue;
-    if(visit === "private" && !d.privateVisit) continue;
-    if(cityVal && d._cityNorm !== cityVal) continue;
-    results.push(d);
-
-    if(i % 120 === 0){
-      await nextFrame();
-      if(runId !== activeSearchRunId) return;
+  if(workerResult && Array.isArray(workerResult.ids)){
+    lastSearchResults = workerResult.ids
+      .map((id)=>facilityById.get(Number(id)))
+      .filter(Boolean);
+  }
+  else{
+    const results = [];
+    for(let i = 0; i < facilityRecords.length; i++){
+      const d = facilityRecords[i];
+      if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
+      if(visit === "nfz" && !d.nfz) continue;
+      if(visit === "private" && !d.privateVisit) continue;
+      if(cityVal && d._cityNorm !== cityVal) continue;
+      results.push(d);
+      if(i % 150 === 0){
+        await nextFrame();
+      }
     }
+
+    results.sort((a,b)=>{
+      let scoreA = 0;
+      let scoreB = 0;
+      if(sortBest){
+        scoreA += a.rating || 0;
+        scoreB += b.rating || 0;
+      }
+      if(sortDistance){
+        scoreA -= Number(a.distance ?? 9999);
+        scoreB -= Number(b.distance ?? 9999);
+      }
+      if(sortPrice){
+        scoreA -= (a.price ?? 9999);
+        scoreB -= (b.price ?? 9999);
+      }
+      return scoreB - scoreA;
+    });
+    lastSearchResults = results;
   }
 
-  results.sort((a,b)=>{
-    let scoreA = 0;
-    let scoreB = 0;
-
-    if(sortBest){
-      scoreA += a.rating || 0;
-      scoreB += b.rating || 0;
-    }
-    if(sortDistance){
-      scoreA -= Number(a.distance ?? 9999);
-      scoreB -= Number(b.distance ?? 9999);
-    }
-    if(sortPrice){
-      scoreA -= (a.price ?? 9999);
-      scoreB -= (b.price ?? 9999);
-    }
-    return scoreB - scoreA;
-  });
-
-  searchCache.set(cacheKey, results);
-  lastSearchResults = results;
+  searchCache.set(cacheKey, lastSearchResults);
 }
 
 if(runId !== activeSearchRunId) return;
@@ -22773,6 +22875,7 @@ function closeFacility(){
 
 /* START */
 buildDoctorIndexes();
+initSearchWorker();
 home();
 
 setTimeout(()=>{
