@@ -1774,11 +1774,10 @@ const cacheKey = `${specNorm}__${cityVal}__${visit}__${sortBest ? 1 : 0}${sortDi
 
 if(!specNorm && !cityVal){
   resultsTitle.innerHTML = "Wyszukaj lekarza";
-  resultsInfo.innerHTML = "Wybierz przynajmniej specjalizację lub miasto, aby uniknąć bardzo ciężkiego ładowania wszystkich danych naraz.";
+  resultsInfo.innerHTML = "";
   resultsDiv.innerHTML = `
-  <div class="bg-white border border-slate-200 rounded-xl p-7 text-center shadow-sm">
-  <p class="text-lg font-semibold text-slate-800 mb-1">Najpierw wybierz filtr</p>
-  <p class="text-sm text-slate-500">Podaj specjalizację albo miasto, a wyniki pojawią się od razu.</p>
+  <div class="bg-red-50 border border-red-200 rounded-xl p-5 text-center shadow-sm">
+  <p class="text-base font-semibold text-red-700">Wybierz specjalizację.</p>
   </div>
   `;
   return;
