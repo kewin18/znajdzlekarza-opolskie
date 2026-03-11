@@ -282,6 +282,8 @@ let renderedResultsCount = 0;
 let doctorsById = new Map();
 let doctorsByFacility = new Map();
 let specializationList = [];
+let facilityRecords = [];
+let searchCache = new Map();
 
 
 let doctors = [
@@ -22135,6 +22137,8 @@ function normalizePhoneForTel(phone){
 function buildDoctorIndexes(){
   doctorsById = new Map();
   doctorsByFacility = new Map();
+  facilityRecords = [];
+  searchCache = new Map();
   specializationList = [...new Set(doctors.map(d => d.specialization))].sort((a,b)=>a.localeCompare(b,"pl"));
 
   doctors = doctors.map((doctor)=>{
@@ -22153,6 +22157,35 @@ function buildDoctorIndexes(){
     doctorsByFacility.get(enriched.name).push(enriched);
 
     return enriched;
+  });
+
+  const pickBestDoctor = (list)=>{
+    return [...list].sort((a,b)=>{
+      const scoreA = (a.rating || 0) + (a.featured ? 0.35 : 0) + (a.phone ? 0.25 : 0) + (a.address ? 0.2 : 0);
+      const scoreB = (b.rating || 0) + (b.featured ? 0.35 : 0) + (b.phone ? 0.25 : 0) + (b.address ? 0.2 : 0);
+      return scoreB - scoreA;
+    })[0];
+  };
+
+  doctorsByFacility.forEach((list, name)=>{
+    if(!list.length) return;
+    const best = pickBestDoctor(list);
+    const specs = [...new Set(list.map((d)=>d.specialization).filter(Boolean))];
+    const specNormJoined = specs.map((s)=>normalize(s)).join("|");
+
+    facilityRecords.push({
+      ...best,
+      name,
+      nfz: list.some((d)=>Boolean(d.nfz)),
+      privateVisit: list.some((d)=>Boolean(d.privateVisit)),
+      price: list.reduce((acc, d)=>{
+        if(d.price == null) return acc;
+        return acc == null ? d.price : Math.min(acc, d.price);
+      }, null),
+      rating: list.reduce((acc,d)=>acc + Number(d.rating || 0), 0) / list.length,
+      reviews: best.reviews || [],
+      _specNormList: specNormJoined
+    });
   });
 }
 function buildMapsQuery(item){
@@ -22203,31 +22236,6 @@ function trackMapsClick(source, facilityNameEncoded, cityEncoded){
     facility_name: safeDecodeURIComponent(facilityNameEncoded),
     city: safeDecodeURIComponent(cityEncoded)
   });
-}
-function isHospitalLikeName(name){
-  const n = normalize(String(name || ""));
-  return (
-    n.includes("szpital") ||
-    n.includes("zoz") ||
-    n.includes("centrumzdrowia") ||
-    n.includes("centrummedyczne") ||
-    n.includes("uniwersyteckiszpitalkliniczny") ||
-    n.includes("krapkowickiecentrumzdrowia") ||
-    n.includes("namyslowskiecentrumzdrowia")
-  );
-}
-function resolveHospitalDisplayDoctor(doctor){
-  const parts = String(doctor.name || "").split(" – ");
-  if(parts.length < 2) return doctor;
-
-  const baseName = parts[0].trim();
-  if(!isHospitalLikeName(baseName)) return doctor;
-
-  const baseDoctor = doctors.find((d)=>
-    d.city === doctor.city &&
-    d.name === baseName
-  );
-  return baseDoctor || doctor;
 }
 function syncSortFilterStyles(){
   const ids = ["sortBest","sortDistance","sortPrice"];
@@ -22462,12 +22470,41 @@ const specVal = document.getElementById("spec").value.trim().toLowerCase();
 const specNorm = normalize(specVal);
 const cityVal = normalize(document.getElementById("city").value);
 let visit = document.getElementById("visitType").value;
+const sortBest = document.getElementById("sortBest").checked;
+const sortDistance = document.getElementById("sortDistance").checked;
+const sortPrice = document.getElementById("sortPrice").checked;
+const cacheKey = `${specNorm}__${cityVal}__${visit}__${sortBest ? 1 : 0}${sortDistance ? 1 : 0}${sortPrice ? 1 : 0}`;
+
+if(searchCache.has(cacheKey)){
+  lastSearchResults = searchCache.get(cacheKey);
+
+  let nfzCount = lastSearchResults.filter(d => d.nfz).length;
+  let privateCount = lastSearchResults.filter(d => d.privateVisit).length;
+
+  let specNameCached = specVal ? specVal : "lekarze";
+  let visitLabelCached = "";
+  if(visit === "nfz") visitLabelCached = " NFZ";
+  else if(visit === "private") visitLabelCached = " prywatnie";
+  resultsTitle.innerHTML = `Najlepsi ${specNameCached}${visitLabelCached}`;
+
+  if(visit === "nfz"){
+    resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
+  }
+  else if(visit === "private"){
+    resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
+  }
+  else{
+    resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> lekarzy (NFZ + prywatnie)`;
+  }
+  renderResultsBatch(true);
+  return;
+}
 
 let results = [];
 
-for(const doctor of doctors){
+for(const doctor of facilityRecords){
 const d = doctor;
-if(specNorm && !(d._specNorm || "").includes(specNorm)) continue;
+if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
 
 /* NFZ / PRIVATE */
 if(visit==="nfz" && !d.nfz) continue;
@@ -22479,18 +22516,6 @@ if(cityVal && d._cityNorm !== cityVal) continue;
 
 results.push(d);
 }
-
-/* ===== USUWANIE DUPLIKATÓW / POKAZUJ SZPITAL ZAMIAST ODDZIAŁU ===== */
-const uniqueResults = [];
-const seen = new Set();
-for(const item of results){
-  const displayDoctor = resolveHospitalDisplayDoctor(item);
-  const key = displayDoctor.__facilityKey || `${displayDoctor.name}__${displayDoctor.city}`;
-  if(seen.has(key)) continue;
-  seen.add(key);
-  uniqueResults.push(displayDoctor);
-}
-results = uniqueResults;
 
 /* ===== DYNAMICZNY TYTUŁ ===== */
 
@@ -22523,10 +22548,6 @@ else{
 }
 
 /* ===== SORTOWANIE ===== */
-
-const sortBest = document.getElementById("sortBest").checked;
-const sortDistance = document.getElementById("sortDistance").checked;
-const sortPrice = document.getElementById("sortPrice").checked;
 
 results.sort((a,b)=>{
 
@@ -22562,6 +22583,7 @@ resultsDiv.innerHTML = `
 `;
 return;
 }
+searchCache.set(cacheKey, results);
 lastSearchResults = results;
 renderResultsBatch(true);
 }
