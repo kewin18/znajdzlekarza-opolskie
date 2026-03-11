@@ -81,6 +81,7 @@ let renderedResultsCount = 0;
 let doctorsById = new Map();
 let doctorsByFacility = new Map();
 let specializationList = [];
+let specializationNormSet = new Set();
 let facilityRecords = [];
 let facilityById = new Map();
 let searchCache = new Map();
@@ -1019,7 +1020,8 @@ function withSearchContext(results, specNorm){
 
   return results.map((item)=>{
     const variants = doctorsByFacility.get(item.name) || [];
-    const matched = variants.find((v)=>(v._specNorm || "").includes(specNorm));
+    const matched = variants.find((v)=>(v._specNorm || "") === specNorm)
+      || variants.find((v)=>(v._specNorm || "").includes(specNorm));
     if(!matched) return item;
 
     return {
@@ -1038,6 +1040,7 @@ function buildDoctorIndexes(){
   facilityById = new Map();
   searchCache = new Map();
   specializationList = [...new Set(doctors.map(d => d.specialization))].sort((a,b)=>a.localeCompare(b,"pl"));
+  specializationNormSet = new Set(specializationList.map((s)=>normalize(s)));
 
   doctors = doctors.map((doctor)=>{
     const enriched = {
@@ -1069,7 +1072,7 @@ function buildDoctorIndexes(){
     if(!list.length) return;
     const best = pickBestDoctor(list);
     const specs = [...new Set(list.map((d)=>d.specialization).filter(Boolean))];
-    const specNormJoined = specs.map((s)=>normalize(s)).join("|");
+    const specNormJoined = `|${specs.map((s)=>normalize(s)).join("|")}|`;
 
     const record = {
       ...best,
@@ -1471,6 +1474,7 @@ const resultsInfo = document.getElementById("resultsInfo");
 const resultsTitle = document.getElementById("resultsTitle");
 const specVal = document.getElementById("spec").value.trim().toLowerCase();
 const specNorm = normalize(specVal);
+const exactSpec = specializationNormSet.has(specNorm);
 const cityVal = normalize(document.getElementById("city").value);
 const visit = document.getElementById("visitType").value;
 const sortBest = document.getElementById("sortBest").checked;
@@ -1503,6 +1507,7 @@ if(searchCache.has(cacheKey)){
 else{
   const workerResult = await searchWithWorker({
     specNorm,
+    exactSpec,
     cityNorm: cityVal,
     visit,
     sortBest,
@@ -1521,7 +1526,13 @@ else{
     const results = [];
     for(let i = 0; i < facilityRecords.length; i++){
       const d = facilityRecords[i];
-      if(specNorm && !(d._specNormList || "").includes(specNorm)) continue;
+      if(specNorm){
+        const list = d._specNormList || "";
+        if(exactSpec){
+          if(!list.includes(`|${specNorm}|`)) continue;
+        }
+        else if(!list.includes(specNorm)) continue;
+      }
       if(visit === "nfz" && !d.nfz) continue;
       if(visit === "private" && !d.privateVisit) continue;
       if(cityVal && d._cityNorm !== cityVal) continue;

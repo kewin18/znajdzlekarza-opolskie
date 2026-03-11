@@ -15,6 +15,7 @@ self.onmessage = (event)=>{
     const {
       requestId,
       specNorm = "",
+      exactSpec = false,
       cityNorm = "",
       visit = "all",
       sortBest = false,
@@ -28,7 +29,13 @@ self.onmessage = (event)=>{
 
     for(let i = 0; i < records.length; i++){
       const d = records[i];
-      if(specNorm && !(d.specNormList || "").includes(specNorm)) continue;
+      if(specNorm){
+        const list = d.specNormList || "";
+        if(exactSpec){
+          if(!list.includes(`|${specNorm}|`)) continue;
+        }
+        else if(!list.includes(specNorm)) continue;
+      }
       if(cityNorm && d.cityNorm !== cityNorm) continue;
       if(visit === "nfz" && !d.nfz) continue;
       if(visit === "private" && !d.privateVisit) continue;
@@ -67,4 +74,3 @@ self.onmessage = (event)=>{
     });
   }
 };
-
