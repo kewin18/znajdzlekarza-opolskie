@@ -47,6 +47,8 @@ body{
 .result-card {
   animation: fadeUp .24s ease-out both;
   transform:translateY(0);
+  content-visibility:auto;
+  contain-intrinsic-size: 260px;
 }
 .result-card:hover{
   transform:translateY(-2px);
@@ -274,9 +276,12 @@ Akceptuję
 
 <script>
 const app = document.getElementById("app");
-const RESULTS_BATCH_SIZE = 60;
+const RESULTS_BATCH_SIZE = 30;
 let lastSearchResults = [];
 let renderedResultsCount = 0;
+let doctorsById = new Map();
+let doctorsByFacility = new Map();
+let specializationList = [];
 
 
 let doctors = [
@@ -22127,6 +22132,29 @@ function normalizeCity(txt){
 function normalizePhoneForTel(phone){
   return String(phone || "").replace(/[^\d+]/g,"");
 }
+function buildDoctorIndexes(){
+  doctorsById = new Map();
+  doctorsByFacility = new Map();
+  specializationList = [...new Set(doctors.map(d => d.specialization))].sort((a,b)=>a.localeCompare(b,"pl"));
+
+  doctors = doctors.map((doctor)=>{
+    const enriched = {
+      ...doctor,
+      _specNorm: normalize(doctor.specialization || doctor.spec || doctor.speciality || ""),
+      _cityNorm: normalize(doctor.city || ""),
+      __facilityKey: `${doctor.name}__${doctor.city}`
+    };
+
+    doctorsById.set(Number(enriched.id), enriched);
+
+    if(!doctorsByFacility.has(enriched.name)){
+      doctorsByFacility.set(enriched.name, []);
+    }
+    doctorsByFacility.get(enriched.name).push(enriched);
+
+    return enriched;
+  });
+}
 function buildMapsQuery(item){
   const rawQuery =
     item.mapsQuery ||
@@ -22376,15 +22404,24 @@ function renderResultsBatch(reset = false){
   const resultsInfo = document.getElementById("resultsInfo");
   if(!resultsDiv) return;
 
+  let cardsHost = document.getElementById("resultsCards");
+  let moreHost = document.getElementById("resultsMore");
+
   if(reset){
     renderedResultsCount = 0;
+    resultsDiv.innerHTML = `<div id="resultsCards"></div><div id="resultsMore"></div>`;
+    cardsHost = document.getElementById("resultsCards");
+    moreHost = document.getElementById("resultsMore");
   }
 
+  if(!cardsHost || !moreHost) return;
+
+  const previousCount = renderedResultsCount;
   const nextCount = Math.min(
     renderedResultsCount + RESULTS_BATCH_SIZE,
     lastSearchResults.length
   );
-  const chunk = lastSearchResults.slice(0,nextCount);
+  const chunk = lastSearchResults.slice(previousCount,nextCount);
   renderedResultsCount = nextCount;
 
   if(resultsInfo){
@@ -22408,7 +22445,11 @@ function renderResultsBatch(reset = false){
     </div>`;
   }
 
-  resultsDiv.innerHTML = chunk.map((d,index)=>buildResultCard(d,index)).join("") + moreButton;
+  cardsHost.insertAdjacentHTML(
+    "beforeend",
+    chunk.map((d,index)=>buildResultCard(d, previousCount + index)).join("")
+  );
+  moreHost.innerHTML = moreButton;
 }
 
 async function search(){
@@ -22417,24 +22458,16 @@ const resultsDiv = document.getElementById("results");
 
 const resultsInfo = document.getElementById("resultsInfo");
 const resultsTitle = document.getElementById("resultsTitle");
-let specVal = document.getElementById("spec").value.toLowerCase();
-let cityVal = normalize(document.getElementById("city").value);
+const specVal = document.getElementById("spec").value.trim().toLowerCase();
+const specNorm = normalize(specVal);
+const cityVal = normalize(document.getElementById("city").value);
 let visit = document.getElementById("visitType").value;
 
 let results = [];
 
 for(const doctor of doctors){
-
-const d = { ...doctor }; 
-if(
-  specVal &&
-  !normalize(
-  d.specialization ||
-  d.spec ||
-  d.speciality ||
-  ""
-).includes(normalize(specVal))
-) continue;
+const d = doctor;
+if(specNorm && !(d._specNorm || "").includes(specNorm)) continue;
 
 /* NFZ / PRIVATE */
 if(visit==="nfz" && !d.nfz) continue;
@@ -22442,7 +22475,7 @@ if(visit==="nfz" && !d.nfz) continue;
 if(visit==="private" && !d.privateVisit) continue;
 
 /* CITY FILTER */
-if(cityVal && normalize(d.city) !== normalize(cityVal)) continue;
+if(cityVal && d._cityNorm !== cityVal) continue;
 
 results.push(d);
 }
@@ -22452,7 +22485,7 @@ const uniqueResults = [];
 const seen = new Set();
 for(const item of results){
   const displayDoctor = resolveHospitalDisplayDoctor(item);
-  const key = `${displayDoctor.name}__${displayDoctor.city}`;
+  const key = displayDoctor.__facilityKey || `${displayDoctor.name}__${displayDoctor.city}`;
   if(seen.has(key)) continue;
   seen.add(key);
   uniqueResults.push(displayDoctor);
@@ -22536,7 +22569,7 @@ renderResultsBatch(true);
  SPECJALIZACJE AUTO
 ========================= */
 function getSpecializations(){
-  return [...new Set(doctors.map(d => d.specialization))].sort();
+  return specializationList;
 }
 
 function renderSpecButtons(){
@@ -22592,7 +22625,7 @@ function chooseSuggestion(spec){
 function openFacilityById(facilityId){
 const numericId = Number(facilityId);
 if(Number.isNaN(numericId)) return;
-const base = doctors.find(d => Number(d.id) === numericId);
+const base = doctorsById.get(numericId);
 if(!base) return;
 openFacility(base.name);
 }
@@ -22602,8 +22635,7 @@ function openFacility(name){
 const box = document.getElementById("modalRoot");
 
 /* wszystkie wpisy tej placówki */
-const facilityDoctors =
-  doctors.filter(d => d.name === name);
+const facilityDoctors = doctorsByFacility.get(name) || [];
 if(!facilityDoctors.length){
   box.innerHTML = "";
   return;
@@ -22723,6 +22755,7 @@ function closeFacility(){
 }
 
 /* START */
+buildDoctorIndexes();
 home();
 
 setTimeout(()=>{
