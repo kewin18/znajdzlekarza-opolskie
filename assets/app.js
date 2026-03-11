@@ -1015,24 +1015,33 @@ function formatRating(value){
   if(!Number.isFinite(num)) return "-";
   return num.toFixed(1);
 }
-function withSearchContext(results, specNorm){
+function withSearchContext(results, specNorm, exactSpec = false){
   if(!specNorm) return results;
 
-  return results.map((item)=>{
+  const mapped = [];
+  results.forEach((item)=>{
     const facilityKey = item.__facilityKey || `${item.name}__${item.city}`;
     const variants = doctorsByFacility.get(facilityKey) || [];
-    const matched = variants.find((v)=>(v._specNorm || "") === specNorm)
-      || variants.find((v)=>(v._specNorm || "").includes(specNorm));
-    if(!matched) return item;
+    let matched = null;
 
-    return {
+    if(exactSpec){
+      matched = variants.find((v)=>(v._specNorm || "") === specNorm) || null;
+    }
+    if(!matched){
+      matched = variants.find((v)=>(v._specNorm || "").includes(specNorm)) || null;
+    }
+    if(!matched) return;
+
+    mapped.push({
       ...item,
       specialization: matched.specialization || item.specialization,
       rating: Number(matched.rating ?? item.rating),
       price: matched.price ?? item.price,
       reviews: (Array.isArray(matched.reviews) && matched.reviews.length) ? matched.reviews : item.reviews
-    };
+    });
   });
+
+  return mapped;
 }
 function buildDoctorIndexes(){
   doctorsById = new Map();
@@ -1508,7 +1517,7 @@ resultsDiv.innerHTML = `
 
 if(searchCache.has(cacheKey)){
   if(runId !== activeSearchRunId) return;
-  lastSearchResults = withSearchContext(searchCache.get(cacheKey), specNorm);
+  lastSearchResults = withSearchContext(searchCache.get(cacheKey), specNorm, exactSpec);
 }
 else{
   const workerResult = await searchWithWorker({
@@ -1526,7 +1535,7 @@ else{
     lastSearchResults = workerResult.ids
       .map((id)=>facilityById.get(Number(id)))
       .filter(Boolean);
-    lastSearchResults = withSearchContext(lastSearchResults, specNorm);
+    lastSearchResults = withSearchContext(lastSearchResults, specNorm, exactSpec);
   }
   else{
     const results = [];
@@ -1565,7 +1574,7 @@ else{
       }
       return scoreB - scoreA;
     });
-    lastSearchResults = withSearchContext(results, specNorm);
+    lastSearchResults = withSearchContext(results, specNorm, exactSpec);
   }
 
   searchCache.set(cacheKey, lastSearchResults);
