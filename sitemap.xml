@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/bug-report.html</loc>
@@ -1241,39 +1241,69 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-antybiotyk-kiedy-nie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-badania-profilaktyczne.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-bol-kregoslupa-kiedy-do-lekarza.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-cisnienie-jak-mierzyc.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-dziecko-goraczka-co-robic.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-jak-czytac-wyniki-badan.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-jak-przygotowac-sie-do-wizyty.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-jak-sprawdzic-placowke.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-do-lekarza-rodzinnego.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-do-specjalisty.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-kiedy-na-sor.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-recepta-skierowanie-zwolnienie.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/poradnik-zdrowia.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kewin18.github.io/znajdzlekarza-opolskie/privacy.html</loc>
