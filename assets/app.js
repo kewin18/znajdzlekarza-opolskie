@@ -1009,6 +1009,28 @@ function normalizeCity(txt){
 function normalizePhoneForTel(phone){
   return String(phone || "").replace(/[^\d+]/g,"");
 }
+function formatRating(value){
+  const num = Number(value);
+  if(!Number.isFinite(num)) return "-";
+  return num.toFixed(1);
+}
+function withSearchContext(results, specNorm){
+  if(!specNorm) return results;
+
+  return results.map((item)=>{
+    const variants = doctorsByFacility.get(item.name) || [];
+    const matched = variants.find((v)=>(v._specNorm || "").includes(specNorm));
+    if(!matched) return item;
+
+    return {
+      ...item,
+      specialization: matched.specialization || item.specialization,
+      rating: Number(matched.rating ?? item.rating),
+      price: matched.price ?? item.price,
+      reviews: (Array.isArray(matched.reviews) && matched.reviews.length) ? matched.reviews : item.reviews
+    };
+  });
+}
 function buildDoctorIndexes(){
   doctorsById = new Map();
   doctorsByFacility = new Map();
@@ -1058,7 +1080,7 @@ function buildDoctorIndexes(){
         if(d.price == null) return acc;
         return acc == null ? d.price : Math.min(acc, d.price);
       }, null),
-      rating: list.reduce((acc,d)=>acc + Number(d.rating || 0), 0) / list.length,
+      rating: Number((list.reduce((acc,d)=>acc + Number(d.rating || 0), 0) / list.length).toFixed(1)),
       reviews: best.reviews || [],
       _specNormList: specNormJoined
     };
@@ -1348,7 +1370,7 @@ function buildResultCard(d,index){
 
   <div class="result-meta">
   <span class="meta-pill meta-neutral">
-  ⭐ ${d.rating ?? "-"}
+  ⭐ ${formatRating(d.rating)}
   </span>
   ${d.distance ? `
   <span class="meta-pill meta-neutral">
@@ -1464,6 +1486,7 @@ if(!specNorm && !cityVal){
   <p class="text-base font-semibold text-red-700">Wybierz specjalizację.</p>
   </div>
   `;
+  resultsDiv.scrollIntoView({ behavior: "smooth", block: "start" });
   return;
 }
 
@@ -1475,7 +1498,7 @@ resultsDiv.innerHTML = `
 
 if(searchCache.has(cacheKey)){
   if(runId !== activeSearchRunId) return;
-  lastSearchResults = searchCache.get(cacheKey);
+  lastSearchResults = withSearchContext(searchCache.get(cacheKey), specNorm);
 }
 else{
   const workerResult = await searchWithWorker({
@@ -1492,6 +1515,7 @@ else{
     lastSearchResults = workerResult.ids
       .map((id)=>facilityById.get(Number(id)))
       .filter(Boolean);
+    lastSearchResults = withSearchContext(lastSearchResults, specNorm);
   }
   else{
     const results = [];
@@ -1524,7 +1548,7 @@ else{
       }
       return scoreB - scoreA;
     });
-    lastSearchResults = results;
+    lastSearchResults = withSearchContext(results, specNorm);
   }
 
   searchCache.set(cacheKey, lastSearchResults);
