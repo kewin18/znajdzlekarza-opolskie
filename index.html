@@ -45,13 +45,8 @@ body{
   to { opacity: 1; transform: translateY(0); }
 }
 .result-card {
-  animation: fadeUp .24s ease-out both;
-  transform:translateY(0);
   content-visibility:auto;
-  contain-intrinsic-size: 260px;
-}
-.result-card:hover{
-  transform:translateY(-2px);
+  contain-intrinsic-size: 220px;
 }
 .glass-panel{
   background:rgba(255,255,255,.82);
@@ -276,7 +271,7 @@ Akceptuję
 
 <script>
 const app = document.getElementById("app");
-const RESULTS_BATCH_SIZE = 30;
+const RESULTS_BATCH_SIZE = 12;
 let lastSearchResults = [];
 let renderedResultsCount = 0;
 let doctorsById = new Map();
@@ -22370,8 +22365,7 @@ function buildResultCard(d,index){
 
   return `
   <div onclick="openFacilityById(${Number(d.id)})"
-  class="result-card bg-white/95 border border-slate-200 p-5 rounded-3xl shadow-[0_18px_44px_-26px_rgba(15,23,42,.35)] mb-4 cursor-pointer hover:shadow-[0_24px_48px_-24px_rgba(37,99,235,.45)] hover:border-blue-300 transition"
-  style="animation-delay:${Math.min(index*35,280)}ms">
+  class="result-card bg-white border border-slate-200 p-5 rounded-3xl mb-4 cursor-pointer hover:border-blue-300 transition">
   <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 lg:gap-5">
   <div class="flex-1 min-w-0">
 
@@ -22425,7 +22419,7 @@ function buildResultCard(d,index){
   `;
 }
 
-function renderResultsBatch(reset = false){
+async function renderResultsBatch(reset = false){
   const resultsDiv = document.getElementById("results");
   const resultsInfo = document.getElementById("resultsInfo");
   if(!resultsDiv) return;
@@ -22471,10 +22465,14 @@ function renderResultsBatch(reset = false){
     </div>`;
   }
 
-  cardsHost.insertAdjacentHTML(
-    "beforeend",
-    chunk.map((d,index)=>buildResultCard(d, previousCount + index)).join("")
-  );
+  for(let i = 0; i < chunk.length; i += 4){
+    const part = chunk
+      .slice(i, i + 4)
+      .map((d,index)=>buildResultCard(d, previousCount + i + index))
+      .join("");
+    cardsHost.insertAdjacentHTML("beforeend", part);
+    await nextFrame();
+  }
   moreHost.innerHTML = moreButton;
 }
 
@@ -22576,7 +22574,7 @@ if(!lastSearchResults.length){
   return;
 }
 
-renderResultsBatch(true);
+await renderResultsBatch(true);
 }
 finally{
   if(runId === activeSearchRunId){
