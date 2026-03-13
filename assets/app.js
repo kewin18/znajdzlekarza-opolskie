@@ -476,6 +476,10 @@
     panel.hidden = false;
     launcher.hidden = true;
     TRIAGE_STATE.open = true;
+    const messages = document.getElementById("triageMessages");
+    if(messages){
+      messages.scrollTop = messages.scrollHeight;
+    }
     const input = document.getElementById("triageInput");
     if(input) input.focus();
   }
