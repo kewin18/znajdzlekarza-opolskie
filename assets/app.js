@@ -72,6 +72,243 @@
     window.location.href = "mailto:znajdzlekarzaopolskie@gmail.com?subject=Ocena%20strony%20ZnajdzLekarza%20Opolskie";
   };
 
+  const TRIAGE_STATE = {
+    open: false
+  };
+
+  function normalizePolishText(input){
+    return String(input || "")
+      .toLowerCase()
+      .replace(/[ąćęłńóśźż]/g, (char)=>{
+        const map = { "ą":"a", "ć":"c", "ę":"e", "ł":"l", "ń":"n", "ó":"o", "ś":"s", "ź":"z", "ż":"z" };
+        return map[char] || char;
+      });
+  }
+
+  function triageEvaluate(userText){
+    const t = normalizePolishText(userText);
+
+    const dangerPatterns = [
+      /duszno|nie moge oddychac|brak oddechu|sinieje/,
+      /bol.*klat|klat.*bol|ucisk w klatce/,
+      /udar|opadniety kacik|bełkot|niedowlad|paraliz/,
+      /utrata przytomnosci|nieprzytom|zemdl|drgawk/,
+      /krwotok|silne krwawienie|krwioplucie/,
+      /samoboj|chce sie zabic|mysli samobojcze/,
+      /bardzo silny bol glowy.*nagle|najgorszy bol glowy/
+    ];
+
+    const urgentPatterns = [
+      /wysoka goraczka|39|40/,
+      /goraczk.*wymiot|wymiot.*goraczk/,
+      /odwodn|nie pije|suchy jezyk/,
+      /silny bol brzucha|nie przechodzi bol/,
+      /dziecko.*goracz|niemowl/,
+      /biegunka.*krew|krew w stolcu/,
+      /utrzymuje sie.*wymiot|wymiotuje caly/
+    ];
+
+    const pozPatterns = [
+      /goraczk|kaszel|katar|bol gardla|infekcj/,
+      /nadcisnienie|cisnienie/,
+      /bol plec|bol kregoslupa|bol glowy/,
+      /recept|skierowan|zwolnienie/,
+      /przewlek|kontrol/
+    ];
+
+    if(dangerPatterns.some((r)=>r.test(t))){
+      return {
+        level: "danger",
+        title: "Pilne: 112 / SOR teraz",
+        text: "Objawy mogą wskazywać stan nagły. Nie czekaj na konsultację online. Dzwoń 112 albo jedź na SOR.",
+        bullets: [
+          "Jeśli możesz, nie jedź sam/a.",
+          "Przygotuj listę leków i chorób przewlekłych.",
+          "W razie pogorszenia natychmiast dzwoń 112."
+        ]
+      };
+    }
+
+    if(urgentPatterns.some((r)=>r.test(t))){
+      return {
+        level: "urgent",
+        title: "Pilne: NPL dzisiaj lub SOR przy pogorszeniu",
+        text: "Objawy wymagają pilnej oceny medycznej jeszcze dziś. Zacznij od NPL (nocna i świąteczna opieka), a przy nasileniu objawów jedź na SOR.",
+        bullets: [
+          "Nawadniaj się małymi porcjami.",
+          "Monitoruj temperaturę i ogólny stan.",
+          "Jeśli pojawi się duszność lub osłabienie kontaktu: 112/SOR."
+        ]
+      };
+    }
+
+    if(pozPatterns.some((r)=>r.test(t))){
+      return {
+        level: "soon",
+        title: "POZ: umów wizytę w 24-48h",
+        text: "Najbardziej sensowny pierwszy krok to lekarz rodzinny (POZ). Jeśli objawy będą się nasilać, skorzystaj szybciej z NPL.",
+        bullets: [
+          "Przygotuj listę objawów: od kiedy trwają i co je nasila.",
+          "Zabierz wyniki badań i listę leków.",
+          "Przy nagłym pogorszeniu nie czekaj - 112/SOR."
+        ]
+      };
+    }
+
+    return {
+      level: "low",
+      title: "Potrzeba więcej informacji",
+      text: "Opisz dokładniej objawy: od kiedy trwają, czy jest gorączka, ból, duszność, wymioty, osłabienie lub choroby przewlekłe.",
+      bullets: [
+        "Przykład: „Od 2 dni mam 38.7, wymioty 3 razy, bez duszności”.",
+        "Na tej podstawie podpowiem właściwy poziom pilności.",
+        "To asystent informacyjny, nie diagnoza."
+      ]
+    };
+  }
+
+  function triageLevelClass(level){
+    if(level === "danger") return "triage-level triage-level-danger";
+    if(level === "urgent") return "triage-level triage-level-urgent";
+    if(level === "soon") return "triage-level triage-level-soon";
+    return "triage-level triage-level-low";
+  }
+
+  function triageLevelIcon(level){
+    if(level === "danger") return "🚨";
+    if(level === "urgent") return "⚠️";
+    if(level === "soon") return "✅";
+    return "ℹ️";
+  }
+
+  function triageAddMessage(text, role){
+    const box = document.getElementById("triageMessages");
+    if(!box) return;
+    const item = document.createElement("div");
+    item.className = `triage-bubble ${role === "user" ? "triage-user" : "triage-bot"}`;
+    item.textContent = text;
+    box.appendChild(item);
+    box.scrollTop = box.scrollHeight;
+  }
+
+  function triageAddDecision(decision){
+    const box = document.getElementById("triageMessages");
+    if(!box) return;
+    const wrap = document.createElement("div");
+    wrap.className = "triage-bubble triage-bot";
+
+    const title = document.createElement("div");
+    title.className = triageLevelClass(decision.level);
+    title.textContent = `${triageLevelIcon(decision.level)} ${decision.title}`;
+    wrap.appendChild(title);
+
+    const p = document.createElement("p");
+    p.style.margin = "8px 0 0";
+    p.textContent = decision.text;
+    wrap.appendChild(p);
+
+    const ul = document.createElement("ul");
+    ul.style.margin = "8px 0 0";
+    ul.style.paddingLeft = "17px";
+    decision.bullets.forEach((line)=>{
+      const li = document.createElement("li");
+      li.textContent = line;
+      ul.appendChild(li);
+    });
+    wrap.appendChild(ul);
+
+    const note = document.createElement("p");
+    note.style.margin = "8px 0 0";
+    note.style.fontSize = "12px";
+    note.style.color = "#64748b";
+    note.textContent = "Uwaga: To wsparcie informacyjne, nie porada lekarska.";
+    wrap.appendChild(note);
+
+    box.appendChild(wrap);
+    box.scrollTop = box.scrollHeight;
+  }
+
+  function triageSubmit(){
+    const input = document.getElementById("triageInput");
+    if(!input) return;
+    const text = String(input.value || "").trim();
+    if(!text) return;
+
+    triageAddMessage(text, "user");
+    input.value = "";
+
+    const decision = triageEvaluate(text);
+    window.setTimeout(()=>{
+      triageAddDecision(decision);
+    }, 220);
+  }
+
+  function openTriageAssistant(){
+    const panel = document.getElementById("triagePanel");
+    const launcher = document.getElementById("triageLauncher");
+    if(!panel || !launcher) return;
+    panel.hidden = false;
+    launcher.hidden = true;
+    TRIAGE_STATE.open = true;
+    const input = document.getElementById("triageInput");
+    if(input) input.focus();
+  }
+
+  function closeTriageAssistant(){
+    const panel = document.getElementById("triagePanel");
+    const launcher = document.getElementById("triageLauncher");
+    if(!panel || !launcher) return;
+    panel.hidden = true;
+    launcher.hidden = false;
+    TRIAGE_STATE.open = false;
+  }
+
+  function initTriageAssistant(){
+    if(document.getElementById("triageAssistantRoot")) return;
+
+    const root = document.createElement("div");
+    root.id = "triageAssistantRoot";
+    root.innerHTML = `
+      <button id="triageLauncher" type="button" class="triage-launcher" aria-label="Otwórz asystenta objawów">
+        🤖 Asystent objawów
+      </button>
+      <section id="triagePanel" class="triage-panel" hidden aria-live="polite">
+        <div class="triage-head">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;">
+            <div>
+              <p class="triage-title">Asystent objawów (beta)</p>
+              <p class="triage-sub">Napisz objawy, a podpowiem gdzie zgłosić się najpierw.</p>
+            </div>
+            <button id="triageClose" class="triage-close" type="button" aria-label="Zamknij">×</button>
+          </div>
+        </div>
+        <div id="triageMessages" class="triage-messages">
+          <div class="triage-bubble triage-bot">
+            Cześć! Opisz objawy (np. „mam gorączkę 39 i wymiotuję od wczoraj”). Dostaniesz podpowiedź: 112/SOR, NPL albo POZ.
+          </div>
+        </div>
+        <div class="triage-input-wrap">
+          <input id="triageInput" class="triage-input" type="text" placeholder="Opisz objawy..." autocomplete="off">
+          <button id="triageSend" class="btn-primary triage-send" type="button">Wyślij</button>
+        </div>
+      </section>
+    `;
+    document.body.appendChild(root);
+
+    document.getElementById("triageLauncher").addEventListener("click", openTriageAssistant);
+    document.getElementById("triageClose").addEventListener("click", closeTriageAssistant);
+    document.getElementById("triageSend").addEventListener("click", triageSubmit);
+    document.getElementById("triageInput").addEventListener("keydown", (event)=>{
+      if(event.key === "Enter"){
+        event.preventDefault();
+        triageSubmit();
+      }
+    });
+  }
+
+  window.openTriageAssistant = openTriageAssistant;
+  window.closeTriageAssistant = closeTriageAssistant;
+
   document.addEventListener("DOMContentLoaded", initCookieConsent);
 
 const app = document.getElementById("app");
@@ -1797,6 +2034,10 @@ ${reviews.map(r=>`
 
 function handleModalEsc(event){
   if(event.key === "Escape"){
+    if(TRIAGE_STATE.open){
+      closeTriageAssistant();
+      return;
+    }
     closeFacility();
   }
 }
@@ -1813,6 +2054,7 @@ function closeFacility(){
 buildDoctorIndexes();
 initSearchWorker();
 home();
+initTriageAssistant();
 
 setTimeout(()=>{
   populateCityDropdown();
