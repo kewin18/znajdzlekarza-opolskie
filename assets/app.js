@@ -73,7 +73,8 @@
   };
 
   const TRIAGE_STATE = {
-    open: false
+    open: false,
+    session: null
   };
 
   function normalizePolishText(input){
@@ -85,85 +86,143 @@
       });
   }
 
-  function triageEvaluate(userText){
-    const t = normalizePolishText(userText);
-
+  function triageDangerFromText(text){
+    const t = normalizePolishText(text);
     const dangerPatterns = [
       /duszno|nie moge oddychac|brak oddechu|sinieje/,
       /bol.*klat|klat.*bol|ucisk w klatce/,
-      /udar|opadniety kacik|bełkot|niedowlad|paraliz/,
+      /udar|opadniety kacik|belkot|niedowlad|paraliz/,
       /utrata przytomnosci|nieprzytom|zemdl|drgawk/,
       /krwotok|silne krwawienie|krwioplucie/,
       /samoboj|chce sie zabic|mysli samobojcze/,
-      /bardzo silny bol glowy.*nagle|najgorszy bol glowy/
+      /najgorszy bol glowy|bardzo silny bol glowy/
     ];
+    return dangerPatterns.some((r)=>r.test(t));
+  }
 
-    const urgentPatterns = [
-      /wysoka goraczka|39|40/,
-      /goraczk.*wymiot|wymiot.*goraczk/,
-      /odwodn|nie pije|suchy jezyk/,
-      /silny bol brzucha|nie przechodzi bol/,
-      /dziecko.*goracz|niemowl/,
-      /biegunka.*krew|krew w stolcu/,
-      /utrzymuje sie.*wymiot|wymiotuje caly/
-    ];
+  function createTriageSession(){
+    return {
+      step: "symptoms",
+      answers: {
+        symptoms: "",
+        age: "",
+        duration: "",
+        fever: "",
+        redFlags: "",
+        dehydration: ""
+      }
+    };
+  }
 
-    const pozPatterns = [
-      /goraczk|kaszel|katar|bol gardla|infekcj/,
-      /nadcisnienie|cisnienie/,
-      /bol plec|bol kregoslupa|bol glowy/,
-      /recept|skierowan|zwolnienie/,
-      /przewlek|kontrol/
-    ];
+  function triageAsk(question, options){
+    triageAddMessage(question, "bot");
+    if(Array.isArray(options) && options.length){
+      triageAddOptions(options);
+    }
+  }
 
-    if(dangerPatterns.some((r)=>r.test(t))){
+  function triageBegin(){
+    TRIAGE_STATE.session = createTriageSession();
+    triageAsk(
+      "Zrobimy krótką ocenę krok po kroku. Najpierw opisz objawy jednym zdaniem.",
+      null
+    );
+  }
+
+  function triageBuildDecision(){
+    const a = TRIAGE_STATE.session?.answers || {};
+    const reasons = [];
+    let urgentScore = 0;
+
+    if(a.age === "infant"){
+      urgentScore += 2;
+      reasons.push("dotyczy małego dziecka");
+    } else if(a.age === "child" || a.age === "senior"){
+      urgentScore += 1;
+      reasons.push("większe ryzyko ze względu na wiek");
+    }
+
+    if(a.duration === "gt3"){
+      urgentScore += 1;
+      reasons.push("objawy trwają ponad 3 dni");
+    } else if(a.duration === "1-3"){
+      urgentScore += 0.5;
+    }
+
+    if(a.fever === "high"){
+      urgentScore += 2;
+      reasons.push("wysoka gorączka (>=39)");
+    } else if(a.fever === "mid"){
+      urgentScore += 1;
+      reasons.push("podwyższona temperatura");
+    }
+
+    if(a.dehydration === "yes"){
+      urgentScore += 2;
+      reasons.push("ryzyko odwodnienia / utrzymujących się wymiotów");
+    }
+
+    const symptomText = normalizePolishText(a.symptoms);
+    if(/silny bol brzucha|bardzo silny bol/.test(symptomText)){
+      urgentScore += 1.5;
+      reasons.push("silny ból");
+    }
+    if(/wymiot|biegun/.test(symptomText)){
+      urgentScore += 0.5;
+    }
+
+    if(a.redFlags === "yes" || triageDangerFromText(a.symptoms)){
       return {
         level: "danger",
         title: "Pilne: 112 / SOR teraz",
-        text: "Objawy mogą wskazywać stan nagły. Nie czekaj na konsultację online. Dzwoń 112 albo jedź na SOR.",
+        text: "Na podstawie odpowiedzi wygląda to na stan wymagający pilnej pomocy.",
         bullets: [
-          "Jeśli możesz, nie jedź sam/a.",
-          "Przygotuj listę leków i chorób przewlekłych.",
-          "W razie pogorszenia natychmiast dzwoń 112."
-        ]
+          "Nie czekaj na dalszą konsultację online.",
+          "Dzwoń 112 albo jedź na SOR.",
+          "Jeśli możesz, nie jedź sam/a."
+        ],
+        reasons: ["występują objawy alarmowe"]
       };
     }
 
-    if(urgentPatterns.some((r)=>r.test(t))){
+    if(urgentScore >= 3){
       return {
         level: "urgent",
-        title: "Pilne: NPL dzisiaj lub SOR przy pogorszeniu",
-        text: "Objawy wymagają pilnej oceny medycznej jeszcze dziś. Zacznij od NPL (nocna i świąteczna opieka), a przy nasileniu objawów jedź na SOR.",
+        title: "Pilne: NPL dzisiaj (lub SOR przy pogorszeniu)",
+        text: "Objawy wymagają pilnej oceny medycznej jeszcze dziś.",
         bullets: [
+          "Skontaktuj się z NPL dzisiaj.",
           "Nawadniaj się małymi porcjami.",
-          "Monitoruj temperaturę i ogólny stan.",
-          "Jeśli pojawi się duszność lub osłabienie kontaktu: 112/SOR."
-        ]
+          "Jeśli pojawi się duszność, silne osłabienie lub zaburzenia świadomości: 112/SOR."
+        ],
+        reasons
       };
     }
 
-    if(pozPatterns.some((r)=>r.test(t))){
+    if(urgentScore >= 1.5){
       return {
         level: "soon",
-        title: "POZ: umów wizytę w 24-48h",
-        text: "Najbardziej sensowny pierwszy krok to lekarz rodzinny (POZ). Jeśli objawy będą się nasilać, skorzystaj szybciej z NPL.",
+        title: "POZ: umów wizytę w 24h",
+        text: "Najlepszy pierwszy krok to lekarz rodzinny (POZ), najlepiej jeszcze dziś lub jutro.",
         bullets: [
-          "Przygotuj listę objawów: od kiedy trwają i co je nasila.",
-          "Zabierz wyniki badań i listę leków.",
-          "Przy nagłym pogorszeniu nie czekaj - 112/SOR."
-        ]
+          "Przygotuj listę objawów i czas trwania.",
+          "Weź listę leków i chorób przewlekłych.",
+          "Przy pogorszeniu: NPL lub SOR."
+        ],
+        reasons
       };
     }
 
     return {
       level: "low",
-      title: "Potrzeba więcej informacji",
-      text: "Opisz dokładniej objawy: od kiedy trwają, czy jest gorączka, ból, duszność, wymioty, osłabienie lub choroby przewlekłe.",
+      title: "POZ / obserwacja",
+      text: "Na ten moment wygląda na sytuację niewymagającą SOR. Obserwuj objawy i skontaktuj się z POZ, jeśli się utrzymują.",
       bullets: [
-        "Przykład: „Od 2 dni mam 38.7, wymioty 3 razy, bez duszności”.",
-        "Na tej podstawie podpowiem właściwy poziom pilności.",
-        "To asystent informacyjny, nie diagnoza."
-      ]
+        "Nawadniaj się i odpoczywaj.",
+        "Mierz temperaturę i zapisuj objawy.",
+        "W razie pogorszenia lub objawów alarmowych: 112/SOR."
+      ],
+      reasons
     };
   }
 
@@ -188,6 +247,23 @@
     item.className = `triage-bubble ${role === "user" ? "triage-user" : "triage-bot"}`;
     item.textContent = text;
     box.appendChild(item);
+    box.scrollTop = box.scrollHeight;
+  }
+
+  function triageAddOptions(options){
+    const box = document.getElementById("triageMessages");
+    if(!box) return;
+    const wrap = document.createElement("div");
+    wrap.className = "triage-options";
+    options.forEach((option)=>{
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "triage-option-btn";
+      btn.textContent = option.label;
+      btn.dataset.value = option.value;
+      wrap.appendChild(btn);
+    });
+    box.appendChild(wrap);
     box.scrollTop = box.scrollHeight;
   }
 
@@ -217,6 +293,15 @@
     });
     wrap.appendChild(ul);
 
+    if(Array.isArray(decision.reasons) && decision.reasons.length){
+      const why = document.createElement("p");
+      why.style.margin = "8px 0 0";
+      why.style.fontSize = "12px";
+      why.style.color = "#334155";
+      why.textContent = `Na to wpłynęło: ${decision.reasons.join(", ")}.`;
+      wrap.appendChild(why);
+    }
+
     const note = document.createElement("p");
     note.style.margin = "8px 0 0";
     note.style.fontSize = "12px";
@@ -228,19 +313,160 @@
     box.scrollTop = box.scrollHeight;
   }
 
+  function triageHandleInput(text){
+    const value = String(text || "").trim();
+    if(!value) return;
+
+    const normalized = normalizePolishText(value);
+    if(/^(od nowa|reset|restart|start)$/.test(normalized)){
+      triageAddMessage("Rozpocznijmy od nowa.", "bot");
+      triageBegin();
+      return;
+    }
+
+    const session = TRIAGE_STATE.session || createTriageSession();
+    TRIAGE_STATE.session = session;
+
+    if(session.step === "symptoms"){
+      session.answers.symptoms = value;
+      if(triageDangerFromText(value)){
+        triageAddDecision({
+          level: "danger",
+          title: "Pilne: 112 / SOR teraz",
+          text: "Już z pierwszego opisu widać objawy alarmowe.",
+          bullets: [
+            "Nie czekaj na dalsze pytania.",
+            "Dzwoń 112 albo jedź na SOR.",
+            "Jeśli możesz, nie jedź sam/a."
+          ],
+          reasons: ["objawy alarmowe w opisie"]
+        });
+        triageAsk("Możemy zrobić nową ocenę. Kliknij:", [
+          { label: "Rozpocznij od nowa", value: "restart" }
+        ]);
+        session.step = "done";
+        return;
+      }
+      session.step = "age";
+      triageAsk("Jaka grupa wiekowa dotyczy objawów?", [
+        { label: "Niemowlę (0-1)", value: "age:infant" },
+        { label: "Dziecko (2-17)", value: "age:child" },
+        { label: "Dorosły (18-64)", value: "age:adult" },
+        { label: "Senior (65+)", value: "age:senior" }
+      ]);
+      return;
+    }
+
+    if(session.step === "age"){
+      const match = normalized.match(/^age:(infant|child|adult|senior)$/);
+      if(!match){
+        triageAsk("Wybierz jedną z opcji wieku poniżej.", [
+          { label: "Niemowlę (0-1)", value: "age:infant" },
+          { label: "Dziecko (2-17)", value: "age:child" },
+          { label: "Dorosły (18-64)", value: "age:adult" },
+          { label: "Senior (65+)", value: "age:senior" }
+        ]);
+        return;
+      }
+      session.answers.age = match[1];
+      session.step = "duration";
+      triageAsk("Jak długo trwają objawy?", [
+        { label: "< 24h", value: "duration:lt1" },
+        { label: "1-3 dni", value: "duration:1-3" },
+        { label: "> 3 dni", value: "duration:gt3" }
+      ]);
+      return;
+    }
+
+    if(session.step === "duration"){
+      const match = normalized.match(/^duration:(lt1|1-3|gt3)$/);
+      if(!match){
+        triageAsk("Wybierz czas trwania z opcji.", [
+          { label: "< 24h", value: "duration:lt1" },
+          { label: "1-3 dni", value: "duration:1-3" },
+          { label: "> 3 dni", value: "duration:gt3" }
+        ]);
+        return;
+      }
+      session.answers.duration = match[1];
+      session.step = "fever";
+      triageAsk("Jaka jest temperatura?", [
+        { label: "Brak gorączki", value: "fever:none" },
+        { label: "37.5-38.9", value: "fever:mid" },
+        { label: ">= 39.0", value: "fever:high" }
+      ]);
+      return;
+    }
+
+    if(session.step === "fever"){
+      const match = normalized.match(/^fever:(none|mid|high)$/);
+      if(!match){
+        triageAsk("Wybierz poziom gorączki z opcji.", [
+          { label: "Brak gorączki", value: "fever:none" },
+          { label: "37.5-38.9", value: "fever:mid" },
+          { label: ">= 39.0", value: "fever:high" }
+        ]);
+        return;
+      }
+      session.answers.fever = match[1];
+      session.step = "redFlags";
+      triageAsk("Czy występuje któryś objaw alarmowy (np. duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)?", [
+        { label: "Tak", value: "redflags:yes" },
+        { label: "Nie", value: "redflags:no" }
+      ]);
+      return;
+    }
+
+    if(session.step === "redFlags"){
+      const match = normalized.match(/^redflags:(yes|no)$/);
+      if(!match){
+        triageAsk("Wybierz Tak lub Nie.", [
+          { label: "Tak", value: "redflags:yes" },
+          { label: "Nie", value: "redflags:no" }
+        ]);
+        return;
+      }
+      session.answers.redFlags = match[1];
+      session.step = "dehydration";
+      triageAsk("Czy są częste wymioty, brak przyjmowania płynów lub bardzo mało moczu?", [
+        { label: "Tak", value: "dehydration:yes" },
+        { label: "Nie", value: "dehydration:no" }
+      ]);
+      return;
+    }
+
+    if(session.step === "dehydration"){
+      const match = normalized.match(/^dehydration:(yes|no)$/);
+      if(!match){
+        triageAsk("Wybierz Tak lub Nie.", [
+          { label: "Tak", value: "dehydration:yes" },
+          { label: "Nie", value: "dehydration:no" }
+        ]);
+        return;
+      }
+      session.answers.dehydration = match[1];
+      session.step = "done";
+      const decision = triageBuildDecision();
+      triageAddDecision(decision);
+      triageAsk("Jeśli chcesz, możemy zrobić kolejną ocenę:", [
+        { label: "Rozpocznij od nowa", value: "restart" }
+      ]);
+      return;
+    }
+
+    triageAsk("Aby zacząć nową ocenę, kliknij poniżej:", [
+      { label: "Rozpocznij od nowa", value: "restart" }
+    ]);
+  }
+
   function triageSubmit(){
     const input = document.getElementById("triageInput");
     if(!input) return;
     const text = String(input.value || "").trim();
     if(!text) return;
-
     triageAddMessage(text, "user");
     input.value = "";
-
-    const decision = triageEvaluate(text);
-    window.setTimeout(()=>{
-      triageAddDecision(decision);
-    }, 220);
+    window.setTimeout(()=> triageHandleInput(text), 160);
   }
 
   function openTriageAssistant(){
@@ -284,7 +510,7 @@
         </div>
         <div id="triageMessages" class="triage-messages">
           <div class="triage-bubble triage-bot">
-            Cześć! Opisz objawy (np. „mam gorączkę 39 i wymiotuję od wczoraj”). Dostaniesz podpowiedź: 112/SOR, NPL albo POZ.
+            Cześć! To rozbudowany asystent objawów. Zadam kilka pytań i na końcu podpowiem, czy lepiej: 112/SOR, NPL, czy POZ.
           </div>
         </div>
         <div class="triage-input-wrap">
@@ -304,6 +530,17 @@
         triageSubmit();
       }
     });
+    document.getElementById("triageMessages").addEventListener("click", (event)=>{
+      const target = event.target;
+      if(!(target instanceof HTMLElement)) return;
+      if(!target.classList.contains("triage-option-btn")) return;
+      const value = String(target.dataset.value || "").trim();
+      if(!value) return;
+      triageAddMessage(target.textContent || value, "user");
+      window.setTimeout(()=> triageHandleInput(value), 120);
+    });
+
+    triageBegin();
   }
 
   window.openTriageAssistant = openTriageAssistant;
