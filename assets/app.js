@@ -124,9 +124,70 @@
   function triageBegin(){
     TRIAGE_STATE.session = createTriageSession();
     triageAsk(
-      "Zrobimy krótką ocenę krok po kroku. Najpierw opisz objawy jednym zdaniem.",
+      "Zrobimy krótką ocenę krok po kroku. Pisz normalnie własnymi słowami. Najpierw opisz objawy jednym zdaniem.",
       null
     );
+  }
+
+  function triageParseYesNo(input){
+    const t = normalizePolishText(input);
+    if(/^(tak|yes|y|prawda|wystepuje)$/.test(t) || /\b(tak|wystepuje|sa|jest)\b/.test(t)) return "yes";
+    if(/^(nie|no|n|brak|nie ma|nie wystepuje)$/.test(t) || /\b(nie|brak)\b/.test(t)) return "no";
+    return "";
+  }
+
+  function triageParseAge(input){
+    const t = normalizePolishText(input);
+    if(/age:(infant|child|adult|senior)/.test(t)) return t.split(":")[1];
+    if(/niemowle|noworod|0[- ]?1|miesiac|roczek/.test(t)) return "infant";
+    if(/dziecko|nastolat|lat 1[0-7]|lat [2-9]\b|ma \d+ lat/.test(t)){
+      const m = t.match(/(\d{1,2})\s*lat/);
+      if(m){
+        const years = Number(m[1]);
+        if(years <= 1) return "infant";
+        if(years <= 17) return "child";
+      }
+      if(/nastolat/.test(t)) return "child";
+    }
+    if(/senior|emeryt|65\+|lat 6[5-9]|lat [7-9]\d/.test(t)) return "senior";
+    if(/dorosl|pelnolet|18\+|lat [1-5]\d|lat 6[0-4]/.test(t)) return "adult";
+    return "";
+  }
+
+  function triageParseDuration(input){
+    const t = normalizePolishText(input);
+    if(/duration:(lt1|1-3|gt3)/.test(t)) return t.split(":")[1];
+    if(/od dzis|kilka godzin|od rana|od wieczora|< ?24|mniej niz 24|ponizej doby|1 dzien/.test(t)) return "lt1";
+    if(/1-3|2 dni|3 dni|od 2 dni|od 3 dni|dwa dni|trzy dni/.test(t)) return "1-3";
+    if(/ponad 3|wiecej niz 3|od tygod|od kilku dni|od 4 dni|od 5 dni|od miesi/.test(t)) return "gt3";
+    return "";
+  }
+
+  function triageParseFever(input){
+    const t = normalizePolishText(input).replace(",", ".");
+    if(/fever:(none|mid|high)/.test(t)) return t.split(":")[1];
+    if(/brak goraczki|bez goraczki|bez temperatury/.test(t)) return "none";
+    const numMatch = t.match(/(\d{2}\.\d|\d{2})/);
+    if(numMatch){
+      const temp = Number(numMatch[1]);
+      if(Number.isFinite(temp)){
+        if(temp >= 39) return "high";
+        if(temp >= 37.5) return "mid";
+        return "none";
+      }
+    }
+    if(/wysoka goracz|39|40/.test(t)) return "high";
+    if(/goracz|stan podgoraczk|37/.test(t)) return "mid";
+    return "";
+  }
+
+  function triageExtractQuickFacts(input){
+    return {
+      age: triageParseAge(input),
+      duration: triageParseDuration(input),
+      fever: triageParseFever(input),
+      yesNo: triageParseYesNo(input)
+    };
   }
 
   function triageBuildDecision(){
@@ -326,9 +387,13 @@
 
     const session = TRIAGE_STATE.session || createTriageSession();
     TRIAGE_STATE.session = session;
+    const quickFacts = triageExtractQuickFacts(value);
 
     if(session.step === "symptoms"){
       session.answers.symptoms = value;
+      if(quickFacts.age && !session.answers.age) session.answers.age = quickFacts.age;
+      if(quickFacts.duration && !session.answers.duration) session.answers.duration = quickFacts.duration;
+      if(quickFacts.fever && !session.answers.fever) session.answers.fever = quickFacts.fever;
       if(triageDangerFromText(value)){
         triageAddDecision({
           level: "danger",
@@ -347,20 +412,9 @@
         session.step = "done";
         return;
       }
-      session.step = "age";
-      triageAsk("Jaka grupa wiekowa dotyczy objawów?", [
-        { label: "Niemowlę (0-1)", value: "age:infant" },
-        { label: "Dziecko (2-17)", value: "age:child" },
-        { label: "Dorosły (18-64)", value: "age:adult" },
-        { label: "Senior (65+)", value: "age:senior" }
-      ]);
-      return;
-    }
-
-    if(session.step === "age"){
-      const match = normalized.match(/^age:(infant|child|adult|senior)$/);
-      if(!match){
-        triageAsk("Wybierz jedną z opcji wieku poniżej.", [
+      if(!session.answers.age){
+        session.step = "age";
+        triageAsk("Kogo dotyczą objawy? Np. „dorosły 34 lata”, „dziecko 6 lat”, „senior 70+”.", [
           { label: "Niemowlę (0-1)", value: "age:infant" },
           { label: "Dziecko (2-17)", value: "age:child" },
           { label: "Dorosły (18-64)", value: "age:adult" },
@@ -368,9 +422,46 @@
         ]);
         return;
       }
-      session.answers.age = match[1];
+      if(!session.answers.duration){
+        session.step = "duration";
+        triageAsk("Jak długo trwają objawy? Np. „od rana”, „2 dni”, „ponad tydzień”.", [
+          { label: "< 24h", value: "duration:lt1" },
+          { label: "1-3 dni", value: "duration:1-3" },
+          { label: "> 3 dni", value: "duration:gt3" }
+        ]);
+        return;
+      }
+      if(!session.answers.fever){
+        session.step = "fever";
+        triageAsk("Jaka jest temperatura? Możesz wpisać np. „38.4” albo „brak gorączki”.", [
+          { label: "Brak gorączki", value: "fever:none" },
+          { label: "37.5-38.9", value: "fever:mid" },
+          { label: ">= 39.0", value: "fever:high" }
+        ]);
+        return;
+      }
+      session.step = "redFlags";
+      triageAsk("Czy występuje któryś objaw alarmowy (duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)? Odpowiedz: tak/nie.", [
+        { label: "Tak", value: "redflags:yes" },
+        { label: "Nie", value: "redflags:no" }
+      ]);
+      return;
+    }
+
+    if(session.step === "age"){
+      const age = triageParseAge(value);
+      if(!age){
+        triageAsk("Nie złapałem wieku. Napisz np. „dorosły 35 lat” albo „dziecko 7 lat”.", [
+          { label: "Niemowlę (0-1)", value: "age:infant" },
+          { label: "Dziecko (2-17)", value: "age:child" },
+          { label: "Dorosły (18-64)", value: "age:adult" },
+          { label: "Senior (65+)", value: "age:senior" }
+        ]);
+        return;
+      }
+      session.answers.age = age;
       session.step = "duration";
-      triageAsk("Jak długo trwają objawy?", [
+      triageAsk("Jak długo trwają objawy? Np. „od rana”, „2 dni”, „ponad tydzień”.", [
         { label: "< 24h", value: "duration:lt1" },
         { label: "1-3 dni", value: "duration:1-3" },
         { label: "> 3 dni", value: "duration:gt3" }
@@ -379,18 +470,18 @@
     }
 
     if(session.step === "duration"){
-      const match = normalized.match(/^duration:(lt1|1-3|gt3)$/);
-      if(!match){
-        triageAsk("Wybierz czas trwania z opcji.", [
+      const duration = triageParseDuration(value);
+      if(!duration){
+        triageAsk("Napisz orientacyjnie czas trwania, np. „2 dni”, „od rana”, „ponad 3 dni”.", [
           { label: "< 24h", value: "duration:lt1" },
           { label: "1-3 dni", value: "duration:1-3" },
           { label: "> 3 dni", value: "duration:gt3" }
         ]);
         return;
       }
-      session.answers.duration = match[1];
+      session.answers.duration = duration;
       session.step = "fever";
-      triageAsk("Jaka jest temperatura?", [
+      triageAsk("Jaka jest temperatura? Możesz wpisać np. „38.7”, „39”, albo „brak gorączki”.", [
         { label: "Brak gorączki", value: "fever:none" },
         { label: "37.5-38.9", value: "fever:mid" },
         { label: ">= 39.0", value: "fever:high" }
@@ -399,18 +490,18 @@
     }
 
     if(session.step === "fever"){
-      const match = normalized.match(/^fever:(none|mid|high)$/);
-      if(!match){
-        triageAsk("Wybierz poziom gorączki z opcji.", [
+      const fever = triageParseFever(value);
+      if(!fever){
+        triageAsk("Nie odczytałem temperatury. Wpisz np. „38.5” albo „brak gorączki”.", [
           { label: "Brak gorączki", value: "fever:none" },
           { label: "37.5-38.9", value: "fever:mid" },
           { label: ">= 39.0", value: "fever:high" }
         ]);
         return;
       }
-      session.answers.fever = match[1];
+      session.answers.fever = fever;
       session.step = "redFlags";
-      triageAsk("Czy występuje któryś objaw alarmowy (np. duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)?", [
+      triageAsk("Czy występuje któryś objaw alarmowy (np. duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)? Odpowiedz: tak/nie.", [
         { label: "Tak", value: "redflags:yes" },
         { label: "Nie", value: "redflags:no" }
       ]);
@@ -418,17 +509,22 @@
     }
 
     if(session.step === "redFlags"){
-      const match = normalized.match(/^redflags:(yes|no)$/);
-      if(!match){
-        triageAsk("Wybierz Tak lub Nie.", [
+      let redFlagAnswer = "";
+      if(/^redflags:(yes|no)$/.test(normalized)){
+        redFlagAnswer = normalized.endsWith(":yes") ? "yes" : "no";
+      } else {
+        redFlagAnswer = triageParseYesNo(value);
+      }
+      if(!redFlagAnswer){
+        triageAsk("Napisz po prostu: tak albo nie.", [
           { label: "Tak", value: "redflags:yes" },
           { label: "Nie", value: "redflags:no" }
         ]);
         return;
       }
-      session.answers.redFlags = match[1];
+      session.answers.redFlags = redFlagAnswer;
       session.step = "dehydration";
-      triageAsk("Czy są częste wymioty, brak przyjmowania płynów lub bardzo mało moczu?", [
+      triageAsk("Czy są częste wymioty, brak przyjmowania płynów lub bardzo mało moczu? Odpowiedz: tak/nie.", [
         { label: "Tak", value: "dehydration:yes" },
         { label: "Nie", value: "dehydration:no" }
       ]);
@@ -436,15 +532,20 @@
     }
 
     if(session.step === "dehydration"){
-      const match = normalized.match(/^dehydration:(yes|no)$/);
-      if(!match){
-        triageAsk("Wybierz Tak lub Nie.", [
+      let dehydrationAnswer = "";
+      if(/^dehydration:(yes|no)$/.test(normalized)){
+        dehydrationAnswer = normalized.endsWith(":yes") ? "yes" : "no";
+      } else {
+        dehydrationAnswer = triageParseYesNo(value);
+      }
+      if(!dehydrationAnswer){
+        triageAsk("Napisz po prostu: tak albo nie.", [
           { label: "Tak", value: "dehydration:yes" },
           { label: "Nie", value: "dehydration:no" }
         ]);
         return;
       }
-      session.answers.dehydration = match[1];
+      session.answers.dehydration = dehydrationAnswer;
       session.step = "done";
       const decision = triageBuildDecision();
       triageAddDecision(decision);
