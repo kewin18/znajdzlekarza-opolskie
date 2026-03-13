@@ -1,6 +1,7 @@
 ﻿  const GA_MEASUREMENT_ID = "G-QVZM8C85VW";
   const COOKIE_CONSENT_KEY = "zl_cookie_consent_v1";
   const RATING_FORM_URL = "";
+  const HEALTH_CHAT_ENDPOINT = "";
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -74,7 +75,8 @@
 
   const TRIAGE_STATE = {
     open: false,
-    session: null
+    session: null,
+    chatHistory: []
   };
 
   function normalizePolishText(input){
@@ -123,8 +125,9 @@
 
   function triageBegin(){
     TRIAGE_STATE.session = createTriageSession();
+    TRIAGE_STATE.chatHistory = [];
     triageAsk(
-      "Zrobimy krótką ocenę krok po kroku. Pisz normalnie własnymi słowami. Najpierw opisz objawy jednym zdaniem.",
+      "Napisz swoje pytanie zdrowotne własnymi słowami. Odpowiadam tylko na tematy zdrowia i kierowania do właściwej pomocy (POZ/NPL/SOR/112).",
       null
     );
   }
@@ -190,6 +193,60 @@
     };
   }
 
+
+  function isHealthTopic(input){
+    const t = normalizePolishText(input);
+    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
+  }
+
+  async function getHealthAiReply(userText){
+    const messages = [
+      {
+        role: "system",
+        content:
+`Jestes polskim asystentem zdrowotnym na stronie lokalnej wyszukiwarki lekarzy.
+Zasady bez wyjatku:
+- Odpowiadasz WYLACZNIE na pytania o zdrowie, objawy, profilaktyke i gdzie zglosic sie po pomoc.
+- Jesli pytanie nie dotyczy zdrowia: krotko odmow i popros o pytanie zdrowotne.
+- Nie stawiaj diagnozy.
+- Oceniaj pilnosc i sugeruj sciezke: 112/SOR, NPL, POZ, specjalista.
+- Gdy sa czerwone flagi (dusznosc, bol w klatce, udarowe, utrata przytomnosci, drgawki, silne krwawienie), zawsze 112/SOR natychmiast.
+- Odpowiedz ma byc krotka, konkretna, po polsku, max 8 zdan + 3 krotkie punkty dzialania.
+- Zawsze dodaj zdanie: "To informacja, nie diagnoza lekarska."`
+      },
+      ...TRIAGE_STATE.chatHistory.slice(-8),
+      { role: "user", content: userText }
+    ];
+
+    if(!HEALTH_CHAT_ENDPOINT){
+      return null;
+    }
+
+    try{
+      const res = await fetch(HEALTH_CHAT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages })
+      });
+      if(!res.ok) return null;
+      const data = await res.json();
+      const reply = String(data.reply || data.output_text || data.text || "").trim();
+      return reply || null;
+    }catch{
+      return null;
+    }
+  }
+
+  function fallbackHealthReply(userText){
+    const decision = triageEvaluate(userText);
+    const lines = [
+      `${triageLevelIcon(decision.level)} ${decision.title}`,
+      decision.text,
+      ...decision.bullets.map((b)=>`- ${b}`),
+      "To informacja, nie diagnoza lekarska."
+    ];
+    return lines.join("\n");
+  }
   function triageBuildDecision(){
     const a = TRIAGE_STATE.session?.answers || {};
     const reasons = [];
@@ -374,7 +431,7 @@
     box.scrollTop = box.scrollHeight;
   }
 
-  function triageHandleInput(text){
+  async function triageHandleInput(text){
     const value = String(text || "").trim();
     if(!value) return;
 
@@ -385,179 +442,23 @@
       return;
     }
 
-    const session = TRIAGE_STATE.session || createTriageSession();
-    TRIAGE_STATE.session = session;
-    const quickFacts = triageExtractQuickFacts(value);
-
-    if(session.step === "symptoms"){
-      session.answers.symptoms = value;
-      if(quickFacts.age && !session.answers.age) session.answers.age = quickFacts.age;
-      if(quickFacts.duration && !session.answers.duration) session.answers.duration = quickFacts.duration;
-      if(quickFacts.fever && !session.answers.fever) session.answers.fever = quickFacts.fever;
-      if(triageDangerFromText(value)){
-        triageAddDecision({
-          level: "danger",
-          title: "Pilne: 112 / SOR teraz",
-          text: "Już z pierwszego opisu widać objawy alarmowe.",
-          bullets: [
-            "Nie czekaj na dalsze pytania.",
-            "Dzwoń 112 albo jedź na SOR.",
-            "Jeśli możesz, nie jedź sam/a."
-          ],
-          reasons: ["objawy alarmowe w opisie"]
-        });
-        triageAsk("Możemy zrobić nową ocenę. Kliknij:", [
-          { label: "Rozpocznij od nowa", value: "restart" }
-        ]);
-        session.step = "done";
-        return;
-      }
-      if(!session.answers.age){
-        session.step = "age";
-        triageAsk("Kogo dotyczą objawy? Np. „dorosły 34 lata”, „dziecko 6 lat”, „senior 70+”.", [
-          { label: "Niemowlę (0-1)", value: "age:infant" },
-          { label: "Dziecko (2-17)", value: "age:child" },
-          { label: "Dorosły (18-64)", value: "age:adult" },
-          { label: "Senior (65+)", value: "age:senior" }
-        ]);
-        return;
-      }
-      if(!session.answers.duration){
-        session.step = "duration";
-        triageAsk("Jak długo trwają objawy? Np. „od rana”, „2 dni”, „ponad tydzień”.", [
-          { label: "< 24h", value: "duration:lt1" },
-          { label: "1-3 dni", value: "duration:1-3" },
-          { label: "> 3 dni", value: "duration:gt3" }
-        ]);
-        return;
-      }
-      if(!session.answers.fever){
-        session.step = "fever";
-        triageAsk("Jaka jest temperatura? Możesz wpisać np. „38.4” albo „brak gorączki”.", [
-          { label: "Brak gorączki", value: "fever:none" },
-          { label: "37.5-38.9", value: "fever:mid" },
-          { label: ">= 39.0", value: "fever:high" }
-        ]);
-        return;
-      }
-      session.step = "redFlags";
-      triageAsk("Czy występuje któryś objaw alarmowy (duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)? Odpowiedz: tak/nie.", [
-        { label: "Tak", value: "redflags:yes" },
-        { label: "Nie", value: "redflags:no" }
-      ]);
+    if(!isHealthTopic(value)){
+      triageAddMessage("Pomagam tylko w pytaniach zdrowotnych i medycznych. Napisz prosze objawy albo pytanie o zdrowie.", "bot");
       return;
     }
 
-    if(session.step === "age"){
-      const age = triageParseAge(value);
-      if(!age){
-        triageAsk("Nie złapałem wieku. Napisz np. „dorosły 35 lat” albo „dziecko 7 lat”.", [
-          { label: "Niemowlę (0-1)", value: "age:infant" },
-          { label: "Dziecko (2-17)", value: "age:child" },
-          { label: "Dorosły (18-64)", value: "age:adult" },
-          { label: "Senior (65+)", value: "age:senior" }
-        ]);
-        return;
-      }
-      session.answers.age = age;
-      session.step = "duration";
-      triageAsk("Jak długo trwają objawy? Np. „od rana”, „2 dni”, „ponad tydzień”.", [
-        { label: "< 24h", value: "duration:lt1" },
-        { label: "1-3 dni", value: "duration:1-3" },
-        { label: "> 3 dni", value: "duration:gt3" }
-      ]);
+    TRIAGE_STATE.chatHistory.push({ role: "user", content: value });
+
+    const aiReply = await getHealthAiReply(value);
+    if(aiReply){
+      triageAddMessage(aiReply, "bot");
+      TRIAGE_STATE.chatHistory.push({ role: "assistant", content: aiReply });
       return;
     }
 
-    if(session.step === "duration"){
-      const duration = triageParseDuration(value);
-      if(!duration){
-        triageAsk("Napisz orientacyjnie czas trwania, np. „2 dni”, „od rana”, „ponad 3 dni”.", [
-          { label: "< 24h", value: "duration:lt1" },
-          { label: "1-3 dni", value: "duration:1-3" },
-          { label: "> 3 dni", value: "duration:gt3" }
-        ]);
-        return;
-      }
-      session.answers.duration = duration;
-      session.step = "fever";
-      triageAsk("Jaka jest temperatura? Możesz wpisać np. „38.7”, „39”, albo „brak gorączki”.", [
-        { label: "Brak gorączki", value: "fever:none" },
-        { label: "37.5-38.9", value: "fever:mid" },
-        { label: ">= 39.0", value: "fever:high" }
-      ]);
-      return;
-    }
-
-    if(session.step === "fever"){
-      const fever = triageParseFever(value);
-      if(!fever){
-        triageAsk("Nie odczytałem temperatury. Wpisz np. „38.5” albo „brak gorączki”.", [
-          { label: "Brak gorączki", value: "fever:none" },
-          { label: "37.5-38.9", value: "fever:mid" },
-          { label: ">= 39.0", value: "fever:high" }
-        ]);
-        return;
-      }
-      session.answers.fever = fever;
-      session.step = "redFlags";
-      triageAsk("Czy występuje któryś objaw alarmowy (np. duszność, ból w klatce, omdlenie, drgawki, zaburzenia mowy)? Odpowiedz: tak/nie.", [
-        { label: "Tak", value: "redflags:yes" },
-        { label: "Nie", value: "redflags:no" }
-      ]);
-      return;
-    }
-
-    if(session.step === "redFlags"){
-      let redFlagAnswer = "";
-      if(/^redflags:(yes|no)$/.test(normalized)){
-        redFlagAnswer = normalized.endsWith(":yes") ? "yes" : "no";
-      } else {
-        redFlagAnswer = triageParseYesNo(value);
-      }
-      if(!redFlagAnswer){
-        triageAsk("Napisz po prostu: tak albo nie.", [
-          { label: "Tak", value: "redflags:yes" },
-          { label: "Nie", value: "redflags:no" }
-        ]);
-        return;
-      }
-      session.answers.redFlags = redFlagAnswer;
-      session.step = "dehydration";
-      triageAsk("Czy są częste wymioty, brak przyjmowania płynów lub bardzo mało moczu? Odpowiedz: tak/nie.", [
-        { label: "Tak", value: "dehydration:yes" },
-        { label: "Nie", value: "dehydration:no" }
-      ]);
-      return;
-    }
-
-    if(session.step === "dehydration"){
-      let dehydrationAnswer = "";
-      if(/^dehydration:(yes|no)$/.test(normalized)){
-        dehydrationAnswer = normalized.endsWith(":yes") ? "yes" : "no";
-      } else {
-        dehydrationAnswer = triageParseYesNo(value);
-      }
-      if(!dehydrationAnswer){
-        triageAsk("Napisz po prostu: tak albo nie.", [
-          { label: "Tak", value: "dehydration:yes" },
-          { label: "Nie", value: "dehydration:no" }
-        ]);
-        return;
-      }
-      session.answers.dehydration = dehydrationAnswer;
-      session.step = "done";
-      const decision = triageBuildDecision();
-      triageAddDecision(decision);
-      triageAsk("Jeśli chcesz, możemy zrobić kolejną ocenę:", [
-        { label: "Rozpocznij od nowa", value: "restart" }
-      ]);
-      return;
-    }
-
-    triageAsk("Aby zacząć nową ocenę, kliknij poniżej:", [
-      { label: "Rozpocznij od nowa", value: "restart" }
-    ]);
+    const fallback = fallbackHealthReply(value);
+    triageAddMessage(fallback, "bot");
+    TRIAGE_STATE.chatHistory.push({ role: "assistant", content: fallback });
   }
 
   function triageSubmit(){
@@ -567,7 +468,9 @@
     if(!text) return;
     triageAddMessage(text, "user");
     input.value = "";
-    window.setTimeout(()=> triageHandleInput(text), 160);
+    window.setTimeout(()=>{
+      triageHandleInput(text);
+    }, 160);
   }
 
   function openTriageAssistant(){
@@ -608,14 +511,14 @@
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;">
             <div>
               <p class="triage-title">Asystent objawów (beta)</p>
-              <p class="triage-sub">Napisz objawy, a podpowiem gdzie zgłosić się najpierw.</p>
+              <p class="triage-sub">Tryb AI: analiza Twojej wiadomości, tylko tematy zdrowotne.</p>
             </div>
             <button id="triageClose" class="triage-close" type="button" aria-label="Zamknij">×</button>
           </div>
         </div>
         <div id="triageMessages" class="triage-messages">
           <div class="triage-bubble triage-bot">
-            Cześć! To rozbudowany asystent objawów. Zadam kilka pytań i na końcu podpowiem, czy lepiej: 112/SOR, NPL, czy POZ.
+            Cześć! Opisz swój problem zdrowotny. Odpowiem jak asystent AI, ale tylko w tematach zdrowotnych.
           </div>
         </div>
         <div class="triage-input-wrap">
@@ -2414,4 +2317,5 @@ setTimeout(()=>{
 },100);
 
 document.addEventListener("keydown", handleModalEsc);
+
 
