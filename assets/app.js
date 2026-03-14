@@ -318,6 +318,78 @@
 	      const yn = triageParseYesNo(val);
 	      if(yn) a.dehydration = yn;
 	    }
+
+	    // If the asked field got filled, clear the "awaiting" marker so the next turn can pick a new question.
+	    if(key === "age" && a.age) session.lastQuestionKey = "";
+	    if(key === "duration" && a.duration) session.lastQuestionKey = "";
+	    if(key === "fever" && a.fever) session.lastQuestionKey = "";
+	    if(key === "redFlags" && a.redFlags) session.lastQuestionKey = "";
+	    if(key === "dehydration" && a.dehydration) session.lastQuestionKey = "";
+	  }
+
+	  function triageNeedsAge(normSymptoms){
+	    // Ask about age only if it's clearly relevant or not obvious from text.
+	    if(/dziecko|niemowl|noworod|syn|corka|nastolat/.test(normSymptoms)) return false; // already implied
+	    if(/senior|emeryt|65\\+/.test(normSymptoms)) return false;
+	    // If symptoms suggest higher risk, age matters more.
+	    if(/omdlen|duszno|bol w klat|krew w stolcu|silny bol/.test(normSymptoms)) return true;
+	    return false;
+	  }
+
+	  function triageMaybeAskNextQuestion(a){
+	    const norm = normalizePolishText(a.symptoms || "");
+
+	    // Prioritize red flags first if not answered and symptoms suggest danger.
+	    if(!a.redFlags && (triageDangerFromText(a.symptoms) || /krew w stolcu|smolisty stol|czarny stol|omdlen|duszno|silny bol brzucha|bol w klat/.test(norm))){
+	      triageAskWithKey(
+	        "redFlags",
+	        "Dopytam jedno: czy jest coś alarmowego (duszność, silny ból w klatce, omdlenie, drgawki, silne krwawienie, krew w stolcu)? Odpowiedz: tak/nie.",
+	        null
+	      );
+	      return true;
+	    }
+
+	    // Dehydration is key for vomiting/diarrhea
+	    if(!a.dehydration && /wymiot|biegun/.test(norm)){
+	      triageAskWithKey(
+	        "dehydration",
+	        "Czy utrzymujesz płyny i oddajesz mocz normalnie? (tak/nie)",
+	        null
+	      );
+	      return true;
+	    }
+
+	    // Fever often matters for infections / GI symptoms
+	    if(!a.fever && (/(goracz|temperatur|dreszcz)/.test(norm) || /kaszel|katar|gryp|infekc|wymiot|biegun/.test(norm))){
+	      triageAskWithKey(
+	        "fever",
+	        "Czy masz gorączkę? Jeśli tak, podaj temperaturę (np. 38.5).",
+	        null
+	      );
+	      return true;
+	    }
+
+	    // Duration is usually needed to pick next step
+	    if(!a.duration){
+	      triageAskWithKey(
+	        "duration",
+	        "Od kiedy trwają objawy? (np. dziś, 2 dni, tydzień)",
+	        null
+	      );
+	      return true;
+	    }
+
+	    // Age as optional last detail (only if likely to change urgency)
+	    if(!a.age && triageNeedsAge(norm)){
+	      triageAskWithKey(
+	        "age",
+	        "Ile masz lat? (wystarczy liczba, np. 29)",
+	        null
+	      );
+	      return true;
+	    }
+
+	    return false;
 	  }
 
 	  function triageLocalFlow(userText){
@@ -354,49 +426,8 @@
 	      a.redFlags = "yes";
 	    }
 
-	    // Decide next missing info. Keep it to 1 question at a time (feels like chat).
-	    if(!a.age){
-	      triageAskWithKey(
-	        "age",
-	        "Ile masz lat? (możesz odpisać np. 29)",
-	        [{ label: "Dziecko (<18)", value: "age:child" }, { label: "Dorosły (18-64)", value: "age:adult" }, { label: "Senior (65+)", value: "age:senior" }]
-	      );
-	      return;
-	    }
-
-	    if(!a.duration){
-	      triageAskWithKey(
-	        "duration",
-	        "Od kiedy trwają objawy?",
-	        [{ label: "Kilka godzin / dziś", value: "duration:lt1" }, { label: "1-3 dni", value: "duration:1-3" }, { label: "Ponad 3 dni", value: "duration:gt3" }]
-	      );
-	      return;
-	    }
-
-	    if(!a.fever){
-	      triageAskWithKey(
-	        "fever",
-	        "Czy masz gorączkę? Jeśli tak, podaj temperaturę (np. 38.5).",
-	        [{ label: "Brak", value: "fever:none" }, { label: "37.5-38.9", value: "fever:mid" }, { label: "39+", value: "fever:high" }]
-	      );
-	      return;
-	    }
-
-	    if(!a.redFlags){
-	      triageAskWithKey(
-	        "redFlags",
-	        "Czy występuje coś alarmowego: duszność, silny ból w klatce, omdlenie, drgawki, silne krwawienie lub krew w stolcu?",
-	        [{ label: "Tak", value: "tak" }, { label: "Nie", value: "nie" }]
-	      );
-	      return;
-	    }
-
-	    if(!a.dehydration && /wymiot|biegun/.test(norm)){
-	      triageAskWithKey(
-	        "dehydration",
-	        "Czy utrzymujesz płyny i oddajesz mocz normalnie? (pytam o ryzyko odwodnienia)",
-	        [{ label: "Tak, jest ok", value: "tak" }, { label: "Nie / bardzo mało", value: "nie" }]
-	      );
+	    // Decide next missing info (symptom-driven, one question at a time).
+	    if(triageMaybeAskNextQuestion(a)){
 	      return;
 	    }
 
@@ -410,7 +441,7 @@
 	        triageAddOptions(specialists.map((s)=>({ label: `Pokaż: ${s}`, value: `__selectSpec__:${s}` })));
 	      }
 	    }
-	    triageAddMessage("Jeśli chcesz, dopisz: jakie leki bierzesz i czy masz choroby przewlekłe (to pomoże doprecyzować).", "bot");
+	    triageAddMessage("Jeśli chcesz, dopisz: od kiedy dokładnie, czy jest gorączka/ krew w stolcu i czy utrzymujesz płyny. To informacja, nie diagnoza.", "bot");
 	    session.lastQuestionKey = "";
 	  }
 
@@ -531,13 +562,15 @@
 	  }
   function triageBuildDecision(){
     const a = TRIAGE_STATE.session?.answers || {};
+    // If age isn't provided, assume adult for scoring (age can still be asked later if needed).
+    const age = a.age || "adult";
     const reasons = [];
     let urgentScore = 0;
 
-    if(a.age === "infant"){
+    if(age === "infant"){
       urgentScore += 2;
       reasons.push("dotyczy małego dziecka");
-    } else if(a.age === "child" || a.age === "senior"){
+    } else if(age === "child" || age === "senior"){
       urgentScore += 1;
       reasons.push("większe ryzyko ze względu na wiek");
     }
@@ -717,17 +750,30 @@
 	    const value = String(text || "").trim();
 	    if(!value) return;
 
-    const normalized = normalizePolishText(value);
-    if(/^(od nowa|reset|restart|start)$/.test(normalized)){
-      triageAddMessage("Rozpocznijmy od nowa.", "bot");
-      triageBegin();
-      return;
-    }
+	    const normalized = normalizePolishText(value);
+	    if(/^(od nowa|reset|restart|start)$/.test(normalized)){
+	      triageAddMessage("Rozpocznijmy od nowa.", "bot");
+	      triageBegin();
+	      return;
+	    }
 
-    if(!isHealthTopic(value)){
-      triageAddMessage("Pomagam tylko w pytaniach zdrowotnych i medycznych. Napisz prosze objawy albo pytanie o zdrowie.", "bot");
-      return;
-    }
+	    const session = ensureTriageSession();
+	    const expecting = String(session.lastQuestionKey || "");
+	    const isShortAnswer = value.length <= 32;
+	    const isStructured = /^(age|duration|fever):/.test(normalized);
+	    const isYesNo = /^(tak|nie|yes|no|y|n)$/.test(normalized);
+	    const isNumeric = /^\d{1,3}([.,]\d+)?$/.test(normalized) || /\b\d{1,3}\b/.test(normalized);
+	    const allowNonHealthBecauseFollowUp =
+	      expecting === "age" ? (isStructured || isNumeric || isShortAnswer) :
+	      expecting === "duration" ? (isStructured || isNumeric || isShortAnswer) :
+	      expecting === "fever" ? (isStructured || isNumeric || isShortAnswer) :
+	      (expecting === "redFlags" || expecting === "dehydration") ? (isYesNo || isShortAnswer) :
+	      false;
+
+	    if(!allowNonHealthBecauseFollowUp && !isHealthTopic(value)){
+	      triageAddMessage("Pomagam tylko w pytaniach zdrowotnych i medycznych. Napisz proszę objawy albo pytanie o zdrowie.", "bot");
+	      return;
+	    }
 
 	    TRIAGE_STATE.chatHistory.push({ role: "user", content: value });
 
