@@ -199,7 +199,7 @@
     return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
   }
 
-  async function getHealthAiReply(userText){
+	  async function getHealthAiReply(userText){
     const messages = [
       {
         role: "system",
@@ -235,18 +235,68 @@ Zasady bez wyjatku:
     }catch{
       return null;
     }
-  }
+	  }
 
-  function fallbackHealthReply(userText){
-    const decision = triageEvaluate(userText);
-    const lines = [
-      `${triageLevelIcon(decision.level)} ${decision.title}`,
-      decision.text,
-      ...decision.bullets.map((b)=>`- ${b}`),
-      "To informacja, nie diagnoza lekarska."
-    ];
-    return lines.join("\n");
-  }
+	  // Fallback "AI" (bez backendu): analizuje tekst uzytkownika i buduje decyzje pilnosci.
+	  // Wczesniej fallback wolal triageEvaluate(), ale ta funkcja nie istniala, co psulo odpowiedzi.
+	  function triageEvaluate(userText){
+	    // Ensure session exists
+	    if(!TRIAGE_STATE.session){
+	      TRIAGE_STATE.session = createTriageSession();
+	    }
+
+	    const value = String(userText || "").trim();
+	    const a = TRIAGE_STATE.session.answers;
+	    a.symptoms = value;
+
+	    // Quick facts from the same message (best-effort, user rarely odpowiada krokami)
+	    const facts = triageExtractQuickFacts(value);
+	    if(facts.age) a.age = facts.age;
+	    if(facts.duration) a.duration = facts.duration;
+	    if(facts.fever) a.fever = facts.fever;
+
+	    // Simple heuristics for dehydration / red flags from free text
+	    const t = normalizePolishText(value);
+	    if(/krew w stolcu|smolisty stol|czarny stol|odwodn|sucho w ustach|brak moczu|zawrot glowy|omdlen/.test(t)){
+	      a.dehydration = "yes";
+	    }
+	    if(triageDangerFromText(value) || /krew w stolcu|bardzo silny bol brzucha|sztywnosc karku/.test(t)){
+	      a.redFlags = "yes";
+	    }
+
+	    return triageBuildDecision();
+	  }
+
+	  function fallbackHealthReply(userText){
+	    try{
+	      const decision = triageEvaluate(userText);
+
+	      // Add a tiny symptom-specific hint for common cases (keeps it useful even without backend AI)
+	      const t = normalizePolishText(userText);
+	      const extra = [];
+	      if(/biegun/.test(t)){
+	        extra.push("Pij często małymi porcjami (woda/elektrolity).");
+	        extra.push("Pilnie skontaktuj się z lekarzem, jeśli jest krew w stolcu, wysoka gorączka lub objawy odwodnienia.");
+	      } else if(/wymiot/.test(t)){
+	        extra.push("Nawadniaj się małymi porcjami; jeśli nie utrzymujesz płynów lub pojawia się odwodnienie, kontakt pilny.");
+	      }
+
+	      const lines = [
+	        `${triageLevelIcon(decision.level)} ${decision.title}`,
+	        decision.text,
+	        ...decision.bullets.map((b)=>`- ${b}`),
+	        ...(extra.length ? ["", ...extra.map((x)=>`- ${x}`)] : []),
+	        "To informacja, nie diagnoza lekarska."
+	      ];
+	      return lines.join("\n");
+	    }catch{
+	      return [
+	        "Nie potrafię teraz ocenić pilności na podstawie tej wiadomości.",
+	        "Napisz proszę: wiek, od kiedy trwają objawy i czy jest gorączka, krew w stolcu lub silny ból.",
+	        "To informacja, nie diagnoza lekarska."
+	      ].join("\n");
+	    }
+	  }
   function triageBuildDecision(){
     const a = TRIAGE_STATE.session?.answers || {};
     const reasons = [];
