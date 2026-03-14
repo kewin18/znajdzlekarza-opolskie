@@ -1,7 +1,11 @@
 ﻿  const GA_MEASUREMENT_ID = "G-QVZM8C85VW";
   const COOKIE_CONSENT_KEY = "zl_cookie_consent_v1";
   const RATING_FORM_URL = "";
-  const HEALTH_CHAT_ENDPOINT = "";
+  // Endpoint do prawdziwego trybu AI (backend). Dla GitHub Pages musi to byc zewnetrzny URL (np. Cloudflare Worker).
+  // Mozesz ustawic tez w index.html: window.HEALTH_CHAT_ENDPOINT = "https://twoj-worker.workers.dev/health-chat";
+  const HEALTH_CHAT_ENDPOINT = (typeof window !== "undefined" && window.HEALTH_CHAT_ENDPOINT)
+    ? String(window.HEALTH_CHAT_ENDPOINT)
+    : "";
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -73,11 +77,24 @@
     window.location.href = "mailto:znajdzlekarzaopolskie@gmail.com?subject=Ocena%20strony%20ZnajdzLekarza%20Opolskie";
   };
 
-  const TRIAGE_STATE = {
-    open: false,
-    session: null,
-    chatHistory: []
-  };
+	  const TRIAGE_STATE = {
+	    open: false,
+	    session: null,
+	    chatHistory: []
+	  };
+
+	  function ensureTriageSession(){
+	    if(!TRIAGE_STATE.session){
+	      TRIAGE_STATE.session = createTriageSession();
+	    }
+	    if(!TRIAGE_STATE.session.answers){
+	      TRIAGE_STATE.session.answers = createTriageSession().answers;
+	    }
+	    if(!TRIAGE_STATE.session.lastQuestionKey){
+	      TRIAGE_STATE.session.lastQuestionKey = "";
+	    }
+	    return TRIAGE_STATE.session;
+	  }
 
   function normalizePolishText(input){
     return String(input || "")
@@ -123,14 +140,15 @@
     }
   }
 
-  function triageBegin(){
-    TRIAGE_STATE.session = createTriageSession();
-    TRIAGE_STATE.chatHistory = [];
-    triageAsk(
-      "Napisz swoje pytanie zdrowotne własnymi słowami. Odpowiadam tylko na tematy zdrowia i kierowania do właściwej pomocy (POZ/NPL/SOR/112).",
-      null
-    );
-  }
+	  function triageBegin(){
+	    TRIAGE_STATE.session = createTriageSession();
+	    TRIAGE_STATE.session.lastQuestionKey = "";
+	    TRIAGE_STATE.chatHistory = [];
+	    triageAsk(
+	      "Opisz objawy własnymi słowami. Zadam 1-3 krótkie pytania doprecyzowujące, a na końcu powiem czy sprawa jest pilna i do kogo się udać (POZ/NPL/SOR/112 + sugerowany specjalista).",
+	      null
+	    );
+	  }
 
   function triageParseYesNo(input){
     const t = normalizePolishText(input);
@@ -194,29 +212,18 @@
   }
 
 
-  function isHealthTopic(input){
-    const t = normalizePolishText(input);
-    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
-  }
+	  function isHealthTopic(input){
+	    const t = normalizePolishText(input);
+	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
+	  }
 
 	  async function getHealthAiReply(userText){
-    const messages = [
-      {
-        role: "system",
-        content:
-`Jestes polskim asystentem zdrowotnym na stronie lokalnej wyszukiwarki lekarzy.
-Zasady bez wyjatku:
-- Odpowiadasz WYLACZNIE na pytania o zdrowie, objawy, profilaktyke i gdzie zglosic sie po pomoc.
-- Jesli pytanie nie dotyczy zdrowia: krotko odmow i popros o pytanie zdrowotne.
-- Nie stawiaj diagnozy.
-- Oceniaj pilnosc i sugeruj sciezke: 112/SOR, NPL, POZ, specjalista.
-- Gdy sa czerwone flagi (dusznosc, bol w klatce, udarowe, utrata przytomnosci, drgawki, silne krwawienie), zawsze 112/SOR natychmiast.
-- Odpowiedz ma byc krotka, konkretna, po polsku, max 8 zdan + 3 krotkie punkty dzialania.
-- Zawsze dodaj zdanie: "To informacja, nie diagnoza lekarska."`
-      },
-      ...TRIAGE_STATE.chatHistory.slice(-8),
-      { role: "user", content: userText }
-    ];
+	    // System prompt i guardrails trzymamy po stronie backendu (Worker),
+	    // zeby nie dublowac instrukcji i miec jedna "prawde" dot. bezpieczenstwa.
+	    const messages = [
+	      ...TRIAGE_STATE.chatHistory.slice(-12),
+	      { role: "user", content: userText }
+	    ];
 
     if(!HEALTH_CHAT_ENDPOINT){
       return null;
@@ -229,12 +236,237 @@ Zasady bez wyjatku:
         body: JSON.stringify({ messages })
       });
       if(!res.ok) return null;
-      const data = await res.json();
-      const reply = String(data.reply || data.output_text || data.text || "").trim();
-      return reply || null;
-    }catch{
-      return null;
-    }
+	      const data = await res.json();
+	      // Backend (np. Worker) moze zwrocic:
+	      // { reply: string, done?: boolean, questions?: [{text,choices?}], triage?: {...} }
+	      const reply = String(data.reply || data.output_text || data.text || "").trim();
+	      if(!reply) return null;
+	      return {
+	        reply,
+	        done: Boolean(data.done),
+	        questions: Array.isArray(data.questions) ? data.questions : null,
+	        triage: data.triage && typeof data.triage === "object" ? data.triage : null
+	      };
+	    }catch{
+	      return null;
+	    }
+	  }
+
+	  function triageSuggestSpecialists(symptomsText){
+	    const t = normalizePolishText(symptomsText);
+	    const hits = [];
+
+	    // A few pragmatic, user-friendly mappings (not diagnoses).
+	    if(/biegun|wymiot|bol brzucha|nudn|zatruc|jelit|stolec/.test(t)) hits.push("Internista", "Gastroenterolog");
+	    if(/kaszel|katar|zatok|gardl|angin|chryp|ucho/.test(t)) hits.push("Lekarz rodzinny", "Laryngolog");
+	    if(/wysypk|swedz|alerg|pokrzyw|tradzik|skor/.test(t)) hits.push("Dermatolog", "Alergolog");
+	    if(/oczy|widzen|zaczerwien|rop|swedzace oczy/.test(t)) hits.push("Okulista");
+	    if(/bol w klat|ucisk|serc|kolatan/.test(t)) hits.push("Kardiolog");
+	    if(/bol glowy|migren|zawrot|dretw|omdlen/.test(t)) hits.push("Neurolog");
+	    if(/staw|kregosl|plec|rwa|kolan|bark/.test(t)) hits.push("Ortopeda", "Rehabilitacja");
+	    if(/depres|lek|panik|bezsenn|stres|psychi/.test(t)) hits.push("Psychiatra");
+	    if(/dziecko|niemowl|syn|corka/.test(t)) hits.unshift("Pediatra");
+
+	    // De-duplicate and keep max 3
+	    return Array.from(new Set(hits)).slice(0, 3);
+	  }
+
+	  function triageAskWithKey(key, question, options){
+	    const session = ensureTriageSession();
+	    session.lastQuestionKey = key;
+	    triageAsk(question, options);
+	  }
+
+	  function triageLocalUpdateFromAnswer(key, input){
+	    const session = ensureTriageSession();
+	    const a = session.answers;
+	    const val = String(input || "").trim();
+	    const facts = triageExtractQuickFacts(val);
+
+	    // Always allow "one message answers" to fill multiple fields.
+	    if(facts.age) a.age = facts.age;
+	    if(facts.duration) a.duration = facts.duration;
+	    if(facts.fever) a.fever = facts.fever;
+
+	    if(key === "age" && !a.age){
+	      const m = normalizePolishText(val).match(/(\d{1,3})/);
+	      if(m){
+	        const years = Number(m[1]);
+	        if(Number.isFinite(years)){
+	          if(years <= 1) a.age = "infant";
+	          else if(years <= 17) a.age = "child";
+	          else if(years >= 65) a.age = "senior";
+	          else a.age = "adult";
+	        }
+	      }
+	    }
+
+	    if(key === "duration" && !a.duration){
+	      a.duration = triageParseDuration(val);
+	    }
+
+	    if(key === "fever" && !a.fever){
+	      a.fever = triageParseFever(val);
+	    }
+
+	    if(key === "redFlags"){
+	      const yn = triageParseYesNo(val);
+	      if(yn) a.redFlags = yn;
+	    }
+
+	    if(key === "dehydration"){
+	      const yn = triageParseYesNo(val);
+	      if(yn) a.dehydration = yn;
+	    }
+	  }
+
+	  function triageLocalFlow(userText){
+	    const session = ensureTriageSession();
+	    const a = session.answers;
+	    const text = String(userText || "").trim();
+	    if(!text) return;
+
+	    // Save symptoms early if this is the first free-text message.
+	    if(!a.symptoms){
+	      a.symptoms = text;
+	    } else {
+	      // Append extra detail (keeps context)
+	      if(text.length > 3 && a.symptoms.length < 1200){
+	        a.symptoms = `${a.symptoms}\n${text}`;
+	      }
+	    }
+
+	    // Always check danger patterns in the full symptoms text
+	    if(triageDangerFromText(a.symptoms)){
+	      a.redFlags = "yes";
+	    }
+
+	    // Update from last asked question + any quick facts
+	    const key = session.lastQuestionKey || "";
+	    triageLocalUpdateFromAnswer(key, text);
+
+	    // Heuristic auto-fill for dehydration/red flags if user wrote it in symptoms
+	    const norm = normalizePolishText(a.symptoms);
+	    if(!a.dehydration && /odwodn|sucho w ustach|brak moczu|zawrot glowy|nie moge pic|nie utrzymuje plynow/.test(norm)){
+	      a.dehydration = "yes";
+	    }
+	    if(!a.redFlags && /krew w stolcu|smolisty stol|czarny stol|bardzo silny bol brzucha/.test(norm)){
+	      a.redFlags = "yes";
+	    }
+
+	    // Decide next missing info. Keep it to 1 question at a time (feels like chat).
+	    if(!a.age){
+	      triageAskWithKey(
+	        "age",
+	        "Ile masz lat? (możesz odpisać np. 29)",
+	        [{ label: "Dziecko (<18)", value: "age:child" }, { label: "Dorosły (18-64)", value: "age:adult" }, { label: "Senior (65+)", value: "age:senior" }]
+	      );
+	      return;
+	    }
+
+	    if(!a.duration){
+	      triageAskWithKey(
+	        "duration",
+	        "Od kiedy trwają objawy?",
+	        [{ label: "Kilka godzin / dziś", value: "duration:lt1" }, { label: "1-3 dni", value: "duration:1-3" }, { label: "Ponad 3 dni", value: "duration:gt3" }]
+	      );
+	      return;
+	    }
+
+	    if(!a.fever){
+	      triageAskWithKey(
+	        "fever",
+	        "Czy masz gorączkę? Jeśli tak, podaj temperaturę (np. 38.5).",
+	        [{ label: "Brak", value: "fever:none" }, { label: "37.5-38.9", value: "fever:mid" }, { label: "39+", value: "fever:high" }]
+	      );
+	      return;
+	    }
+
+	    if(!a.redFlags){
+	      triageAskWithKey(
+	        "redFlags",
+	        "Czy występuje coś alarmowego: duszność, silny ból w klatce, omdlenie, drgawki, silne krwawienie lub krew w stolcu?",
+	        [{ label: "Tak", value: "tak" }, { label: "Nie", value: "nie" }]
+	      );
+	      return;
+	    }
+
+	    if(!a.dehydration && /wymiot|biegun/.test(norm)){
+	      triageAskWithKey(
+	        "dehydration",
+	        "Czy utrzymujesz płyny i oddajesz mocz normalnie? (pytam o ryzyko odwodnienia)",
+	        [{ label: "Tak, jest ok", value: "tak" }, { label: "Nie / bardzo mało", value: "nie" }]
+	      );
+	      return;
+	    }
+
+	    // We have enough: final decision + suggested specialists
+	    const decision = triageBuildDecision();
+	    const specialists = triageSuggestSpecialists(a.symptoms);
+	    triageAddDecision(decision);
+	    if(specialists.length){
+	      triageAddMessage(`Sugerowani specjaliści do wyszukania: ${specialists.join(", ")}.`, "bot");
+	      if(typeof window.selectSpec === "function"){
+	        triageAddOptions(specialists.map((s)=>({ label: `Pokaż: ${s}`, value: `__selectSpec__:${s}` })));
+	      }
+	    }
+	    triageAddMessage("Jeśli chcesz, dopisz: jakie leki bierzesz i czy masz choroby przewlekłe (to pomoże doprecyzować).", "bot");
+	    session.lastQuestionKey = "";
+	  }
+
+	  function triageSetBusy(isBusy){
+	    const input = document.getElementById("triageInput");
+	    const btn = document.getElementById("triageSend");
+	    if(input) input.disabled = !!isBusy;
+	    if(btn){
+	      btn.disabled = !!isBusy;
+	      btn.textContent = isBusy ? "..." : "Wyślij";
+	      btn.style.opacity = isBusy ? "0.7" : "";
+	    }
+	  }
+
+	  function triageAddTyping(){
+	    const box = document.getElementById("triageMessages");
+	    if(!box) return;
+	    if(document.getElementById("triageTyping")) return;
+	    const item = document.createElement("div");
+	    item.id = "triageTyping";
+	    item.className = "triage-bubble triage-bot";
+	    item.textContent = "Piszę...";
+	    box.appendChild(item);
+	    box.scrollTop = box.scrollHeight;
+	  }
+
+	  function triageRemoveTyping(){
+	    const el = document.getElementById("triageTyping");
+	    if(el && el.parentNode) el.parentNode.removeChild(el);
+	  }
+
+	  function triageAddAiSummary(triage){
+	    if(!triage || typeof triage !== "object") return;
+	    const level = String(triage.urgency || triage.level || "low");
+	    const nextStep = String(triage.next_step || triage.nextStep || "");
+	    const specialists = Array.isArray(triage.specialists) ? triage.specialists : [];
+	    const reasons = Array.isArray(triage.reasons) ? triage.reasons : [];
+
+	    const title = nextStep ? `Następny krok: ${nextStep}` : "Podsumowanie";
+	    triageAddMessage(`${triageLevelIcon(level)} ${title}`, "bot");
+
+	    const bullets = [];
+	    if(specialists.length){
+	      bullets.push(`Sugerowani specjaliści: ${specialists.join(", ")}`);
+	    }
+	    if(reasons.length){
+	      bullets.push(`Dlaczego: ${reasons.slice(0,3).join(", ")}`);
+	    }
+	    if(bullets.length){
+	      triageAddMessage(bullets.map((b)=>`- ${b}`).join("\n"), "bot");
+	    }
+
+	    // CTA: szybkie przejscie do wyszukiwarki wg specjalizacji (jesli jest na stronie glownej)
+	    if(typeof window.selectSpec === "function" && specialists.length){
+	      triageAddOptions(specialists.slice(0, 4).map((s)=>({ label: `Pokaż: ${s}`, value: `__selectSpec__:${s}` })));
+	    }
 	  }
 
 	  // Fallback "AI" (bez backendu): analizuje tekst uzytkownika i buduje decyzje pilnosci.
@@ -481,9 +713,9 @@ Zasady bez wyjatku:
     box.scrollTop = box.scrollHeight;
   }
 
-  async function triageHandleInput(text){
-    const value = String(text || "").trim();
-    if(!value) return;
+	  async function triageHandleInput(text){
+	    const value = String(text || "").trim();
+	    if(!value) return;
 
     const normalized = normalizePolishText(value);
     if(/^(od nowa|reset|restart|start)$/.test(normalized)){
@@ -497,14 +729,36 @@ Zasady bez wyjatku:
       return;
     }
 
-    TRIAGE_STATE.chatHistory.push({ role: "user", content: value });
+	    TRIAGE_STATE.chatHistory.push({ role: "user", content: value });
 
-    const aiReply = await getHealthAiReply(value);
-    if(aiReply){
-      triageAddMessage(aiReply, "bot");
-      TRIAGE_STATE.chatHistory.push({ role: "assistant", content: aiReply });
-      return;
-    }
+	    // Free mode (no API): conversational local triage.
+	    if(!HEALTH_CHAT_ENDPOINT){
+	      triageLocalFlow(value);
+	      return;
+	    }
+
+	    triageSetBusy(true);
+	    triageAddTyping();
+	    const ai = await getHealthAiReply(value);
+	    triageRemoveTyping();
+	    triageSetBusy(false);
+	    if(ai && ai.reply){
+	      triageAddMessage(ai.reply, "bot");
+	      TRIAGE_STATE.chatHistory.push({ role: "assistant", content: ai.reply });
+	      if(ai.questions && Array.isArray(ai.questions) && ai.questions.length){
+	        const q = ai.questions[0];
+	        if(q && q.text){
+	          triageAddMessage(q.text, "bot");
+	          if(Array.isArray(q.choices) && q.choices.length){
+	            triageAddOptions(q.choices.map((c)=>({ label: String(c), value: String(c) })));
+	          }
+	        }
+	      }
+	      if(ai.done && ai.triage){
+	        triageAddAiSummary(ai.triage);
+	      }
+	      return;
+	    }
 
     const fallback = fallbackHealthReply(value);
     triageAddMessage(fallback, "bot");
@@ -561,16 +815,16 @@ Zasady bez wyjatku:
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;">
             <div>
               <p class="triage-title">Asystent objawów (beta)</p>
-              <p class="triage-sub">Tryb AI: analiza Twojej wiadomości, tylko tematy zdrowotne.</p>
+	              <p class="triage-sub">Tryb AI: dopytuję i analizuję Twoje objawy (tylko tematy zdrowotne).</p>
             </div>
             <button id="triageClose" class="triage-close" type="button" aria-label="Zamknij">×</button>
           </div>
         </div>
         <div id="triageMessages" class="triage-messages">
           <div class="triage-bubble triage-bot">
-            Cześć! Opisz swój problem zdrowotny. Odpowiem jak asystent AI, ale tylko w tematach zdrowotnych.
-          </div>
-        </div>
+	            Cześć! Opisz objawy. Jeśli potrzeba, dopytam i na końcu podpowiem pilność oraz do kogo się udać.
+	          </div>
+	        </div>
         <div class="triage-input-wrap">
           <input id="triageInput" class="triage-input" type="text" placeholder="Opisz objawy..." autocomplete="off">
           <button id="triageSend" class="btn-primary triage-send" type="button">Wyślij</button>
@@ -588,15 +842,25 @@ Zasady bez wyjatku:
         triageSubmit();
       }
     });
-    document.getElementById("triageMessages").addEventListener("click", (event)=>{
-      const target = event.target;
-      if(!(target instanceof HTMLElement)) return;
-      if(!target.classList.contains("triage-option-btn")) return;
-      const value = String(target.dataset.value || "").trim();
-      if(!value) return;
-      triageAddMessage(target.textContent || value, "user");
-      window.setTimeout(()=> triageHandleInput(value), 120);
-    });
+	    document.getElementById("triageMessages").addEventListener("click", (event)=>{
+	      const target = event.target;
+	      if(!(target instanceof HTMLElement)) return;
+	      if(!target.classList.contains("triage-option-btn")) return;
+	      const value = String(target.dataset.value || "").trim();
+	      if(!value) return;
+	      const text = target.textContent || value;
+	      triageAddMessage(text, "user");
+	      if(value.startsWith("__selectSpec__:")){
+	        const spec = value.split(":").slice(1).join(":").trim();
+	        try{
+	          if(typeof window.selectSpec === "function"){
+	            window.selectSpec(spec);
+	          }
+	        }catch{}
+	        return;
+	      }
+	      window.setTimeout(()=> triageHandleInput(value), 120);
+	    });
 
     triageBegin();
   }
