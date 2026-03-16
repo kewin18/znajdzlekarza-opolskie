@@ -1965,33 +1965,33 @@ class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 <div class="flex flex-col md:flex-row md:items-end gap-3">
 
 <div class="relative flex-1 min-w-[260px]">
-<label for="spec" class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+<label for="spec" class="field-label">
 Specjalizacja
 </label>
 <input id="spec"
 oninput="showSpecSuggestions()"
-class="border border-slate-300 bg-white px-3 py-3 rounded-xl w-full text-sm font-medium text-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400"
+class="field-control"
 placeholder="Jakiego specjalisty szukasz?">
 
 <div id="specSuggestions"
-class="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-lg shadow hidden z-10 max-h-40 overflow-auto"></div>
+class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
 </div>
 
 <div id="cityDropdownWrap" class="relative min-w-[220px]">
-<label for="city" class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+<label for="city" class="field-label">
 Miasto
 </label>
 <select id="city" class="hidden">
   <option value="">Wszystkie miasta</option>
 </select>
 <button id="cityDropdownButton" type="button" onclick="toggleCityDropdown()"
-class="w-full border border-slate-300 bg-white pl-9 pr-10 py-3 rounded-xl text-sm font-medium text-left text-slate-700 shadow-sm hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400">
+class="field-control has-icon text-left pr-12">
 Wszystkie miasta
 </button>
-<span class="pointer-events-none absolute left-3 top-[35px] text-slate-400">📍</span>
-<span class="pointer-events-none absolute right-3 top-[35px] text-slate-400">▾</span>
+<span class="field-icon">📍</span>
+<span class="pointer-events-none absolute right-4 top-[38px] text-slate-400">▾</span>
 
-<div id="cityDropdownMenu" class="hidden absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-lg shadow-lg z-20 max-h-56 overflow-auto"></div>
+<div id="cityDropdownMenu" class="menu hidden absolute left-0 right-0 top-full mt-2 z-20 max-h-72 overflow-auto"></div>
 </div>
 
 <button id="searchBtn" onclick="search()"
@@ -2002,7 +2002,7 @@ Szukaj
 </div>
 
 <!-- FILTRY -->
-<div class="bg-slate-50/80 border border-slate-200 p-3 sm:p-4 rounded-2xl space-y-3">
+<div class="filter-panel space-y-3">
 
 <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
 Filtry wyników
@@ -2011,7 +2011,7 @@ Filtry wyników
 <div class="flex flex-col lg:flex-row gap-3 lg:items-center">
 
 <select id="visitType"
-class="border border-slate-300 bg-white px-3 py-2 rounded-xl text-sm font-medium text-slate-700 shadow-sm">
+class="field-control">
 <option value="all">NFZ + Prywatnie</option>
 <option value="nfz">Tylko NFZ</option>
 <option value="private">Tylko prywatnie</option>
@@ -2019,17 +2019,17 @@ class="border border-slate-300 bg-white px-3 py-2 rounded-xl text-sm font-medium
 
 <div class="flex flex-wrap gap-2">
 
-<label data-filter-card="sortBest" class="inline-flex items-center gap-2 cursor-pointer bg-white border border-slate-200 hover:border-blue-300 px-3 py-2.5 rounded-xl text-sm transition">
+<label data-filter-card="sortBest" class="filter-pill">
 <input type="checkbox" id="sortBest" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
 <span class="font-medium text-slate-700">⭐ Najlepiej oceniani</span>
 </label>
 
-<label data-filter-card="sortDistance" class="inline-flex items-center gap-2 cursor-pointer bg-white border border-slate-200 hover:border-blue-300 px-3 py-2.5 rounded-xl text-sm transition">
+<label data-filter-card="sortDistance" class="filter-pill">
 <input type="checkbox" id="sortDistance" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
 <span class="font-medium text-slate-700">📍 Najbliżej</span>
 </label>
 
-<label data-filter-card="sortPrice" class="inline-flex items-center gap-2 cursor-pointer bg-white border border-slate-200 hover:border-blue-300 px-3 py-2.5 rounded-xl text-sm transition">
+<label data-filter-card="sortPrice" class="filter-pill">
 <input type="checkbox" id="sortPrice" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
 <span class="font-medium text-slate-700">💰 Najtaniej</span>
 </label>
@@ -2398,12 +2398,10 @@ function syncSortFilterStyles(){
     const card = document.querySelector(`[data-filter-card="${id}"]`);
     if(!card) return;
     if(input.checked){
-      card.classList.add("bg-blue-50","border-blue-400","text-blue-800","shadow-sm");
-      card.classList.remove("bg-white","border-slate-200","text-slate-700");
+      card.classList.add("filter-pill--active");
     }
     else{
-      card.classList.remove("bg-blue-50","border-blue-400","text-blue-800","shadow-sm");
-      card.classList.add("bg-white","border-slate-200","text-slate-700");
+      card.classList.remove("filter-pill--active");
     }
   });
 }
@@ -2444,10 +2442,10 @@ function populateCityDropdown(){
   });
 
   menu.innerHTML =
-    `<button type="button" onclick="chooseCity('', 'Wszystkie miasta')" class="block w-full text-left px-3 py-2.5 text-sm text-slate-700 hover:bg-blue-50">Wszystkie miasta</button>` +
+    `<button type="button" onclick="chooseCity('', 'Wszystkie miasta')" class="menu-item">Wszystkie miasta</button>` +
     cities.map((city)=>{
       const safe = city.replace(/'/g,"\\'");
-      return `<button type="button" onclick="chooseCity('${safe}', '${safe}')" class="block w-full text-left px-3 py-2.5 text-sm text-slate-700 hover:bg-blue-50">${city}</button>`;
+      return `<button type="button" onclick="chooseCity('${safe}', '${safe}')" class="menu-item">${city}</button>`;
     }).join("");
 }
 function chooseCity(value,label){
@@ -2800,7 +2798,7 @@ const matches = getSpecializations()
 
 box.innerHTML = matches.map(s=>`
 <div onclick="chooseSuggestion('${s}')"
-class="px-3 py-2.5 hover:bg-gray-100 cursor-pointer text-sm">
+class="menu-item">
 ${s}
 </div>
 `).join("");

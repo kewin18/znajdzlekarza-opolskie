@@ -161,6 +161,108 @@ body{
   box-shadow:0 18px 48px -38px rgba(2,6,23,.55);
 }
 
+.field-label{
+  display:block;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(71,85,105,.95);
+  margin:0 0 6px;
+}
+.field-control{
+  width:100%;
+  min-height:48px;
+  border-radius:16px;
+  border:1px solid rgba(148,163,184,.65);
+  background:rgba(255,255,255,.94);
+  padding:12px 14px;
+  font-size:14px;
+  font-weight:700;
+  color:#0f172a;
+  box-shadow:0 12px 30px -24px rgba(2,6,23,.45);
+  transition:border-color .16s ease, box-shadow .16s ease, transform .16s ease, background .16s ease;
+}
+.field-control:hover{
+  border-color:rgba(59,130,246,.55);
+}
+.field-control:focus{
+  outline:none;
+  box-shadow:0 12px 30px -24px rgba(2,6,23,.45), var(--ring);
+  border-color:rgba(29,78,216,.65);
+  background:#fff;
+}
+.field-icon{
+  position:absolute;
+  left:12px;
+  top:38px;
+  color:rgba(100,116,139,.9);
+  pointer-events:none;
+}
+.field-control.has-icon{
+  padding-left:38px;
+}
+.menu{
+  background:#fff;
+  border:1px solid rgba(148,163,184,.40);
+  border-radius:16px;
+  box-shadow:0 26px 70px -52px rgba(2,6,23,.72);
+  overflow:hidden;
+}
+.menu-item{
+  display:block;
+  width:100%;
+  text-align:left;
+  padding:10px 12px;
+  font-size:14px;
+  font-weight:650;
+  color:#0f172a;
+  background:#fff;
+  border:0;
+  cursor:pointer;
+}
+.menu-item:hover{
+  background:rgba(239,246,255,.95);
+}
+
+.filter-panel{
+  border-radius:18px;
+  border:1px solid rgba(148,163,184,.30);
+  background:rgba(248,250,252,.78);
+  padding:14px;
+}
+.filter-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  user-select:none;
+  border-radius:999px;
+  border:1px solid rgba(148,163,184,.50);
+  background:rgba(255,255,255,.92);
+  padding:10px 12px;
+  font-size:14px;
+  font-weight:750;
+  color:#0f172a;
+  box-shadow:0 10px 22px -20px rgba(2,6,23,.25);
+  transition:transform .16s ease, border-color .16s ease, background .16s ease, color .16s ease;
+}
+.filter-pill:hover{
+  transform:translateY(-1px);
+  border-color:rgba(59,130,246,.55);
+  background:rgba(239,246,255,.92);
+  color:var(--brand-blue);
+}
+.filter-pill--active{
+  border-color:rgba(29,78,216,.65);
+  background:rgba(219,234,254,.92);
+  color:#1e3a8a;
+}
+.filter-pill--active:hover{
+  background:rgba(219,234,254,.92);
+  color:#1e3a8a;
+}
+
 /* Make top nav pills feel consistent */
 header a[href], header button{
   border-radius:999px !important;
