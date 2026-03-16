@@ -274,6 +274,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
   padding:9px 11px;
   font-size:13px;
   line-height:1.45;
+  white-space:pre-line; /* keep newlines from JS messages */
 }
 .triage-bot{
   align-self:flex-start;

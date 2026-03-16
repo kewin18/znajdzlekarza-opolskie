@@ -375,48 +375,74 @@
 
 	  function triageGenericSpecialistDescription(specName){
 	    const n = triageNormalizeSpecName(specName);
-	    const hints = [];
+	    const profiles = [
+	      { re: /\baudiolog\b/, what: "Audiolog diagnozuje i leczy zaburzenia słuchu i równowagi.", when: ["niedosłuch, pogorszenie słyszenia", "szumy uszne", "zawroty głowy/uczucie wirowania (często też laryngolog)", "kontrola aparatów słuchowych (w zależności od placówki)"] },
+	      { re: /\bfoniatr/, what: "Foniatra zajmuje się zaburzeniami głosu, mowy i problemami krtani (zwłaszcza u osób pracujących głosem).", when: ["chrypka > 2-3 tygodnie", "utrata głosu", "problemy z emisją głosu", "ból gardła przy mówieniu"] },
+	      { re: /\banestezjolog/, what: "Anestezjolog odpowiada za znieczulenie do zabiegów, ocenę przedoperacyjną i leczenie bólu (w zależności od poradni).", when: ["kwalifikacja do znieczulenia przed operacją", "przewlekły ból (poradnia leczenia bólu)", "zabiegi w trybie dziennym – konsultacja anestezjologiczna"] },
+	      { re: /\balergolog/, what: "Alergolog diagnozuje i leczy choroby alergiczne (np. katar sienny, astma alergiczna).", when: ["nawracający katar/sapanie", "pokrzywka i świąd", "alergie sezonowe", "podejrzenie alergii pokarmowej (po ocenie lekarza)"] },
+	      { re: /\bangiolog/, what: "Angiolog zajmuje się chorobami naczyń krwionośnych (żyły i tętnice).", when: ["żylaki i obrzęki nóg", "ból łydek przy chodzeniu", "podejrzenie zakrzepicy (pilnie!)", "przewlekłe problemy z krążeniem"] },
+	      { re: /\bchirurg\b/, what: "Chirurg ocenia problemy wymagające leczenia zabiegowego lub kwalifikacji do operacji.", when: ["rany, ropnie, zmiany do wycięcia", "przepukliny", "nasilający się ból brzucha (pilnie, jeśli ostry)", "konsultacje po urazach (czasem ortopeda)"] },
+	      { re: /chirurg.*naczyniow/, what: "Chirurg naczyniowy leczy choroby naczyń (tętnice/żyły) często zabiegowo.", when: ["tętniaki, zwężenia tętnic", "przewlekłe niedokrwienie kończyn", "żylaki i powikłania", "owrzodzenia żylne"] },
+	      { re: /chirurg.*klatk/, what: "Chirurg klatki piersiowej (torakochirurg) zajmuje się operacjami w obrębie klatki piersiowej (płuca, opłucna, śródpiersie).", when: ["konsultacje po badaniach obrazowych płuc", "zmiany w płucach (po skierowaniu)", "choroby opłucnej", "kwalifikacje do zabiegów w klatce piersiowej"] },
+	      { re: /chirurg.*dziec/, what: "Chirurg dziecięcy zajmuje się leczeniem zabiegowym u dzieci.", when: ["konsultacje chirurgiczne dziecka", "przepukliny u dzieci", "zmiany skórne do wycięcia u dzieci", "urazy wymagające oceny (pilnie przy ciężkich)"] },
+	      { re: /chirurg.*onkolog/, what: "Chirurg onkologiczny zajmuje się leczeniem operacyjnym nowotworów.", when: ["kwalifikacja do operacji onkologicznej", "opieka po zabiegach onkologicznych", "konsultacje po rozpoznaniu (zwykle po skierowaniu)"] },
+	      { re: /\bchoroby zakazne\b/, what: "Specjalista chorób zakaźnych zajmuje się diagnostyką i leczeniem chorób infekcyjnych.", when: ["nietypowe/przewlekłe infekcje", "poważne zakażenia (często szpital)", "konsultacje po skierowaniu", "w razie ciężkich objawów: SOR"] },
+	      { re: /\bdermatolog/, what: "Dermatolog zajmuje się chorobami skóry, włosów i paznokci.", when: ["wysypka, świąd", "trądzik", "zmiany skórne/znamię", "podejrzenie infekcji skóry"] },
+	      { re: /\bdiabetolog/, what: "Diabetolog prowadzi leczenie cukrzycy i powikłań metabolicznych.", when: ["prowadzenie cukrzycy", "trudne do wyrównania cukry", "dobór leczenia i edukacja", "powikłania cukrzycy (współpraca ze specjalistami)"] },
+	      { re: /\bdietetyk/, what: "Dietetyk pomaga w doborze diety w chorobach i redukcji masy ciała (nie jest lekarzem).", when: ["odchudzanie", "dieta w cukrzycy/nadciśnieniu", "nietolerancje pokarmowe", "dieta w chorobach przewodu pokarmowego (po ocenie lekarza)"] },
+	      { re: /\bendokrynolog/, what: "Endokrynolog zajmuje się chorobami hormonalnymi (tarczyca, nadnercza, przysadka).", when: ["problemy z tarczycą", "nieprawidłowe hormony w badaniach", "zaburzenia miesiączkowania (też ginekolog)", "nietypowe objawy metaboliczne"] },
+	      { re: /\bgastroenterolog/, what: "Gastroenterolog diagnozuje i leczy choroby układu pokarmowego.", when: ["przewlekły ból brzucha", "długotrwała biegunka", "zgaga/refluks", "podejrzenie chorób jelit (po badaniach)"] },
+	      { re: /\bginekolog/, what: "Ginekolog zajmuje się zdrowiem kobiet i profilaktyką.", when: ["ból podbrzusza", "zaburzenia miesiączkowania", "ciąża i kontrola", "profilaktyka (cytologia, USG)"] },
+	      { re: /\bhematolog/, what: "Hematolog zajmuje się chorobami krwi i układu krwiotwórczego.", when: ["nieprawidłowe wyniki morfologii", "niedokrwistość o niejasnej przyczynie", "zaburzenia krzepnięcia (po ocenie lekarza)", "podejrzenie chorób hematologicznych"] },
+	      { re: /\binternist|choroby wewnetrzne/, what: "Internista (choroby wewnętrzne) diagnozuje i leczy choroby narządów wewnętrznych u dorosłych.", when: ["objawy ogólne i niejasne", "ból brzucha", "nadciśnienie/cukrzyca (prowadzenie)", "kierowanie do dalszej diagnostyki"] },
+	      { re: /\bkardiolog/, what: "Kardiolog zajmuje się sercem i układem krążenia.", when: ["kołatania serca", "nadciśnienie trudne do kontroli", "duszność wysiłkowa", "ból w klatce (nagły/silny: 112/SOR)"] },
+	      { re: /\blaryngolog/, what: "Laryngolog zajmuje się uszami, nosem, zatokami, gardłem i krtanią.", when: ["ból ucha", "zatoki", "chrypka", "nawracające anginy"] },
+	      { re: /\bmedycyna paliatywna\b/, what: "Medycyna paliatywna wspiera pacjentów z ciężkimi chorobami (ból, duszność, jakość życia).", when: ["leczenie bólu w chorobie przewlekłej", "opieka paliatywna", "wsparcie objawowe", "konsultacje zwykle po skierowaniu"] },
+	      { re: /\bmedycyna pracy\b/, what: "Medycyna pracy wykonuje badania do pracy (wstępne/okresowe/kontrolne) i orzeczenia.", when: ["badania do pracy", "badania okresowe", "orzeczenia do stanowiska", "profilaktyka zawodowa"] },
+	      { re: /\bmedycyna ratunkowa\b/, what: "Medycyna ratunkowa dotyczy stanów nagłych (SOR/zespoły ratownictwa).", when: ["nagłe, ciężkie objawy", "urazy", "duszność/omdlenie", "w razie zagrożenia: 112"] },
+	      { re: /\bnefrolog/, what: "Nefrolog zajmuje się chorobami nerek.", when: ["białkomocz/krwiomocz w badaniach", "przewlekła choroba nerek", "obrzęki, nadciśnienie nerkowe", "konsultacje po wynikach badań"] },
+	      { re: /\bneonatolog/, what: "Neonatolog zajmuje się noworodkami, zwłaszcza wcześniakami i dziećmi po porodzie.", when: ["opieka nad noworodkiem", "problemy wcześniaków", "kontrole po hospitalizacji", "konsultacje po wypisie"] },
+	      { re: /\bneurochirurg/, what: "Neurochirurg zajmuje się leczeniem operacyjnym układu nerwowego (mózg, kręgosłup).", when: ["konsultacje po MR/TK", "dyskopatie wymagające oceny", "zmiany w mózgu (po skierowaniu)", "objawy alarmowe: 112/SOR"] },
+	      { re: /\bneurolog/, what: "Neurolog zajmuje się chorobami układu nerwowego.", when: ["migreny i bóle głowy", "drętwienia, mrowienia", "zawroty głowy", "podejrzenie padaczki (pilnie przy drgawkach)"] },
+	      { re: /\bokulist/, what: "Okulista zajmuje się chorobami oczu i wzroku.", when: ["pogorszenie widzenia", "zaczerwienienie oka", "ból oka", "kontrola wzroku"] },
+	      { re: /onkologia kliniczna|onkolog/, what: "Onkolog zajmuje się leczeniem systemowym nowotworów (konsultacje, chemioterapia, opieka).", when: ["po rozpoznaniu nowotworu", "plan leczenia (po skierowaniu)", "kontrole w trakcie leczenia", "opieka po zakończeniu leczenia"] },
+	      { re: /\bortoped/, what: "Ortopeda zajmuje się urazami i chorobami kości oraz stawów.", when: ["ból stawów/kręgosłupa", "urazy, skręcenia", "ograniczenie ruchu", "kwalifikacja do zabiegów ortopedycznych"] },
+	      { re: /\bpediatr/, what: "Pediatra zajmuje się zdrowiem dzieci.", when: ["gorączka u dziecka", "kaszel/katar u dziecka", "biegunka/wymioty u dziecka", "bilans i szczepienia"] },
+	      { re: /psychiatr/, what: "Psychiatra pomaga w zaburzeniach nastroju i lękowych oraz dobiera leczenie.", when: ["depresja, silny lęk", "napady paniki", "bezsenność przewlekła", "kryzys psychiczny (pilnie przy zagrożeniu)"] },
+	      { re: /\bpulmonolog/, what: "Pulmonolog zajmuje się chorobami płuc i oddychania.", when: ["przewlekły kaszel", "duszność", "astma/POChP (prowadzenie)", "nieprawidłowe RTG płuc (po skierowaniu)"] },
+	      { re: /radioterapia onkologiczna|radioterap/, what: "Radioterapia onkologiczna dotyczy leczenia nowotworów promieniowaniem.", when: ["kwalifikacja do radioterapii", "planowanie leczenia (po skierowaniu)", "kontrole w trakcie radioterapii", "opieka po radioterapii"] },
+	      { re: /rehabilitacja medyczna|rehabilitac/, what: "Rehabilitacja medyczna pomaga wrócić do sprawności po urazach i w bólach narządu ruchu.", when: ["ból pleców", "po urazie/operacji", "ograniczenie ruchu", "kierowanie na fizjoterapię"] },
+	      { re: /\breumatolog/, what: "Reumatolog zajmuje się chorobami stawów i chorobami autoimmunologicznymi.", when: ["przewlekły ból i sztywność stawów", "obrzęki stawów", "podejrzenie RZS/dny (po badaniach)", "kontrole leczenia reumatologicznego"] },
+	      { re: /\burolog/, what: "Urolog zajmuje się układem moczowym i (u mężczyzn) prostatą.", when: ["pieczenie przy oddawaniu moczu", "krwiomocz (często pilnie)", "ból w boku (kamica)", "problemy z oddawaniem moczu"] },
+	      { re: /\bstomatolog|dentyst/, what: "Stomatolog (dentysta) leczy zęby i choroby jamy ustnej.", when: ["ból zęba", "próchnica", "stany zapalne dziąseł", "profilaktyka i przeglądy"] },
+	      { re: /diagnostyka obrazowa/, what: "Diagnostyka obrazowa to badania typu USG/RTG/TK/MR oraz ich opis (zależnie od placówki).", when: ["USG/RTG/TK/MR zlecone przez lekarza", "kontrola zmian w badaniach", "diagnostyka urazów (często pilnie)", "interpretacja wyników z lekarzem prowadzącym"] },
+	      { re: /diagnostyka laboratoryjna/, what: "Diagnostyka laboratoryjna dotyczy badań z krwi/moczu i ich opracowania (zwykle na zlecenie lekarza).", when: ["badania kontrolne", "morfologia/biochemia", "badania moczu", "wyniki omawiaj z lekarzem"] }
+	    ];
 
-	    // Name-based heuristics (broad coverage). Keep it general and non-diagnostic.
-	    if(/dzieciec|dzieci|mlodziez/.test(n)) hints.push("dotyczy głównie dzieci i młodzieży");
-	    if(/onkolog|radioterapia/.test(n)) hints.push("opieka onkologiczna (diagnostyka i leczenie nowotworów) – zwykle po skierowaniu");
-	    if(/chirurg/.test(n)) hints.push("ocena problemów wymagających leczenia zabiegowego lub konsultacji chirurgicznej");
-	    if(/neurochirurg/.test(n)) hints.push("konsultacje neurochirurgiczne (zwykle po badaniach obrazowych) – pilnie przy objawach neurologicznych alarmowych");
-	    if(/diagnostyka obrazowa|radiolog/.test(n)) hints.push("badania obrazowe (USG/RTG/TK/MR) i ich opis");
-	    if(/diagnostyka laboratoryjna/.test(n)) hints.push("badania laboratoryjne i diagnostyka (zwykle zlecenia od lekarza)");
-	    if(/rehabilitac|fizjoterap/.test(n)) hints.push("powrót do sprawności, terapia bólu i ruchu");
-	    if(/medycyna pracy/.test(n)) hints.push("badania medycyny pracy (orzeczenia, badania okresowe)");
-	    if(/medycyna ratunkowa/.test(n)) hints.push("stany nagłe; w razie ciężkich objawów: SOR/112");
-	    if(/psychiatr/.test(n)) hints.push("zdrowie psychiczne; pilnie przy myślach samobójczych: 112/SOR");
-	    if(/pediatr/.test(n)) hints.push("zdrowie dzieci; u niemowląt i małych dzieci pilność bywa większa");
-	    if(/ginekolog|polozn/.test(n)) hints.push("zdrowie kobiet; pilnie przy silnym bólu i krwawieniu w ciąży: SOR");
-	    if(/urolog/.test(n)) hints.push("układ moczowy; krwiomocz często wymaga pilnej oceny");
-	    if(/kardiolog/.test(n)) hints.push("serce i krążenie; ból w klatce z dusznością/omdleniem: 112/SOR");
-	    if(/pulmonolog/.test(n)) hints.push("płuca i oddychanie; duszność nasilona: 112/SOR");
-	    if(/nefrolog/.test(n)) hints.push("nerki; obrzęki, problemy z moczem – zwykle po ocenie POZ");
-	    if(/endokrynolog/.test(n)) hints.push("hormony i gruczoły; zwykle po badaniach z POZ");
-	    if(/diabetolog/.test(n)) hints.push("cukrzyca; kontrola i prowadzenie leczenia");
-	    if(/reumatolog/.test(n)) hints.push("stawy, choroby autoimmunologiczne; zwykle po diagnostyce");
-	    if(/dermatolog/.test(n)) hints.push("skóra; wysypka, świąd, znamiona");
-	    if(/alergolog/.test(n)) hints.push("alergie; duszność/obrzęk twarzy: pilnie 112/SOR");
-	    if(/okulist/.test(n)) hints.push("oczy; nagła utrata widzenia/ból oka: pilnie");
-	    if(/laryngolog/.test(n)) hints.push("ucho/nos/gardło; nasilone duszności: pilnie 112/SOR");
-	    if(/ortoped/.test(n)) hints.push("kości i stawy; uraz z deformacją/utratą czucia: SOR");
-	    if(/hematolog/.test(n)) hints.push("krew i układ krwiotwórczy; zwykle po badaniach z POZ");
-	    if(/choroby zakazne/.test(n)) hints.push("choroby zakaźne; zwykle po skierowaniu/ocenie");
-	    if(/internist|choroby wewnetrzne/.test(n)) hints.push("choroby wewnętrzne u dorosłych – dobra opcja, gdy objawy są ogólne");
-
-	    const bullets = [];
-	    bullets.push("Jeśli nie wiesz od czego zacząć: najczęściej POZ (lekarz rodzinny) jest pierwszym krokiem.");
-	    bullets.push("W nagłych stanach (duszność, silny ból w klatce, omdlenie, objawy udaru): 112/SOR.");
-	    if(hints.length){
-	      bullets.unshift(`Zakres (ogólnie): ${hints.slice(0,2).join("; ")}.`);
+	    // Support composite names like "Audiolog / Foniatra"
+	    const parts = String(specName).split("/").map((p)=>p.trim()).filter(Boolean);
+	    const matched = [];
+	    for(const p of (parts.length ? parts : [specName])){
+	      const pn = triageNormalizeSpecName(p);
+	      const prof = profiles.find((x)=>x.re.test(pn));
+	      if(prof) matched.push({ part: p, prof });
 	    }
 
+	    if(matched.length){
+	      const title = matched.length === 1 ? matched[0].part : parts.join(" / ");
+	      const what = matched.map((m)=>m.prof.what).join(" ");
+	      const when = Array.from(new Set(matched.flatMap((m)=>m.prof.when))).slice(0, 6);
+	      return { name: title, what, when };
+	    }
+
+	    // Fallback (unknown name): still be useful, but not bland.
 	    return {
 	      name: specName,
-	      what: `Specjalista: ${specName}. To lekarz zajmujący się wybranym obszarem medycyny.`,
-	      when: bullets
+	      what: `${specName} to specjalizacja lekarska. Jeśli opiszesz krótko objawy, mogę podpowiedzieć, czy to dobry kierunek i jak pilnie szukać pomocy.`,
+	      when: [
+	        "Jeśli objawy są nagłe i ciężkie (duszność, silny ból w klatce, omdlenie, objawy udaru): 112/SOR.",
+	        "W większości spraw pierwszym krokiem jest POZ (lekarz rodzinny), który zleci badania i skieruje dalej."
+	      ]
 	    };
 	  }
 
