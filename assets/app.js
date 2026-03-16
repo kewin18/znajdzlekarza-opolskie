@@ -216,7 +216,243 @@
 
 	  function isHealthTopic(input){
 	    const t = normalizePolishText(input);
-	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|krew|krwiomocz|mocz|sikam|pieczen|pecherz|nerk|urolog|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
+	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|dusz|omdlen|drgawk|krew|krwiomocz|mocz|sikam|pieczen|pecherz|nerk|urolog|ginekolog|okulist|laryngolog|dermatolog|internist|kardiolog|neurolog|ortoped|gastroenterolog|pulmonolog|endokrynolog|diabetolog|reumatolog|nefrolog|hematolog|onkolog|chirurg|rehabilitac|fizjoterap|psychiatr|alergolog|pediatr|stomatolog|lekarz rodzinny|poz|npl|sor|szpital|przychodni|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet|specjalist)/.test(t);
+	  }
+
+	  function triageGetSpecialistInfo(){
+	    // Proste, lokalne opisy (bez diagnoz). Klucze to znormalizowane wyrazenia.
+	    return [
+	      {
+	        keys: ["internista", "choroby wewnetrzne", "choroby wewnętrzne"],
+	        name: "Internista",
+	        what: "Internista (choroby wewnętrzne) zajmuje się diagnozowaniem i leczeniem chorób narządów wewnętrznych u dorosłych oraz kieruje do dalszej diagnostyki/specjalistów.",
+	        when: ["przewlekły kaszel lub osłabienie", "ból brzucha / niestrawność", "nadciśnienie, cukrzyca (prowadzenie)", "niejasne objawy ogólne"]
+	      },
+	      {
+	        keys: ["lekarz rodzinny", "poz", "medycyna rodzinna", "po z", "poż"],
+	        name: "Lekarz rodzinny",
+	        what: "Lekarz rodzinny (POZ) to pierwszy kontakt: ocenia objawy, leczy typowe infekcje, zleca badania i wystawia skierowania do specjalistów.",
+	        when: ["infekcje, gorączka", "kontrola chorób przewlekłych", "skierowanie do specjalisty", "profilaktyka i szczepienia"]
+	      },
+	      {
+	        keys: ["pediatra", "dziecko", "niemowle", "niemowlę"],
+	        name: "Pediatra",
+	        what: "Pediatra zajmuje się zdrowiem dzieci: infekcje, rozwój, szczepienia, diagnostyka objawów u niemowląt i dzieci.",
+	        when: ["gorączka u dziecka", "kaszel/katar u dziecka", "biegunka/wymioty u dziecka", "bilans i szczepienia"]
+	      },
+	      {
+	        keys: ["kardiolog", "serce", "kardiologia"],
+	        name: "Kardiolog",
+	        what: "Kardiolog diagnozuje i leczy choroby serca i układu krążenia.",
+	        when: ["kołatania serca", "ból w klatce (jeśli nagły/silny: SOR)", "nadciśnienie trudne do kontroli", "duszność wysiłkowa"]
+	      },
+	      {
+	        keys: ["dermatolog", "skora", "skóra"],
+	        name: "Dermatolog",
+	        what: "Dermatolog zajmuje się chorobami skóry, włosów i paznokci.",
+	        when: ["wysypka, świąd", "trądzik", "zmiany skórne", "podejrzenie alergii skórnej"]
+	      },
+	      {
+	        keys: ["laryngolog", "otolaryngolog"],
+	        name: "Laryngolog",
+	        what: "Laryngolog zajmuje się chorobami uszu, nosa, zatok, gardła i krtani.",
+	        when: ["ból ucha", "zatoki", "chrypka", "nawracające anginy"]
+	      },
+	      {
+	        keys: ["neurolog"],
+	        name: "Neurolog",
+	        what: "Neurolog diagnozuje i leczy choroby układu nerwowego.",
+	        when: ["nawracające bóle głowy/migreny", "drętwienia, mrowienia", "zawroty głowy", "omdlenia (często też POZ/diagnostyka)"]
+	      },
+	      {
+	        keys: ["ortopeda", "ortopedia"],
+	        name: "Ortopeda",
+	        what: "Ortopeda zajmuje się urazami i chorobami kości, stawów, mięśni i więzadeł.",
+	        when: ["ból kolana/barku/kręgosłupa", "uraz, skręcenie", "ograniczenie ruchu", "rehabilitacja po urazie (wspólnie z fizjo)"]
+	      },
+	      {
+	        keys: ["gastroenterolog", "gastrolog"],
+	        name: "Gastroenterolog",
+	        what: "Gastroenterolog zajmuje się chorobami układu pokarmowego (żołądek, jelita, wątroba, trzustka).",
+	        when: ["przewlekły ból brzucha", "długotrwała biegunka", "refluks, zgaga", "nietolerancje/podejrzenie IBD (po ocenie lekarza)"]
+	      },
+	      {
+	        keys: ["urolog"],
+	        name: "Urolog",
+	        what: "Urolog zajmuje się układem moczowym (nerki, pęcherz) i męskim układem płciowym.",
+	        when: ["pieczenie przy oddawaniu moczu", "krwiomocz (często pilnie)", "ból w boku (kamica)", "problemy z oddawaniem moczu"]
+	      },
+	      {
+	        keys: ["ginekolog"],
+	        name: "Ginekolog",
+	        what: "Ginekolog zajmuje się zdrowiem kobiet (układ rozrodczy), profilaktyką i prowadzeniem ciąży.",
+	        when: ["ból podbrzusza", "zaburzenia miesiączkowania", "profilaktyka cytologii", "ciąża"]
+	      },
+	      {
+	        keys: ["okulista"],
+	        name: "Okulista",
+	        what: "Okulista zajmuje się chorobami oczu i wzroku.",
+	        when: ["pogorszenie widzenia", "zaczerwienienie oka", "ból oka", "kontrola wzroku"]
+	      },
+	      {
+	        keys: ["psychiatra"],
+	        name: "Psychiatra",
+	        what: "Psychiatra pomaga w zaburzeniach nastroju i lękowych oraz dobiera leczenie (także farmakologiczne).",
+	        when: ["depresja, silny lęk", "napady paniki", "bezsenność przewlekła", "kryzys psychiczny (pilnie przy zagrożeniu)"]
+	      },
+	      {
+	        keys: ["alergolog", "alergia"],
+	        name: "Alergolog",
+	        what: "Alergolog diagnozuje i leczy choroby alergiczne.",
+	        when: ["katar sienny", "pokrzywka", "nawracające duszności/świsty (pilnie, jeśli nasilone)", "alergie pokarmowe (po ocenie lekarza)"]
+	      },
+	      {
+	        keys: ["rehabilitacja", "fizjoterapeuta", "fizjoterapia"],
+	        name: "Rehabilitacja / fizjoterapia",
+	        what: "Rehabilitacja/fizjoterapia pomaga w powrocie do sprawności po urazach, operacjach i w bólach mięśniowo‑stawowych.",
+	        when: ["ból pleców, ograniczenie ruchu", "po skręceniu/urazie", "po operacji", "ćwiczenia wzmacniające i terapia manualna"]
+	      }
+	    ];
+	  }
+
+	  function triageNormalizeSpecName(name){
+	    return normalizePolishText(name)
+	      .replace(/[-/()]/g, " ")
+	      .replace(/\s+/g, " ")
+	      .trim();
+	  }
+
+	  function triageFindSpecialistFromText(userText){
+	    const t = triageNormalizeSpecName(userText);
+	    if(!t) return null;
+
+	    // Use the actual specialization list from the site (covers all specializations).
+	    const specs = Array.isArray(specializationList) ? specializationList : [];
+	    let best = null;
+	    let bestScore = 0;
+
+	    for(const spec of specs){
+	      const sNorm = triageNormalizeSpecName(spec);
+	      if(!sNorm) continue;
+
+	      // Direct substring match is the strongest signal.
+	      if(t.includes(sNorm)){
+	        const score = 100 + sNorm.length;
+	        if(score > bestScore){
+	          bestScore = score;
+	          best = spec;
+	        }
+	        continue;
+	      }
+
+	      // Token overlap as fallback (handles small variations)
+	      const tTokens = t.split(" ").filter(Boolean);
+	      const sTokens = sNorm.split(" ").filter(Boolean);
+	      if(!tTokens.length || !sTokens.length) continue;
+
+	      let hit = 0;
+	      for(const tok of sTokens){
+	        if(tok.length < 4) continue;
+	        if(tTokens.includes(tok)) hit++;
+	      }
+	      if(hit){
+	        const score = hit * 10 + Math.min(30, sNorm.length / 2);
+	        if(score > bestScore){
+	          bestScore = score;
+	          best = spec;
+	        }
+	      }
+	    }
+
+	    return best;
+	  }
+
+	  function triageGenericSpecialistDescription(specName){
+	    const n = triageNormalizeSpecName(specName);
+	    const hints = [];
+
+	    // Name-based heuristics (broad coverage). Keep it general and non-diagnostic.
+	    if(/dzieciec|dzieci|mlodziez/.test(n)) hints.push("dotyczy głównie dzieci i młodzieży");
+	    if(/onkolog|radioterapia/.test(n)) hints.push("opieka onkologiczna (diagnostyka i leczenie nowotworów) – zwykle po skierowaniu");
+	    if(/chirurg/.test(n)) hints.push("ocena problemów wymagających leczenia zabiegowego lub konsultacji chirurgicznej");
+	    if(/neurochirurg/.test(n)) hints.push("konsultacje neurochirurgiczne (zwykle po badaniach obrazowych) – pilnie przy objawach neurologicznych alarmowych");
+	    if(/diagnostyka obrazowa|radiolog/.test(n)) hints.push("badania obrazowe (USG/RTG/TK/MR) i ich opis");
+	    if(/diagnostyka laboratoryjna/.test(n)) hints.push("badania laboratoryjne i diagnostyka (zwykle zlecenia od lekarza)");
+	    if(/rehabilitac|fizjoterap/.test(n)) hints.push("powrót do sprawności, terapia bólu i ruchu");
+	    if(/medycyna pracy/.test(n)) hints.push("badania medycyny pracy (orzeczenia, badania okresowe)");
+	    if(/medycyna ratunkowa/.test(n)) hints.push("stany nagłe; w razie ciężkich objawów: SOR/112");
+	    if(/psychiatr/.test(n)) hints.push("zdrowie psychiczne; pilnie przy myślach samobójczych: 112/SOR");
+	    if(/pediatr/.test(n)) hints.push("zdrowie dzieci; u niemowląt i małych dzieci pilność bywa większa");
+	    if(/ginekolog|polozn/.test(n)) hints.push("zdrowie kobiet; pilnie przy silnym bólu i krwawieniu w ciąży: SOR");
+	    if(/urolog/.test(n)) hints.push("układ moczowy; krwiomocz często wymaga pilnej oceny");
+	    if(/kardiolog/.test(n)) hints.push("serce i krążenie; ból w klatce z dusznością/omdleniem: 112/SOR");
+	    if(/pulmonolog/.test(n)) hints.push("płuca i oddychanie; duszność nasilona: 112/SOR");
+	    if(/nefrolog/.test(n)) hints.push("nerki; obrzęki, problemy z moczem – zwykle po ocenie POZ");
+	    if(/endokrynolog/.test(n)) hints.push("hormony i gruczoły; zwykle po badaniach z POZ");
+	    if(/diabetolog/.test(n)) hints.push("cukrzyca; kontrola i prowadzenie leczenia");
+	    if(/reumatolog/.test(n)) hints.push("stawy, choroby autoimmunologiczne; zwykle po diagnostyce");
+	    if(/dermatolog/.test(n)) hints.push("skóra; wysypka, świąd, znamiona");
+	    if(/alergolog/.test(n)) hints.push("alergie; duszność/obrzęk twarzy: pilnie 112/SOR");
+	    if(/okulist/.test(n)) hints.push("oczy; nagła utrata widzenia/ból oka: pilnie");
+	    if(/laryngolog/.test(n)) hints.push("ucho/nos/gardło; nasilone duszności: pilnie 112/SOR");
+	    if(/ortoped/.test(n)) hints.push("kości i stawy; uraz z deformacją/utratą czucia: SOR");
+	    if(/hematolog/.test(n)) hints.push("krew i układ krwiotwórczy; zwykle po badaniach z POZ");
+	    if(/choroby zakazne/.test(n)) hints.push("choroby zakaźne; zwykle po skierowaniu/ocenie");
+	    if(/internist|choroby wewnetrzne/.test(n)) hints.push("choroby wewnętrzne u dorosłych – dobra opcja, gdy objawy są ogólne");
+
+	    const bullets = [];
+	    bullets.push("Jeśli nie wiesz od czego zacząć: najczęściej POZ (lekarz rodzinny) jest pierwszym krokiem.");
+	    bullets.push("W nagłych stanach (duszność, silny ból w klatce, omdlenie, objawy udaru): 112/SOR.");
+	    if(hints.length){
+	      bullets.unshift(`Zakres (ogólnie): ${hints.slice(0,2).join("; ")}.`);
+	    }
+
+	    return {
+	      name: specName,
+	      what: `Specjalista: ${specName}. To lekarz zajmujący się wybranym obszarem medycyny.`,
+	      when: bullets
+	    };
+	  }
+
+	  function triageTryExplainSpecialist(userText){
+	    const t = normalizePolishText(userText);
+	    // Heurystyka: pytania typu "co robi X", "czym zajmuje się X"
+	    const asksWhat = /(co robi|czym sie zajmuje|czym zajmuje|jakim lekarzem|na co jest|kiedy isc|kiedy pojsc)/.test(t);
+	    if(!asksWhat) return null;
+
+	    // 1) First try explicit curated descriptions.
+	    const items = triageGetSpecialistInfo();
+	    for(const it of items){
+	      if(it.keys.some((k)=>t.includes(normalizePolishText(k)))){
+	        const lines = [
+	          `${it.name}: ${it.what}`,
+	          "",
+	          "Kiedy warto iść:",
+	          ...it.when.slice(0,6).map((w)=>`- ${w}`),
+	          "",
+	          "To informacja, nie diagnoza lekarska."
+	        ];
+	        return { name: it.name, text: lines.join("\n") };
+	      }
+	    }
+
+	    // 2) Otherwise detect any specialization from the site's list and generate a generic explanation.
+	    const match = triageFindSpecialistFromText(userText);
+	    if(match){
+	      const gen = triageGenericSpecialistDescription(match);
+	      const lines = [
+	        `${gen.name}: ${gen.what}`,
+	        "",
+	        "Wskazówki:",
+	        ...gen.when.slice(0,6).map((w)=>`- ${w}`),
+	        "",
+	        "To informacja, nie diagnoza lekarska."
+	      ];
+	      return { name: gen.name, text: lines.join("\n") };
+	    }
+
+	    // 3) If still unknown, ask which specialization the user means.
+	    return { name: "", text: "O jaką specjalizację chodzi? Napisz nazwę specjalisty (np. internista, kardiolog, urolog), a wyjaśnię czym się zajmuje. To informacja, nie diagnoza lekarska." };
 	  }
 
 	  async function getHealthAiReply(userText){
@@ -409,6 +645,16 @@
 	    const a = session.answers;
 	    const text = String(userText || "").trim();
 	    if(!text) return;
+
+	    // If user asks "what does specialist do" – answer directly (separate from symptoms triage).
+	    const specialistInfo = triageTryExplainSpecialist(text);
+	    if(specialistInfo){
+	      triageAddMessage(specialistInfo.text, "bot");
+	      if(typeof window.selectSpec === "function" && specialistInfo.name){
+	        triageAddOptions([{ label: `Pokaż: ${specialistInfo.name}`, value: `__selectSpec__:${specialistInfo.name}` }]);
+	      }
+	      return;
+	    }
 
 	    // Save symptoms early if this is the first free-text message.
 	    if(!a.symptoms){
