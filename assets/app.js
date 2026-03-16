@@ -1912,44 +1912,42 @@ return R * 2 * Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
 
 function home(){
 app.innerHTML=`
-<div class="glass-panel border border-white/70 p-3 sm:p-6 sm:rounded-3xl shadow-[0_20px_64px_-32px_rgba(15,23,42,.35)]">
+<div class="panel p-3 sm:p-6">
 
-<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-950 via-blue-900 to-cyan-700 p-5 sm:p-8 mb-5">
-<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-white/10"></div>
-<div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-cyan-200/20"></div>
-<div class="absolute right-8 bottom-6 hidden lg:block text-7xl text-white/15 font-black select-none">OPOLSKIE</div>
-<h1 class="relative text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+<div class="hero mb-5">
+<div class="absolute right-7 bottom-5 hidden lg:block text-7xl text-white/15 font-black select-none">OPOLSKIE</div>
+<h1 class="hero-title">
 Znajdź lekarza i placówkę w Wojewódstwie Opolskim
 </h1>
-<p class="relative text-sm sm:text-base text-blue-100 mt-2 max-w-2xl">
+<p class="hero-sub">
 Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojazd do placówki.
 </p>
-<div class="relative mt-4 flex flex-wrap gap-2 text-xs sm:text-sm">
-<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">Aktualizowane dane</span>
-<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">NFZ i prywatnie</span>
-<span class="px-3 py-1 rounded-full bg-white/15 text-blue-50 border border-white/20">Najważniejsze miasta regionu</span>
+<div class="hero-chips">
+<span class="hero-chip">Aktualizowane dane</span>
+<span class="hero-chip">NFZ i prywatnie</span>
+<span class="hero-chip">Najważniejsze miasta regionu</span>
 </div>
 </div>
 
-<div class="mb-4 rounded-2xl border border-amber-200 bg-amber-50 p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-<p class="text-sm text-amber-900">
+<div class="notice mb-4">
+<p class="text-sm">
 Widzisz błąd w danych placówki? Zgłoś to jednym kliknięciem.
 </p>
-<button onclick="openBugReport()" class="h-10 px-4 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold shadow-sm">
+<button onclick="openBugReport()" class="btn-primary text-sm">
 Zgłoś błąd
 </button>
 </div>
 
 <section class="mb-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
-<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Szybkie wyszukiwanie</p>
 <p class="mt-1 text-sm text-slate-700">Wpisz specjalizację, wybierz miasto i od razu sprawdź dostępne placówki.</p>
 </article>
-<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Kontakt i dojazd</p>
 <p class="mt-1 text-sm text-slate-700">Każdy wynik ma telefon i przycisk mapy prowadzący bezpośrednio do placówki.</p>
 </article>
-<article class="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Opolskie lokalnie</p>
 <p class="mt-1 text-sm text-slate-700">Serwis skupia się na województwie opolskim, więc wyniki są konkretne i lokalne.</p>
 </article>
@@ -1961,7 +1959,7 @@ class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 
 <div class="mb-5">
 <div class="-mx-1 px-1">
-<div class="rounded-2xl border border-slate-200/90 bg-white/95 p-3 sm:p-4 shadow-[0_16px_38px_-26px_rgba(15,23,42,.35)] space-y-3">
+<div class="filters-shell p-3 sm:p-4 space-y-3">
 
 <!-- GŁÓWNA WYSZUKIWARKA -->
 <div class="flex flex-col md:flex-row md:items-end gap-3">
@@ -2772,7 +2770,7 @@ const box = document.getElementById("specButtons");
 box.innerHTML = getSpecializations().map(spec=>`
 <button
 onclick="selectSpec('${spec}')"
-class="whitespace-nowrap bg-white/90 border border-slate-200 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 transition px-4 py-2.5 rounded-full text-slate-700 font-medium shadow-sm min-h-[42px]">
+class="chip whitespace-nowrap min-h-[44px]">
 ${spec}
 </button>
 `).join("");
