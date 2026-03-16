@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="assets/app.css">
+	<link rel="stylesheet" href="assets/app.css">
 
 </head>
 
@@ -112,8 +112,14 @@ Akceptuję
 
 <div id="modalRoot"></div>
 
-<script src="assets/doctors-data.js"></script>
-<script src="assets/app.js"></script>
+	<script src="assets/doctors-data.js"></script>
+	<script>
+	// Konfiguracja trybu AI (opcjonalnie):
+	// 1) Wdróż Cloudflare Workera z folderu `cloudflare-worker/`
+	// 2) Wklej tutaj URL endpointu Workera (np. https://twoj-worker.workers.dev/health-chat)
+	window.HEALTH_CHAT_ENDPOINT = "";
+	</script>
+	<script src="assets/app.js"></script>
 </body>
 </html>
 

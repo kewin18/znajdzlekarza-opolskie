@@ -105,19 +105,21 @@
       });
   }
 
-  function triageDangerFromText(text){
-    const t = normalizePolishText(text);
-    const dangerPatterns = [
-      /duszno|nie moge oddychac|brak oddechu|sinieje/,
-      /bol.*klat|klat.*bol|ucisk w klatce/,
-      /udar|opadniety kacik|belkot|niedowlad|paraliz/,
-      /utrata przytomnosci|nieprzytom|zemdl|drgawk/,
-      /krwotok|silne krwawienie|krwioplucie/,
-      /samoboj|chce sie zabic|mysli samobojcze/,
-      /najgorszy bol glowy|bardzo silny bol glowy/
-    ];
-    return dangerPatterns.some((r)=>r.test(t));
-  }
+	  function triageDangerFromText(text){
+	    const t = normalizePolishText(text);
+	    const dangerPatterns = [
+	      /duszno|nie moge oddychac|brak oddechu|sinieje/,
+	      /bol.*klat|klat.*bol|ucisk w klatce/,
+	      /udar|opadniety kacik|belkot|niedowlad|paraliz/,
+	      /utrata przytomnosci|nieprzytom|zemdl|drgawk/,
+	      /krwotok|silne krwawienie|krwioplucie/,
+	      // Krwiomocz sam w sobie czesto wymaga pilnej oceny; jesli jest obfity / ze skrzepami / z omdleniem -> SOR.
+	      /sikam krwia|krwiomocz|krew.*mocz/,
+	      /samoboj|chce sie zabic|mysli samobojcze/,
+	      /najgorszy bol glowy|bardzo silny bol glowy/
+	    ];
+	    return dangerPatterns.some((r)=>r.test(t));
+	  }
 
   function createTriageSession(){
     return {
@@ -214,7 +216,7 @@
 
 	  function isHealthTopic(input){
 	    const t = normalizePolishText(input);
-	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
+	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|duszn|omdlen|drgawk|krew|krwiomocz|mocz|sikam|pieczen|pecherz|nerk|urolog|lekarz|przychodni|szpital|sor|npl|poz|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet)/.test(t);
 	  }
 
 	  async function getHealthAiReply(userText){
@@ -344,6 +346,16 @@
 	      triageAskWithKey(
 	        "redFlags",
 	        "Dopytam jedno: czy jest coś alarmowego (duszność, silny ból w klatce, omdlenie, drgawki, silne krwawienie, krew w stolcu)? Odpowiedz: tak/nie.",
+	        null
+	      );
+	      return true;
+	    }
+
+	    // Hematuria (blood in urine): ask quickly about severity / obstruction / fainting.
+	    if(!a.redFlags && /(krwiomocz|krew.*mocz|sikam krwia)/.test(norm)){
+	      triageAskWithKey(
+	        "redFlags",
+	        "Czy masz silny ból w boku/brzuchu, skrzepy, zawroty/omdlenie lub trudność oddania moczu? (tak/nie)",
 	        null
 	      );
 	      return true;
@@ -560,12 +572,12 @@
 	      ].join("\n");
 	    }
 	  }
-  function triageBuildDecision(){
-    const a = TRIAGE_STATE.session?.answers || {};
-    // If age isn't provided, assume adult for scoring (age can still be asked later if needed).
-    const age = a.age || "adult";
-    const reasons = [];
-    let urgentScore = 0;
+	  function triageBuildDecision(){
+	    const a = TRIAGE_STATE.session?.answers || {};
+	    // If age isn't provided, assume adult for scoring (age can still be asked later if needed).
+	    const age = a.age || "adult";
+	    const reasons = [];
+	    let urgentScore = 0;
 
     if(age === "infant"){
       urgentScore += 2;
@@ -595,18 +607,22 @@
       reasons.push("ryzyko odwodnienia / utrzymujących się wymiotów");
     }
 
-    const symptomText = normalizePolishText(a.symptoms);
-    if(/silny bol brzucha|bardzo silny bol/.test(symptomText)){
-      urgentScore += 1.5;
-      reasons.push("silny ból");
-    }
-    if(/wymiot|biegun/.test(symptomText)){
-      urgentScore += 0.5;
-    }
+	    const symptomText = normalizePolishText(a.symptoms);
+	    if(/silny bol brzucha|bardzo silny bol/.test(symptomText)){
+	      urgentScore += 1.5;
+	      reasons.push("silny ból");
+	    }
+	    if(/wymiot|biegun/.test(symptomText)){
+	      urgentScore += 0.5;
+	    }
+	    if(/krwiomocz|krew.*mocz|sikam krwia/.test(symptomText)){
+	      urgentScore += 2;
+	      reasons.push("krwiomocz (krew w moczu)");
+	    }
 
-    if(a.redFlags === "yes" || triageDangerFromText(a.symptoms)){
-      return {
-        level: "danger",
+	    if(a.redFlags === "yes" || triageDangerFromText(a.symptoms)){
+	      return {
+	        level: "danger",
         title: "Pilne: 112 / SOR teraz",
         text: "Na podstawie odpowiedzi wygląda to na stan wymagający pilnej pomocy.",
         bullets: [
@@ -618,10 +634,10 @@
       };
     }
 
-    if(urgentScore >= 3){
-      return {
-        level: "urgent",
-        title: "Pilne: NPL dzisiaj (lub SOR przy pogorszeniu)",
+	    if(urgentScore >= 3){
+	      return {
+	        level: "urgent",
+	        title: "Pilne: NPL dzisiaj (lub SOR przy pogorszeniu)",
         text: "Objawy wymagają pilnej oceny medycznej jeszcze dziś.",
         bullets: [
           "Skontaktuj się z NPL dzisiaj.",
@@ -847,36 +863,32 @@
     TRIAGE_STATE.open = false;
   }
 
-  function initTriageAssistant(){
+	  function initTriageAssistant(){
     if(document.getElementById("triageAssistantRoot")) return;
 
-    const root = document.createElement("div");
-    root.id = "triageAssistantRoot";
-    root.innerHTML = `
-      <button id="triageLauncher" type="button" class="triage-launcher" aria-label="Otwórz asystenta objawów">
-        🤖 Asystent objawów
-      </button>
-      <section id="triagePanel" class="triage-panel" hidden aria-live="polite">
+	    const root = document.createElement("div");
+	    root.id = "triageAssistantRoot";
+	    root.innerHTML = `
+	      <button id="triageLauncher" type="button" class="triage-launcher" aria-label="Otwórz asystenta objawów">
+	        🤖 Asystent objawów
+	      </button>
+	      <section id="triagePanel" class="triage-panel" hidden aria-live="polite">
         <div class="triage-head">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;">
             <div>
-              <p class="triage-title">Asystent objawów (beta)</p>
-	              <p class="triage-sub">Tryb AI: dopytuję i analizuję Twoje objawy (tylko tematy zdrowotne).</p>
+	              <p class="triage-title">Asystent objawów (beta)</p>
+	              <p class="triage-sub">Tryb: dopytuję i analizuję objawy (tylko tematy zdrowotne).</p>
             </div>
             <button id="triageClose" class="triage-close" type="button" aria-label="Zamknij">×</button>
           </div>
-        </div>
-        <div id="triageMessages" class="triage-messages">
-          <div class="triage-bubble triage-bot">
-	            Cześć! Opisz objawy. Jeśli potrzeba, dopytam i na końcu podpowiem pilność oraz do kogo się udać.
-	          </div>
 	        </div>
-        <div class="triage-input-wrap">
-          <input id="triageInput" class="triage-input" type="text" placeholder="Opisz objawy..." autocomplete="off">
-          <button id="triageSend" class="btn-primary triage-send" type="button">Wyślij</button>
-        </div>
-      </section>
-    `;
+	        <div id="triageMessages" class="triage-messages"></div>
+	        <div class="triage-input-wrap">
+	          <input id="triageInput" class="triage-input" type="text" placeholder="Opisz objawy..." autocomplete="off">
+	          <button id="triageSend" class="btn-primary triage-send" type="button">Wyślij</button>
+	        </div>
+	      </section>
+	    `;
     document.body.appendChild(root);
 
     document.getElementById("triageLauncher").addEventListener("click", openTriageAssistant);
