@@ -219,6 +219,12 @@
 	    return /(goracz|temperatur|wymiot|biegun|kaszel|katar|bol|dusz|omdlen|drgawk|krew|krwiomocz|mocz|sikam|pieczen|pecherz|nerk|urolog|ginekolog|okulist|laryngolog|dermatolog|internist|kardiolog|neurolog|ortoped|gastroenterolog|pulmonolog|endokrynolog|diabetolog|reumatolog|nefrolog|hematolog|onkolog|chirurg|rehabilitac|fizjoterap|psychiatr|alergolog|pediatr|stomatolog|lekarz rodzinny|poz|npl|sor|szpital|przychodni|recept|skierowan|zwolnien|badan|wynik|cisnien|cukrzyc|alerg|serc|udar|gryp|infekc|zdrow|medycz|objaw|lek|tablet|specjalist)/.test(t);
 	  }
 
+	  function triageLooksLikeSymptomStory(userText){
+	    const t = normalizePolishText(userText);
+	    // Rough heuristic: if user describes their own symptoms, don't treat it as "explain specialist" request.
+	    return /\b(mam|czuje|boli|bolą|goracz|temperatur|wymiot|biegun|kaszel|katar|dusz|omdlen|drgawk|zawrot|krwawi|sikam)\b/.test(t);
+	  }
+
 	  function triageGetSpecialistInfo(){
 	    // Proste, lokalne opisy (bez diagnoz). Klucze to znormalizowane wyrazenia.
 	    return [
@@ -418,7 +424,6 @@
 	    const t = normalizePolishText(userText);
 	    // Heurystyka: pytania typu "co robi X", "czym zajmuje się X"
 	    const asksWhat = /(co robi|czym sie zajmuje|czym zajmuje|jakim lekarzem|na co jest|kiedy isc|kiedy pojsc)/.test(t);
-	    if(!asksWhat) return null;
 
 	    // 1) First try explicit curated descriptions.
 	    const items = triageGetSpecialistInfo();
@@ -438,7 +443,9 @@
 
 	    // 2) Otherwise detect any specialization from the site's list and generate a generic explanation.
 	    const match = triageFindSpecialistFromText(userText);
-	    if(match){
+	    // If user just typed a specialist name (e.g. "a anestezjolog"), treat it as a request too,
+	    // unless the message looks like a symptom story.
+	    if(match && (asksWhat || !triageLooksLikeSymptomStory(userText))){
 	      const gen = triageGenericSpecialistDescription(match);
 	      const lines = [
 	        `${gen.name}: ${gen.what}`,
@@ -452,7 +459,10 @@
 	    }
 
 	    // 3) If still unknown, ask which specialization the user means.
-	    return { name: "", text: "O jaką specjalizację chodzi? Napisz nazwę specjalisty (np. internista, kardiolog, urolog), a wyjaśnię czym się zajmuje. To informacja, nie diagnoza lekarska." };
+	    if(asksWhat){
+	      return { name: "", text: "O jaką specjalizację chodzi? Napisz nazwę specjalisty (np. internista, kardiolog, urolog), a wyjaśnię czym się zajmuje. To informacja, nie diagnoza lekarska." };
+	    }
+	    return null;
 	  }
 
 	  async function getHealthAiReply(userText){
@@ -1032,7 +1042,10 @@
 	      (expecting === "redFlags" || expecting === "dehydration") ? (isYesNo || isShortAnswer) :
 	      false;
 
-	    if(!allowNonHealthBecauseFollowUp && !isHealthTopic(value)){
+	    // Allow specialist questions even if user doesn't use "health keywords".
+	    const looksLikeSpecialistQuery = !!triageFindSpecialistFromText(value) && !triageLooksLikeSymptomStory(value);
+
+	    if(!allowNonHealthBecauseFollowUp && !looksLikeSpecialistQuery && !isHealthTopic(value)){
 	      triageAddMessage("Pomagam tylko w pytaniach zdrowotnych i medycznych. Napisz proszę objawy albo pytanie o zdrowie.", "bot");
 	      return;
 	    }
