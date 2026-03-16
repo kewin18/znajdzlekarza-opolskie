@@ -1,0 +1,8 @@
+name = "znajdzlekarza-triage"
+main = "src/worker.js"
+compatibility_date = "2026-03-14"
+
+[vars]
+# Dozwolone originy dla CORS (zmien, jesli uzywasz innego hostingu domeny)
+ALLOWED_ORIGIN = "https://kewin18.github.io"
+
