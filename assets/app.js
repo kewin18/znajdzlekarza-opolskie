@@ -2042,7 +2042,7 @@ class="field-control">
 
 </div>
 
-<section class="mt-6 rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 via-white to-cyan-50 p-4 sm:p-5 shadow-[0_14px_34px_-22px_rgba(37,99,235,.45)]">
+<section class="popular-searches-section mt-6 p-4 sm:p-5">
 <div class="flex items-center gap-2 mb-3">
 <span class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 inline-flex items-center justify-center text-sm">🔎</span>
 <h3 class="text-base sm:text-lg font-semibold text-slate-800">Popularne wyszukiwania w regionie</h3>
@@ -2050,27 +2050,27 @@ class="field-control">
 
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500 mb-2">Miasta</p>
 <div class="flex flex-wrap gap-2">
-  <a href="lekarz-opole.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Opole</a>
-  <a href="lekarz-nysa.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Nysa</a>
-  <a href="lekarz-brzeg.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Brzeg</a>
-  <a href="lekarz-kedzierzyn-kozle.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Kędzierzyn-Koźle</a>
-  <a href="lekarz-kluczbork.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Kluczbork</a>
-  <a href="lekarz-prudnik.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Prudnik</a>
-  <a href="lekarz-glubczyce.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Głubczyce</a>
-  <a href="lekarz-namyslow.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Namysłów</a>
-  <a href="lekarz-strzelce-opolskie.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Strzelce Opolskie</a>
-  <a href="lekarz-krapkowice.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Krapkowice</a>
-  <a href="lekarz-olesno.html" class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm text-slate-700 hover:border-blue-300 hover:text-blue-700">Olesno</a>
+  <a href="lekarz-opole.html" class="chip text-sm">Opole</a>
+  <a href="lekarz-nysa.html" class="chip text-sm">Nysa</a>
+  <a href="lekarz-brzeg.html" class="chip text-sm">Brzeg</a>
+  <a href="lekarz-kedzierzyn-kozle.html" class="chip text-sm">Kędzierzyn-Koźle</a>
+  <a href="lekarz-kluczbork.html" class="chip text-sm">Kluczbork</a>
+  <a href="lekarz-prudnik.html" class="chip text-sm">Prudnik</a>
+  <a href="lekarz-glubczyce.html" class="chip text-sm">Głubczyce</a>
+  <a href="lekarz-namyslow.html" class="chip text-sm">Namysłów</a>
+  <a href="lekarz-strzelce-opolskie.html" class="chip text-sm">Strzelce Opolskie</a>
+  <a href="lekarz-krapkowice.html" class="chip text-sm">Krapkowice</a>
+  <a href="lekarz-olesno.html" class="chip text-sm">Olesno</a>
 </div>
 
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500 mt-4 mb-2">Frazy</p>
 <div class="flex flex-wrap gap-2">
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Lekarz Opole</span>
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Lekarz Nysa</span>
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Lekarz Brzeg</span>
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Przychodnia Opole</span>
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Przychodnia Nysa</span>
-  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Przychodnia Kędzierzyn-Koźle</span>
+  <span class="chip chip-accent text-sm">Lekarz Opole</span>
+  <span class="chip chip-accent text-sm">Lekarz Nysa</span>
+  <span class="chip chip-accent text-sm">Lekarz Brzeg</span>
+  <span class="chip chip-accent text-sm">Przychodnia Opole</span>
+  <span class="chip chip-accent text-sm">Przychodnia Nysa</span>
+  <span class="chip chip-accent text-sm">Przychodnia Kędzierzyn-Koźle</span>
 </div>
 <div class="mt-4 flex flex-wrap gap-2">
   <a href="miasta-opolskie.html" class="btn-secondary text-sm">Zobacz wszystkie miasta</a>
@@ -2079,8 +2079,8 @@ class="field-control">
 </div>
 </section>
 
-<section class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-3">
-<article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+<section class="trust-section mt-6 grid grid-cols-1 lg:grid-cols-3 gap-3">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Jak działa serwis</p>
 <h3 class="mt-1 text-base font-bold text-slate-900">3 proste kroki</h3>
 <ol class="mt-2 text-sm text-slate-700 space-y-1.5">
@@ -2089,13 +2089,13 @@ class="field-control">
 <li><span class="font-semibold">3.</span> Otwórz placówkę i przejdź do telefonu lub mapy.</li>
 </ol>
 </article>
-<article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Skąd dane</p>
 <h3 class="mt-1 text-base font-bold text-slate-900">Aktualizacja i wiarygodność</h3>
 <p class="mt-2 text-sm text-slate-700">Dane placówek są regularnie uzupełniane i porządkowane na podstawie publicznych informacji lokalnych. Przy każdej zmianie zgłoszonej przez użytkowników wykonujemy ręczną korektę.</p>
 <p class="mt-2 text-xs text-slate-500">Przed wizytą zawsze potwierdź numer telefonu i adres.</p>
 </article>
-<article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+<article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">FAQ</p>
 <h3 class="mt-1 text-base font-bold text-slate-900">Najczęstsze pytania</h3>
 <div class="mt-2 space-y-2 text-sm text-slate-700">
