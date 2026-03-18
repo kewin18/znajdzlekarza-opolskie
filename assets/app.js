@@ -1972,6 +1972,7 @@ Specjalizacja
 oninput="showSpecSuggestions()"
 class="field-control"
 placeholder="Jakiego specjalisty szukasz?">
+<p class="mt-1 text-xs text-slate-500">Możesz zostawić puste i wyszukać tylko po mieście.</p>
 
 <div id="specSuggestions"
 class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
@@ -2637,7 +2638,7 @@ if(!specNorm && !cityVal){
   resultsInfo.innerHTML = "";
   resultsDiv.innerHTML = `
   <div class="bg-red-50 border border-red-200 rounded-xl p-5 text-center shadow-sm">
-  <p class="text-base font-semibold text-red-700">Wybierz specjalizację.</p>
+  <p class="text-base font-semibold text-red-700">Wybierz specjalizację lub miasto.</p>
   </div>
   `;
   resultsDiv.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -2721,18 +2722,27 @@ const specName = specVal ? specVal : "lekarze";
 let visitLabel = "";
 if(visit === "nfz") visitLabel = " NFZ";
 else if(visit === "private") visitLabel = " prywatnie";
-resultsTitle.innerHTML = `Najlepsi ${specName}${visitLabel}`;
+if(cityVal && !specNorm){
+  const cityLabel = document.getElementById("cityDropdownButton")?.textContent?.trim() || document.getElementById("city")?.value || "wybranym mieście";
+  resultsTitle.innerHTML = `Placówki w mieście: ${cityLabel}${visitLabel}`;
+}
+else{
+  resultsTitle.innerHTML = `Najlepsi ${specName}${visitLabel}`;
+}
 
 const nfzCount = lastSearchResults.filter(d => d.nfz).length;
 const privateCount = lastSearchResults.filter(d => d.privateVisit).length;
 if(visit === "nfz"){
-  resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
+  if(cityVal && !specNorm) resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ w wybranym mieście`;
+  else resultsInfo.innerHTML = `Znaleziono <b>${nfzCount}</b> placówek NFZ`;
 }
 else if(visit === "private"){
-  resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
+  if(cityVal && !specNorm) resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych w wybranym mieście`;
+  else resultsInfo.innerHTML = `Znaleziono <b>${privateCount}</b> wizyt prywatnych`;
 }
 else{
-  resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> lekarzy (NFZ + prywatnie)`;
+  if(cityVal && !specNorm) resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> placówek i specjalizacji w wybranym mieście`;
+  else resultsInfo.innerHTML = `Znaleziono <b>${lastSearchResults.length}</b> lekarzy (NFZ + prywatnie)`;
 }
 
 if(!lastSearchResults.length){
