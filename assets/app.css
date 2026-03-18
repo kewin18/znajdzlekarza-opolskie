@@ -54,7 +54,7 @@ a:hover{
   background:rgba(255,255,255,.70);
   border:1px solid rgba(148,163,184,.26);
   border-radius:28px;
-  backdrop-filter:blur(16px) saturate(180%);
+  backdrop-filter:none;
   box-shadow:var(--shadow-soft);
   position:relative;
   overflow:hidden;
@@ -322,8 +322,8 @@ header a[href], header button{
   to { opacity: 1; transform: translateY(0); }
 }
 .result-card {
-  content-visibility:auto;
-  contain-intrinsic-size: 220px;
+  content-visibility:visible;
+  contain-intrinsic-size:auto;
 }
 .result-card-lite{
   background:var(--brand-card);
@@ -461,7 +461,7 @@ header a[href], header button{
 }
 .glass-panel{
   background:rgba(255,255,255,.74);
-  backdrop-filter:blur(16px) saturate(180%);
+  backdrop-filter:none;
   border:1px solid rgba(148,163,184,.26);
   box-shadow:var(--shadow-soft);
 }
@@ -578,7 +578,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
   border:1px solid rgba(148,163,184,.45);
   border-radius:16px;
   background:rgba(255,255,255,.92);
-  backdrop-filter:blur(14px) saturate(170%);
+  backdrop-filter:none;
   box-shadow:0 34px 78px -48px rgba(2,6,23,.75);
   overflow:hidden;
 }

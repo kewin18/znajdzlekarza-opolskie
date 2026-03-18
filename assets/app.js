@@ -1972,7 +1972,6 @@ Specjalizacja
 oninput="showSpecSuggestions()"
 class="field-control"
 placeholder="Jakiego specjalisty szukasz?">
-<p class="mt-1 text-xs text-slate-500">Możesz zostawić puste i wyszukać tylko po mieście.</p>
 
 <div id="specSuggestions"
 class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
@@ -2001,6 +2000,7 @@ Szukaj
 </button>
 
 </div>
+<p class="text-xs text-slate-500">Możesz zostawić specjalizację pustą i wyszukać tylko po mieście.</p>
 
 <!-- FILTRY -->
 <div class="filter-panel space-y-3">
