@@ -589,75 +589,45 @@ header a[href], header button{
   border:1px solid rgba(141,169,214,.26);
   box-shadow:0 16px 48px -34px rgba(5,18,46,.48);
 }
-.brand-logo{
+.brand-logo-shell{
   position:relative;
   overflow:hidden;
   background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));
-  color:#fff;
   box-shadow:0 16px 36px -22px rgba(36,84,230,.72);
   transition:transform .18s var(--ease-smooth), box-shadow .18s var(--ease-smooth);
 }
-.brand-logo:hover{
-  transform:translateY(-1px) scale(1.03);
-  box-shadow:0 20px 44px -24px rgba(36,84,230,.86);
-}
-.brand-logo__plus{
-  position:relative;
-  width:16px;
-  height:16px;
-}
-.brand-logo__plus::before,
-.brand-logo__plus::after{
+.brand-logo-shell::after{
   content:"";
   position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  border-radius:999px;
-  background:rgba(255,255,255,.95);
-}
-.brand-logo__plus::before{
-  width:14px;
-  height:2.6px;
-}
-.brand-logo__plus::after{
-  width:2.6px;
-  height:14px;
-}
-.brand-logo__pulse{
-  position:absolute;
-  inset:0;
+  inset:-50%;
+  background:linear-gradient(120deg, transparent 34%, rgba(255,255,255,.25) 50%, transparent 66%);
+  transform:translateX(-120%);
+  transition:transform .85s var(--ease-smooth);
   pointer-events:none;
 }
-.brand-logo__pulse::before{
-  content:"";
-  position:absolute;
-  left:-8px;
-  right:-8px;
-  top:50%;
-  height:2px;
-  transform:translateY(-50%);
-  background:
-    linear-gradient(90deg,
-      transparent 0%,
-      transparent 26%,
-      rgba(255,255,255,.35) 32%,
-      rgba(255,255,255,.9) 45%,
-      rgba(255,255,255,.35) 57%,
-      transparent 70%,
-      transparent 100%);
-  opacity:.5;
+.brand-logo-shell:hover{
+  transform:translateY(-1px) scale(1.03);
+  box-shadow:0 22px 46px -24px rgba(36,84,230,.88);
 }
-.brand-logo::after{
-  content:"";
-  position:absolute;
-  inset:-45%;
-  background:linear-gradient(120deg, transparent 35%, rgba(255,255,255,.26) 50%, transparent 65%);
-  transform:translateX(-120%);
-  transition:transform .8s var(--ease-smooth);
-}
-.brand-logo:hover::after{
+.brand-logo-shell:hover::after{
   transform:translateX(120%);
+}
+.brand-logo-img{
+  display:block;
+  object-fit:cover;
+  transform:translateZ(0);
+}
+.brand-wordmark{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.brand-wordmark::after{
+  content:"●";
+  font-size:10px;
+  color:rgba(31,78,216,.55);
+  transform:translateY(-1px);
 }
 .btn-primary{
   display:inline-flex;
