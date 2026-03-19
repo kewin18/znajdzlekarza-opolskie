@@ -1906,11 +1906,27 @@ Math.sin(dLon/2)**2;
 return R * 2 * Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
 }
 
+function scrollToSearchPanel(){
+const searchPanel = document.getElementById("searchPanelStart");
+if(searchPanel){
+  searchPanel.scrollIntoView({ behavior:"smooth", block:"start" });
+}
+setTimeout(()=>{
+  const specInput = document.getElementById("spec");
+  if(specInput) specInput.focus();
+},260);
+}
+window.scrollToSearchPanel = scrollToSearchPanel;
+
 /* =========================
  UI HOME
 ========================= */
 
 function home(){
+const totalEntries = doctors.length;
+const uniqueCities = new Set(doctors.map(d=>d.city).filter(Boolean)).size;
+const uniqueSpecs = new Set(doctors.map(d=>d.specialization).filter(Boolean)).size;
+
 app.innerHTML=`
 <div class="panel p-3 sm:p-6">
 
@@ -1927,6 +1943,30 @@ Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojaz
 <span class="hero-chip">NFZ i prywatnie</span>
 <span class="hero-chip">Najważniejsze miasta regionu</span>
 </div>
+<div class="hero-cta-row mt-4 flex flex-wrap gap-2">
+<button type="button" onclick="scrollToSearchPanel()" class="btn-primary text-sm">
+Zacznij wyszukiwanie
+</button>
+<a href="poradnik-zdrowia.html" class="btn-secondary text-sm hero-btn-light">
+Czytaj poradnik
+</a>
+</div>
+</div>
+
+<section class="stats-strip mb-4">
+<article class="stats-item">
+<p class="stats-value">${totalEntries}</p>
+<p class="stats-label">wpisów lekarzy i placówek</p>
+</article>
+<article class="stats-item">
+<p class="stats-value">${uniqueCities}</p>
+<p class="stats-label">miast w bazie</p>
+</article>
+<article class="stats-item">
+<p class="stats-value">${uniqueSpecs}</p>
+<p class="stats-label">specjalizacji medycznych</p>
+</article>
+</section>
 </div>
 
 <div class="notice mb-4">
@@ -1957,7 +1997,7 @@ Zgłoś błąd
 class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 </div>
 
-<div class="mb-5">
+<div class="mb-5" id="searchPanelStart">
 <div class="-mx-1 px-1">
 <div class="filters-shell p-3 sm:p-4 space-y-3">
 
@@ -2080,7 +2120,7 @@ class="field-control">
 </div>
 </section>
 
-<section class="trust-section mt-6 grid grid-cols-1 lg:grid-cols-3 gap-3">
+<section id="trustSection" class="trust-section mt-6 grid grid-cols-1 lg:grid-cols-3 gap-3">
 <article class="card p-4">
 <p class="text-xs uppercase tracking-wide font-semibold text-slate-500">Jak działa serwis</p>
 <h3 class="mt-1 text-base font-bold text-slate-900">3 proste kroki</h3>

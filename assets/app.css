@@ -185,6 +185,42 @@ a:hover{
   font-size:13px;
   border-radius:999px;
 }
+.hero-btn-light{
+  color:#e2ecff;
+  border-color:rgba(255,255,255,.35);
+  background:rgba(255,255,255,.14);
+}
+.hero-btn-light:hover{
+  color:#fff;
+  background:rgba(255,255,255,.22);
+  border-color:rgba(255,255,255,.45);
+}
+
+.stats-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.stats-item{
+  border:1px solid rgba(129,159,205,.34);
+  background:rgba(255,255,255,.92);
+  border-radius:16px;
+  padding:12px 14px;
+  box-shadow:0 14px 34px -28px rgba(5,18,46,.36);
+}
+.stats-value{
+  margin:0;
+  font-size:clamp(20px,3vw,28px);
+  font-weight:900;
+  line-height:1.1;
+  color:#0f2f86;
+}
+.stats-label{
+  margin:3px 0 0;
+  font-size:12px;
+  font-weight:700;
+  color:#4b5f84;
+}
 
 .notice{
   border-radius:18px;
@@ -342,6 +378,13 @@ header a[href], header button{
 @media (max-width:640px){
   .hero{ padding:18px; border-radius:24px; }
   .notice{ flex-direction:column; align-items:flex-start; }
+  .stats-strip{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .stats-item{
+    padding:11px 12px;
+  }
 }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
@@ -824,6 +867,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
 header .md\:flex a{
   border-color:rgba(129,159,205,.45) !important;
   box-shadow:0 10px 26px -20px rgba(5,18,46,.30);
+}
+
+.mobile-top-links a{
+  box-shadow:0 10px 22px -20px rgba(5,18,46,.30);
 }
 header .md\:flex a:hover{
   background:rgba(239,246,255,.92) !important;
