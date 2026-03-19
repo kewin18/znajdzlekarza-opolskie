@@ -1933,7 +1933,7 @@ app.innerHTML=`
 <div class="hero mb-5">
 <div class="absolute right-7 bottom-5 hidden lg:block text-7xl text-white/15 font-black select-none">OPOLSKIE</div>
 <h1 class="hero-title">
-Znajdź lekarza i placówkę w Wojewódstwie Opolskim
+Znajdź lekarza w woj. opolskim w 10 sekund
 </h1>
 <p class="hero-sub">
 Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojazd do placówki.
@@ -1999,7 +1999,11 @@ class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 
 <div class="mb-5" id="searchPanelStart">
 <div class="-mx-1 px-1">
-<div class="filters-shell p-3 sm:p-4 space-y-3">
+<div class="filters-shell search-core p-4 sm:p-5 space-y-3">
+<div class="search-core-head">
+<p class="search-core-kicker">Wyszukiwarka</p>
+<h2 class="search-core-title">Wybierz miasto i specjalizację</h2>
+</div>
 
 <!-- GŁÓWNA WYSZUKIWARKA -->
 <div class="search-row flex flex-col md:flex-row md:items-end gap-3">

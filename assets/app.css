@@ -1,9 +1,9 @@
 :root{
   --brand-ink:#0a1022;
   --brand-muted:#51607a;
-  --brand-blue:#2454e6;
-  --brand-cyan:#0798d4;
-  --brand-violet:#5b4ee6;
+  --brand-blue:#1f4ed8;
+  --brand-cyan:#1f4ed8;
+  --brand-violet:#1f4ed8;
   --brand-surface:#f2f7ff;
   --brand-card:rgba(255,255,255,.95);
   --brand-border:rgba(116,142,186,.30);
@@ -20,8 +20,8 @@ body{
   font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   letter-spacing:-0.01em;
   background:
-    radial-gradient(980px 560px at 16% -10%, rgba(36,84,230,.23) 0%, transparent 56%),
-    radial-gradient(900px 560px at 90% -14%, rgba(7,152,212,.19) 0%, transparent 57%),
+    radial-gradient(980px 560px at 16% -10%, rgba(31,78,216,.23) 0%, transparent 56%),
+    radial-gradient(900px 560px at 90% -14%, rgba(31,78,216,.15) 0%, transparent 57%),
     radial-gradient(760px 520px at 50% 118%, rgba(66,95,158,.12) 0%, transparent 56%),
     linear-gradient(180deg, #f8fbff 0%, #f0f5ff 34%, #e9f0fb 100%);
   color:var(--brand-ink);
@@ -66,7 +66,7 @@ a:hover{
   position:absolute;
   inset:0;
   pointer-events:none;
-  background:linear-gradient(135deg, rgba(36,84,230,.13), rgba(7,152,212,.10) 44%, rgba(91,78,230,.09));
+  background:linear-gradient(135deg, rgba(31,78,216,.13), rgba(31,78,216,.10) 44%, rgba(31,78,216,.09));
   opacity:.78;
 }
 .card{
@@ -84,7 +84,7 @@ a:hover{
   top:0;
   width:100%;
   height:3px;
-  background:linear-gradient(90deg, rgba(36,84,230,.88), rgba(7,152,212,.74), rgba(91,78,230,.60));
+  background:linear-gradient(90deg, rgba(31,78,216,.88), rgba(31,78,216,.74), rgba(31,78,216,.60));
   opacity:.72;
 }
 
@@ -128,7 +128,7 @@ a:hover{
   border-radius:30px;
   background:
     radial-gradient(900px 380px at 18% 8%, rgba(255,255,255,.12) 0%, transparent 55%),
-    linear-gradient(135deg, #08132c 0%, #133ea1 46%, #0a87b6 100%);
+    linear-gradient(135deg, #08132c 0%, #133ea1 55%, #1f4ed8 100%);
   padding:22px;
   color:#fff;
   border:1px solid rgba(255,255,255,.14);
@@ -153,7 +153,7 @@ a:hover{
   width:260px;
   height:260px;
   border-radius:999px;
-  background:rgba(7,152,212,.22);
+  background:rgba(31,78,216,.22);
 }
 .hero-title{
   position:relative;
@@ -239,10 +239,35 @@ a:hover{
   border-radius:22px;
   border:1px solid rgba(129,159,205,.35);
   background:
-    radial-gradient(540px 230px at 12% 0%, rgba(36,84,230,.13) 0%, transparent 62%),
-    radial-gradient(520px 220px at 88% 0%, rgba(7,152,212,.12) 0%, transparent 60%),
+    radial-gradient(540px 230px at 12% 0%, rgba(31,78,216,.13) 0%, transparent 62%),
+    radial-gradient(520px 220px at 88% 0%, rgba(31,78,216,.10) 0%, transparent 60%),
     rgba(255,255,255,.90);
   box-shadow:0 24px 58px -44px rgba(5,18,46,.56);
+}
+.search-core{
+  border:1px solid rgba(31,78,216,.28);
+  background:
+    radial-gradient(700px 280px at 50% 0%, rgba(31,78,216,.12), transparent 65%),
+    linear-gradient(180deg, rgba(255,255,255,.98), rgba(245,249,255,.96));
+  box-shadow:0 24px 66px -42px rgba(31,78,216,.32);
+}
+.search-core-head{
+  margin-bottom:8px;
+}
+.search-core-kicker{
+  margin:0;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:800;
+  color:#35549d;
+}
+.search-core-title{
+  margin:4px 0 0;
+  font-size:clamp(20px,2.7vw,28px);
+  line-height:1.15;
+  font-weight:900;
+  color:#102b73;
 }
 .search-row{
   align-items:flex-end;
@@ -598,7 +623,7 @@ header a[href], header button{
   border:1px solid rgba(109,173,240,.44);
   background:
     radial-gradient(500px 230px at 0% 0%, rgba(36,84,230,.14), transparent 62%),
-    radial-gradient(500px 230px at 100% 0%, rgba(7,152,212,.13), transparent 62%),
+    radial-gradient(500px 230px at 100% 0%, rgba(31,78,216,.13), transparent 62%),
     rgba(255,255,255,.90);
   box-shadow:0 22px 54px -40px rgba(36,84,230,.62);
 }
@@ -712,7 +737,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
 .triage-head{
   padding:12px 14px;
   color:#fff;
-  background:linear-gradient(135deg,#0b1b45,#2454e6 56%,#0798d4);
+  background:linear-gradient(135deg,#0b1b45,#2454e6 65%,#1f4ed8);
 }
 .triage-title{
   margin:0;
@@ -879,7 +904,7 @@ header .md\:flex a:hover{
 
 footer{
   background:
-    radial-gradient(600px 240px at 10% 0%, rgba(36,84,230,.08), transparent 62%),
-    radial-gradient(600px 240px at 90% 0%, rgba(7,152,212,.08), transparent 62%),
+    radial-gradient(600px 240px at 10% 0%, rgba(31,78,216,.08), transparent 62%),
+    radial-gradient(600px 240px at 90% 0%, rgba(31,78,216,.08), transparent 62%),
     rgba(255,255,255,.92) !important;
 }
