@@ -13,7 +13,7 @@ nfz:true,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Szybka pomoc","Mi≥a obs≥uga","KrÛtki czas oczekiwania"]
+reviews:["Szybka pomoc","Mi≈Ça obs≈Çuga","Kr√≥tki czas oczekiwania"]
 },
 
 {
@@ -43,12 +43,12 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.4,
-reviews:["Dobra opieka","Lekarz dok≥adny"]
+reviews:["Dobra opieka","Lekarz dok≈Çadny"]
 },
 
 {
 id:13,
-name:"Centrum Zdrowia KrÍgos≥upa",
+name:"Centrum Zdrowia Krƒôgos≈Çupa",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -58,7 +58,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["PomÛg≥ z bÛlem plecÛw","Profesjonalnie"]
+reviews:["Pom√≥g≈Ç z b√≥lem plec√≥w","Profesjonalnie"]
 },
 
 {
@@ -73,7 +73,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:5.0,
-reviews:["åwietne podejúcie","Duøe wsparcie"]
+reviews:["≈öwietne podej≈õcie","Du≈ºe wsparcie"]
 },
 
 {
@@ -88,7 +88,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Bez bÛlu","Nowoczesny sprzÍt"]
+reviews:["Bez b√≥lu","Nowoczesny sprzƒôt"]
 },
 
 {
@@ -103,12 +103,12 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.9,
-reviews:["Dok≥adne badanie","Polecam serdecznie"]
+reviews:["Dok≈Çadne badanie","Polecam serdecznie"]
 }
 ,
 {
 id:101,
-name:"Krystyna SuchiÒska ñ Gabinet dermatologii",
+name:"Krystyna Suchi≈Ñska ‚Äì Gabinet dermatologii",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -118,11 +118,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Bardzo dok≥adna konsultacja","Mi≥a atmosfera"]
+reviews:["Bardzo dok≈Çadna konsultacja","Mi≈Ça atmosfera"]
 },
 {
 id:102,
-name:"Dermatolog KÍcki ñ Gabinet medycyny estetycznej",
+name:"Dermatolog Kƒôcki ‚Äì Gabinet medycyny estetycznej",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -136,7 +136,7 @@ reviews:["Nowoczesne zabiegi","Polecam serdecznie"]
 },
 {
 id:103,
-name:"lek. Bartosz Ptak ñ Dermatolog",
+name:"lek. Bartosz Ptak ‚Äì Dermatolog",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -146,11 +146,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.9,
-reviews:["åwietny specjalista","Szybka diagnoza"]
+reviews:["≈öwietny specjalista","Szybka diagnoza"]
 },
 {
 id:104,
-name:"Qderm ñ Dagmara Bartosik",
+name:"Qderm ‚Äì Dagmara Bartosik",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -164,7 +164,7 @@ reviews:["Najlepszy gabinet w Opolu","Profesjonalizm"]
 },
 {
 id:105,
-name:"Katarzyna Pa≥uchowska ñ Gabinet dermatologii",
+name:"Katarzyna Pa≈Çuchowska ‚Äì Gabinet dermatologii",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -174,11 +174,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Dok≥adne badanie","Polecam"]
+reviews:["Dok≈Çadne badanie","Polecam"]
 },
 {
 id:106,
-name:"NOVUM ñ Instytut Dermatologii Leczniczej i Estetycznej",
+name:"NOVUM ‚Äì Instytut Dermatologii Leczniczej i Estetycznej",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -188,11 +188,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Wysoki poziom us≥ug","Nowoczesny sprzÍt"]
+reviews:["Wysoki poziom us≈Çug","Nowoczesny sprzƒôt"]
 },
 {
 id:107,
-name:"Estena Derm ñ A. Czernecka",
+name:"Estena Derm ‚Äì A. Czernecka",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -202,11 +202,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
-reviews:["Mi≥a obs≥uga","Skuteczne leczenie"]
+reviews:["Mi≈Ça obs≈Çuga","Skuteczne leczenie"]
 },
 {
 id:108,
-name:"AKDERM ñ Aleksandra Kapuúniak",
+name:"AKDERM ‚Äì Aleksandra Kapu≈õniak",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -216,11 +216,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.8,
-reviews:["Profesjonalne podejúcie","Polecam"]
+reviews:["Profesjonalne podej≈õcie","Polecam"]
 },
 {
 id:109,
-name:"Rekucka B. ñ Gabinet dermatologiczny",
+name:"Rekucka B. ‚Äì Gabinet dermatologiczny",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -267,7 +267,7 @@ reviews:[
 },
 {
 id:211,
-name:"Oddzia≥ Dermatologii ñ Szpital w Opolu",
+name:"Oddzia≈Ç Dermatologii ‚Äì Szpital w Opolu",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -280,7 +280,7 @@ rating:4.5,
 reviews:[
 "Wysoki poziom leczenia",
 "Kompetentny personel",
-"Polecam oddzia≥"
+"Polecam oddzia≈Ç"
 ]
 }
 ,
@@ -297,13 +297,13 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Bardzo dok≥adne badanie",
-"åwietny specjalista chorÛb przewodu pokarmowego"
+"Bardzo dok≈Çadne badanie",
+"≈öwietny specjalista chor√≥b przewodu pokarmowego"
 ]
 },
 {
 id:301,
-name:"Danuta Mielczarek ñ EndoPractica",
+name:"Danuta Mielczarek ‚Äì EndoPractica",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -314,13 +314,13 @@ privateVisit:true,
 featured:false,
 rating:4.9,
 reviews:[
-"Profesjonalne podejúcie",
-"Polecam gastroskopiÍ"
+"Profesjonalne podej≈õcie",
+"Polecam gastroskopiƒô"
 ]
 },
 {
 id:302,
-name:"lek. Jaros≥aw Struzik ñ EndoPractica",
+name:"lek. Jaros≈Çaw Struzik ‚Äì EndoPractica",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -337,7 +337,7 @@ reviews:[
 },
 {
 id:303,
-name:"lek. Wojciech Beker ñ EndoPractica",
+name:"lek. Wojciech Beker ‚Äì EndoPractica",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -348,8 +348,8 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Mi≥a obs≥uga",
-"Dok≥adna konsultacja"
+"Mi≈Ça obs≈Çuga",
+"Dok≈Çadna konsultacja"
 ]
 },
 {
@@ -365,13 +365,13 @@ privateVisit:true,
 featured:false,
 rating:4.8,
 reviews:[
-"Duøa wiedza",
-"PomÛg≥ rozwiπzaÊ problem"
+"Du≈ºa wiedza",
+"Pom√≥g≈Ç rozwiƒÖzaƒá problem"
 ]
 },
 {
 id:305,
-name:"Paulina Ciszewska-Ho≥da ñ gastroenterolog dzieciÍcy",
+name:"Paulina Ciszewska-Ho≈Çda ‚Äì gastroenterolog dzieciƒôcy",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -382,14 +382,14 @@ privateVisit:true,
 featured:true,
 rating:5.0,
 reviews:[
-"åwietne podejúcie do dzieci",
+"≈öwietne podej≈õcie do dzieci",
 "Polecam rodzicom"
 ]
 }
 ,
 {
 id:400,
-name:"Poradnia gastroenterologiczna ñ Katowicka 66",
+name:"Poradnia gastroenterologiczna ‚Äì Katowicka 66",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -406,7 +406,7 @@ reviews:[
 },
 {
 id:401,
-name:"Poradnia Gastroenterologiczna ñ SPZOZ Koúciuszki 2",
+name:"Poradnia Gastroenterologiczna ‚Äì SPZOZ Ko≈õciuszki 2",
 specialization:"Gastroenterolog",
 
 city:"Opole",
@@ -451,12 +451,12 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"Specjaliúci z doúwiadczeniem",
-"Polecam poradniÍ"
+"Specjali≈õci z do≈õwiadczeniem",
+"Polecam poradniƒô"
 ]
 },
 /* =========================
- DENTYåCI PRYWATNI ó OPOLE
+ DENTY≈öCI PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
@@ -471,11 +471,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Nowoczesny gabinet","Profesjonalna obs≥uga"]
+reviews:["Nowoczesny gabinet","Profesjonalna obs≈Çuga"]
 },
 {
 id:501,
-name:"Ambasada Uúmiechu",
+name:"Ambasada U≈õmiechu",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -485,7 +485,7 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["åwietni specjaliúci","Bezbolesne leczenie"]
+reviews:["≈öwietni specjali≈õci","Bezbolesne leczenie"]
 },
 {
 id:502,
@@ -513,11 +513,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Mi≥a obs≥uga","Szybkie wizyty"]
+reviews:["Mi≈Ça obs≈Çuga","Szybkie wizyty"]
 },
 {
 id:504,
-name:"Opolskie Centrum Stomatologiczne TaÒczak",
+name:"Opolskie Centrum Stomatologiczne Ta≈Ñczak",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -527,7 +527,7 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Najlepsi stomatolodzy","Nowoczesny sprzÍt"]
+reviews:["Najlepsi stomatolodzy","Nowoczesny sprzƒôt"]
 },
 {
 id:505,
@@ -569,7 +569,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Mi≥a atmosfera","Dok≥adne leczenie"]
+reviews:["Mi≈Ça atmosfera","Dok≈Çadne leczenie"]
 },
 {
 id:508,
@@ -587,7 +587,7 @@ reviews:["Dobry kontakt","Sprawna wizyta"]
 },
 {
 id:509,
-name:"Galeria Uúmiechu Opole",
+name:"Galeria U≈õmiechu Opole",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -597,10 +597,10 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:5.0,
-reviews:["TOP gabinet","Najwyøsza jakoúÊ"]
+reviews:["TOP gabinet","Najwy≈ºsza jako≈õƒá"]
 },
 /* =========================
- DENTYåCI NFZ ó OPOLE
+ DENTY≈öCI NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -633,7 +633,7 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"KrÛtki czas oczekiwania",
+"Kr√≥tki czas oczekiwania",
 "Profesjonalna pomoc"
 ]
 },
@@ -646,17 +646,17 @@ city:"Opole",
 phone:"77 000 10 03",
 price:null,
 nfz:true,
-privateVisit:true,   // czÍúÊ prywatnie
+privateVisit:true,   // czƒô≈õƒá prywatnie
 featured:false,
 rating:4.5,
 reviews:[
-"CzÍúÊ úwiadczeÒ refundowana",
+"Czƒô≈õƒá ≈õwiadcze≈Ñ refundowana",
 "Nowoczesny gabinet"
 ]
 },
 {
 id:603,
-name:"Opolskie Centrum Stomatologiczne TaÒczak (NFZ)",
+name:"Opolskie Centrum Stomatologiczne Ta≈Ñczak (NFZ)",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -667,17 +667,17 @@ privateVisit:true,
 featured:true,
 rating:4.6,
 reviews:[
-"Wybrane úwiadczenia NFZ",
+"Wybrane ≈õwiadczenia NFZ",
 "Wysoki poziom leczenia"
 ]
 },
 /* =========================
- INTERNIåCI PRYWATNI ó OPOLE
+ INTERNI≈öCI PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
 id:700,
-name:"lek. Jacek Kochanowski ñ Internista",
+name:"lek. Jacek Kochanowski ‚Äì Internista",
 specialization:"Internista",
 
 city:"Opole",
@@ -687,11 +687,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Dok≥adny lekarz","Szybka pomoc"]
+reviews:["Dok≈Çadny lekarz","Szybka pomoc"]
 },
 {
 id:701,
-name:"lek. Tomasz Pawlik ñ Klinika MEDEST",
+name:"lek. Tomasz Pawlik ‚Äì Klinika MEDEST",
 specialization:"Internista",
 
 city:"Opole",
@@ -701,11 +701,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["åwietna diagnostyka","Polecam"]
+reviews:["≈öwietna diagnostyka","Polecam"]
 },
 {
 id:702,
-name:"Danuta Kazek-Pastwa ñ wizyty domowe",
+name:"Danuta Kazek-Pastwa ‚Äì wizyty domowe",
 specialization:"Internista",
 
 city:"Opole",
@@ -719,7 +719,7 @@ reviews:["Dojazd do pacjenta","Bardzo pomocna"]
 },
 {
 id:703,
-name:"Miros≥aw Ma≥owski ñ Gabinet internistyczny",
+name:"Miros≈Çaw Ma≈Çowski ‚Äì Gabinet internistyczny",
 specialization:"Internista",
 
 city:"Opole",
@@ -733,7 +733,7 @@ reviews:["Dobry kontakt","Szybka wizyta"]
 },
 {
 id:704,
-name:"Henryk Operacz ñ internista",
+name:"Henryk Operacz ‚Äì internista",
 specialization:"Internista",
 
 city:"Opole",
@@ -743,11 +743,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.4,
-reviews:["Doúwiadczony lekarz","Polecam"]
+reviews:["Do≈õwiadczony lekarz","Polecam"]
 },
 {
 id:705,
-name:"Maria Boú ñ choroby wewnÍtrzne",
+name:"Maria Bo≈õ ‚Äì choroby wewnƒôtrzne",
 specialization:"Internista",
 
 city:"Opole",
@@ -757,11 +757,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.8,
-reviews:["Bardzo dok≥adna","Mi≥a atmosfera"]
+reviews:["Bardzo dok≈Çadna","Mi≈Ça atmosfera"]
 },
 {
 id:706,
-name:"Gabinet Internistyczny Koúnego",
+name:"Gabinet Internistyczny Ko≈õnego",
 specialization:"Internista",
 
 city:"Opole",
@@ -771,11 +771,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Sprawna obs≥uga","Polecam wizytÍ"]
+reviews:["Sprawna obs≈Çuga","Polecam wizytƒô"]
 },
 {
 id:707,
-name:"dr n. med. Graøyna Jaworska-GÛrna",
+name:"dr n. med. Gra≈ºyna Jaworska-G√≥rna",
 specialization:"Internista",
 
 city:"Opole",
@@ -785,7 +785,7 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Duøa wiedza","åwietne podejúcie"]
+reviews:["Du≈ºa wiedza","≈öwietne podej≈õcie"]
 },
 
 /* CENTRA MEDYCZNE */
@@ -830,11 +830,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Kompleksowa opieka","Dobrzy specjaliúci"]
+reviews:["Kompleksowa opieka","Dobrzy specjali≈õci"]
 },
 {
 id:711,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Internista",
 
 city:"Opole",
@@ -844,7 +844,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
-reviews:["Mi≥a obs≥uga","Sprawne wizyty"]
+reviews:["Mi≈Ça obs≈Çuga","Sprawne wizyty"]
 },
 {
 id:712,
@@ -858,11 +858,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Wysoki poziom us≥ug","Polecam"]
+reviews:["Wysoki poziom us≈Çug","Polecam"]
 },
 {
 id:713,
-name:"LUX MED ñ ChabrÛw",
+name:"LUX MED ‚Äì Chabr√≥w",
 specialization:"Internista",
 
 city:"Opole",
@@ -872,11 +872,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Nowoczesna placÛwka","KrÛtki czas oczekiwania"]
+reviews:["Nowoczesna plac√≥wka","Kr√≥tki czas oczekiwania"]
 },
 {
 id:714,
-name:"LUX MED ñ Fieldorfa",
+name:"LUX MED ‚Äì Fieldorfa",
 specialization:"Internista",
 
 city:"Opole",
@@ -889,12 +889,12 @@ rating:4.8,
 reviews:["Profesjonalna opieka","Dobra diagnostyka"]
 },
 /* =========================
- INTERNIåCI NFZ ó OPOLE
+ INTERNI≈öCI NFZ ‚Äî OPOLE
 ========================= */
 
 {
 id:800,
-name:"Szpital WojewÛdzki w Opolu ñ Oddzia≥ ChorÛb WewnÍtrznych",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Oddzia≈Ç Chor√≥b Wewnƒôtrznych",
 specialization:"Internista",
 
 city:"Opole",
@@ -906,12 +906,12 @@ featured:true,
 rating:4.0,
 reviews:[
 "Leczenie szpitalne NFZ",
-"Duøy oddzia≥ internistyczny"
+"Du≈ºy oddzia≈Ç internistyczny"
 ]
 },
 {
 id:801,
-name:"SPZOZ MSWiA w Opolu ñ Poradnia ChorÛb WewnÍtrznych",
+name:"SPZOZ MSWiA w Opolu ‚Äì Poradnia Chor√≥b Wewnƒôtrznych",
 specialization:"Internista",
 
 city:"Opole",
@@ -928,7 +928,7 @@ reviews:[
 },
 {
 id:802,
-name:"116 Szpital Wojskowy ñ konsultacje internistyczne",
+name:"116 Szpital Wojskowy ‚Äì konsultacje internistyczne",
 specialization:"Internista",
 
 city:"Opole",
@@ -939,13 +939,13 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"Doúwiadczeni lekarze",
+"Do≈õwiadczeni lekarze",
 "Profesjonalna diagnostyka"
 ]
 },
 {
 id:803,
-name:"ZespÛ≥ WojewÛdzkich Poradni Specjalistycznych ñ Interna",
+name:"Zesp√≥≈Ç Wojew√≥dzkich Poradni Specjalistycznych ‚Äì Interna",
 specialization:"Internista",
 
 city:"Opole",
@@ -961,12 +961,12 @@ reviews:[
 ]
 },
 /* =========================
- LEKARZE RODZINNI PRYWATNI ó OPOLE
+ LEKARZE RODZINNI PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
 id:900,
-name:"Medin Klinika ñ lekarz rodzinny",
+name:"Medin Klinika ‚Äì lekarz rodzinny",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -980,7 +980,7 @@ reviews:["Szybkie terminy","Profesjonalna opieka"]
 },
 {
 id:901,
-name:"PanMedica ñ lekarz rodzinny",
+name:"PanMedica ‚Äì lekarz rodzinny",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -990,11 +990,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Mi≥a obs≥uga","Dobry kontakt"]
+reviews:["Mi≈Ça obs≈Çuga","Dobry kontakt"]
 },
 {
 id:902,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1004,11 +1004,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Nowoczesna placÛwka","Polecam lekarzy"]
+reviews:["Nowoczesna plac√≥wka","Polecam lekarzy"]
 },
 {
 id:903,
-name:"Centrum Medyczne ÑNa Dobre i Na Z≥eî",
+name:"Centrum Medyczne ‚ÄûNa Dobre i Na Z≈Çe‚Äù",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1046,7 +1046,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["KrÛtki czas oczekiwania","Polecam"]
+reviews:["Kr√≥tki czas oczekiwania","Polecam"]
 },
 {
 id:906,
@@ -1064,7 +1064,7 @@ reviews:["Profesjonalna opieka","Nowoczesne centrum"]
 },
 {
 id:907,
-name:"Centrum Medyczne PZU Zdrowie Opole Pi≥sudskiego",
+name:"Centrum Medyczne PZU Zdrowie Opole Pi≈Çsudskiego",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1074,15 +1074,15 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Dobra dostÍpnoúÊ","Polecam wizyty"]
+reviews:["Dobra dostƒôpno≈õƒá","Polecam wizyty"]
 },
 /* =========================
- LEKARZE RODZINNI NFZ ó OPOLE
+ LEKARZE RODZINNI NFZ ‚Äî OPOLE
 ========================= */
 
 {
 id:950,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Licealna",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Licealna",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1096,7 +1096,7 @@ reviews:["Dobra opieka POZ","Sprawna rejestracja"]
 },
 {
 id:951,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Koúciuszki",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Ko≈õciuszki",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1110,7 +1110,7 @@ reviews:["Lekarz rodzinny NFZ","Dobra lokalizacja"]
 },
 {
 id:952,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia WaryÒskiego",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Wary≈Ñskiego",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1120,11 +1120,11 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.2,
-reviews:["Mi≥a obs≥uga","Polecam lekarzy"]
+reviews:["Mi≈Ça obs≈Çuga","Polecam lekarzy"]
 },
 {
 id:953,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Chmielowicka",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Chmielowicka",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1138,7 +1138,7 @@ reviews:["Blisko osiedla","Pomocna poradnia"]
 },
 {
 id:954,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Witosa",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Witosa",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1162,7 +1162,7 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.1,
-reviews:["Sprawna obs≥uga","KrÛtki czas oczekiwania"]
+reviews:["Sprawna obs≈Çuga","Kr√≥tki czas oczekiwania"]
 },
 {
 id:956,
@@ -1190,7 +1190,7 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.0,
-reviews:["Lekarz rodzinny NFZ","Dobra dostÍpnoúÊ"]
+reviews:["Lekarz rodzinny NFZ","Dobra dostƒôpno≈õƒá"]
 },
 {
 id:958,
@@ -1204,7 +1204,7 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.1,
-reviews:["Dobra opieka","Mi≥a rejestracja"]
+reviews:["Dobra opieka","Mi≈Ça rejestracja"]
 },
 {
 id:959,
@@ -1222,7 +1222,7 @@ reviews:["Szybkie wizyty","Polecam"]
 },
 {
 id:960,
-name:"Zdrowie s.c. Poradnia ogÛlna",
+name:"Zdrowie s.c. Poradnia og√≥lna",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1236,7 +1236,7 @@ reviews:["Standardowa poradnia NFZ","Dobra lokalizacja"]
 },
 {
 id:961,
-name:"Poradnia ogÛlna SPZOZ ñ Koúciuszki",
+name:"Poradnia og√≥lna SPZOZ ‚Äì Ko≈õciuszki",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -1246,15 +1246,15 @@ nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.3,
-reviews:["Duøa poradnia","Doúwiadczeni lekarze"]
+reviews:["Du≈ºa poradnia","Do≈õwiadczeni lekarze"]
 },
 /* =========================
- NEUROLODZY PRYWATNI ó OPOLE
+ NEUROLODZY PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
 id:1000,
-name:"Robert Zdanowski ñ specjalista neurolog",
+name:"Robert Zdanowski ‚Äì specjalista neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1264,11 +1264,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Bardzo dok≥adna diagnoza","åwietny specjalista"]
+reviews:["Bardzo dok≈Çadna diagnoza","≈öwietny specjalista"]
 },
 {
 id:1001,
-name:"dr n. med. Klaudia Plinta ñ neurolog",
+name:"dr n. med. Klaudia Plinta ‚Äì neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1282,7 +1282,7 @@ reviews:["Ogromna wiedza","Polecam serdecznie"]
 },
 {
 id:1002,
-name:"Wojciech OsiÒski ñ neurolog psychiatra",
+name:"Wojciech Osi≈Ñski ‚Äì neurolog psychiatra",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1292,11 +1292,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Profesjonalne podejúcie","Dok≥adne badanie"]
+reviews:["Profesjonalne podej≈õcie","Dok≈Çadne badanie"]
 },
 {
 id:1003,
-name:"Magdalena Trumpus-Tas ñ Gabinet Neurologiczny",
+name:"Magdalena Trumpus-Tas ‚Äì Gabinet Neurologiczny",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1306,11 +1306,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Mi≥a atmosfera","Szybka pomoc"]
+reviews:["Mi≈Ça atmosfera","Szybka pomoc"]
 },
 {
 id:1004,
-name:"Kuziara Zbigniew ñ dr nauk med. neurolog",
+name:"Kuziara Zbigniew ‚Äì dr nauk med. neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1320,11 +1320,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
-reviews:["Doúwiadczony lekarz","Polecam wizytÍ"]
+reviews:["Do≈õwiadczony lekarz","Polecam wizytƒô"]
 },
 {
 id:1005,
-name:"Rados≥aw Szymczyk ñ Specjalistyczna Praktyka Neurologiczna",
+name:"Rados≈Çaw Szymczyk ‚Äì Specjalistyczna Praktyka Neurologiczna",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1334,11 +1334,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.8,
-reviews:["Dok≥adna konsultacja","Profesjonalnie"]
+reviews:["Dok≈Çadna konsultacja","Profesjonalnie"]
 },
 {
 id:1006,
-name:"Margu≥a Elena ñ neurolog",
+name:"Margu≈Ça Elena ‚Äì neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1348,11 +1348,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Dobre podejúcie do pacjenta","Polecam"]
+reviews:["Dobre podej≈õcie do pacjenta","Polecam"]
 },
 {
 id:1007,
-name:"Fornalik-Cymbalista Renata ñ neurolog",
+name:"Fornalik-Cymbalista Renata ‚Äì neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1366,7 +1366,7 @@ reviews:["Sprawna konsultacja","Dobry lekarz"]
 },
 {
 id:1008,
-name:"lek. Janusz Maciorowski ñ neurolog",
+name:"lek. Janusz Maciorowski ‚Äì neurolog",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1376,7 +1376,7 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Dok≥adne badanie","Polecam"]
+reviews:["Dok≈Çadne badanie","Polecam"]
 },
 {
 id:1009,
@@ -1390,10 +1390,10 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Nowoczesny gabinet","åwietna opieka"]
+reviews:["Nowoczesny gabinet","≈öwietna opieka"]
 },
 /* =========================
- NEUROLODZY NFZ ó OPOLE
+ NEUROLODZY NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -1410,12 +1410,12 @@ featured:true,
 rating:4.2,
 reviews:[
 "Konsultacje neurologiczne NFZ",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 {
 id:1051,
-name:"NZOZ Specjalistyka ñ poradnia neurologiczna",
+name:"NZOZ Specjalistyka ‚Äì poradnia neurologiczna",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1427,12 +1427,12 @@ featured:false,
 rating:4.1,
 reviews:[
 "Dobra diagnostyka",
-"Sprawna obs≥uga"
+"Sprawna obs≈Çuga"
 ]
 },
 {
 id:1052,
-name:"Przychodnia Odnowamed ñ neurolog NFZ",
+name:"Przychodnia Odnowamed ‚Äì neurolog NFZ",
 specialization:"Neurolog",
 
 city:"Opole",
@@ -1444,16 +1444,16 @@ featured:false,
 rating:4.0,
 reviews:[
 "Wizyty refundowane",
-"Mi≥a obs≥uga"
+"Mi≈Ça obs≈Çuga"
 ]
 },
 /* =========================
- ORTOPEDZI PRYWATNI ó OPOLE
+ ORTOPEDZI PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
 id:1100,
-name:"dr n. med. Andrzej Zdziechowski ñ ortopeda traumatolog",
+name:"dr n. med. Andrzej Zdziechowski ‚Äì ortopeda traumatolog",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1463,11 +1463,11 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["åwietny specjalista","Skuteczne leczenie urazÛw"]
+reviews:["≈öwietny specjalista","Skuteczne leczenie uraz√≥w"]
 },
 {
 id:1101,
-name:"lek. Tomasz Brzozowski ñ ortopeda",
+name:"lek. Tomasz Brzozowski ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1477,11 +1477,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Dok≥adna diagnoza","Polecam wizytÍ"]
+reviews:["Dok≈Çadna diagnoza","Polecam wizytƒô"]
 },
 {
 id:1102,
-name:"lek. Marcin Bπk ñ ortopedia i traumatologia",
+name:"lek. Marcin BƒÖk ‚Äì ortopedia i traumatologia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1491,11 +1491,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.8,
-reviews:["Profesjonalne podejúcie","PomÛg≥ z kolanem"]
+reviews:["Profesjonalne podej≈õcie","Pom√≥g≈Ç z kolanem"]
 },
 {
 id:1103,
-name:"lek. Piotr Rybak ñ ortopeda",
+name:"lek. Piotr Rybak ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1505,11 +1505,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-reviews:["Mi≥a obs≥uga","Szybka konsultacja"]
+reviews:["Mi≈Ça obs≈Çuga","Szybka konsultacja"]
 },
 {
 id:1104,
-name:"lek. Krzysztof Kaniuka ñ ortopeda",
+name:"lek. Krzysztof Kaniuka ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1523,7 +1523,7 @@ reviews:["Dobry kontakt z pacjentem","Polecam"]
 },
 {
 id:1105,
-name:"lek. Jaros≥aw Kaczmarczyk ñ ortopeda",
+name:"lek. Jaros≈Çaw Kaczmarczyk ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1533,11 +1533,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.8,
-reviews:["Duøa wiedza","Profesjonalna konsultacja"]
+reviews:["Du≈ºa wiedza","Profesjonalna konsultacja"]
 },
 {
 id:1106,
-name:"lek. Dariusz Kuku≥a ñ ortopeda",
+name:"lek. Dariusz Kuku≈Ça ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1551,7 +1551,7 @@ reviews:["Sprawna wizyta","Polecam lekarza"]
 },
 {
 id:1107,
-name:"dr n. med. Micha≥ Klementowski ñ ortopeda",
+name:"dr n. med. Micha≈Ç Klementowski ‚Äì ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1561,14 +1561,14 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:5.0,
-reviews:["Top specjalista w Opolu","åwietna diagnostyka"]
+reviews:["Top specjalista w Opolu","≈öwietna diagnostyka"]
 },
 
-/* PLAC”WKI */
+/* PLAC√ìWKI */
 
 {
 id:1110,
-name:"Medin Klinika ñ ortopedia",
+name:"Medin Klinika ‚Äì ortopedia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1592,11 +1592,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.9,
-reviews:["Wysoki standard","Polecam ortopedÛw"]
+reviews:["Wysoki standard","Polecam ortoped√≥w"]
 },
 {
 id:1112,
-name:"Mediclinica Centrum Medyczne ñ ortopedia",
+name:"Mediclinica Centrum Medyczne ‚Äì ortopedia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1610,7 +1610,7 @@ reviews:["Szybkie terminy","Profesjonalnie"]
 },
 {
 id:1113,
-name:"PanMedica ñ ortopedia",
+name:"PanMedica ‚Äì ortopedia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1620,11 +1620,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
-reviews:["Dobra opieka","Polecam placÛwkÍ"]
+reviews:["Dobra opieka","Polecam plac√≥wkƒô"]
 },
 {
 id:1114,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ ortopedia",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì ortopedia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1634,11 +1634,11 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-reviews:["Kompleksowa opieka","Dobry sprzÍt"]
+reviews:["Kompleksowa opieka","Dobry sprzƒôt"]
 },
 {
 id:1115,
-name:"LUX MED ñ ortopedia",
+name:"LUX MED ‚Äì ortopedia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -1648,10 +1648,10 @@ nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
-reviews:["Wysoki poziom us≥ug","KrÛtki czas oczekiwania"]
+reviews:["Wysoki poziom us≈Çug","Kr√≥tki czas oczekiwania"]
 },
 /* =========================
- ORTOPEDZI NFZ ó OPOLE
+ ORTOPEDZI NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -1703,7 +1703,7 @@ featured:false,
 rating:4.0,
 reviews:[
 "Wizyta refundowana",
-"Profesjonalne podejúcie"
+"Profesjonalne podej≈õcie"
 ]
 },
 {
@@ -1719,17 +1719,17 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"KrÛtki czas oczekiwania",
+"Kr√≥tki czas oczekiwania",
 "Dobry ortopeda NFZ"
 ]
 },
 /* =========================
- PSYCHIATRZY PRYWATNI ó OPOLE
+ PSYCHIATRZY PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
 id:1300,
-name:"lek. Wojciech OsiÒski ñ psychiatra",
+name:"lek. Wojciech Osi≈Ñski ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1740,13 +1740,13 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Bardzo empatyczne podejúcie",
-"åwietny specjalista"
+"Bardzo empatyczne podej≈õcie",
+"≈öwietny specjalista"
 ]
 },
 {
 id:1301,
-name:"dr n. med. Katarzyna KÍdzierska ñ psychiatra",
+name:"dr n. med. Katarzyna Kƒôdzierska ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1758,12 +1758,12 @@ featured:false,
 rating:4.8,
 reviews:[
 "Profesjonalna pomoc",
-"Dok≥adna konsultacja"
+"Dok≈Çadna konsultacja"
 ]
 },
 {
 id:1302,
-name:"lek. Agnieszka KrÛl ñ psychiatra",
+name:"lek. Agnieszka Kr√≥l ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1774,13 +1774,13 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Mi≥a atmosfera",
-"Duøe zaangaøowanie"
+"Mi≈Ça atmosfera",
+"Du≈ºe zaanga≈ºowanie"
 ]
 },
 {
 id:1303,
-name:"lek. Marta £πtka ñ psychiatra (Premium House)",
+name:"lek. Marta ≈ÅƒÖtka ‚Äì psychiatra (Premium House)",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1797,7 +1797,7 @@ reviews:[
 },
 {
 id:1304,
-name:"lek. Dariusz £πtka ñ psychiatra (Premium House)",
+name:"lek. Dariusz ≈ÅƒÖtka ‚Äì psychiatra (Premium House)",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1814,7 +1814,7 @@ reviews:[
 },
 {
 id:1305,
-name:"lek. Monika Kaczmarek ñ psychiatra",
+name:"lek. Monika Kaczmarek ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1825,13 +1825,13 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Dobre podejúcie do pacjenta",
+"Dobre podej≈õcie do pacjenta",
 "Spokojna rozmowa"
 ]
 },
 {
 id:1306,
-name:"lek. Tomasz Rybak ñ psychiatra",
+name:"lek. Tomasz Rybak ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1843,12 +1843,12 @@ featured:false,
 rating:4.7,
 reviews:[
 "Szybka pomoc",
-"Profesjonalne podejúcie"
+"Profesjonalne podej≈õcie"
 ]
 },
 {
 id:1307,
-name:"lek. Eløbieta Nowak ñ psychiatra",
+name:"lek. El≈ºbieta Nowak ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1859,13 +1859,13 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Mi≥a lekarka",
+"Mi≈Ça lekarka",
 "Dobra konsultacja"
 ]
 },
 {
 id:1308,
-name:"dr Andrzej Zapa≥a ñ psychiatra",
+name:"dr Andrzej Zapa≈Ça ‚Äì psychiatra",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1876,12 +1876,12 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Duøe doúwiadczenie",
+"Du≈ºe do≈õwiadczenie",
 "Bardzo trafna diagnoza"
 ]
 },
 /* =========================
- PSYCHIATRIA ó PLAC”WKI PRYWATNE
+ PSYCHIATRIA ‚Äî PLAC√ìWKI PRYWATNE
 ========================= */
 
 {
@@ -1898,7 +1898,7 @@ featured:true,
 rating:4.9,
 reviews:[
 "Wysoki standard wizyt",
-"Specjaliúci na wysokim poziomie"
+"Specjali≈õci na wysokim poziomie"
 ]
 },
 {
@@ -1914,13 +1914,13 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Nowoczesna placÛwka",
-"KrÛtki czas oczekiwania"
+"Nowoczesna plac√≥wka",
+"Kr√≥tki czas oczekiwania"
 ]
 },
 {
 id:1312,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -1931,7 +1931,7 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Polecam wizyty"
 ]
 },
@@ -1953,7 +1953,7 @@ reviews:[
 ]
 },
 /* =========================
- PSYCHIATRIA NFZ ó OPOLE
+ PSYCHIATRIA NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -1987,12 +1987,12 @@ featured:true,
 rating:4.2,
 reviews:[
 "Profesjonalna opieka",
-"Doúwiadczeni lekarze"
+"Do≈õwiadczeni lekarze"
 ]
 },
 {
 id:1402,
-name:"NZOZ Specjalistyka ñ poradnia psychiatryczna",
+name:"NZOZ Specjalistyka ‚Äì poradnia psychiatryczna",
 specialization:"Psychiatra",
 
 city:"Opole",
@@ -2021,11 +2021,11 @@ featured:true,
 rating:4.4,
 reviews:[
 "Kompleksowa pomoc",
-"Polecam poradniÍ"
+"Polecam poradniƒô"
 ]
 },
 /* =========================
- ALERGOLODZY PRYWATNI ó OPOLE
+ ALERGOLODZY PRYWATNI ‚Äî OPOLE
 ========================= */
 
 {
@@ -2043,7 +2043,7 @@ rating:4.8,
 reviews:[
 "Diagnostyka alergii",
 "Profesjonalna poradnia alergologiczna",
-"Dobre podejúcie do dzieci"
+"Dobre podej≈õcie do dzieci"
 ]
 },
 
@@ -2060,15 +2060,15 @@ privateVisit:true,
 featured:true,
 rating:4.7,
 reviews:[
-"Testy skÛrne i odczulanie",
-"MoøliwoúÊ wizyt NFZ",
-"Doúwiadczeni specjaliúci"
+"Testy sk√≥rne i odczulanie",
+"Mo≈ºliwo≈õƒá wizyt NFZ",
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:1502,
-name:"lek. Katarzyna Kapeluszna ñ alergolog",
+name:"lek. Katarzyna Kapeluszna ‚Äì alergolog",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2079,15 +2079,15 @@ privateVisit:true,
 featured:false,
 rating:4.9,
 reviews:[
-"Dok≥adna konsultacja",
-"åwietne podejúcie do pacjenta",
+"Dok≈Çadna konsultacja",
+"≈öwietne podej≈õcie do pacjenta",
 "Polecany alergolog"
 ]
 },
 
 {
 id:1503,
-name:"Zbigniew Kurzyca ñ alergolog pediatra",
+name:"Zbigniew Kurzyca ‚Äì alergolog pediatra",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2098,15 +2098,15 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Specjalista dzieciÍcy",
-"Dobre podejúcie do dzieci",
+"Specjalista dzieciƒôcy",
+"Dobre podej≈õcie do dzieci",
 "Skuteczne leczenie alergii"
 ]
 },
 
 {
 id:1504,
-name:"Maria Grandek ñ gabinet alergologiczny",
+name:"Maria Grandek ‚Äì gabinet alergologiczny",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2117,15 +2117,15 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Mi≥a atmosfera",
-"Dok≥adne badania",
+"Mi≈Ça atmosfera",
+"Dok≈Çadne badania",
 "Polecana pediatra alergolog"
 ]
 },
 
 {
 id:1505,
-name:"EndoPractica Specjalistyczne Centrum Medyczne ñ alergologia",
+name:"EndoPractica Specjalistyczne Centrum Medyczne ‚Äì alergologia",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2136,13 +2136,13 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Wielu specjalistÛw",
+"Wielu specjalist√≥w",
 "Nowoczesne centrum medyczne",
 "Szybkie terminy wizyt"
 ]
 },
 /* =========================
- ALERGOLODZY NFZ ó OPOLE
+ ALERGOLODZY NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -2158,7 +2158,7 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"Jedna z g≥Ûwnych poradni alergologicznych NFZ",
+"Jedna z g≈Ç√≥wnych poradni alergologicznych NFZ",
 "Diagnostyka alergii",
 "Konieczne skierowanie"
 ]
@@ -2166,7 +2166,7 @@ reviews:[
 
 {
 id:1511,
-name:"NZOZ Specjalistyka ñ poradnia alergologiczna",
+name:"NZOZ Specjalistyka ‚Äì poradnia alergologiczna",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2185,7 +2185,7 @@ reviews:[
 
 {
 id:1512,
-name:"MEDREM-Poliklinika ñ alergolog NFZ",
+name:"MEDREM-Poliklinika ‚Äì alergolog NFZ",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2196,15 +2196,15 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"Duøa przychodnia specjalistyczna",
+"Du≈ºa przychodnia specjalistyczna",
 "Wizyty refundowane",
-"Warto dopytaÊ o dostÍpnoúÊ"
+"Warto dopytaƒá o dostƒôpno≈õƒá"
 ]
 },
 
 {
 id:1513,
-name:"Optima Medycyna ñ konsultacje alergologiczne",
+name:"Optima Medycyna ‚Äì konsultacje alergologiczne",
 specialization:"Alergolog",
 
 city:"Opole",
@@ -2215,18 +2215,18 @@ privateVisit:false,
 featured:true,
 rating:4.2,
 reviews:[
-"PlacÛwka z kontraktem NFZ",
-"Dobra dostÍpnoúÊ specjalistÛw",
-"Profesjonalna obs≥uga"
+"Plac√≥wka z kontraktem NFZ",
+"Dobra dostƒôpno≈õƒá specjalist√≥w",
+"Profesjonalna obs≈Çuga"
 ]
 },
 /* =========================
- ANESTEZJOLODZY PRYWATNIE ó OPOLE
+ ANESTEZJOLODZY PRYWATNIE ‚Äî OPOLE
 ========================= */
 
 {
 id:1600,
-name:"lek. Jan Iøykowski ñ anestezjolog",
+name:"lek. Jan I≈ºykowski ‚Äì anestezjolog",
 specialization:"Anestezjolog",
 
 city:"Opole",
@@ -2237,9 +2237,9 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Konsultacja przed operacjπ",
-"Dok≥adna ocena ryzyka znieczulenia",
-"Doúwiadczony specjalista"
+"Konsultacja przed operacjƒÖ",
+"Dok≈Çadna ocena ryzyka znieczulenia",
+"Do≈õwiadczony specjalista"
 ]
 },
 
@@ -2256,8 +2256,8 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Kwalifikacje do zabiegÛw",
-"WspÛ≥praca z chirurgami",
+"Kwalifikacje do zabieg√≥w",
+"Wsp√≥≈Çpraca z chirurgami",
 "Profesjonalne konsultacje"
 ]
 },
@@ -2275,7 +2275,7 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Znieczulenia do zabiegÛw prywatnych",
+"Znieczulenia do zabieg√≥w prywatnych",
 "Nowoczesna klinika",
 "Sprawna organizacja"
 ]
@@ -2315,13 +2315,13 @@ rating:4.8,
 reviews:[
 "Anestezjolog przy zabiegach",
 "Wysoki standard operacyjny",
-"Profesjonalny zespÛ≥"
+"Profesjonalny zesp√≥≈Ç"
 ]
 },
 
 {
 id:1605,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Anestezjolog",
 
 city:"Opole",
@@ -2334,11 +2334,11 @@ rating:4.6,
 reviews:[
 "Kwalifikacje do operacji",
 "Dobra opieka przed zabiegiem",
-"Polecana placÛwka"
+"Polecana plac√≥wka"
 ]
 },
 /* =========================
- ANESTEZJOLOG NFZ ó OPOLE
+ ANESTEZJOLOG NFZ ‚Äî OPOLE
 ========================= */
 
 {
@@ -2355,14 +2355,14 @@ featured:true,
 rating:4.5,
 reviews:[
 "Kwalifikacje do operacji NFZ",
-"Oddzia≥ intensywnej terapii",
-"NajczÍstsze skierowania w regionie"
+"Oddzia≈Ç intensywnej terapii",
+"Najczƒôstsze skierowania w regionie"
 ]
 },
 
 {
 id:1651,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Anestezjolog",
 
 city:"Opole",
@@ -2374,8 +2374,8 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje przed zabiegami",
-"Oddzia≥ anestezjologii i OIT",
-"Leczenie bÛlu"
+"Oddzia≈Ç anestezjologii i OIT",
+"Leczenie b√≥lu"
 ]
 },
 
@@ -2394,7 +2394,7 @@ rating:4.2,
 reviews:[
 "Konsultacje szpitalne NFZ",
 "Hospitalizacja i intensywna terapia",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
@@ -2412,14 +2412,14 @@ featured:true,
 rating:4.6,
 reviews:[
 "Zabiegi onkologiczne",
-"Leczenie bÛlu nowotworowego",
+"Leczenie b√≥lu nowotworowego",
 "Wysoki poziom opieki"
 ]
 },
 
 {
 id:1654,
-name:"Centrum Leczenia BÛlu",
+name:"Centrum Leczenia B√≥lu",
 specialization:"Anestezjolog",
 
 city:"Opole",
@@ -2430,18 +2430,18 @@ privateVisit:false,
 featured:true,
 rating:4.7,
 reviews:[
-"Leczenie bÛlu przewlek≥ego",
+"Leczenie b√≥lu przewlek≈Çego",
 "Anestezjolog ambulatoryjnie NFZ",
-"Pomoc przy bÛlu krÍgos≥upa i neuropatii"
+"Pomoc przy b√≥lu krƒôgos≈Çupa i neuropatii"
 ]
 },
 /* =========================
- ANGIOLOG / CHIRURG NACZYNIOWY ó PRYWATNIE OPOLE
+ ANGIOLOG / CHIRURG NACZYNIOWY ‚Äî PRYWATNIE OPOLE
 ========================= */
 
 {
 id:1700,
-name:"Jakub Palacz ñ Chirurg Naczyniowy",
+name:"Jakub Palacz ‚Äì Chirurg Naczyniowy",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2452,15 +2452,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietna diagnostyka Doppler",
-"Bardzo dobre podejúcie do pacjenta",
-"PomÛg≥ przy øylakach"
+"≈öwietna diagnostyka Doppler",
+"Bardzo dobre podej≈õcie do pacjenta",
+"Pom√≥g≈Ç przy ≈ºylakach"
 ]
 },
 
 {
 id:1701,
-name:"Jacek Polewiak ñ Chirurg Naczyniowy (EndoPractica)",
+name:"Jacek Polewiak ‚Äì Chirurg Naczyniowy (EndoPractica)",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2472,7 +2472,7 @@ featured:true,
 rating:4.8,
 reviews:[
 "Profesjonalna konsultacja",
-"Dok≥adne badanie naczyÒ",
+"Dok≈Çadne badanie naczy≈Ñ",
 "USG na miejscu"
 ]
 },
@@ -2490,15 +2490,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Kilku specjalistÛw naczyniowych",
+"Kilku specjalist√≥w naczyniowych",
 "Nowoczesna diagnostyka",
-"Wysoki poziom us≥ug"
+"Wysoki poziom us≈Çug"
 ]
 },
 
 {
 id:1703,
-name:"Medin Klinika ñ chirurgia naczyniowa",
+name:"Medin Klinika ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2509,15 +2509,15 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Skuteczne leczenie øylakÛw",
+"Skuteczne leczenie ≈ºylak√≥w",
 "Nowoczesna klinika",
-"Dobrzy specjaliúci"
+"Dobrzy specjali≈õci"
 ]
 },
 
 {
 id:1704,
-name:"PanMedica ñ konsultacje naczyniowe",
+name:"PanMedica ‚Äì konsultacje naczyniowe",
 specialization:"Angiolog",
 
 city:"Opole",
@@ -2529,14 +2529,14 @@ featured:false,
 rating:4.6,
 reviews:[
 "Dobra diagnostyka",
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Szybkie terminy"
 ]
 },
 
 {
 id:1705,
-name:"Mediclinica Centrum Medyczne ñ angiolog",
+name:"Mediclinica Centrum Medyczne ‚Äì angiolog",
 specialization:"Angiolog",
 
 city:"Opole",
@@ -2548,14 +2548,14 @@ featured:false,
 rating:4.7,
 reviews:[
 "Profesjonalna konsultacja",
-"Nowoczesny sprzÍt",
-"Polecam placÛwkÍ"
+"Nowoczesny sprzƒôt",
+"Polecam plac√≥wkƒô"
 ]
 },
 
 {
 id:1706,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ chirurgia naczyniowa",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2566,16 +2566,16 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Pomoc przy problemach z krπøeniem",
-"Mi≥a obs≥uga",
-"Dok≥adna diagnoza"
+"Pomoc przy problemach z krƒÖ≈ºeniem",
+"Mi≈Ça obs≈Çuga",
+"Dok≈Çadna diagnoza"
 ]
 },
 
 {
 id:1707,
-name:"Bogus≥aw Lorenc ñ Prywatny Gabinet Chirurgiczny",
-specialization:"Chirurg ogÛlny",
+name:"Bogus≈Çaw Lorenc ‚Äì Prywatny Gabinet Chirurgiczny",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 000 97 05",
@@ -2585,18 +2585,18 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Doúwiadczony chirurg",
+"Do≈õwiadczony chirurg",
 "Dobra konsultacja",
-"Pomoc przy problemach øylnych"
+"Pomoc przy problemach ≈ºylnych"
 ]
 },
 /* =========================
- ANGIOLOG / CHIRURG NACZYNIOWY ó NFZ OPOLE
+ ANGIOLOG / CHIRURG NACZYNIOWY ‚Äî NFZ OPOLE
 ========================= */
 
 {
 id:1750,
-name:"Uniwersytecki Szpital Kliniczny ñ Poradnia Chirurgii Naczyniowej",
+name:"Uniwersytecki Szpital Kliniczny ‚Äì Poradnia Chirurgii Naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2607,15 +2607,15 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwna poradnia naczyniowa w regionie",
+"G≈Ç√≥wna poradnia naczyniowa w regionie",
 "Kwalifikacje do operacji",
-"Duøe doúwiadczenie lekarzy"
+"Du≈ºe do≈õwiadczenie lekarzy"
 ]
 },
 
 {
 id:1751,
-name:"Szpital WojewÛdzki w Opolu ñ chirurgia naczyniowa",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2628,13 +2628,13 @@ rating:4.3,
 reviews:[
 "Kontrole po operacjach",
 "Dobra diagnostyka",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:1752,
-name:"NZOZ Specjalistyka ñ poradnia naczyniowa",
+name:"NZOZ Specjalistyka ‚Äì poradnia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2645,15 +2645,15 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"KrÛtsze kolejki NFZ",
-"Sprawna obs≥uga",
+"Kr√≥tsze kolejki NFZ",
+"Sprawna obs≈Çuga",
 "Dobra konsultacja"
 ]
 },
 
 {
 id:1753,
-name:"MEDREM-Poliklinika ñ chirurgia naczyniowa",
+name:"MEDREM-Poliklinika ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2664,7 +2664,7 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Duøa przychodnia specjalistyczna",
+"Du≈ºa przychodnia specjalistyczna",
 "Dobra diagnostyka",
 "Kontrole naczyniowe"
 ]
@@ -2672,7 +2672,7 @@ reviews:[
 
 {
 id:1754,
-name:"SPZOZ MSWiA w Opolu ñ chirurgia naczyniowa",
+name:"SPZOZ MSWiA w Opolu ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -2685,13 +2685,13 @@ rating:4.3,
 reviews:[
 "Kwalifikacje operacyjne",
 "Profesjonalny personel",
-"Leczenie chorÛb naczyÒ"
+"Leczenie chor√≥b naczy≈Ñ"
 ]
 },
 
 {
 id:1755,
-name:"Opolskie Centrum Onkologii ñ konsultacje naczyniowe",
+name:"Opolskie Centrum Onkologii ‚Äì konsultacje naczyniowe",
 specialization:"Angiolog",
 
 city:"Opole",
@@ -2704,16 +2704,16 @@ rating:4.2,
 reviews:[
 "Opieka przy chorobach onkologicznych",
 "Specjalistyczne leczenie",
-"Doúwiadczeni lekarze"
+"Do≈õwiadczeni lekarze"
 ]
 },
 /* =========================
- AUDIOLOGIA / FONIATRIA ó PRYWATNIE OPOLE
+ AUDIOLOGIA / FONIATRIA ‚Äî PRYWATNIE OPOLE
 ========================= */
 
 {
 id:1800,
-name:"Opolskie Centrum S≥uchu i Mowy MEDINCUS",
+name:"Opolskie Centrum S≈Çuchu i Mowy MEDINCUS",
 specialization:"Audiolog / Foniatra",
 
 city:"Opole",
@@ -2724,15 +2724,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Najlepsze centrum s≥uchu w Opolu",
+"Najlepsze centrum s≈Çuchu w Opolu",
 "Profesjonalna diagnostyka",
-"åwietne podejúcie do dzieci"
+"≈öwietne podej≈õcie do dzieci"
 ]
 },
 
 {
 id:1801,
-name:"Gabinet Jolanta MuszyÒska-Chowaniec",
+name:"Gabinet Jolanta Muszy≈Ñska-Chowaniec",
 specialization:"Audiolog / Foniatra",
 
 city:"Opole",
@@ -2743,9 +2743,9 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Dok≥adne badania s≥uchu",
-"Mi≥a atmosfera",
-"Polecam konsultacje g≥osu"
+"Dok≈Çadne badania s≈Çuchu",
+"Mi≈Ça atmosfera",
+"Polecam konsultacje g≈Çosu"
 ]
 },
 
@@ -2781,9 +2781,9 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Najlepsi przy zawrotach g≥owy",
-"Dok≥adne badania b≥Ídnika",
-"Nowoczesny sprzÍt"
+"Najlepsi przy zawrotach g≈Çowy",
+"Dok≈Çadne badania b≈Çƒôdnika",
+"Nowoczesny sprzƒôt"
 ]
 },
 
@@ -2800,9 +2800,9 @@ privateVisit:true,
 featured:false,
 rating:4.8,
 reviews:[
-"åwietna specjalistka",
-"Profesjonalne podejúcie",
-"Polecam diagnostykÍ g≥osu"
+"≈öwietna specjalistka",
+"Profesjonalne podej≈õcie",
+"Polecam diagnostykƒô g≈Çosu"
 ]
 },
 
@@ -2820,8 +2820,8 @@ featured:true,
 rating:4.8,
 reviews:[
 "Kompleksowa diagnostyka",
-"Dobrzy specjaliúci",
-"Nowoczesna placÛwka"
+"Dobrzy specjali≈õci",
+"Nowoczesna plac√≥wka"
 ]
 },
 
@@ -2858,14 +2858,14 @@ featured:false,
 rating:4.6,
 reviews:[
 "Profesjonalne konsultacje",
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Dobry kontakt"
 ]
 },
 
 {
 id:1808,
-name:"Krystyna Augustyn ñ laryngolog i foniatra",
+name:"Krystyna Augustyn ‚Äì laryngolog i foniatra",
 specialization:"Audiolog / Foniatra",
 
 city:"Opole",
@@ -2876,18 +2876,18 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietna specjalistka g≥osu",
-"Duøe doúwiadczenie",
+"≈öwietna specjalistka g≈Çosu",
+"Du≈ºe do≈õwiadczenie",
 "Polecam serdecznie"
 ]
 },
 /* =========================
- AUDIOLOGIA / FONIATRIA ó NFZ OPOLE
+ AUDIOLOGIA / FONIATRIA ‚Äî NFZ OPOLE
 ========================= */
 
 {
 id:1850,
-name:"Opolskie Centrum S≥uchu i Mowy MEDINCUS (NFZ)",
+name:"Opolskie Centrum S≈Çuchu i Mowy MEDINCUS (NFZ)",
 specialization:"Audiolog / Foniatra",
 
 city:"Opole",
@@ -2898,15 +2898,15 @@ privateVisit:false,
 featured:true,
 rating:4.8,
 reviews:[
-"Najwaøniejsze centrum audiologiczne NFZ",
-"Profesjonalna diagnostyka s≥uchu",
-"Dobra opieka dla dzieci i doros≥ych"
+"Najwa≈ºniejsze centrum audiologiczne NFZ",
+"Profesjonalna diagnostyka s≈Çuchu",
+"Dobra opieka dla dzieci i doros≈Çych"
 ]
 },
 
 {
 id:1851,
-name:"Uniwersytecki Szpital Kliniczny ñ Poradnia Laryngologiczna",
+name:"Uniwersytecki Szpital Kliniczny ‚Äì Poradnia Laryngologiczna",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -2925,7 +2925,7 @@ reviews:[
 
 {
 id:1852,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Otolaryngologiczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Otolaryngologiczna",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -2936,7 +2936,7 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Konsultacje g≥osu i s≥uchu",
+"Konsultacje g≈Çosu i s≈Çuchu",
 "Dobra opieka specjalistyczna",
 "Wizyty NFZ"
 ]
@@ -2944,7 +2944,7 @@ reviews:[
 
 {
 id:1853,
-name:"PZG Oúrodek Diagnozy i Rehabilitacji Wad S≥uchu",
+name:"PZG O≈õrodek Diagnozy i Rehabilitacji Wad S≈Çuchu",
 specialization:"Audiolog / Foniatra",
 
 city:"Opole",
@@ -2955,15 +2955,15 @@ privateVisit:false,
 featured:true,
 rating:4.7,
 reviews:[
-"åwietne miejsce dla dzieci",
-"Rehabilitacja s≥uchu",
-"Bardzo dobrzy specjaliúci"
+"≈öwietne miejsce dla dzieci",
+"Rehabilitacja s≈Çuchu",
+"Bardzo dobrzy specjali≈õci"
 ]
 },
 
 {
 id:1854,
-name:"Optima Medycyna ñ poradnia laryngologiczna NFZ",
+name:"Optima Medycyna ‚Äì poradnia laryngologiczna NFZ",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -2974,18 +2974,18 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"Badania s≥uchu NFZ",
-"Dobra dostÍpnoúÊ",
-"Sprawna obs≥uga"
+"Badania s≈Çuchu NFZ",
+"Dobra dostƒôpno≈õƒá",
+"Sprawna obs≈Çuga"
 ]
 },
 /* =========================
- REHABILITACJA MEDYCZNA / FIZYKOTERAPIA ó PRYWATNIE
+ REHABILITACJA MEDYCZNA / FIZYKOTERAPIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:1900,
-name:"Centrum Leczenia BÛlu",
+name:"Centrum Leczenia B√≥lu",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -2996,9 +2996,9 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Leczenie bÛlu krÍgos≥upa",
+"Leczenie b√≥lu krƒôgos≈Çupa",
 "Profesjonalna kwalifikacja lekarska",
-"Skuteczna terapia bÛlu"
+"Skuteczna terapia b√≥lu"
 ]
 },
 
@@ -3015,9 +3015,9 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Szeroki zakres zabiegÛw",
+"Szeroki zakres zabieg√≥w",
 "Dobra fizjoterapia",
-"Nowoczesny sprzÍt"
+"Nowoczesny sprzƒôt"
 ]
 },
 
@@ -3035,7 +3035,7 @@ featured:false,
 rating:4.7,
 reviews:[
 "Rehabilitacja neurologiczna",
-"Profesjonalne podejúcie",
+"Profesjonalne podej≈õcie",
 "Dobra opieka specjalistyczna"
 ]
 },
@@ -3061,7 +3061,7 @@ reviews:[
 
 {
 id:1904,
-name:"KRIOSONIK ñ Centrum Rehabilitacji",
+name:"KRIOSONIK ‚Äì Centrum Rehabilitacji",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3111,14 +3111,14 @@ featured:false,
 rating:4.4,
 reviews:[
 "Terapia neurologiczna",
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Skuteczne zabiegi"
 ]
 },
 
 {
 id:1907,
-name:"Novum-Zdrowie ñ Centrum Rehabilitacji",
+name:"Novum-Zdrowie ‚Äì Centrum Rehabilitacji",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3129,18 +3129,18 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Elektroterapia i úwiat≥olecznictwo",
+"Elektroterapia i ≈õwiat≈Çolecznictwo",
 "Dobra opieka",
-"Pomoc przy bÛlu przewlek≥ym"
+"Pomoc przy b√≥lu przewlek≈Çym"
 ]
 },
 /* =========================
- REHABILITACJA MEDYCZNA / FIZYKOTERAPIA ó NFZ
+ REHABILITACJA MEDYCZNA / FIZYKOTERAPIA ‚Äî NFZ
 ========================= */
 
 {
 id:1950,
-name:"Uniwersytecki Szpital Kliniczny ñ Poradnia Rehabilitacyjna",
+name:"Uniwersytecki Szpital Kliniczny ‚Äì Poradnia Rehabilitacyjna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3151,15 +3151,15 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"G≥Ûwny oúrodek rehabilitacji w regionie",
-"Kwalifikacje do zabiegÛw NFZ",
+"G≈Ç√≥wny o≈õrodek rehabilitacji w regionie",
+"Kwalifikacje do zabieg√≥w NFZ",
 "Profesjonalna opieka specjalistyczna"
 ]
 },
 
 {
 id:1951,
-name:"Szpital WojewÛdzki w Opolu ñ Rehabilitacja",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3172,13 +3172,13 @@ rating:4.2,
 reviews:[
 "Rehabilitacja pourazowa NFZ",
 "Dobra opieka szpitalna",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:1952,
-name:"OPTIMA Medycyna ñ rehabilitacja",
+name:"OPTIMA Medycyna ‚Äì rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3189,15 +3189,15 @@ privateVisit:false,
 featured:false,
 rating:4.4,
 reviews:[
-"KrÛtsze kolejki NFZ",
+"Kr√≥tsze kolejki NFZ",
 "Dobra fizykoterapia",
-"Nowoczesny sprzÍt"
+"Nowoczesny sprzƒôt"
 ]
 },
 
 {
 id:1953,
-name:"MEDREM-Poliklinika ñ rehabilitacja",
+name:"MEDREM-Poliklinika ‚Äì rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3208,15 +3208,15 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Leczenie bÛlu krÍgos≥upa",
-"Pe≥na fizykoterapia NFZ",
-"Sprawna obs≥uga"
+"Leczenie b√≥lu krƒôgos≈Çupa",
+"Pe≈Çna fizykoterapia NFZ",
+"Sprawna obs≈Çuga"
 ]
 },
 
 {
 id:1954,
-name:"NZOZ Specjalistyka ñ rehabilitacja",
+name:"NZOZ Specjalistyka ‚Äì rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3227,7 +3227,7 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"Kwalifikacja do zabiegÛw",
+"Kwalifikacja do zabieg√≥w",
 "Rehabilitacja ambulatoryjna",
 "Wizyty refundowane"
 ]
@@ -3235,7 +3235,7 @@ reviews:[
 
 {
 id:1955,
-name:"KRIOSONIK ñ rehabilitacja NFZ",
+name:"KRIOSONIK ‚Äì rehabilitacja NFZ",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3254,7 +3254,7 @@ reviews:[
 
 {
 id:1956,
-name:"Pro Corde Home Medical ñ rehabilitacja NFZ",
+name:"Pro Corde Home Medical ‚Äì rehabilitacja NFZ",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -3271,12 +3271,12 @@ reviews:[
 ]
 },
 /* =========================
- PULMONOLOG ó PRYWATNIE OPOLE
+ PULMONOLOG ‚Äî PRYWATNIE OPOLE
 ========================= */
 
 {
 id:2000,
-name:"lek. Anna Bilska ñ specjalista chorÛb p≥uc",
+name:"lek. Anna Bilska ‚Äì specjalista chor√≥b p≈Çuc",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3287,15 +3287,15 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Konsultacje pulmonologiczne doros≥ych",
-"Dok≥adna diagnostyka astmy i dusznoúci",
-"Bardzo dobre podejúcie do pacjenta"
+"Konsultacje pulmonologiczne doros≈Çych",
+"Dok≈Çadna diagnostyka astmy i duszno≈õci",
+"Bardzo dobre podej≈õcie do pacjenta"
 ]
 },
 
 {
 id:2001,
-name:"dr n. med. Ewa SkrzypczyÒska ñ pulmonolog",
+name:"dr n. med. Ewa Skrzypczy≈Ñska ‚Äì pulmonolog",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3306,15 +3306,15 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Specjalistka chorÛb p≥uc",
-"Dok≥adna analiza wynikÛw",
+"Specjalistka chor√≥b p≈Çuc",
+"Dok≈Çadna analiza wynik√≥w",
 "Kameralna praktyka"
 ]
 },
 
 {
 id:2002,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3333,7 +3333,7 @@ reviews:[
 
 {
 id:2003,
-name:"MEDREM-Poliklinika ñ pulmonolog",
+name:"MEDREM-Poliklinika ‚Äì pulmonolog",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3344,15 +3344,15 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Diagnostyka chorÛb oddechowych",
-"MoøliwoúÊ badaÒ dodatkowych",
-"Profesjonalna obs≥uga"
+"Diagnostyka chor√≥b oddechowych",
+"Mo≈ºliwo≈õƒá bada≈Ñ dodatkowych",
+"Profesjonalna obs≈Çuga"
 ]
 },
 
 {
 id:2004,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3364,14 +3364,14 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje specjalistyczne",
-"Pomoc przy przewlek≥ym kaszlu",
-"Dobra dostÍpnoúÊ wizyt"
+"Pomoc przy przewlek≈Çym kaszlu",
+"Dobra dostƒôpno≈õƒá wizyt"
 ]
 },
 
 {
 id:2005,
-name:"PanMedica ñ konsultacje pulmonologiczne",
+name:"PanMedica ‚Äì konsultacje pulmonologiczne",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3382,18 +3382,18 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Diagnostyka dusznoúci",
+"Diagnostyka duszno≈õci",
 "Sprawna rejestracja",
 "Dobry kontakt z lekarzem"
 ]
 },
 /* =========================
- PULMONOLOG ó NFZ OPOLE
+ PULMONOLOG ‚Äî NFZ OPOLE
 ========================= */
 
 {
 id:2050,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ poradnia pulmonologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì poradnia pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3404,15 +3404,15 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"Najwaøniejszy oúrodek pulmonologiczny regionu",
-"Spirometria i pe≥na diagnostyka",
+"Najwa≈ºniejszy o≈õrodek pulmonologiczny regionu",
+"Spirometria i pe≈Çna diagnostyka",
 "Leczenie astmy i POChP"
 ]
 },
 
 {
 id:2051,
-name:"Oddzia≥ Kliniczny Pulmonologii",
+name:"Oddzia≈Ç Kliniczny Pulmonologii",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3423,7 +3423,7 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"Diagnostyka ciÍøkich chorÛb p≥uc",
+"Diagnostyka ciƒô≈ºkich chor√≥b p≈Çuc",
 "Hospitalizacja pulmonologiczna",
 "Specjalistyczna opieka"
 ]
@@ -3431,7 +3431,7 @@ reviews:[
 
 {
 id:2052,
-name:"Poradnia ChorÛb P≥uc i Gruülicy",
+name:"Poradnia Chor√≥b P≈Çuc i Gru≈∫licy",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3443,14 +3443,14 @@ featured:true,
 rating:4.2,
 reviews:[
 "Kontrola leczenia pulmonologicznego",
-"Diagnostyka gruülicy",
-"CzÍste skierowania od POZ"
+"Diagnostyka gru≈∫licy",
+"Czƒôste skierowania od POZ"
 ]
 },
 
 {
 id:2053,
-name:"Szpital WojewÛdzki w Opolu ñ poradnia pulmonologiczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì poradnia pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3461,15 +3461,15 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Konsultacje przed hospitalizacjπ",
+"Konsultacje przed hospitalizacjƒÖ",
 "Kontrole po leczeniu",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:2054,
-name:"NZOZ Specjalistyka ñ pulmonolog NFZ",
+name:"NZOZ Specjalistyka ‚Äì pulmonolog NFZ",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3480,7 +3480,7 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"KrÛtsze kolejki niø w szpitalach",
+"Kr√≥tsze kolejki ni≈º w szpitalach",
 "Wizyty specjalistyczne NFZ",
 "Sprawna rejestracja"
 ]
@@ -3488,7 +3488,7 @@ reviews:[
 
 {
 id:2055,
-name:"MEDREM-Poliklinika ñ poradnia pulmonologiczna",
+name:"MEDREM-Poliklinika ‚Äì poradnia pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Opole",
@@ -3499,19 +3499,19 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Diagnostyka chorÛb oddechowych",
+"Diagnostyka chor√≥b oddechowych",
 "Kontrole leczenia",
-"Dobra dostÍpnoúÊ wizyt"
+"Dobra dostƒôpno≈õƒá wizyt"
 ]
 },
 /* =========================
- CHOROBY ZAKAèNE ó PRYWATNIE (OPOLE)
+ CHOROBY ZAKA≈πNE ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2000,
-name:"Koc-Ogonowska Barbara ñ gabinet chorÛb zakaünych",
-specialization:"Choroby zakaüne",
+name:"Koc-Ogonowska Barbara ‚Äì gabinet chor√≥b zaka≈∫nych",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"609 788 579",
@@ -3521,15 +3521,15 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Konsultacja bardzo dok≥adna",
-"Specjalistka od boreliozy i infekcji przewlek≥ych"
+"Konsultacja bardzo dok≈Çadna",
+"Specjalistka od boreliozy i infekcji przewlek≈Çych"
 ]
 },
 
 {
 id:2001,
 name:"EndoPractica Specjalistyczne Centrum Medyczne",
-specialization:"Choroby zakaüne",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"536 508 501",
@@ -3547,7 +3547,7 @@ reviews:[
 {
 id:2002,
 name:"MEDREM-Poliklinika",
-specialization:"Choroby zakaüne",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 423 26 60",
@@ -3558,14 +3558,14 @@ featured:false,
 rating:4.5,
 reviews:[
 "Dobra diagnostyka infekcji",
-"Sprawna obs≥uga"
+"Sprawna obs≈Çuga"
 ]
 },
 
 {
 id:2003,
-name:"LUX MED ñ Centrum Medyczne Opole",
-specialization:"Choroby zakaüne",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"22 332 28 88",
@@ -3582,8 +3582,8 @@ reviews:[
 
 {
 id:2004,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
-specialization:"Choroby zakaüne",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 474 32 09",
@@ -3593,15 +3593,15 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Dok≥adna konsultacja",
-"Mi≥a obs≥uga"
+"Dok≈Çadna konsultacja",
+"Mi≈Ça obs≈Çuga"
 ]
 },
 
 {
 id:2005,
 name:"PanMedica",
-specialization:"Choroby zakaüne",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"690 346 214",
@@ -3616,13 +3616,13 @@ reviews:[
 ]
 },
 /* =========================
- CHOROBY ZAKAèNE ó NFZ (OPOLE)
+ CHOROBY ZAKA≈πNE ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2010,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Oddzia≥ ChorÛb Zakaünych",
-specialization:"Choroby zakaüne",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Oddzia≈Ç Chor√≥b Zaka≈∫nych",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 452 05 36",
@@ -3632,15 +3632,15 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwny oddzia≥ zakaüny w regionie",
+"G≈Ç√≥wny oddzia≈Ç zaka≈∫ny w regionie",
 "Specjalistyczna diagnostyka i leczenie"
 ]
 },
 
 {
 id:2011,
-name:"Poradnia ChorÛb Zakaünych ñ Katowicka 64",
-specialization:"Choroby zakaüne",
+name:"Poradnia Chor√≥b Zaka≈∫nych ‚Äì Katowicka 64",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 443 36 81",
@@ -3650,7 +3650,7 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Kontrole leczenia zakaøeÒ",
+"Kontrole leczenia zaka≈ºe≈Ñ",
 "Konsultacje specjalistyczne NFZ"
 ]
 },
@@ -3658,7 +3658,7 @@ reviews:[
 {
 id:2012,
 name:"Opolskie Centrum Onkologii",
-specialization:"Choroby zakaüne",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 441 60 04",
@@ -3668,7 +3668,7 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"Opieka nad pacjentami z obniøonπ odpornoúciπ",
+"Opieka nad pacjentami z obni≈ºonƒÖ odporno≈õciƒÖ",
 "Profesjonalny personel"
 ]
 },
@@ -3676,7 +3676,7 @@ reviews:[
 {
 id:2013,
 name:"SPZOZ MSWiA w Opolu",
-specialization:"Choroby zakaüne",
+specialization:"Choroby zaka≈∫ne",
 
 city:"Opole",
 phone:"77 401 11 00",
@@ -3686,18 +3686,18 @@ privateVisit:false,
 featured:false,
 rating:4.3,
 reviews:[
-"Diagnostyka zakaøeÒ ogÛlnoustrojowych",
-"Doúwiadczeni lekarze"
+"Diagnostyka zaka≈ºe≈Ñ og√≥lnoustrojowych",
+"Do≈õwiadczeni lekarze"
 ]
 },
 /* =========================
- CHIRURGIA DZIECI CA ó PRYWATNIE (OPOLE)
+ CHIRURGIA DZIECIƒòCA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2100,
-name:"Popio≥ek R. ñ Gabinet Chirurgii DzieciÍcej",
-specialization:"Chirurg dzieciÍcy",
+name:"Popio≈Çek R. ‚Äì Gabinet Chirurgii Dzieciƒôcej",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"602 496 331",
@@ -3707,15 +3707,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietne podejúcie do dzieci",
-"Bardzo doúwiadczony chirurg"
+"≈öwietne podej≈õcie do dzieci",
+"Bardzo do≈õwiadczony chirurg"
 ]
 },
 
 {
 id:2101,
-name:"Ma≥gorzata Puziewicz-Krzemienowska ñ Chirurgia dzieciÍca",
-specialization:"Chirurg dzieciÍcy",
+name:"Ma≈Çgorzata Puziewicz-Krzemienowska ‚Äì Chirurgia dzieciƒôca",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"603 189 257",
@@ -3725,15 +3725,15 @@ privateVisit:true,
 featured:false,
 rating:4.8,
 reviews:[
-"Dok≥adna konsultacja",
-"Bardzo dobre podejúcie do ma≥ych pacjentÛw"
+"Dok≈Çadna konsultacja",
+"Bardzo dobre podej≈õcie do ma≈Çych pacjent√≥w"
 ]
 },
 
 {
 id:2102,
-name:"Aleksander Wojty≥ko ñ Gabinet Chirurgii DzieciÍcej",
-specialization:"Chirurg dzieciÍcy",
+name:"Aleksander Wojty≈Çko ‚Äì Gabinet Chirurgii Dzieciƒôcej",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"601 559 161",
@@ -3750,8 +3750,8 @@ reviews:[
 
 {
 id:2103,
-name:"dr n. med. Pawe≥ Mielczarek ñ EndoPractica",
-specialization:"Chirurg dzieciÍcy",
+name:"dr n. med. Pawe≈Ç Mielczarek ‚Äì EndoPractica",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"536 508 501",
@@ -3762,14 +3762,14 @@ featured:true,
 rating:4.9,
 reviews:[
 "Specjalista wysokiej klasy",
-"MoøliwoúÊ pe≥nej diagnostyki na miejscu"
+"Mo≈ºliwo≈õƒá pe≈Çnej diagnostyki na miejscu"
 ]
 },
 
 {
 id:2104,
-name:"Medin Klinika ñ chirurgia dzieciÍca",
-specialization:"Chirurg dzieciÍcy",
+name:"Medin Klinika ‚Äì chirurgia dzieciƒôca",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 707 70 70",
@@ -3780,14 +3780,14 @@ featured:false,
 rating:4.7,
 reviews:[
 "Nowoczesna klinika",
-"Sprawna kwalifikacja do zabiegÛw"
+"Sprawna kwalifikacja do zabieg√≥w"
 ]
 },
 
 {
 id:2105,
-name:"PanMedica ñ chirurg dzieciÍcy",
-specialization:"Chirurg dzieciÍcy",
+name:"PanMedica ‚Äì chirurg dzieciƒôcy",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"690 346 214",
@@ -3804,8 +3804,8 @@ reviews:[
 
 {
 id:2106,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ chirurgia dzieciÍca",
-specialization:"Chirurg dzieciÍcy",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì chirurgia dzieciƒôca",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 474 32 09",
@@ -3816,17 +3816,17 @@ featured:false,
 rating:4.7,
 reviews:[
 "Dobra diagnostyka",
-"Polecane przez rodzicÛw"
+"Polecane przez rodzic√≥w"
 ]
 },
 /* =========================
- CHIRURGIA DZIECI CA ó NFZ (OPOLE)
+ CHIRURGIA DZIECIƒòCA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2150,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Chirurgii DzieciÍcej",
-specialization:"Chirurg dzieciÍcy",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Chirurgii Dzieciƒôcej",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 452 06 40",
@@ -3836,16 +3836,16 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwna poradnia chirurgii dzieciÍcej w regionie",
-"Duøe doúwiadczenie lekarzy",
+"G≈Ç√≥wna poradnia chirurgii dzieciƒôcej w regionie",
+"Du≈ºe do≈õwiadczenie lekarzy",
 "Kwalifikacje do operacji dzieci"
 ]
 },
 
 {
 id:2151,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Oddzia≥ Chirurgii DzieciÍcej",
-specialization:"Chirurg dzieciÍcy",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Oddzia≈Ç Chirurgii Dzieciƒôcej",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 452 06 40",
@@ -3857,14 +3857,14 @@ rating:4.5,
 reviews:[
 "Operacje dzieci na NFZ",
 "Opieka pooperacyjna",
-"Specjalistyczny oddzia≥ dzieciÍcy"
+"Specjalistyczny oddzia≈Ç dzieciƒôcy"
 ]
 },
 
 {
 id:2152,
-name:"Szpital WojewÛdzki w Opolu ñ konsultacje chirurgii dzieciÍcej",
-specialization:"Chirurg dzieciÍcy",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì konsultacje chirurgii dzieciƒôcej",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 443 31 00",
@@ -3881,8 +3881,8 @@ reviews:[
 
 {
 id:2153,
-name:"NZOZ Specjalistyka ñ chirurgia dzieciÍca",
-specialization:"Chirurg dzieciÍcy",
+name:"NZOZ Specjalistyka ‚Äì chirurgia dzieciƒôca",
+specialization:"Chirurg dzieciƒôcy",
 
 city:"Opole",
 phone:"77 454 54 27",
@@ -3892,12 +3892,12 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"KrÛtsze kolejki niø w szpitalach",
+"Kr√≥tsze kolejki ni≈º w szpitalach",
 "Poradnia specjalistyczna NFZ"
 ]
 },
 /* =========================
- CHIRURGIA KLATKI PIERSIOWEJ ó PRYWATNIE (OPOLE)
+ CHIRURGIA KLATKI PIERSIOWEJ ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
@@ -3914,7 +3914,7 @@ featured:true,
 rating:4.7,
 reviews:[
 "Konsultacje przedoperacyjne",
-"Kwalifikacje do zabiegÛw klatki piersiowej",
+"Kwalifikacje do zabieg√≥w klatki piersiowej",
 "Profesjonalna diagnostyka"
 ]
 },
@@ -3958,7 +3958,7 @@ reviews:[
 
 {
 id:2203,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Chirurg klatki piersiowej",
 
 city:"Opole",
@@ -3969,7 +3969,7 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Diagnostyka zmian p≥ucnych",
+"Diagnostyka zmian p≈Çucnych",
 "Konsultacje onkologiczne"
 ]
 },
@@ -3988,12 +3988,12 @@ featured:true,
 rating:4.9,
 reviews:[
 "Konsultacje torakochirurgiczne",
-"Diagnostyka guzÛw p≥uca",
-"Doúwiadczeni specjaliúci"
+"Diagnostyka guz√≥w p≈Çuca",
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 /* =========================
- CHIRURGIA KLATKI PIERSIOWEJ ó NFZ (OPOLE)
+ CHIRURGIA KLATKI PIERSIOWEJ ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -4009,8 +4009,8 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"G≥Ûwny oúrodek torakochirurgiczny regionu",
-"Kwalifikacje do operacji p≥uc",
+"G≈Ç√≥wny o≈õrodek torakochirurgiczny regionu",
+"Kwalifikacje do operacji p≈Çuc",
 "Diagnostyka zmian w TK klatki piersiowej"
 ]
 },
@@ -4028,7 +4028,7 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"Diagnostyka raka p≥uca",
+"Diagnostyka raka p≈Çuca",
 "Kwalifikacje do leczenia onkologicznego",
 "Specjalistyczna opieka NFZ"
 ]
@@ -4036,7 +4036,7 @@ reviews:[
 
 {
 id:2252,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Chirurg klatki piersiowej",
 
 city:"Opole",
@@ -4048,13 +4048,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Konsultacje chirurgiczne NFZ",
-"WstÍpna kwalifikacja do leczenia operacyjnego"
+"Wstƒôpna kwalifikacja do leczenia operacyjnego"
 ]
 },
 
 {
 id:2253,
-name:"ZespÛ≥ Poradni Specjalistycznych ñ USK Opole",
+name:"Zesp√≥≈Ç Poradni Specjalistycznych ‚Äì USK Opole",
 specialization:"Chirurg klatki piersiowej",
 
 city:"Opole",
@@ -4071,12 +4071,12 @@ reviews:[
 ]
 },
 /* =========================
- CHIRURGIA NACZYNIOWA ó PRYWATNIE (OPOLE)
+ CHIRURGIA NACZYNIOWA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2300,
-name:"Jakub Palacz ñ chirurg naczyniowy",
+name:"Jakub Palacz ‚Äì chirurg naczyniowy",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4087,15 +4087,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietna diagnostyka Doppler",
-"Profesjonalne podejúcie",
-"Polecany przy øylakach"
+"≈öwietna diagnostyka Doppler",
+"Profesjonalne podej≈õcie",
+"Polecany przy ≈ºylakach"
 ]
 },
 
 {
 id:2301,
-name:"Jacek Polewiak ñ chirurg naczyniowy (EndoPractica)",
+name:"Jacek Polewiak ‚Äì chirurg naczyniowy (EndoPractica)",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4106,15 +4106,15 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Dok≥adna konsultacja",
+"Dok≈Çadna konsultacja",
 "Kwalifikacje do operacji",
-"Duøe doúwiadczenie"
+"Du≈ºe do≈õwiadczenie"
 ]
 },
 
 {
 id:2302,
-name:"prof. Grzegorz Oszkinis ñ chirurg naczyniowy",
+name:"prof. Grzegorz Oszkinis ‚Äì chirurg naczyniowy",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4133,7 +4133,7 @@ reviews:[
 
 {
 id:2303,
-name:"dr n. med. Jacek Hobot ñ chirurg naczyniowy",
+name:"dr n. med. Jacek Hobot ‚Äì chirurg naczyniowy",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4145,13 +4145,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Rzetelna diagnoza",
-"Dobre podejúcie do pacjenta"
+"Dobre podej≈õcie do pacjenta"
 ]
 },
 
 {
 id:2304,
-name:"Edward Chorπøka ñ Specjalistyczny Gabinet Chirurgiczny",
+name:"Edward ChorƒÖ≈ºka ‚Äì Specjalistyczny Gabinet Chirurgiczny",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4162,14 +4162,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Specjalista od øylakÛw",
-"Skuteczne leczenie niewydolnoúci øylnej"
+"Specjalista od ≈ºylak√≥w",
+"Skuteczne leczenie niewydolno≈õci ≈ºylnej"
 ]
 },
 
 {
 id:2305,
-name:"Medin Klinika ñ chirurgia naczyniowa",
+name:"Medin Klinika ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4187,7 +4187,7 @@ reviews:[
 
 {
 id:2306,
-name:"PanMedica ñ konsultacje naczyniowe",
+name:"PanMedica ‚Äì konsultacje naczyniowe",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4205,7 +4205,7 @@ reviews:[
 
 {
 id:2307,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4216,14 +4216,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Diagnostyka øylna i tÍtnicza",
-"Profesjonalna obs≥uga"
+"Diagnostyka ≈ºylna i tƒôtnicza",
+"Profesjonalna obs≈Çuga"
 ]
 },
 
 {
 id:2308,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ chirurgia naczyniowa",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4235,16 +4235,16 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje naczyniowe",
-"Pomoc przy obrzÍkach nÛg"
+"Pomoc przy obrzƒôkach n√≥g"
 ]
 },
 /* =========================
- CHIRURGIA NACZYNIOWA ó NFZ (OPOLE)
+ CHIRURGIA NACZYNIOWA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2350,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Chirurgii Naczyniowej",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Chirurgii Naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4255,7 +4255,7 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwny oúrodek naczyniowy regionu",
+"G≈Ç√≥wny o≈õrodek naczyniowy regionu",
 "Kwalifikacje do operacji",
 "Kompleksowa diagnostyka"
 ]
@@ -4263,7 +4263,7 @@ reviews:[
 
 {
 id:2351,
-name:"Szpital WojewÛdzki w Opolu ñ chirurgia naczyniowa",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4275,14 +4275,14 @@ featured:true,
 rating:4.2,
 reviews:[
 "Kontrole po operacjach",
-"Doúwiadczeni specjaliúci",
+"Do≈õwiadczeni specjali≈õci",
 "Dobra opieka szpitalna"
 ]
 },
 
 {
 id:2352,
-name:"SPZOZ MSWiA w Opolu ñ chirurgia naczyniowa",
+name:"SPZOZ MSWiA w Opolu ‚Äì chirurgia naczyniowa",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4294,13 +4294,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Leczenie szpitalne NFZ",
-"Diagnostyka chorÛb naczyÒ"
+"Diagnostyka chor√≥b naczy≈Ñ"
 ]
 },
 
 {
 id:2353,
-name:"NZOZ Specjalistyka ñ poradnia chirurgii naczyniowej",
+name:"NZOZ Specjalistyka ‚Äì poradnia chirurgii naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4311,14 +4311,14 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"KrÛtsze kolejki niø w szpitalach",
+"Kr√≥tsze kolejki ni≈º w szpitalach",
 "Sprawna konsultacja"
 ]
 },
 
 {
 id:2354,
-name:"MEDREM-Poliklinika ñ konsultacje naczyniowe NFZ",
+name:"MEDREM-Poliklinika ‚Äì konsultacje naczyniowe NFZ",
 specialization:"Chirurg naczyniowy",
 
 city:"Opole",
@@ -4334,13 +4334,13 @@ reviews:[
 ]
 },
 /* =========================
- CHIRURGIA OG”LNA ó PRYWATNIE (OPOLE)
+ CHIRURGIA OG√ìLNA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2400,
-name:"Bogus≥aw Lorenc ñ Prywatny Gabinet Chirurgiczny",
-specialization:"Chirurg ogÛlny",
+name:"Bogus≈Çaw Lorenc ‚Äì Prywatny Gabinet Chirurgiczny",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"606 221 448",
@@ -4358,8 +4358,8 @@ reviews:[
 
 {
 id:2401,
-name:"dr n. med. Grzegorz Krasowski ñ chirurg",
-specialization:"Chirurg ogÛlny",
+name:"dr n. med. Grzegorz Krasowski ‚Äì chirurg",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"605 224 164",
@@ -4369,15 +4369,15 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Dok≥adna diagnostyka",
-"Profesjonalne podejúcie"
+"Dok≈Çadna diagnostyka",
+"Profesjonalne podej≈õcie"
 ]
 },
 
 {
 id:2402,
-name:"lek. Maciej Idzik ñ chirurg ogÛlny i onkologiczny",
-specialization:"Chirurg ogÛlny",
+name:"lek. Maciej Idzik ‚Äì chirurg og√≥lny i onkologiczny",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 453 81 66",
@@ -4387,15 +4387,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Duøe doúwiadczenie",
-"åwietna konsultacja chirurgiczna"
+"Du≈ºe do≈õwiadczenie",
+"≈öwietna konsultacja chirurgiczna"
 ]
 },
 
 {
 id:2403,
-name:"Robert Wajda ñ chirurg",
-specialization:"Chirurg ogÛlny",
+name:"Robert Wajda ‚Äì chirurg",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"608 428 888",
@@ -4414,8 +4414,8 @@ reviews:[
 
 {
 id:2404,
-name:"Medin Klinika ñ chirurgia ogÛlna",
-specialization:"Chirurg ogÛlny",
+name:"Medin Klinika ‚Äì chirurgia og√≥lna",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 707 70 70",
@@ -4433,7 +4433,7 @@ reviews:[
 {
 id:2405,
 name:"EndoPractica Specjalistyczne Centrum Medyczne",
-specialization:"Chirurg ogÛlny",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"536 508 501",
@@ -4443,15 +4443,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Wielu specjalistÛw",
+"Wielu specjalist√≥w",
 "Profesjonalna diagnostyka"
 ]
 },
 
 {
 id:2406,
-name:"PanMedica ñ konsultacje chirurgiczne",
-specialization:"Chirurg ogÛlny",
+name:"PanMedica ‚Äì konsultacje chirurgiczne",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"690 346 214",
@@ -4461,15 +4461,15 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"KrÛtki czas oczekiwania",
+"Kr√≥tki czas oczekiwania",
 "Sprawna konsultacja"
 ]
 },
 
 {
 id:2407,
-name:"MEDREM-Poliklinika ñ chirurg prywatnie",
-specialization:"Chirurg ogÛlny",
+name:"MEDREM-Poliklinika ‚Äì chirurg prywatnie",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 423 26 60",
@@ -4480,14 +4480,14 @@ featured:false,
 rating:4.5,
 reviews:[
 "Dobra diagnostyka",
-"MoøliwoúÊ badaÒ na miejscu"
+"Mo≈ºliwo≈õƒá bada≈Ñ na miejscu"
 ]
 },
 
 {
 id:2408,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ chirurgia",
-specialization:"Chirurg ogÛlny",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì chirurgia",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 474 32 09",
@@ -4497,15 +4497,15 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Dobry chirurg"
 ]
 },
 
 {
 id:2409,
-name:"MEDICLINICA ñ Centrum Medyczne",
-specialization:"Chirurg ogÛlny",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 707 07 33",
@@ -4520,13 +4520,13 @@ reviews:[
 ]
 },
 /* =========================
- CHIRURGIA OG”LNA ó NFZ (OPOLE)
+ CHIRURGIA OG√ìLNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2450,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 452 01 50",
@@ -4536,16 +4536,16 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwna poradnia chirurgiczna regionu",
+"G≈Ç√≥wna poradnia chirurgiczna regionu",
 "Kwalifikacje do operacji",
-"Doúwiadczeni specjaliúci"
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:2451,
-name:"Szpital WojewÛdzki w Opolu ñ Chirurgia OgÛlna",
-specialization:"Chirurg ogÛlny",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Chirurgia Og√≥lna",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 443 31 00",
@@ -4562,8 +4562,8 @@ reviews:[
 
 {
 id:2452,
-name:"SPZOZ MSWiA w Opolu ñ Chirurgia",
-specialization:"Chirurg ogÛlny",
+name:"SPZOZ MSWiA w Opolu ‚Äì Chirurgia",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 401 11 00",
@@ -4580,8 +4580,8 @@ reviews:[
 
 {
 id:2453,
-name:"MEDREM-Poliklinika ñ poradnia chirurgiczna",
-specialization:"Chirurg ogÛlny",
+name:"MEDREM-Poliklinika ‚Äì poradnia chirurgiczna",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 423 26 60",
@@ -4591,15 +4591,15 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"CzÍsto krÛtsze kolejki",
+"Czƒôsto kr√≥tsze kolejki",
 "Dobra konsultacja chirurgiczna"
 ]
 },
 
 {
 id:2454,
-name:"NZOZ Specjalistyka ñ chirurg ogÛlny",
-specialization:"Chirurg ogÛlny",
+name:"NZOZ Specjalistyka ‚Äì chirurg og√≥lny",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 454 54 27",
@@ -4610,14 +4610,14 @@ featured:false,
 rating:4.0,
 reviews:[
 "Drobne zabiegi chirurgiczne",
-"Sprawna obs≥uga"
+"Sprawna obs≈Çuga"
 ]
 },
 
 {
 id:2455,
-name:"OPTIMA Medycyna ñ poradnia chirurgiczna",
-specialization:"Chirurg ogÛlny",
+name:"OPTIMA Medycyna ‚Äì poradnia chirurgiczna",
+specialization:"Chirurg og√≥lny",
 
 city:"Opole",
 phone:"77 887 21 21",
@@ -4628,16 +4628,16 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje planowe NFZ",
-"Leczenie zmian skÛrnych i przepuklin"
+"Leczenie zmian sk√≥rnych i przepuklin"
 ]
 },
 /* =========================
- CHIRURGIA ONKOLOGICZNA ó PRYWATNIE (OPOLE)
+ CHIRURGIA ONKOLOGICZNA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2500,
-name:"lek. med. Maciej Idzik ñ chirurg onkologiczny",
+name:"lek. med. Maciej Idzik ‚Äì chirurg onkologiczny",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4649,14 +4649,14 @@ featured:true,
 rating:4.9,
 reviews:[
 "Konkretna diagnoza",
-"Profesjonalne podejúcie",
-"CzÍsto polecany chirurg onkologiczny"
+"Profesjonalne podej≈õcie",
+"Czƒôsto polecany chirurg onkologiczny"
 ]
 },
 
 {
 id:2501,
-name:"ZiÍbiÒska Jolanta ñ chirurg onkologiczny",
+name:"Ziƒôbi≈Ñska Jolanta ‚Äì chirurg onkologiczny",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4667,14 +4667,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Dok≥adne konsultacje",
+"Dok≈Çadne konsultacje",
 "Dobra opieka po leczeniu"
 ]
 },
 
 {
 id:2502,
-name:"dr n. med. Kamila Czerw ñ Gabinet onkologiczny",
+name:"dr n. med. Kamila Czerw ‚Äì Gabinet onkologiczny",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4686,13 +4686,13 @@ featured:true,
 rating:4.8,
 reviews:[
 "Szybka diagnostyka",
-"Duøe doúwiadczenie onkologiczne"
+"Du≈ºe do≈õwiadczenie onkologiczne"
 ]
 },
 
 {
 id:2503,
-name:"BWS-MEDIC ñ Chirurgia OgÛlna i Onkologiczna",
+name:"BWS-MEDIC ‚Äì Chirurgia Og√≥lna i Onkologiczna",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4704,7 +4704,7 @@ featured:false,
 rating:4.6,
 reviews:[
 "Drobne zabiegi chirurgiczne",
-"Sprawna obs≥uga"
+"Sprawna obs≈Çuga"
 ]
 },
 
@@ -4722,13 +4722,13 @@ featured:true,
 rating:4.9,
 reviews:[
 "Szeroka diagnostyka",
-"Specjaliúci onkologiczni"
+"Specjali≈õci onkologiczni"
 ]
 },
 
 {
 id:2505,
-name:"Medin Klinika ñ chirurgia onkologiczna",
+name:"Medin Klinika ‚Äì chirurgia onkologiczna",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4746,7 +4746,7 @@ reviews:[
 
 {
 id:2506,
-name:"PanMedica ñ konsultacje onkologiczne",
+name:"PanMedica ‚Äì konsultacje onkologiczne",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4764,7 +4764,7 @@ reviews:[
 
 {
 id:2507,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ chirurgia onkologiczna",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì chirurgia onkologiczna",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4780,7 +4780,7 @@ reviews:[
 ]
 },
 /* =========================
- CHIRURGIA ONKOLOGICZNA ó NFZ (OPOLE)
+ CHIRURGIA ONKOLOGICZNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -4796,15 +4796,15 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"G≥Ûwny oúrodek onkologiczny regionu",
-"Kompleksowe leczenie nowotworÛw",
-"Doúwiadczeni specjaliúci"
+"G≈Ç√≥wny o≈õrodek onkologiczny regionu",
+"Kompleksowe leczenie nowotwor√≥w",
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:2601,
-name:"Poradnia Chirurgii Onkologicznej ñ Opolskie Centrum Onkologii",
+name:"Poradnia Chirurgii Onkologicznej ‚Äì Opolskie Centrum Onkologii",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4823,7 +4823,7 @@ reviews:[
 
 {
 id:2602,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ konsultacje chirurgiczne",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì konsultacje chirurgiczne",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4834,14 +4834,14 @@ privateVisit:false,
 featured:false,
 rating:4.3,
 reviews:[
-"WstÍpna diagnostyka zmian",
+"Wstƒôpna diagnostyka zmian",
 "Kierowanie do leczenia onkologicznego"
 ]
 },
 
 {
 id:2603,
-name:"Szpital WojewÛdzki w Opolu ñ konsultacje chirurgiczne NFZ",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì konsultacje chirurgiczne NFZ",
 specialization:"Chirurg onkologiczny",
 
 city:"Opole",
@@ -4852,17 +4852,17 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Kwalifikacje przy podejrzeniu nowotworÛw",
-"Dalsze kierowanie do specjalistÛw"
+"Kwalifikacje przy podejrzeniu nowotwor√≥w",
+"Dalsze kierowanie do specjalist√≥w"
 ]
 },
 /* =========================
- KARDIOLOGIA ó PRYWATNIE (OPOLE)
+ KARDIOLOGIA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2700,
-name:"dr n. med. Micha≥ Ploch ñ Prywatny Gabinet Kardiologiczny",
+name:"dr n. med. Micha≈Ç Ploch ‚Äì Prywatny Gabinet Kardiologiczny",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4873,15 +4873,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Wysoka jakoúÊ diagnostyki",
-"Bardzo dok≥adny lekarz",
-"åwietne podejúcie do pacjenta"
+"Wysoka jako≈õƒá diagnostyki",
+"Bardzo dok≈Çadny lekarz",
+"≈öwietne podej≈õcie do pacjenta"
 ]
 },
 
 {
 id:2701,
-name:"lek. Tomasz Pawlik ñ Klinika MEDEST",
+name:"lek. Tomasz Pawlik ‚Äì Klinika MEDEST",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4899,7 +4899,7 @@ reviews:[
 
 {
 id:2702,
-name:"KardioMat ñ Bogus≥aw Mateja",
+name:"KardioMat ‚Äì Bogus≈Çaw Mateja",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4911,7 +4911,7 @@ featured:true,
 rating:4.8,
 reviews:[
 "Specjalistyczna poradnia",
-"Dok≥adna analiza wynikÛw"
+"Dok≈Çadna analiza wynik√≥w"
 ]
 },
 
@@ -4935,7 +4935,7 @@ reviews:[
 
 {
 id:2704,
-name:"lek. Janusz Wysota ñ Gabinet Kardiologiczny",
+name:"lek. Janusz Wysota ‚Äì Gabinet Kardiologiczny",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4946,14 +4946,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Doúwiadczony kardiolog",
-"Dok≥adna konsultacja"
+"Do≈õwiadczony kardiolog",
+"Dok≈Çadna konsultacja"
 ]
 },
 
 {
 id:2705,
-name:"Gabinet Kardiologiczny Marek JÍdryszczak",
+name:"Gabinet Kardiologiczny Marek Jƒôdryszczak",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4965,13 +4965,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Dobra diagnostyka",
-"Polecam wizytÍ"
+"Polecam wizytƒô"
 ]
 },
 
 {
 id:2706,
-name:"Agnieszka Wojdy≥a-HordyÒska ñ Kardiolog",
+name:"Agnieszka Wojdy≈Ça-Hordy≈Ñska ‚Äì Kardiolog",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -4982,8 +4982,8 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Mi≥a atmosfera",
-"Profesjonalne podejúcie"
+"Mi≈Ça atmosfera",
+"Profesjonalne podej≈õcie"
 ]
 },
 
@@ -4991,7 +4991,7 @@ reviews:[
 
 {
 id:2710,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5027,7 +5027,7 @@ reviews:[
 
 {
 id:2712,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5038,14 +5038,14 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Sprawna obs≥uga",
+"Sprawna obs≈Çuga",
 "Polecam lekarzy"
 ]
 },
 
 {
 id:2713,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5074,17 +5074,17 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Dobrzy specjaliúci",
+"Dobrzy specjali≈õci",
 "Szybkie konsultacje"
 ]
 },
 /* =========================
- KARDIOLOGIA ó NFZ (OPOLE)
+ KARDIOLOGIA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2750,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Kardiologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5095,7 +5095,7 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwna poradnia kardiologiczna w regionie",
+"G≈Ç√≥wna poradnia kardiologiczna w regionie",
 "Kompleksowa diagnostyka serca",
 "Leczenie specjalistyczne NFZ"
 ]
@@ -5103,7 +5103,7 @@ reviews:[
 
 {
 id:2751,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Kardiologiczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5115,14 +5115,14 @@ featured:true,
 rating:4.3,
 reviews:[
 "Kontrole po zawale",
-"Doúwiadczeni lekarze",
+"Do≈õwiadczeni lekarze",
 "Dobra opieka kardiologiczna"
 ]
 },
 
 {
 id:2752,
-name:"NZOZ Specjalistyka ñ Poradnia Kardiologiczna",
+name:"NZOZ Specjalistyka ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5134,14 +5134,14 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje NFZ",
-"CzÍsto krÛtsze kolejki",
-"Profesjonalna obs≥uga"
+"Czƒôsto kr√≥tsze kolejki",
+"Profesjonalna obs≈Çuga"
 ]
 },
 
 {
 id:2753,
-name:"Optima Medycyna ñ Poradnia Kardiologiczna",
+name:"Optima Medycyna ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5152,15 +5152,15 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Diagnostyka nadciúnienia",
+"Diagnostyka nadci≈õnienia",
 "EKG i kontrole leczenia",
-"Dobra dostÍpnoúÊ wizyt"
+"Dobra dostƒôpno≈õƒá wizyt"
 ]
 },
 
 {
 id:2754,
-name:"NZOZ Poradnia Kardiologiczna ñ Koúnego 8",
+name:"NZOZ Poradnia Kardiologiczna ‚Äì Ko≈õnego 8",
 specialization:"Kardiolog",
 
 city:"Opole",
@@ -5171,18 +5171,18 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"Kontrola chorÛb serca",
+"Kontrola chor√≥b serca",
 "Wizyty refundowane",
-"Sta≥a opieka kardiologiczna"
+"Sta≈Ça opieka kardiologiczna"
 ]
 },
 /* =========================
- DIABETOLOGIA ó PRYWATNIE (OPOLE)
+ DIABETOLOGIA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:2800,
-name:"Diabetologia & USG Opole ñ Maciej Horodecki",
+name:"Diabetologia & USG Opole ‚Äì Maciej Horodecki",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5193,15 +5193,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietne prowadzenie cukrzycy",
-"Bardzo dok≥adna diagnostyka",
-"Specjalistyczne podejúcie"
+"≈öwietne prowadzenie cukrzycy",
+"Bardzo dok≈Çadna diagnostyka",
+"Specjalistyczne podej≈õcie"
 ]
 },
 
 {
 id:2801,
-name:"lek. Ryszard Morisson ñ Diabetolog",
+name:"lek. Ryszard Morisson ‚Äì Diabetolog",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5214,13 +5214,13 @@ rating:4.7,
 reviews:[
 "Dobry kontakt z pacjentem",
 "Skuteczne leczenie cukrzycy",
-"Duøe doúwiadczenie"
+"Du≈ºe do≈õwiadczenie"
 ]
 },
 
 {
 id:2802,
-name:"dr n. med. Anna Rostropowicz-Honka ñ Diabetolog",
+name:"dr n. med. Anna Rostropowicz-Honka ‚Äì Diabetolog",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5231,15 +5231,15 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Indywidualne podejúcie",
-"Pomoc przy insulinoopornoúci",
+"Indywidualne podej≈õcie",
+"Pomoc przy insulinooporno≈õci",
 "Bardzo profesjonalna konsultacja"
 ]
 },
 
 {
 id:2803,
-name:"EndoPractica Specjalistyczne Centrum Medyczne ñ Diabetologia",
+name:"EndoPractica Specjalistyczne Centrum Medyczne ‚Äì Diabetologia",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5250,7 +5250,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Kilku specjalistÛw w jednym miejscu",
+"Kilku specjalist√≥w w jednym miejscu",
 "Nowoczesna diagnostyka",
 "Dobra opieka diabetologiczna"
 ]
@@ -5258,7 +5258,7 @@ reviews:[
 
 {
 id:2804,
-name:"MEDICLINICA ñ Centrum Medyczne (Diabetolog)",
+name:"MEDICLINICA ‚Äì Centrum Medyczne (Diabetolog)",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5277,7 +5277,7 @@ reviews:[
 
 {
 id:2805,
-name:"MEDREM-Poliklinika ñ Diabetolog",
+name:"MEDREM-Poliklinika ‚Äì Diabetolog",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5289,14 +5289,14 @@ featured:false,
 rating:4.5,
 reviews:[
 "Kompleksowa diagnostyka",
-"Dobra opieka przewlek≥a",
-"Profesjonalna obs≥uga"
+"Dobra opieka przewlek≈Ça",
+"Profesjonalna obs≈Çuga"
 ]
 },
 
 {
 id:2806,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ Diabetolog",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì Diabetolog",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5307,18 +5307,18 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Mi≥a obs≥uga",
+"Mi≈Ça obs≈Çuga",
 "Dobra kontrola cukrzycy",
 "Polecane centrum medyczne"
 ]
 },
 /* =========================
- DIABETOLOGIA ó NFZ (OPOLE)
+ DIABETOLOGIA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:2850,
-name:"Uniwersytecki Szpital Kliniczny ñ Poradnia Diabetologiczna",
+name:"Uniwersytecki Szpital Kliniczny ‚Äì Poradnia Diabetologiczna",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5329,15 +5329,15 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwny oúrodek diabetologiczny",
-"Duøe doúwiadczenie lekarzy",
+"G≈Ç√≥wny o≈õrodek diabetologiczny",
+"Du≈ºe do≈õwiadczenie lekarzy",
 "Kompleksowa diagnostyka"
 ]
 },
 
 {
 id:2851,
-name:"SPZOZ MSWiA ñ Oddzia≥ ChorÛb WewnÍtrznych (Diabetologia)",
+name:"SPZOZ MSWiA ‚Äì Oddzia≈Ç Chor√≥b Wewnƒôtrznych (Diabetologia)",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5349,14 +5349,14 @@ featured:false,
 rating:4.3,
 reviews:[
 "Dobra opieka specjalistyczna",
-"Leczenie powik≥aÒ cukrzycy",
+"Leczenie powik≈Ça≈Ñ cukrzycy",
 "Profesjonalny personel"
 ]
 },
 
 {
 id:2852,
-name:"ZespÛ≥ Poradni Specjalistycznych ñ USK Opole",
+name:"Zesp√≥≈Ç Poradni Specjalistycznych ‚Äì USK Opole",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5368,14 +5368,14 @@ featured:false,
 rating:4.2,
 reviews:[
 "Regularne kontrole leczenia",
-"Dok≥adna diagnostyka",
+"Dok≈Çadna diagnostyka",
 "Pomocni lekarze"
 ]
 },
 
 {
 id:2853,
-name:"NZOZ Specjalistyka ñ Poradnia Diabetologiczna",
+name:"NZOZ Specjalistyka ‚Äì Poradnia Diabetologiczna",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5386,15 +5386,15 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"KrÛtsze kolejki",
-"Sprawna obs≥uga",
+"Kr√≥tsze kolejki",
+"Sprawna obs≈Çuga",
 "Dobra opieka NFZ"
 ]
 },
 
 {
 id:2854,
-name:"Szpital WojewÛdzki ñ Konsultacje diabetologiczne",
+name:"Szpital Wojew√≥dzki ‚Äì Konsultacje diabetologiczne",
 specialization:"Diabetolog",
 
 city:"Opole",
@@ -5407,16 +5407,16 @@ rating:4.3,
 reviews:[
 "Dobra opieka internistyczna",
 "Skuteczne leczenie",
-"Doúwiadczeni lekarze"
+"Do≈õwiadczeni lekarze"
 ]
 },
 /* =========================
- ENDOKRYNOLOGIA ó PRYWATNIE
+ ENDOKRYNOLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:2900,
-name:"£omna-Bogdanov Eløbieta ñ Gabinet Endokrynologiczny",
+name:"≈Åomna-Bogdanov El≈ºbieta ‚Äì Gabinet Endokrynologiczny",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5427,14 +5427,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Bardzo dok≥adna diagnostyka",
-"åwietne podejúcie do pacjenta"
+"Bardzo dok≈Çadna diagnostyka",
+"≈öwietne podej≈õcie do pacjenta"
 ]
 },
 
 {
 id:2901,
-name:"Piotr Pa≥uchowski ñ Endokrynolog",
+name:"Piotr Pa≈Çuchowski ‚Äì Endokrynolog",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5446,13 +5446,13 @@ featured:false,
 rating:4.8,
 reviews:[
 "Dobry specjalista tarczycy",
-"Dok≥adne wyjaúnienia leczenia"
+"Dok≈Çadne wyja≈õnienia leczenia"
 ]
 },
 
 {
 id:2902,
-name:"Teresa SiciÒska-Werner ñ Endokrynolog",
+name:"Teresa Sici≈Ñska-Werner ‚Äì Endokrynolog",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5463,14 +5463,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Mi≥a atmosfera",
+"Mi≈Ça atmosfera",
 "Skuteczne leczenie"
 ]
 },
 
 {
 id:2903,
-name:"Joanna Tabora-Ciszewska ñ MedArt",
+name:"Joanna Tabora-Ciszewska ‚Äì MedArt",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5488,7 +5488,7 @@ reviews:[
 
 {
 id:2904,
-name:"Janusz Stachera ñ Endokrynolog",
+name:"Janusz Stachera ‚Äì Endokrynolog",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5560,7 +5560,7 @@ reviews:[
 
 {
 id:2908,
-name:"LUX MED ñ Centrum Medyczne (ChabrÛw)",
+name:"LUX MED ‚Äì Centrum Medyczne (Chabr√≥w)",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5571,14 +5571,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Profesjonalna obs≥uga",
-"Nowoczesna placÛwka"
+"Profesjonalna obs≈Çuga",
+"Nowoczesna plac√≥wka"
 ]
 },
 
 {
 id:2909,
-name:"LUX MED ñ Centrum Medyczne (Fieldorfa)",
+name:"LUX MED ‚Äì Centrum Medyczne (Fieldorfa)",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5614,7 +5614,7 @@ reviews:[
 
 {
 id:2911,
-name:"ESMED ñ Endokrynologia dzieciÍca",
+name:"ESMED ‚Äì Endokrynologia dzieciƒôca",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5625,17 +5625,17 @@ privateVisit:true,
 featured:true,
 rating:5.0,
 reviews:[
-"åwietne podejúcie do dzieci",
-"Bardzo dok≥adna diagnostyka"
+"≈öwietne podej≈õcie do dzieci",
+"Bardzo dok≈Çadna diagnostyka"
 ]
 },
 /* =========================
- ENDOKRYNOLOGIA ó NFZ
+ ENDOKRYNOLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:2950,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Endokrynologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Endokrynologiczna",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5646,14 +5646,14 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"G≥Ûwny oúrodek endokrynologiczny regionu",
-"Duøa diagnostyka specjalistyczna"
+"G≈Ç√≥wny o≈õrodek endokrynologiczny regionu",
+"Du≈ºa diagnostyka specjalistyczna"
 ]
 },
 
 {
 id:2951,
-name:"Poradnia Endokrynologiczna ñ Katowicka 64",
+name:"Poradnia Endokrynologiczna ‚Äì Katowicka 64",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5682,14 +5682,14 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"KrÛtsze kolejki niø w szpitalu",
+"Kr√≥tsze kolejki ni≈º w szpitalu",
 "Sprawna rejestracja"
 ]
 },
 
 {
 id:2953,
-name:"ESMED ñ Poradnia Endokrynologiczna dla Dzieci",
+name:"ESMED ‚Äì Poradnia Endokrynologiczna dla Dzieci",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5700,14 +5700,14 @@ privateVisit:false,
 featured:true,
 rating:4.8,
 reviews:[
-"Bardzo dobre podejúcie do dzieci",
+"Bardzo dobre podej≈õcie do dzieci",
 "Specjalistyczna diagnostyka"
 ]
 },
 
 {
 id:2954,
-name:"Opolskie Centrum Onkologii ñ Endokrynologia Onkologiczna",
+name:"Opolskie Centrum Onkologii ‚Äì Endokrynologia Onkologiczna",
 specialization:"Endokrynolog",
 
 city:"Opole",
@@ -5723,7 +5723,7 @@ reviews:[
 ]
 },
 /* =========================
- HEMATOLOGIA ó PRYWATNIE
+ HEMATOLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -5739,7 +5739,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Diagnostyka anemii i zaburzeÒ krwi",
+"Diagnostyka anemii i zaburze≈Ñ krwi",
 "Nowoczesne centrum specjalistyczne"
 ]
 },
@@ -5764,7 +5764,7 @@ reviews:[
 
 {
 id:3002,
-name:"LUX MED ñ Centrum Medyczne Opole Fieldorfa",
+name:"LUX MED ‚Äì Centrum Medyczne Opole Fieldorfa",
 specialization:"Hematolog",
 
 city:"Opole",
@@ -5782,7 +5782,7 @@ reviews:[
 
 {
 id:3003,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Hematolog",
 
 city:"Opole",
@@ -5793,7 +5793,7 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Interpretacja wynikÛw krwi",
+"Interpretacja wynik√≥w krwi",
 "Dobra konsultacja internistyczna"
 ]
 },
@@ -5816,12 +5816,12 @@ reviews:[
 ]
 },
 /* =========================
- HEMATOLOGIA ó NFZ
+ HEMATOLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:3010,
-name:"Poradnia Hematologiczna ñ Katowicka 64",
+name:"Poradnia Hematologiczna ‚Äì Katowicka 64",
 specialization:"Hematolog",
 
 city:"Opole",
@@ -5832,14 +5832,14 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwna poradnia hematologiczna w regionie",
-"Diagnostyka chorÛb krwi NFZ"
+"G≈Ç√≥wna poradnia hematologiczna w regionie",
+"Diagnostyka chor√≥b krwi NFZ"
 ]
 },
 
 {
 id:3011,
-name:"Oddzia≥ Hematologii i Onkologii Hematologicznej",
+name:"Oddzia≈Ç Hematologii i Onkologii Hematologicznej",
 specialization:"Hematolog",
 
 city:"Opole",
@@ -5851,7 +5851,7 @@ featured:true,
 rating:4.5,
 reviews:[
 "Specjalistyczne leczenie hematologiczne",
-"Pe≥na diagnostyka szpitalna"
+"Pe≈Çna diagnostyka szpitalna"
 ]
 },
 
@@ -5869,7 +5869,7 @@ featured:true,
 rating:4.6,
 reviews:[
 "Hematologia onkologiczna NFZ",
-"Leczenie chorÛb rozrostowych krwi"
+"Leczenie chor√≥b rozrostowych krwi"
 ]
 },
 
@@ -5893,7 +5893,7 @@ reviews:[
 
 {
 id:3014,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Hematolog",
 
 city:"Opole",
@@ -5904,17 +5904,17 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"WstÍpna diagnostyka chorÛb krwi",
+"Wstƒôpna diagnostyka chor√≥b krwi",
 "Konsultacje internistyczne NFZ"
 ]
 },
 /* =========================
- NEFROLOGIA ó PRYWATNIE
+ NEFROLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:3100,
-name:"dr hab. n. med. Tomasz Poraøko ñ Specjalistyczna Praktyka Internistyczno-Nefrologiczna",
+name:"dr hab. n. med. Tomasz Pora≈ºko ‚Äì Specjalistyczna Praktyka Internistyczno-Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -5925,14 +5925,14 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Jeden z g≥Ûwnych nefrologÛw w Opolu",
-"Bardzo dok≥adna diagnostyka chorÛb nerek"
+"Jeden z g≈Ç√≥wnych nefrolog√≥w w Opolu",
+"Bardzo dok≈Çadna diagnostyka chor√≥b nerek"
 ]
 },
 
 {
 id:3101,
-name:"Poradnia Nefrologiczna ñ Ozimska 20",
+name:"Poradnia Nefrologiczna ‚Äì Ozimska 20",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -5943,14 +5943,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Diagnostyka chorÛb nerek",
-"Doúwiadczeni lekarze nefrolodzy"
+"Diagnostyka chor√≥b nerek",
+"Do≈õwiadczeni lekarze nefrolodzy"
 ]
 },
 
 {
 id:3102,
-name:"Poradnia Nefrologiczna ñ ul. Biasa 31",
+name:"Poradnia Nefrologiczna ‚Äì ul. Biasa 31",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -5961,17 +5961,17 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Kontrola przewlek≥ych chorÛb nerek",
+"Kontrola przewlek≈Çych chor√≥b nerek",
 "Profesjonalne konsultacje"
 ]
 },
 /* =========================
- NEFROLOGIA ó NFZ
+ NEFROLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:3150,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Nefrologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -5982,14 +5982,14 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"G≥Ûwny oúrodek nefrologiczny w regionie",
+"G≈Ç√≥wny o≈õrodek nefrologiczny w regionie",
 "Kwalifikacje do dializ i leczenia specjalistycznego"
 ]
 },
 
 {
 id:3151,
-name:"NZOZ Specjalistyka ñ Poradnia Nefrologiczna",
+name:"NZOZ Specjalistyka ‚Äì Poradnia Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -6001,13 +6001,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje nefrologiczne NFZ",
-"CzÍsto krÛtsze kolejki niø w szpitalach"
+"Czƒôsto kr√≥tsze kolejki ni≈º w szpitalach"
 ]
 },
 
 {
 id:3152,
-name:"Poradnia Nefrologiczna ñ Ozimska 20",
+name:"Poradnia Nefrologiczna ‚Äì Ozimska 20",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -6018,14 +6018,14 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Kontrola przewlek≥ych chorÛb nerek",
-"Diagnostyka badaÒ krwi i moczu"
+"Kontrola przewlek≈Çych chor√≥b nerek",
+"Diagnostyka bada≈Ñ krwi i moczu"
 ]
 },
 
 {
 id:3153,
-name:"Poradnia Nefrologiczna ñ ul. Biasa 31",
+name:"Poradnia Nefrologiczna ‚Äì ul. Biasa 31",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -6037,13 +6037,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Ambulatoryjna nefrologia NFZ",
-"Sta≥a opieka nad pacjentami przewlek≥ymi"
+"Sta≈Ça opieka nad pacjentami przewlek≈Çymi"
 ]
 },
 
 {
 id:3154,
-name:"Szpital WojewÛdzki w Opolu ñ konsultacje nefrologiczne",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì konsultacje nefrologiczne",
 specialization:"Nefrolog",
 
 city:"Opole",
@@ -6054,17 +6054,17 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"WstÍpna diagnostyka chorÛb nerek",
+"Wstƒôpna diagnostyka chor√≥b nerek",
 "Kierowanie do dalszego leczenia specjalistycznego"
 ]
 },
 /* =========================
- PEDIATRIA ó PRYWATNIE
+ PEDIATRIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:3200,
-name:"P≥onka Jacek ñ Gabinet Pediatryczny",
+name:"P≈Çonka Jacek ‚Äì Gabinet Pediatryczny",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6076,13 +6076,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Kameralny gabinet pediatryczny",
-"Dobre podejúcie do dzieci"
+"Dobre podej≈õcie do dzieci"
 ]
 },
 
 {
 id:3201,
-name:"Zbigniew Kurzyca ñ pediatra i alergolog",
+name:"Zbigniew Kurzyca ‚Äì pediatra i alergolog",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6093,14 +6093,14 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Bardzo popularny lekarz dzieciÍcy",
-"åwietne podejúcie do alergii i astmy"
+"Bardzo popularny lekarz dzieciƒôcy",
+"≈öwietne podej≈õcie do alergii i astmy"
 ]
 },
 
 {
 id:3202,
-name:"Maria Grandek ñ Gabinet Pediatryczny",
+name:"Maria Grandek ‚Äì Gabinet Pediatryczny",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6111,14 +6111,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Dok≥adna konsultacja",
+"Dok≈Çadna konsultacja",
 "Dobra opieka pediatryczna"
 ]
 },
 
 {
 id:3203,
-name:"Irena Minkiewicz ñ pediatra",
+name:"Irena Minkiewicz ‚Äì pediatra",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6130,13 +6130,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Spokojna atmosfera",
-"Dobry kontakt z dzieÊmi"
+"Dobry kontakt z dzieƒámi"
 ]
 },
 
 {
 id:3204,
-name:"Agnieszka Sowa ñ pediatra",
+name:"Agnieszka Sowa ‚Äì pediatra",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6148,13 +6148,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Szybka pomoc przy infekcjach",
-"Polecana przez rodzicÛw"
+"Polecana przez rodzic√≥w"
 ]
 },
 
 {
 id:3205,
-name:"Zofia Kucharska ñ pediatra",
+name:"Zofia Kucharska ‚Äì pediatra",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6165,14 +6165,14 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Opieka nad dzieÊmi przewlekle chorymi",
-"Doúwiadczony lekarz"
+"Opieka nad dzieƒámi przewlekle chorymi",
+"Do≈õwiadczony lekarz"
 ]
 },
 
 {
 id:3206,
-name:"Anna Chirowska-Adamczyk ñ pediatra",
+name:"Anna Chirowska-Adamczyk ‚Äì pediatra",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6183,8 +6183,8 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Dok≥adna diagnostyka",
-"Mi≥a atmosfera wizyty"
+"Dok≈Çadna diagnostyka",
+"Mi≈Ça atmosfera wizyty"
 ]
 },
 
@@ -6192,7 +6192,7 @@ reviews:[
 
 {
 id:3207,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6204,7 +6204,7 @@ featured:true,
 rating:4.8,
 reviews:[
 "Szybkie terminy wizyt",
-"Pe≥na diagnostyka dzieci"
+"Pe≈Çna diagnostyka dzieci"
 ]
 },
 
@@ -6221,7 +6221,7 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Kilku pediatrÛw w jednym miejscu",
+"Kilku pediatr√≥w w jednym miejscu",
 "Dobra diagnostyka"
 ]
 },
@@ -6239,7 +6239,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"MoøliwoúÊ dalszej diagnostyki specjalistycznej",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki specjalistycznej",
 "Nowoczesne centrum medyczne"
 ]
 },
@@ -6258,16 +6258,16 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje pediatryczne i badania",
-"Nowoczesna placÛwka"
+"Nowoczesna plac√≥wka"
 ]
 },
 /* =========================
- PEDIATRIA ó NFZ
+ PEDIATRIA ‚Äî NFZ
 ========================= */
 
 {
 id:3300,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Koúciuszki",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Ko≈õciuszki",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6278,14 +6278,14 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"Duøa poradnia dzieciÍca NFZ",
+"Du≈ºa poradnia dzieciƒôca NFZ",
 "Szczepienia i bilanse dzieci"
 ]
 },
 
 {
 id:3301,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Licealna",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Licealna",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6314,8 +6314,8 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Sta≥a opieka nad dzieckiem",
-"Dobra dostÍpnoúÊ lekarzy"
+"Sta≈Ça opieka nad dzieckiem",
+"Dobra dostƒôpno≈õƒá lekarzy"
 ]
 },
 
@@ -6332,7 +6332,7 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 reviews:[
-"KrÛtsze kolejki niø w centrum",
+"Kr√≥tsze kolejki ni≈º w centrum",
 "Badania na miejscu"
 ]
 },
@@ -6350,16 +6350,16 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Podstawowa opieka dzieciÍca NFZ",
-"Konsultacje chorÛb przewlek≥ych"
+"Podstawowa opieka dzieciƒôca NFZ",
+"Konsultacje chor√≥b przewlek≈Çych"
 ]
 },
 
-/* SZPITALE ó pomoc pediatryczna */
+/* SZPITALE ‚Äî pomoc pediatryczna */
 
 {
 id:3305,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Pediatria",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Pediatria",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6370,14 +6370,14 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"Izba przyjÍÊ pediatryczna",
-"Pomoc w nag≥ych przypadkach"
+"Izba przyjƒôƒá pediatryczna",
+"Pomoc w nag≈Çych przypadkach"
 ]
 },
 
 {
 id:3306,
-name:"Szpital WojewÛdzki w Opolu ñ Pediatria",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Pediatria",
 specialization:"Pediatra",
 
 city:"Opole",
@@ -6393,12 +6393,12 @@ reviews:[
 ]
 },
 /* =========================
- NEONATOLOGIA ó PRYWATNIE
+ NEONATOLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:3400,
-name:"Prywatna Praktyka Lekarska Ewa BobiÒska / Andrzej BobiÒski",
+name:"Prywatna Praktyka Lekarska Ewa Bobi≈Ñska / Andrzej Bobi≈Ñski",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6410,7 +6410,7 @@ featured:true,
 rating:4.9,
 reviews:[
 "Konsultacja noworodka po porodzie",
-"Duøe doúwiadczenie z wczeúniakami"
+"Du≈ºe do≈õwiadczenie z wcze≈õniakami"
 ]
 },
 
@@ -6434,7 +6434,7 @@ reviews:[
 
 {
 id:3402,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6452,7 +6452,7 @@ reviews:[
 
 {
 id:3403,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6464,16 +6464,16 @@ featured:true,
 rating:4.7,
 reviews:[
 "Pierwsza wizyta po porodzie",
-"Sprawna opieka nad niemowlÍciem"
+"Sprawna opieka nad niemowlƒôciem"
 ]
 },
 /* =========================
- NEONATOLOGIA ó NFZ
+ NEONATOLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:3450,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Kliniczne Centrum Ginekologii, Po≥oønictwa i Neonatologii",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Kliniczne Centrum Ginekologii, Po≈Ço≈ºnictwa i Neonatologii",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6484,14 +6484,14 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"Najwaøniejszy oddzia≥ neonatologii w regionie",
-"Opieka nad wczeúniakami i noworodkami"
+"Najwa≈ºniejszy oddzia≈Ç neonatologii w regionie",
+"Opieka nad wcze≈õniakami i noworodkami"
 ]
 },
 
 {
 id:3451,
-name:"Poradnia Neonatologiczna ñ USK Opole",
+name:"Poradnia Neonatologiczna ‚Äì USK Opole",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6503,13 +6503,13 @@ featured:true,
 rating:4.5,
 reviews:[
 "Kontrole po wypisie ze szpitala",
-"Specjalistyczna opieka nad wczeúniakami"
+"Specjalistyczna opieka nad wcze≈õniakami"
 ]
 },
 
 {
 id:3452,
-name:"Szpital WojewÛdzki w Opolu ñ Oddzia≥ Noworodkowy",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Oddzia≈Ç Noworodkowy",
 specialization:"Neonatolog",
 
 city:"Opole",
@@ -6521,16 +6521,16 @@ featured:false,
 rating:4.3,
 reviews:[
 "Opieka neonatologiczna NFZ",
-"Doúwiadczeni lekarze oddzia≥owi"
+"Do≈õwiadczeni lekarze oddzia≈Çowi"
 ]
 },
 /* =========================
-   NEUROCHIRURGIA ó PRYWATNIE
+   NEUROCHIRURGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:3500,
-name:"lek. Bogus≥aw Andrzej Maj ñ neurochirurg",
+name:"lek. Bogus≈Çaw Andrzej Maj ‚Äì neurochirurg",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6541,14 +6541,14 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Konsultacje krÍgos≥upa i dyskopatii",
-"Bardzo dobre opinie pacjentÛw"
+"Konsultacje krƒôgos≈Çupa i dyskopatii",
+"Bardzo dobre opinie pacjent√≥w"
 ]
 },
 
 {
 id:3501,
-name:"Specjalistyczna Praktyka Lekarska £πtka Dariusz i Marta",
+name:"Specjalistyczna Praktyka Lekarska ≈ÅƒÖtka Dariusz i Marta",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6560,13 +6560,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Interpretacja MRI i TK",
-"Konsultacje bÛlu krÍgos≥upa"
+"Konsultacje b√≥lu krƒôgos≈Çupa"
 ]
 },
 
 {
 id:3502,
-name:"Tomasz Krzeszowiec ñ praktyka neurochirurgiczna",
+name:"Tomasz Krzeszowiec ‚Äì praktyka neurochirurgiczna",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6578,13 +6578,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Kwalifikacje operacyjne",
-"Choroby uk≥adu nerwowego"
+"Choroby uk≈Çadu nerwowego"
 ]
 },
 
 {
 id:3503,
-name:"dr n. med. Wojciech IlkÛw ñ neurochirurg",
+name:"dr n. med. Wojciech Ilk√≥w ‚Äì neurochirurg",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6595,7 +6595,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Ocena badaÒ obrazowych",
+"Ocena bada≈Ñ obrazowych",
 "Konsultacje pourazowe i dyskopatie"
 ]
 },
@@ -6633,7 +6633,7 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Kwalifikacje do zabiegÛw krÍgos≥upa",
+"Kwalifikacje do zabieg√≥w krƒôgos≈Çupa",
 "Nowoczesne centrum zabiegowe"
 ]
 },
@@ -6669,17 +6669,17 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Konsultacje krÍgos≥upowe",
+"Konsultacje krƒôgos≈Çupowe",
 "Diagnostyka zmian neurologicznych"
 ]
 },
 /* =========================
-   NEUROCHIRURGIA ó NFZ
+   NEUROCHIRURGIA ‚Äî NFZ
 ========================= */
 
 {
 id:3600,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Oddzia≥ Neurochirurgii",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Oddzia≈Ç Neurochirurgii",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6690,14 +6690,14 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"G≥Ûwny oúrodek neurochirurgiczny w regionie",
-"Kwalifikacje do operacji krÍgos≥upa i mÛzgu"
+"G≈Ç√≥wny o≈õrodek neurochirurgiczny w regionie",
+"Kwalifikacje do operacji krƒôgos≈Çupa i m√≥zgu"
 ]
 },
 
 {
 id:3601,
-name:"Poradnia Neurochirurgiczna ñ USK Opole",
+name:"Poradnia Neurochirurgiczna ‚Äì USK Opole",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6715,7 +6715,7 @@ reviews:[
 
 {
 id:3602,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Neurochirurg",
 
 city:"Opole",
@@ -6726,7 +6726,7 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"WstÍpna kwalifikacja do neurochirurgii",
+"Wstƒôpna kwalifikacja do neurochirurgii",
 "Kierowanie do leczenia operacyjnego"
 ]
 },
@@ -6749,7 +6749,7 @@ reviews:[
 ]
 },
 /* =========================
-   OKULISTYKA ó PRYWATNIE
+   OKULISTYKA ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -6765,14 +6765,14 @@ privateVisit:true,
 featured:true,
 rating:5.0,
 reviews:[
-"Pe≥na diagnostyka okulistyczna",
-"Bardzo dok≥adne badania OCT i dna oka"
+"Pe≈Çna diagnostyka okulistyczna",
+"Bardzo dok≈Çadne badania OCT i dna oka"
 ]
 },
 
 {
 id:3701,
-name:"OneDayClinic Opole ñ Centrum Okulistyczno-Optyczne",
+name:"OneDayClinic Opole ‚Äì Centrum Okulistyczno-Optyczne",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6783,7 +6783,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Kwalifikacje do zabiegÛw okulistycznych",
+"Kwalifikacje do zabieg√≥w okulistycznych",
 "Nowoczesna diagnostyka wzroku"
 ]
 },
@@ -6801,14 +6801,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Diagnostyka jaskry i zaÊmy",
+"Diagnostyka jaskry i zaƒámy",
 "Kompleksowe badania okulistyczne"
 ]
 },
 
 {
 id:3703,
-name:"lek. Monika Dalach ñ Prywatny Gabinet Okulistyczny",
+name:"lek. Monika Dalach ‚Äì Prywatny Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6819,14 +6819,14 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Dok≥adne badania wzroku",
-"Mi≥a atmosfera wizyty"
+"Dok≈Çadne badania wzroku",
+"Mi≈Ça atmosfera wizyty"
 ]
 },
 
 {
 id:3704,
-name:"Krzysztof Starzyk ñ Gabinet Okulistyczny",
+name:"Krzysztof Starzyk ‚Äì Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6837,14 +6837,14 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Konsultacje doros≥ych",
+"Konsultacje doros≈Çych",
 "Ocena wad wzroku"
 ]
 },
 
 {
 id:3705,
-name:"Kamilla Pustelnik ñ Gabinet Okulistyczny",
+name:"Kamilla Pustelnik ‚Äì Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6856,13 +6856,13 @@ featured:false,
 rating:4.4,
 reviews:[
 "Kontrola wzroku",
-"Leczenie zachowawcze chorÛb oczu"
+"Leczenie zachowawcze chor√≥b oczu"
 ]
 },
 
 {
 id:3706,
-name:"Teresa Lontkowska ñ Gabinet Okulistyczny",
+name:"Teresa Lontkowska ‚Äì Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6880,7 +6880,7 @@ reviews:[
 
 {
 id:3707,
-name:"R. P≥awszewski ñ Gabinet Okulistyczny",
+name:"R. P≈Çawszewski ‚Äì Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6909,17 +6909,17 @@ privateVisit:true,
 featured:true,
 rating:4.6,
 reviews:[
-"Kilku okulistÛw w jednym miejscu",
+"Kilku okulist√≥w w jednym miejscu",
 "Badania diagnostyczne na miejscu"
 ]
 },
 /* =========================
-   OKULISTYKA ó NFZ
+   OKULISTYKA ‚Äî NFZ
 ========================= */
 
 {
 id:3800,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Okulistyczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6930,14 +6930,14 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"G≥Ûwna poradnia okulistyczna w regionie",
-"Kwalifikacje do operacji zaÊmy i jaskry"
+"G≈Ç√≥wna poradnia okulistyczna w regionie",
+"Kwalifikacje do operacji zaƒámy i jaskry"
 ]
 },
 
 {
 id:3801,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Okulistyczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Opole",
@@ -6949,7 +6949,7 @@ featured:true,
 rating:4.2,
 reviews:[
 "Kontrole po leczeniu operacyjnym",
-"Diagnostyka chorÛb oczu NFZ"
+"Diagnostyka chor√≥b oczu NFZ"
 ]
 },
 
@@ -6967,7 +6967,7 @@ featured:false,
 rating:4.0,
 reviews:[
 "Ambulatoryjna okulistyka NFZ",
-"CzÍsto krÛtsze kolejki"
+"Czƒôsto kr√≥tsze kolejki"
 ]
 },
 
@@ -6985,13 +6985,13 @@ featured:false,
 rating:3.9,
 reviews:[
 "Badania wzroku NFZ",
-"Leczenie stanÛw zapalnych oka"
+"Leczenie stan√≥w zapalnych oka"
 ]
 },
 
 {
 id:3804,
-name:"Poradnia okulistyczna dr StÍpieÒ",
+name:"Poradnia okulistyczna dr Stƒôpie≈Ñ",
 specialization:"Okulista",
 
 city:"Opole",
@@ -7007,12 +7007,12 @@ reviews:[
 ]
 },
 /* =========================
-   ORTOPEDIA ó PRYWATNIE
+   ORTOPEDIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:4000,
-name:"Mateusz Froelich ñ Ortopeda",
+name:"Mateusz Froelich ‚Äì Ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7023,14 +7023,14 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Ortopedia doros≥ych i dzieci",
-"USG narzπdu ruchu i urazy sportowe"
+"Ortopedia doros≈Çych i dzieci",
+"USG narzƒÖdu ruchu i urazy sportowe"
 ]
 },
 
 {
 id:4001,
-name:"Mariusz Ciszewski ñ Gabinety MedArt",
+name:"Mariusz Ciszewski ‚Äì Gabinety MedArt",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7041,14 +7041,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Leczenie bÛlu stawÛw i krÍgos≥upa",
+"Leczenie b√≥lu staw√≥w i krƒôgos≈Çupa",
 "Kwalifikacje operacyjne"
 ]
 },
 
 {
 id:4002,
-name:"Jakub Bednarek ñ Gabinet Ortopedyczny",
+name:"Jakub Bednarek ‚Äì Gabinet Ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7066,7 +7066,7 @@ reviews:[
 
 {
 id:4003,
-name:"Grzegorz Piernik ñ Gabinet Ortopedyczny",
+name:"Grzegorz Piernik ‚Äì Gabinet Ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7078,13 +7078,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Ortopedia sportowa",
-"BÛle kolan i przeciπøenia"
+"B√≥le kolan i przeciƒÖ≈ºenia"
 ]
 },
 
 {
 id:4004,
-name:"Rafa≥ Swaton ñ Gabinet Ortopedyczny",
+name:"Rafa≈Ç Swaton ‚Äì Gabinet Ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7095,14 +7095,14 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Diagnostyka narzπdu ruchu",
+"Diagnostyka narzƒÖdu ruchu",
 "Konsultacje ortopedyczne"
 ]
 },
 
 {
 id:4005,
-name:"Tomasz Grzybek ñ Praktyka Lekarska",
+name:"Tomasz Grzybek ‚Äì Praktyka Lekarska",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7120,7 +7120,7 @@ reviews:[
 
 {
 id:4006,
-name:"Bogumi≥ Strzelecki ñ EndoPractica",
+name:"Bogumi≈Ç Strzelecki ‚Äì EndoPractica",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7131,7 +7131,7 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Leczenie bÛlu krÍgos≥upa",
+"Leczenie b√≥lu krƒôgos≈Çupa",
 "Konsultacje ortopedyczne"
 ]
 },
@@ -7151,7 +7151,7 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Duøe centrum ortopedii",
+"Du≈ºe centrum ortopedii",
 "Operacje i iniekcje dostawowe"
 ]
 },
@@ -7170,7 +7170,7 @@ featured:true,
 rating:4.7,
 reviews:[
 "Ortopedia zabiegowa",
-"Leczenie urazÛw i zwyrodnieÒ"
+"Leczenie uraz√≥w i zwyrodnie≈Ñ"
 ]
 },
 
@@ -7188,7 +7188,7 @@ featured:false,
 rating:4.8,
 reviews:[
 "Diagnostyka obrazowa",
-"Leczenie przeciπøeÒ i urazÛw"
+"Leczenie przeciƒÖ≈ºe≈Ñ i uraz√≥w"
 ]
 },
 
@@ -7206,13 +7206,13 @@ featured:false,
 rating:4.4,
 reviews:[
 "Szybkie wizyty ortopedyczne",
-"KrÛtkie terminy"
+"Kr√≥tkie terminy"
 ]
 },
 
 {
 id:4014,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7246,7 +7246,7 @@ reviews:[
 ]
 },
 /* =========================
-   ORTOPEDIA ó NFZ
+   ORTOPEDIA ‚Äî NFZ
 ========================= */
 
 {
@@ -7262,14 +7262,14 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"G≥Ûwny oúrodek ortopedii w regionie",
+"G≈Ç√≥wny o≈õrodek ortopedii w regionie",
 "Kwalifikacje do operacji i kontrole"
 ]
 },
 
 {
 id:4101,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7287,7 +7287,7 @@ reviews:[
 
 {
 id:4102,
-name:"Oddzia≥ Chirurgii Urazowo-Ortopedycznej",
+name:"Oddzia≈Ç Chirurgii Urazowo-Ortopedycznej",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7298,7 +7298,7 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Leczenie urazÛw narzπdu ruchu",
+"Leczenie uraz√≥w narzƒÖdu ruchu",
 "Hospitalizacja ortopedyczna"
 ]
 },
@@ -7317,13 +7317,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Ambulatoryjna ortopedia NFZ",
-"CzÍsto krÛtsze kolejki"
+"Czƒôsto kr√≥tsze kolejki"
 ]
 },
 
 {
 id:4104,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7357,7 +7357,7 @@ reviews:[
 ]
 },
 /* =========================
-   ORTOPEDIA ó PRYWATNIE (NOWI)
+   ORTOPEDIA ‚Äî PRYWATNIE (NOWI)
 ========================= */
 
 {
@@ -7366,43 +7366,43 @@ name:"Mateusz Froelich ORTOPEDA",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:250,
 nfz:false,
 privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietny przy kontuzjach sportowych",
-"Bardzo dok≥adne USG"
+"≈öwietny przy kontuzjach sportowych",
+"Bardzo dok≈Çadne USG"
 ]
 },
 
 {
 id:4201,
-name:"Mariusz Ciszewski ñ Ortopeda (MedArt)",
+name:"Mariusz Ciszewski ‚Äì Ortopeda (MedArt)",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:230,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"PomÛg≥ przy bÛlu krÍgos≥upa",
+"Pom√≥g≈Ç przy b√≥lu krƒôgos≈Çupa",
 "Profesjonalna konsultacja"
 ]
 },
 
 {
 id:4202,
-name:"Jakub Bednarek ñ Ortopeda",
+name:"Jakub Bednarek ‚Äì Ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:220,
 nfz:false,
 privateVisit:true,
@@ -7420,43 +7420,43 @@ name:"Gabinet Ortopedyczny Grzegorz Piernik",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:210,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"åwietny specjalista od kolan",
+"≈öwietny specjalista od kolan",
 "Szybka diagnoza"
 ]
 },
 
 {
 id:4204,
-name:"Rafa≥ Swaton ñ Gabinet Ortopedyczny",
+name:"Rafa≈Ç Swaton ‚Äì Gabinet Ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:200,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Dobre podejúcie do pacjenta",
+"Dobre podej≈õcie do pacjenta",
 "Skuteczne leczenie"
 ]
 },
 
 {
 id:4205,
-name:"Tomasz Grzybek ñ Praktyka Lekarska",
+name:"Tomasz Grzybek ‚Äì Praktyka Lekarska",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:220,
 nfz:false,
 privateVisit:true,
@@ -7470,19 +7470,19 @@ reviews:[
 
 {
 id:4206,
-name:"Bogumi≥ Strzelecki ñ Gabinet Lekarski",
+name:"Bogumi≈Ç Strzelecki ‚Äì Gabinet Lekarski",
 specialization:"Ortopeda",
 
 city:"Opole",
-phone:"ó",
+phone:"‚Äî",
 price:210,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"PomÛg≥ przy bÛlu stawÛw",
-"Dok≥adna konsultacja"
+"Pom√≥g≈Ç przy b√≥lu staw√≥w",
+"Dok≈Çadna konsultacja"
 ]
 },
 
@@ -7501,7 +7501,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Jedno z g≥Ûwnych centrÛw ortopedii",
+"Jedno z g≈Ç√≥wnych centr√≥w ortopedii",
 "Nowoczesne leczenie"
 ]
 },
@@ -7520,7 +7520,7 @@ featured:false,
 rating:4.6,
 reviews:[
 "Szybkie terminy",
-"Dobra diagnostyka bÛlu"
+"Dobra diagnostyka b√≥lu"
 ]
 },
 
@@ -7538,13 +7538,13 @@ featured:true,
 rating:4.8,
 reviews:[
 "Diagnostyka obrazowa na miejscu",
-"Wielu specjalistÛw"
+"Wielu specjalist√≥w"
 ]
 },
 
 {
 id:4213,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7556,7 +7556,7 @@ featured:false,
 rating:4.4,
 reviews:[
 "Dobre leczenie zachowawcze",
-"Mi≥a obs≥uga"
+"Mi≈Ça obs≈Çuga"
 ]
 },
 
@@ -7580,7 +7580,7 @@ reviews:[
 
 {
 id:4215,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7592,16 +7592,16 @@ featured:true,
 rating:4.7,
 reviews:[
 "Szybkie wizyty",
-"Pe≥na diagnostyka"
+"Pe≈Çna diagnostyka"
 ]
 },
 /* =========================
-   ORTOPEDIA ó NFZ
+   ORTOPEDIA ‚Äî NFZ
 ========================= */
 
 {
 id:4300,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Ortopedyczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7612,14 +7612,14 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"G≥Ûwny oúrodek ortopedii w regionie",
-"Duøe doúwiadczenie lekarzy"
+"G≈Ç√≥wny o≈õrodek ortopedii w regionie",
+"Du≈ºe do≈õwiadczenie lekarzy"
 ]
 },
 
 {
 id:4301,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Ortopedyczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7637,7 +7637,7 @@ reviews:[
 
 {
 id:4302,
-name:"Oddzia≥ Chirurgii Urazowo-Ortopedycznej",
+name:"Oddzia≈Ç Chirurgii Urazowo-Ortopedycznej",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7648,14 +7648,14 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"Leczenie ciÍøszych urazÛw",
-"Doúwiadczeni specjaliúci"
+"Leczenie ciƒô≈ºszych uraz√≥w",
+"Do≈õwiadczeni specjali≈õci"
 ]
 },
 
 {
 id:4303,
-name:"NZOZ Specjalistyka ñ Poradnia Ortopedyczna",
+name:"NZOZ Specjalistyka ‚Äì Poradnia Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7666,14 +7666,14 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"KrÛtsze kolejki niø w szpitalu",
+"Kr√≥tsze kolejki ni≈º w szpitalu",
 "Dobra diagnostyka"
 ]
 },
 
 {
 id:4304,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ Ortopedia NFZ",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì Ortopedia NFZ",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7685,13 +7685,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Leczenie zachowawcze",
-"Mi≥a obs≥uga"
+"Mi≈Ça obs≈Çuga"
 ]
 },
 
 {
 id:4305,
-name:"SPZOZ MSWiA w Opolu ñ Ortopedia i Traumatologia",
+name:"SPZOZ MSWiA w Opolu ‚Äì Ortopedia i Traumatologia",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -7707,7 +7707,7 @@ reviews:[
 ]
 },
 /* =========================
-   LARYNGOLOG ó PRYWATNIE
+   LARYNGOLOG ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -7723,7 +7723,7 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"åwietna diagnostyka zawrotÛw g≥owy",
+"≈öwietna diagnostyka zawrot√≥w g≈Çowy",
 "Bardzo specjalistyczna poradnia"
 ]
 },
@@ -7748,7 +7748,7 @@ reviews:[
 
 {
 id:4402,
-name:"Jolanta MuszyÒska-Chowaniec ñ Gabinet Laryngologiczny",
+name:"Jolanta Muszy≈Ñska-Chowaniec ‚Äì Gabinet Laryngologiczny",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7759,14 +7759,14 @@ privateVisit:true,
 featured:false,
 rating:4.8,
 reviews:[
-"Dok≥adne badania s≥uchu",
+"Dok≈Çadne badania s≈Çuchu",
 "Bardzo profesjonalna konsultacja"
 ]
 },
 
 {
 id:4403,
-name:"Tomasz Rekucki ñ Otolaryngolog",
+name:"Tomasz Rekucki ‚Äì Otolaryngolog",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7778,13 +7778,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Szybka diagnoza",
-"Pomoc przy przewlek≥ych infekcjach"
+"Pomoc przy przewlek≈Çych infekcjach"
 ]
 },
 
 {
 id:4404,
-name:"Graøyna Wojtalska ñ Gabinet Laryngologiczny",
+name:"Gra≈ºyna Wojtalska ‚Äì Gabinet Laryngologiczny",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7796,7 +7796,7 @@ featured:false,
 rating:4.5,
 reviews:[
 "Klasyczny dobry laryngolog",
-"Mi≥a atmosfera wizyty"
+"Mi≈Ça atmosfera wizyty"
 ]
 },
 
@@ -7813,7 +7813,7 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Wielu specjalistÛw w jednym miejscu",
+"Wielu specjalist√≥w w jednym miejscu",
 "Nowoczesna diagnostyka"
 ]
 },
@@ -7832,13 +7832,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Dobra diagnostyka zatok",
-"KrÛtki czas oczekiwania"
+"Kr√≥tki czas oczekiwania"
 ]
 },
 
 {
 id:4407,
-name:"Opolskie Centrum S≥uchu i Mowy MEDINCUS",
+name:"Opolskie Centrum S≈Çuchu i Mowy MEDINCUS",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7849,8 +7849,8 @@ privateVisit:true,
 featured:true,
 rating:4.9,
 reviews:[
-"Najlepsze miejsce przy problemach s≥uchu",
-"Bardzo dok≥adne badania"
+"Najlepsze miejsce przy problemach s≈Çuchu",
+"Bardzo dok≈Çadne badania"
 ]
 },
 
@@ -7892,7 +7892,7 @@ reviews:[
 
 {
 id:4410,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7903,8 +7903,8 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Leczenie dzieci i doros≥ych",
-"Sprawna obs≥uga"
+"Leczenie dzieci i doros≈Çych",
+"Sprawna obs≈Çuga"
 ]
 },
 
@@ -7926,12 +7926,12 @@ reviews:[
 ]
 },
 /* =========================
-   LARYNGOLOG ó NFZ
+   LARYNGOLOG ‚Äî NFZ
 ========================= */
 
 {
 id:4500,
-name:"Poradnia Laryngologiczna ñ Uniwersytecki Szpital Kliniczny w Opolu",
+name:"Poradnia Laryngologiczna ‚Äì Uniwersytecki Szpital Kliniczny w Opolu",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7942,14 +7942,14 @@ privateVisit:false,
 featured:true,
 rating:4.5,
 reviews:[
-"G≥Ûwny oúrodek laryngologiczny w regionie",
-"Dok≥adna diagnostyka trudnych przypadkÛw"
+"G≈Ç√≥wny o≈õrodek laryngologiczny w regionie",
+"Dok≈Çadna diagnostyka trudnych przypadk√≥w"
 ]
 },
 
 {
 id:4501,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Laryngologiczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Laryngologiczna",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -7978,7 +7978,7 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"KrÛtsze kolejki niø w szpitalach",
+"Kr√≥tsze kolejki ni≈º w szpitalach",
 "Sprawna rejestracja"
 ]
 },
@@ -7997,13 +7997,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Dobra diagnostyka NFZ",
-"Mi≥a obs≥uga"
+"Mi≈Ça obs≈Çuga"
 ]
 },
 
 {
 id:4504,
-name:"Opolskie Centrum S≥uchu i Mowy MEDINCUS",
+name:"Opolskie Centrum S≈Çuchu i Mowy MEDINCUS",
 specialization:"Laryngolog",
 
 city:"Opole",
@@ -8014,17 +8014,17 @@ privateVisit:false,
 featured:true,
 rating:4.7,
 reviews:[
-"Najlepsze miejsce przy problemach s≥uchu",
-"Specjalistyczny sprzÍt audiologiczny"
+"Najlepsze miejsce przy problemach s≈Çuchu",
+"Specjalistyczny sprzƒôt audiologiczny"
 ]
 },
 /* =========================
-   UROLOG ó PRYWATNIE
+   UROLOG ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:4600,
-name:"Prywatny Gabinet Urologiczny Marek £uczak",
+name:"Prywatny Gabinet Urologiczny Marek ≈Åuczak",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8035,8 +8035,8 @@ privateVisit:true,
 featured:true,
 rating:5.0,
 reviews:[
-"Bardzo dok≥adny lekarz",
-"åwietne podejúcie do pacjenta"
+"Bardzo dok≈Çadny lekarz",
+"≈öwietne podej≈õcie do pacjenta"
 ]
 },
 
@@ -8054,7 +8054,7 @@ featured:false,
 rating:4.8,
 reviews:[
 "Profesjonalna konsultacja",
-"Pomoc przy problemach mÍskich"
+"Pomoc przy problemach mƒôskich"
 ]
 },
 
@@ -8078,7 +8078,7 @@ reviews:[
 
 {
 id:4603,
-name:"Jacek Che≥chowski Konsultacje Urologiczne",
+name:"Jacek Che≈Çchowski Konsultacje Urologiczne",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8090,13 +8090,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Szybka pomoc",
-"Mi≥a atmosfera wizyty"
+"Mi≈Ça atmosfera wizyty"
 ]
 },
 
 {
 id:4604,
-name:"Gabinet Urologiczny Andrzej MrÛz",
+name:"Gabinet Urologiczny Andrzej Mr√≥z",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8107,8 +8107,8 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Doúwiadczony lekarz",
-"Spokojne wyjaúnienie problemu"
+"Do≈õwiadczony lekarz",
+"Spokojne wyja≈õnienie problemu"
 ]
 },
 
@@ -8128,7 +8128,7 @@ featured:true,
 rating:4.8,
 reviews:[
 "Nowoczesna diagnostyka",
-"MoøliwoúÊ zabiegÛw na miejscu"
+"Mo≈ºliwo≈õƒá zabieg√≥w na miejscu"
 ]
 },
 
@@ -8145,7 +8145,7 @@ privateVisit:true,
 featured:false,
 rating:4.7,
 reviews:[
-"Specjaliúci w jednym miejscu",
+"Specjali≈õci w jednym miejscu",
 "Dobra diagnostyka"
 ]
 },
@@ -8164,13 +8164,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Szybkie terminy",
-"Dobra pomoc przy nag≥ych problemach"
+"Dobra pomoc przy nag≈Çych problemach"
 ]
 },
 
 {
 id:4608,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8182,13 +8182,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Diagnostyka na miejscu",
-"Profesjonalna obs≥uga"
+"Profesjonalna obs≈Çuga"
 ]
 },
 
 {
 id:4609,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8206,7 +8206,7 @@ reviews:[
 
 {
 id:4610,
-name:"LUX MED ñ Centrum Medyczne Opole",
+name:"LUX MED ‚Äì Centrum Medyczne Opole",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8222,12 +8222,12 @@ reviews:[
 ]
 },
 /* =========================
-   UROLOG ó NFZ
+   UROLOG ‚Äî NFZ
 ========================= */
 
 {
 id:4611,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Urologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8238,14 +8238,14 @@ privateVisit:false,
 featured:true,
 rating:4.6,
 reviews:[
-"G≥Ûwny oúrodek urologiczny w regionie",
-"Pe≥na diagnostyka i kwalifikacje operacyjne"
+"G≈Ç√≥wny o≈õrodek urologiczny w regionie",
+"Pe≈Çna diagnostyka i kwalifikacje operacyjne"
 ]
 },
 
 {
 id:4612,
-name:"Szpital WojewÛdzki w Opolu ñ Poradnia Urologiczna",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8257,7 +8257,7 @@ featured:false,
 rating:4.4,
 reviews:[
 "Kontrole po leczeniu operacyjnym",
-"Diagnostyka chorÛb uk≥adu moczowego"
+"Diagnostyka chor√≥b uk≈Çadu moczowego"
 ]
 },
 
@@ -8274,14 +8274,14 @@ privateVisit:false,
 featured:false,
 rating:4.5,
 reviews:[
-"CzÍsto krÛtsze kolejki",
+"Czƒôsto kr√≥tsze kolejki",
 "Ambulatoryjna konsultacja urologiczna"
 ]
 },
 
 {
 id:4614,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8299,7 +8299,7 @@ reviews:[
 
 {
 id:4615,
-name:"ZespÛ≥ WojewÛdzkich Poradni Specjalistycznych",
+name:"Zesp√≥≈Ç Wojew√≥dzkich Poradni Specjalistycznych",
 specialization:"Urolog",
 
 city:"Opole",
@@ -8315,7 +8315,7 @@ reviews:[
 ]
 },
 /* =========================
-   GINEKOLOG / PO£OØNIK ó PRYWATNIE
+   GINEKOLOG / PO≈ÅO≈ªNIK ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -8331,8 +8331,8 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Prowadzenie ciπøy i USG prenatalne",
-"Jedno z g≥Ûwnych centrÛw ginekologicznych w Opolu"
+"Prowadzenie ciƒÖ≈ºy i USG prenatalne",
+"Jedno z g≈Ç√≥wnych centr√≥w ginekologicznych w Opolu"
 ]
 },
 
@@ -8367,7 +8367,7 @@ privateVisit:true,
 featured:true,
 rating:4.7,
 reviews:[
-"Prowadzenie ciπøy",
+"Prowadzenie ciƒÖ≈ºy",
 "Diagnostyka hormonalna i USG"
 ]
 },
@@ -8392,7 +8392,7 @@ reviews:[
 
 {
 id:4705,
-name:"Dr Alicja Piπtkowska-Pawlica ñ Gabinet Ginekologiczny",
+name:"Dr Alicja PiƒÖtkowska-Pawlica ‚Äì Gabinet Ginekologiczny",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8403,14 +8403,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Prowadzenie ciπøy",
+"Prowadzenie ciƒÖ≈ºy",
 "Diagnostyka ginekologiczna"
 ]
 },
 
 {
 id:4706,
-name:"Dariusz Kowalczyk Cabinet Gynecology ñ Ultrasound",
+name:"Dariusz Kowalczyk Cabinet Gynecology ‚Äì Ultrasound",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8428,7 +8428,7 @@ reviews:[
 
 {
 id:4707,
-name:"Hanna Øwirska-Drochomirecka ñ Gabinet ginekologiczny",
+name:"Hanna ≈ªwirska-Drochomirecka ‚Äì Gabinet ginekologiczny",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8439,14 +8439,14 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Sta≥a opieka ginekologiczna",
-"Leczenie przewlek≥e"
+"Sta≈Ça opieka ginekologiczna",
+"Leczenie przewlek≈Çe"
 ]
 },
 
 {
 id:4708,
-name:"Piotr Lontkowski ñ Gabinet ginekologiczny",
+name:"Piotr Lontkowski ‚Äì Gabinet ginekologiczny",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8464,7 +8464,7 @@ reviews:[
 
 {
 id:4709,
-name:"Aneta Machnicka-Rusek ñ ginekolog",
+name:"Aneta Machnicka-Rusek ‚Äì ginekolog",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8475,14 +8475,14 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Opieka nad kobietami w ciπøy",
+"Opieka nad kobietami w ciƒÖ≈ºy",
 "Konsultacje ginekologiczne"
 ]
 },
 
 {
 id:4710,
-name:"Boøena Samborska ñ ginekolog po≥oønik",
+name:"Bo≈ºena Samborska ‚Äì ginekolog po≈Ço≈ºnik",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8494,13 +8494,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Cytologia i USG",
-"Prowadzenie ciπøy"
+"Prowadzenie ciƒÖ≈ºy"
 ]
 },
 
 {
 id:4711,
-name:"Joanna Tomiczek-Szwiec ñ Gabinet ginekologiczno-po≥oøniczy",
+name:"Joanna Tomiczek-Szwiec ‚Äì Gabinet ginekologiczno-po≈Ço≈ºniczy",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8511,14 +8511,14 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Prowadzenie ciπøy",
-"Konsultacje po≥oønicze"
+"Prowadzenie ciƒÖ≈ºy",
+"Konsultacje po≈Ço≈ºnicze"
 ]
 },
 
 {
 id:4712,
-name:"Bogus≥aw MrÛz ñ Gabinet ginekologiczno-po≥oøniczy",
+name:"Bogus≈Çaw Mr√≥z ‚Äì Gabinet ginekologiczno-po≈Ço≈ºniczy",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8530,13 +8530,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Diagnostyka i leczenie",
-"Sta≥a opieka ginekologiczna"
+"Sta≈Ça opieka ginekologiczna"
 ]
 },
 
 {
 id:4713,
-name:"GMW ñ Centrum Diagnostyki Ginekologiczno-Po≥oøniczej",
+name:"GMW ‚Äì Centrum Diagnostyki Ginekologiczno-Po≈Ço≈ºniczej",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8547,7 +8547,7 @@ privateVisit:true,
 featured:true,
 rating:4.7,
 reviews:[
-"Diagnostyka p≥odnoúci",
+"Diagnostyka p≈Çodno≈õci",
 "USG specjalistyczne"
 ]
 },
@@ -8565,17 +8565,17 @@ privateVisit:true,
 featured:true,
 rating:4.8,
 reviews:[
-"Leczenie niep≥odnoúci",
+"Leczenie niep≈Çodno≈õci",
 "Zaawansowana diagnostyka"
 ]
 },
 /* =========================
-   GINEKOLOG / PO£OØNIK ó NFZ
+   GINEKOLOG / PO≈ÅO≈ªNIK ‚Äî NFZ
 ========================= */
 
 {
 id:4801,
-name:"Kliniczne Centrum Ginekologii, Po≥oønictwa i Neonatologii",
+name:"Kliniczne Centrum Ginekologii, Po≈Ço≈ºnictwa i Neonatologii",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8586,8 +8586,8 @@ privateVisit:false,
 featured:true,
 rating:4.8,
 reviews:[
-"Najwaøniejszy oúrodek po≥oøniczy w regionie",
-"Prowadzenie ciπøy i patologia ciπøy"
+"Najwa≈ºniejszy o≈õrodek po≈Ço≈ºniczy w regionie",
+"Prowadzenie ciƒÖ≈ºy i patologia ciƒÖ≈ºy"
 ]
 },
 
@@ -8622,8 +8622,8 @@ privateVisit:false,
 featured:false,
 rating:4.4,
 reviews:[
-"KrÛtsze kolejki niø w szpitalach",
-"Ginekologia doros≥ych i dzieci"
+"Kr√≥tsze kolejki ni≈º w szpitalach",
+"Ginekologia doros≈Çych i dzieci"
 ]
 },
 
@@ -8658,14 +8658,14 @@ privateVisit:false,
 featured:false,
 rating:4.5,
 reviews:[
-"Prowadzenie ciπøy fizjologicznej",
+"Prowadzenie ciƒÖ≈ºy fizjologicznej",
 "Badania profilaktyczne NFZ"
 ]
 },
 
 {
 id:4806,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Ginekolog",
 
 city:"Opole",
@@ -8681,12 +8681,12 @@ reviews:[
 ]
 },
 /* =========================
-   GINEKOLOGIA ONKOLOGICZNA ó PRYWATNIE
+   GINEKOLOGIA ONKOLOGICZNA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:4901,
-name:"dr n. med. Pawe≥ GÍbka",
+name:"dr n. med. Pawe≈Ç Gƒôbka",
 specialization:"Ginekolog onkologiczny",
 
 city:"Opole",
@@ -8734,13 +8734,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Kwalifikacje operacyjne",
-"WspÛ≥praca z chirurgiπ onkologicznπ"
+"Wsp√≥≈Çpraca z chirurgiƒÖ onkologicznƒÖ"
 ]
 },
 
 {
 id:4904,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Ginekolog onkologiczny",
 
 city:"Opole",
@@ -8770,11 +8770,11 @@ featured:false,
 rating:4.6,
 reviews:[
 "USG specjalistyczne",
-"WstÍpna kwalifikacja do leczenia onkologicznego"
+"Wstƒôpna kwalifikacja do leczenia onkologicznego"
 ]
 },
 /* =========================
-   GINEKOLOGIA ONKOLOGICZNA ó NFZ
+   GINEKOLOGIA ONKOLOGICZNA ‚Äî NFZ
 ========================= */
 
 {
@@ -8790,14 +8790,14 @@ privateVisit:false,
 featured:true,
 rating:4.8,
 reviews:[
-"G≥Ûwny oúrodek ginekologii onkologicznej w regionie",
-"Pe≥na diagnostyka i leczenie operacyjne NFZ"
+"G≈Ç√≥wny o≈õrodek ginekologii onkologicznej w regionie",
+"Pe≈Çna diagnostyka i leczenie operacyjne NFZ"
 ]
 },
 
 {
 id:4952,
-name:"Poradnia Onkologii ñ Centrum Onkologii",
+name:"Poradnia Onkologii ‚Äì Centrum Onkologii",
 specialization:"Ginekolog onkologiczny",
 
 city:"Opole",
@@ -8809,13 +8809,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Pierwsza konsultacja przy podejrzeniu nowotworu",
-"Szybka úcieøka onkologiczna"
+"Szybka ≈õcie≈ºka onkologiczna"
 ]
 },
 
 {
 id:4953,
-name:"Kliniczne Centrum Ginekologii, Po≥oønictwa i Neonatologii",
+name:"Kliniczne Centrum Ginekologii, Po≈Ço≈ºnictwa i Neonatologii",
 specialization:"Ginekolog onkologiczny",
 
 city:"Opole",
@@ -8833,7 +8833,7 @@ reviews:[
 
 {
 id:4954,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Ginekolog onkologiczny",
 
 city:"Opole",
@@ -8844,17 +8844,17 @@ privateVisit:false,
 featured:false,
 rating:4.4,
 reviews:[
-"WstÍpna diagnostyka zmian ginekologicznych",
+"Wstƒôpna diagnostyka zmian ginekologicznych",
 "Kierowanie do leczenia onkologicznego"
 ]
 },
 /* =========================
-   DERMATOLOGIA I WENEROLOGIA ó PRYWATNIE
+   DERMATOLOGIA I WENEROLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:5101,
-name:"Dermatolog KÍcki ñ Gabinet medycyny estetycznej",
+name:"Dermatolog Kƒôcki ‚Äì Gabinet medycyny estetycznej",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -8868,7 +8868,7 @@ featured:false
 
 {
 id:5102,
-name:"Qderm ñ Dagmara Bartosik",
+name:"Qderm ‚Äì Dagmara Bartosik",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -8882,7 +8882,7 @@ featured:false
 
 {
 id:5103,
-name:"Pa≥uchowska Katarzyna ñ Gabinet dermatologii",
+name:"Pa≈Çuchowska Katarzyna ‚Äì Gabinet dermatologii",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -8896,7 +8896,7 @@ featured:false
 
 {
 id:5104,
-name:"Krystyna SuchiÒska ñ Gabinet dermatologiczny",
+name:"Krystyna Suchi≈Ñska ‚Äì Gabinet dermatologiczny",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -8910,7 +8910,7 @@ featured:false
 
 {
 id:5105,
-name:"lek. Bartosz Ptak ñ Dermatolog",
+name:"lek. Bartosz Ptak ‚Äì Dermatolog",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -8952,7 +8952,7 @@ featured:false
 
 {
 id:5108,
-name:"Rekucka B. ñ Gabinet dermatologiczny",
+name:"Rekucka B. ‚Äì Gabinet dermatologiczny",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -9010,7 +9010,7 @@ featured:false
 
 {
 id:5112,
-name:"LUX MED Opole ñ Fieldorfa",
+name:"LUX MED Opole ‚Äì Fieldorfa",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -9022,12 +9022,12 @@ rating:4.6,
 featured:false
 },
 /* =========================
-   DERMATOLOGIA / WENEROLOGIA ó NFZ
+   DERMATOLOGIA / WENEROLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:5201,
-name:"Uniwersytecki Szpital Kliniczny ñ Poradnia Dermatologiczna",
+name:"Uniwersytecki Szpital Kliniczny ‚Äì Poradnia Dermatologiczna",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -9041,7 +9041,7 @@ featured:true
 
 {
 id:5202,
-name:"Oddzia≥ Dermatologii ñ Katowicka 66",
+name:"Oddzia≈Ç Dermatologii ‚Äì Katowicka 66",
 specialization:"Dermatolog",
 
 city:"Opole",
@@ -9081,12 +9081,12 @@ rating:4.1,
 featured:false
 },
 /* =========================
-   REUMATOLOGIA ó PRYWATNIE
+   REUMATOLOGIA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:5301,
-name:"Anna Kleszcz ñ Gabinet Reumatologiczny",
+name:"Anna Kleszcz ‚Äì Gabinet Reumatologiczny",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9100,7 +9100,7 @@ featured:true
 
 {
 id:5302,
-name:"dr n. med. Graøyna Jaworska-GÛrna ñ Gabinet Reumatologiczny",
+name:"dr n. med. Gra≈ºyna Jaworska-G√≥rna ‚Äì Gabinet Reumatologiczny",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9114,7 +9114,7 @@ featured:false
 
 {
 id:5303,
-name:"Ma≥gorzata Falenta-Hitnarowicz ñ Gabinet Reumatologiczny",
+name:"Ma≈Çgorzata Falenta-Hitnarowicz ‚Äì Gabinet Reumatologiczny",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9128,7 +9128,7 @@ featured:false
 
 {
 id:5304,
-name:"Katarzyna SuchoÒ ñ Specjalista Reumatolog",
+name:"Katarzyna Sucho≈Ñ ‚Äì Specjalista Reumatolog",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9156,7 +9156,7 @@ featured:true
 
 {
 id:5306,
-name:"MEDICLINICA ñ Centrum Medyczne",
+name:"MEDICLINICA ‚Äì Centrum Medyczne",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9198,7 +9198,7 @@ featured:false
 
 {
 id:5309,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9210,12 +9210,12 @@ rating:4.5,
 featured:false
 },
 /* =========================
-   REUMATOLOGIA ó NFZ
+   REUMATOLOGIA ‚Äî NFZ
 ========================= */
 
 {
 id:5310,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Reumatologiczna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Reumatologiczna",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9229,7 +9229,7 @@ featured:true
 
 {
 id:5311,
-name:"ZespÛ≥ WojewÛdzkich Poradni Specjalistycznych",
+name:"Zesp√≥≈Ç Wojew√≥dzkich Poradni Specjalistycznych",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9257,7 +9257,7 @@ featured:false
 
 {
 id:5313,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Reumatolog",
 
 city:"Opole",
@@ -9283,13 +9283,13 @@ rating:4.3,
 featured:false
 },
 /* =========================
-   PSYCHIATRA DZIECI I M£ODZIEØY ó PRYWATNIE
+   PSYCHIATRA DZIECI I M≈ÅODZIE≈ªY ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:5401,
 name:"PSYCHOMED Centrum Diagnostyczno-Terapeutyczne",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"734 460 357",
@@ -9303,7 +9303,7 @@ featured:true
 {
 id:5402,
 name:"Centrum Zdrowia Psychicznego i Seksuologii SENSO",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"734 816 916",
@@ -9317,7 +9317,7 @@ featured:false
 {
 id:5403,
 name:"Centrum Terapii i Psychoedukacji",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"602 673 562",
@@ -9330,8 +9330,8 @@ featured:false
 
 {
 id:5404,
-name:"Jaros≥aw Smela ñ Gabinet Psychiatryczny",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+name:"Jaros≈Çaw Smela ‚Äì Gabinet Psychiatryczny",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"606 238 234",
@@ -9344,8 +9344,8 @@ featured:false
 
 {
 id:5405,
-name:"Maciej OtrÍbski ñ Psychiatra",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+name:"Maciej Otrƒôbski ‚Äì Psychiatra",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"77 333 12 18",
@@ -9358,8 +9358,8 @@ featured:false
 
 {
 id:5406,
-name:"Wojciech OsiÒski ñ Gabinet Psychiatryczny",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+name:"Wojciech Osi≈Ñski ‚Äì Gabinet Psychiatryczny",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"795 000 984",
@@ -9370,13 +9370,13 @@ rating:4.7,
 featured:false
 },
 /* =========================
-   PSYCHIATRA DZIECI I M£ODZIEØY ó NFZ
+   PSYCHIATRA DZIECI I M≈ÅODZIE≈ªY ‚Äî NFZ
 ========================= */
 
 {
 id:5451,
 name:"Centrum Zdrowia Psychicznego AnaMija",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"730 718 718",
@@ -9389,8 +9389,8 @@ featured:true
 
 {
 id:5452,
-name:"WojewÛdzki Szpital Specjalistyczny im. åw. Jadwigi",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+name:"Wojew√≥dzki Szpital Specjalistyczny im. ≈öw. Jadwigi",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"77 541 42 22",
@@ -9404,7 +9404,7 @@ featured:true
 {
 id:5453,
 name:"NZOZ Specjalistyka",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"77 454 54 27",
@@ -9418,7 +9418,7 @@ featured:false
 {
 id:5454,
 name:"Optima Medycyna",
-specialization:"Psychiatra dzieci i m≥odzieøy",
+specialization:"Psychiatra dzieci i m≈Çodzie≈ºy",
 
 city:"Opole",
 phone:"77 887 21 21",
@@ -9429,12 +9429,12 @@ rating:4.4,
 featured:false
 },
 /* =========================
-   MEDYCYNA RATUNKOWA ó PRYWATNIE
+   MEDYCYNA RATUNKOWA ‚Äî PRYWATNIE
 ========================= */
 
 {
 id:5501,
-name:"Extrakaretka ñ prywatna karetka",
+name:"Extrakaretka ‚Äì prywatna karetka",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9462,7 +9462,7 @@ featured:false
 
 {
 id:5503,
-name:"Medin Klinika ñ pilna pomoc lekarska",
+name:"Medin Klinika ‚Äì pilna pomoc lekarska",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9476,7 +9476,7 @@ featured:true
 
 {
 id:5504,
-name:"LUX MED ñ szybka pomoc lekarska",
+name:"LUX MED ‚Äì szybka pomoc lekarska",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9490,7 +9490,7 @@ featured:false
 
 {
 id:5505,
-name:"Holimed ñ pilne wizyty lekarskie",
+name:"Holimed ‚Äì pilne wizyty lekarskie",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9504,7 +9504,7 @@ featured:false
 
 {
 id:5506,
-name:"Danuta Kazek-Pastwa ñ wizyty domowe",
+name:"Danuta Kazek-Pastwa ‚Äì wizyty domowe",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9518,7 +9518,7 @@ featured:false
 
 {
 id:5507,
-name:"Joachim Negacz ñ wizyty domowe",
+name:"Joachim Negacz ‚Äì wizyty domowe",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9530,12 +9530,12 @@ rating:4.4,
 featured:false
 },
 /* =========================
-   MEDYCYNA RATUNKOWA ó NFZ
+   MEDYCYNA RATUNKOWA ‚Äî NFZ
 ========================= */
 
 {
 id:5508,
-name:"SOR ñ Uniwersytecki Szpital Kliniczny",
+name:"SOR ‚Äì Uniwersytecki Szpital Kliniczny",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9549,7 +9549,7 @@ featured:true
 
 {
 id:5509,
-name:"SOR ñ Szpital WojewÛdzki",
+name:"SOR ‚Äì Szpital Wojew√≥dzki",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9563,7 +9563,7 @@ featured:true
 
 {
 id:5510,
-name:"Nocna i åwiπteczna Opieka Zdrowotna ñ USK Opole",
+name:"Nocna i ≈öwiƒÖteczna Opieka Zdrowotna ‚Äì USK Opole",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9577,7 +9577,7 @@ featured:false
 
 {
 id:5511,
-name:"Nocna i åwiπteczna Opieka Zdrowotna ñ Szpital WojewÛdzki",
+name:"Nocna i ≈öwiƒÖteczna Opieka Zdrowotna ‚Äì Szpital Wojew√≥dzki",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9591,7 +9591,7 @@ featured:false
 
 {
 id:5512,
-name:"Zespo≥y Ratownictwa Medycznego ñ Pogotowie Ratunkowe",
+name:"Zespo≈Çy Ratownictwa Medycznego ‚Äì Pogotowie Ratunkowe",
 specialization:"Medycyna ratunkowa",
 
 city:"Opole",
@@ -9603,7 +9603,7 @@ rating:5.0,
 featured:true
 },
 /* =========================
-   LEKARZ RODZINNY / INTERNISTA ó PRYWATNIE
+   LEKARZ RODZINNY / INTERNISTA ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -9622,7 +9622,7 @@ featured:true
 
 {
 id:5602,
-name:"PZU Zdrowie Centrum Medyczne Opole Pi≥sudskiego",
+name:"PZU Zdrowie Centrum Medyczne Opole Pi≈Çsudskiego",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9664,7 +9664,7 @@ featured:false
 
 {
 id:5605,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9678,7 +9678,7 @@ featured:false
 
 {
 id:5606,
-name:"Anna Buczek ñ lekarz medycyny rodzinnej",
+name:"Anna Buczek ‚Äì lekarz medycyny rodzinnej",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9692,7 +9692,7 @@ featured:false
 
 {
 id:5607,
-name:"Krystyna Mazalon-Kumala ñ Prywatny Gabinet Lekarski",
+name:"Krystyna Mazalon-Kumala ‚Äì Prywatny Gabinet Lekarski",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9706,7 +9706,7 @@ featured:false
 
 {
 id:5608,
-name:"Kazek-Pastwa Danuta ñ wizyty domowe",
+name:"Kazek-Pastwa Danuta ‚Äì wizyty domowe",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9718,12 +9718,12 @@ rating:4.6,
 featured:true
 },
 /* =========================
-   LEKARZ RODZINNY ó NFZ
+   LEKARZ RODZINNY ‚Äî NFZ
 ========================= */
 
 {
 id:5701,
-name:"Centrum Zdrowia w Opolu ñ Przychodnia Koúciuszki",
+name:"Centrum Zdrowia w Opolu ‚Äì Przychodnia Ko≈õciuszki",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9737,7 +9737,7 @@ featured:true
 
 {
 id:5702,
-name:"Centrum Zdrowia ñ Przychodnia Licealna",
+name:"Centrum Zdrowia ‚Äì Przychodnia Licealna",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9779,7 +9779,7 @@ featured:false
 
 {
 id:5705,
-name:"NZOZ ZWM ÑMalinkaî",
+name:"NZOZ ZWM ‚ÄûMalinka‚Äù",
 specialization:"Lekarz rodzinny",
 
 city:"Opole",
@@ -9819,7 +9819,7 @@ rating:4.3,
 featured:false
 },
 /* =========================
-   MEDYCYNA PRACY ó PRYWATNIE
+   MEDYCYNA PRACY ‚Äî PRYWATNIE
 ========================= */
 
 {
@@ -9838,7 +9838,7 @@ featured:true
 
 {
 id:5802,
-name:"Medycyna Pracy ñ Zofia Maj-Twardy",
+name:"Medycyna Pracy ‚Äì Zofia Maj-Twardy",
 specialization:"Medycyna pracy",
 
 city:"Opole",
@@ -9908,7 +9908,7 @@ featured:true
 
 {
 id:5807,
-name:"Centrum Medyczne PZU Zdrowie Opole Pi≥sudskiego",
+name:"Centrum Medyczne PZU Zdrowie Opole Pi≈Çsudskiego",
 specialization:"Medycyna pracy",
 
 city:"Opole",
@@ -9922,7 +9922,7 @@ featured:false
 
 {
 id:5808,
-name:"Gabinet medycyny pracy Jadwiga Bernaú-B≥aszczyk",
+name:"Gabinet medycyny pracy Jadwiga Berna≈õ-B≈Çaszczyk",
 specialization:"Medycyna pracy",
 
 city:"Opole",
@@ -9936,7 +9936,7 @@ featured:false
 
 {
 id:5809,
-name:"Gabinet medycyny pracy Eløbieta Szankowska-Miler",
+name:"Gabinet medycyny pracy El≈ºbieta Szankowska-Miler",
 specialization:"Medycyna pracy",
 
 city:"Opole",
@@ -9948,12 +9948,12 @@ rating:4.2,
 featured:false
 },
 /* =========================
-   MEDYCYNA PRACY ó NFZ / SKIEROWANIA
+   MEDYCYNA PRACY ‚Äî NFZ / SKIEROWANIA
 ========================= */
 
 {
 id:5901,
-name:"WojewÛdzki Oúrodek Medycyny Pracy w Opolu",
+name:"Wojew√≥dzki O≈õrodek Medycyny Pracy w Opolu",
 specialization:"Medycyna pracy",
 
 city:"Opole",
@@ -10007,7 +10007,7 @@ rating:4.4,
 featured:false
 },
 /* =========================
-   MEDYCYNA PALIATYWNA ó PRYWATNIE (OPOLE)
+   MEDYCYNA PALIATYWNA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
@@ -10054,7 +10054,7 @@ featured:false
 
 {
 id:6004,
-name:"Domowe Hospicjum dla Dzieci ñ Fundacja",
+name:"Domowe Hospicjum dla Dzieci ‚Äì Fundacja",
 specialization:"Medycyna paliatywna",
 
 city:"Opole",
@@ -10080,7 +10080,7 @@ rating:4.5,
 featured:false
 },
 /* =========================
-   MEDYCYNA PALIATYWNA ó NFZ (OPOLE)
+   MEDYCYNA PALIATYWNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -10100,7 +10100,7 @@ featured:true
 
 {
 id:6102,
-name:"Caritas Diecezji Opolskiej ñ Hospicjum Domowe",
+name:"Caritas Diecezji Opolskiej ‚Äì Hospicjum Domowe",
 specialization:"Medycyna paliatywna",
 
 city:"Opole",
@@ -10143,7 +10143,7 @@ rating:4.9,
 featured:true
 },
 /* =========================
-   REHABILITACJA MEDYCZNA ó PRYWATNIE (OPOLE)
+   REHABILITACJA MEDYCZNA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
@@ -10178,7 +10178,7 @@ featured:false
 
 {
 id:6203,
-name:"KRIOSONIK ñ Centrum Medyczne i Rehabilitacji",
+name:"KRIOSONIK ‚Äì Centrum Medyczne i Rehabilitacji",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10238,7 +10238,7 @@ featured:false
 
 {
 id:6208,
-name:"Centrum Leczenia BÛlu",
+name:"Centrum Leczenia B√≥lu",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10281,12 +10281,12 @@ rating:4.7,
 featured:false
 },
 /* =========================
-   REHABILITACJA MEDYCZNA ó NFZ (OPOLE)
+   REHABILITACJA MEDYCZNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:6301,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Poradnia Rehabilitacyjna",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Poradnia Rehabilitacyjna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10301,7 +10301,7 @@ featured:true
 
 {
 id:6302,
-name:"Szpital WojewÛdzki w Opolu ñ Rehabilitacja",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10316,7 +10316,7 @@ featured:true
 
 {
 id:6303,
-name:"NZOZ Specjalistyka ñ Rehabilitacja",
+name:"NZOZ Specjalistyka ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10376,7 +10376,7 @@ featured:false
 
 {
 id:6307,
-name:"Centrum Medyczne Na Dobre i Na Z≥e ñ Rehabilitacja",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10391,7 +10391,7 @@ featured:false
 
 {
 id:6308,
-name:"Centrum Rehabilitacji dla Dzieci im. ks. bpa JÛzefa Nathana",
+name:"Centrum Rehabilitacji dla Dzieci im. ks. bpa J√≥zefa Nathana",
 specialization:"Rehabilitacja medyczna",
 
 city:"Opole",
@@ -10404,7 +10404,7 @@ rating:4.8,
 featured:true
 },
 /* =========================
-   DIAGNOSTYKA OBRAZOWA ó PRYWATNIE (OPOLE)
+   DIAGNOSTYKA OBRAZOWA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
@@ -10424,7 +10424,7 @@ featured:true
 
 {
 id:6402,
-name:"HELIMED Opole ñ Rezonans Magnetyczny i Tomografia",
+name:"HELIMED Opole ‚Äì Rezonans Magnetyczny i Tomografia",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10454,7 +10454,7 @@ featured:false
 
 {
 id:6405,
-name:"Diagnostyka Wyrobek ñ Centrum Diagnostyki Obrazowej",
+name:"Diagnostyka Wyrobek ‚Äì Centrum Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10469,7 +10469,7 @@ featured:false
 
 {
 id:6406,
-name:"SONOMED Prywatny Oúrodek Diagnostyki USG",
+name:"SONOMED Prywatny O≈õrodek Diagnostyki USG",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10484,7 +10484,7 @@ featured:false
 
 {
 id:6407,
-name:"Gabinet USG Piotr Tomczyk ñ Mediclinica",
+name:"Gabinet USG Piotr Tomczyk ‚Äì Mediclinica",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10499,7 +10499,7 @@ featured:false
 
 {
 id:6408,
-name:"Gabinet USG Doppler Ma≥gorzata Wawrzyniak",
+name:"Gabinet USG Doppler Ma≈Çgorzata Wawrzyniak",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10514,7 +10514,7 @@ featured:false
 
 {
 id:6409,
-name:"Badanie USG Opole ñ Blurej",
+name:"Badanie USG Opole ‚Äì Blurej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10527,12 +10527,12 @@ rating:4.5,
 featured:false
 },
 /* =========================
-   DIAGNOSTYKA OBRAZOWA ó NFZ (OPOLE)
+   DIAGNOSTYKA OBRAZOWA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:6501,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Zak≥ad Diagnostyki Obrazowej",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10547,7 +10547,7 @@ featured:true
 
 {
 id:6502,
-name:"Szpital WojewÛdzki w Opolu ñ Pracownia Radiologii",
+name:"Szpital Wojew√≥dzki w Opolu ‚Äì Pracownia Radiologii",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10562,7 +10562,7 @@ featured:true
 
 {
 id:6503,
-name:"Opolskie Centrum Onkologii ñ Diagnostyka Obrazowa",
+name:"Opolskie Centrum Onkologii ‚Äì Diagnostyka Obrazowa",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10577,7 +10577,7 @@ featured:true
 
 {
 id:6504,
-name:"HELIMED Opole ñ Rezonans i Tomografia",
+name:"HELIMED Opole ‚Äì Rezonans i Tomografia",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10607,7 +10607,7 @@ featured:false
 
 {
 id:6506,
-name:"Oúrodek Diagnostyki ChorÛb Gruczo≥u Piersiowego SPZOZ Centrum",
+name:"O≈õrodek Diagnostyki Chor√≥b Gruczo≈Çu Piersiowego SPZOZ Centrum",
 specialization:"Diagnostyka obrazowa",
 
 city:"Opole",
@@ -10620,12 +10620,12 @@ rating:4.5,
 featured:false
 },
 /* =========================
-   ONKOLOGIA KLINICZNA ó PRYWATNIE (OPOLE)
+   ONKOLOGIA KLINICZNA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:6601,
-name:"Praktyka Lekarska Tomasz SachaÒbiÒski",
+name:"Praktyka Lekarska Tomasz Sacha≈Ñbi≈Ñski",
 specialization:"Onkologia kliniczna",
 
 city:"Opole",
@@ -10683,7 +10683,7 @@ rating:4.7,
 featured:false
 },
 /* =========================
-   ONKOLOGIA KLINICZNA ó NFZ (OPOLE)
+   ONKOLOGIA KLINICZNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -10703,7 +10703,7 @@ featured:true
 
 {
 id:6702,
-name:"Poradnia Onkologiczna ñ Opolskie Centrum Onkologii",
+name:"Poradnia Onkologiczna ‚Äì Opolskie Centrum Onkologii",
 specialization:"Onkologia kliniczna",
 
 city:"Opole",
@@ -10718,7 +10718,7 @@ featured:false
 
 {
 id:6704,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Onkologia kliniczna",
 
 city:"Opole",
@@ -10731,7 +10731,7 @@ rating:4.4,
 featured:false
 },
 /* =========================
-   RADIOTERAPIA ONKOLOGICZNA ó OPOLE
+   RADIOTERAPIA ONKOLOGICZNA ‚Äî OPOLE
 ========================= */
 
 {
@@ -10751,7 +10751,7 @@ featured:true
 
 {
 id:6802,
-name:"Oddzia≥ Radioterapii ñ Opolskie Centrum Onkologii",
+name:"Oddzia≈Ç Radioterapii ‚Äì Opolskie Centrum Onkologii",
 specialization:"Radioterapia onkologiczna",
 
 city:"Opole",
@@ -10766,7 +10766,7 @@ featured:false
 
 {
 id:6803,
-name:"Czerw Kamila ñ konsultacje onkologiczne",
+name:"Czerw Kamila ‚Äì konsultacje onkologiczne",
 specialization:"Radioterapia onkologiczna",
 
 city:"Opole",
@@ -10779,7 +10779,7 @@ rating:4.6,
 featured:false
 },
 /* =========================
-   RADIOTERAPIA ONKOLOGICZNA ó NFZ (OPOLE)
+   RADIOTERAPIA ONKOLOGICZNA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -10799,7 +10799,7 @@ featured:true
 
 {
 id:6902,
-name:"Oddzia≥ Radioterapii ñ Opolskie Centrum Onkologii",
+name:"Oddzia≈Ç Radioterapii ‚Äì Opolskie Centrum Onkologii",
 specialization:"Radioterapia onkologiczna",
 
 city:"Opole",
@@ -10812,13 +10812,13 @@ rating:4.8,
 featured:true
 },
 /* =========================
-   CHIRURGIA SZCZ KOWO-TWARZOWA ó PRYWATNIE (OPOLE)
+   CHIRURGIA SZCZƒòKOWO-TWARZOWA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:7001,
-name:"Dr Roman Sadowski ñ chirurg szczÍkowo-twarzowy",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+name:"Dr Roman Sadowski ‚Äì chirurg szczƒôkowo-twarzowy",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 457 75 54",
@@ -10832,8 +10832,8 @@ featured:true
 
 {
 id:7002,
-name:"Roman Kordel ñ gabinet chirurgii szczÍkowej",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+name:"Roman Kordel ‚Äì gabinet chirurgii szczƒôkowej",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 456 58 09",
@@ -10847,7 +10847,7 @@ rating:4.6
 {
 id:7003,
 name:"Medin Klinika",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 707 70 70",
@@ -10861,7 +10861,7 @@ featured:true
 
 {
 id:7004,
-name:"Kozarski Stomatologia ñ chirurg szczÍkowy",
+name:"Kozarski Stomatologia ‚Äì chirurg szczƒôkowy",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -10875,7 +10875,7 @@ rating:4.9
 
 {
 id:7005,
-name:"Adenta ñ chirurgia stomatologiczna",
+name:"Adenta ‚Äì chirurgia stomatologiczna",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -10903,7 +10903,7 @@ rating:4.8
 
 {
 id:7007,
-name:"STOMART ñ chirurgia stomatologiczna",
+name:"STOMART ‚Äì chirurgia stomatologiczna",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -10915,13 +10915,13 @@ homeVisit:false,
 rating:4.6
 },
 /* =========================
-   CHIRURGIA SZCZ KOWO-TWARZOWA ó NFZ (OPOLE)
+   CHIRURGIA SZCZƒòKOWO-TWARZOWA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
 id:7101,
-name:"Uniwersytecki Szpital Kliniczny w Opolu ñ Oddzia≥ Chirurgii SzczÍkowo-Twarzowej",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+name:"Uniwersytecki Szpital Kliniczny w Opolu ‚Äì Oddzia≈Ç Chirurgii Szczƒôkowo-Twarzowej",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 452 06 50",
@@ -10930,13 +10930,13 @@ privateVisit:false,
 homeVisit:false,
 rating:4.7,
 featured:true,
-note:"G≥Ûwny oddzia≥ chirurgii szczÍkowo-twarzowej w regionie"
+note:"G≈Ç√≥wny oddzia≈Ç chirurgii szczƒôkowo-twarzowej w regionie"
 },
 
 {
 id:7102,
-name:"Poradnia Chirurgii SzczÍkowo-Twarzowej ñ USK Opole",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+name:"Poradnia Chirurgii Szczƒôkowo-Twarzowej ‚Äì USK Opole",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 452 01 11",
@@ -10944,13 +10944,13 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.6,
-note:"Kwalifikacje do zabiegÛw i kontrole pooperacyjne"
+note:"Kwalifikacje do zabieg√≥w i kontrole pooperacyjne"
 },
 
 {
 id:7103,
-name:"Szpital WojewÛdzki w Opolu",
-specialization:"Chirurgia szczÍkowo-twarzowa",
+name:"Szpital Wojew√≥dzki w Opolu",
+specialization:"Chirurgia szczƒôkowo-twarzowa",
 
 city:"Opole",
 phone:"77 443 31 00",
@@ -10958,15 +10958,15 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.5,
-note:"WstÍpna pomoc urazowa i kierowanie do oddzia≥u szczÍkowo-twarzowego"
+note:"Wstƒôpna pomoc urazowa i kierowanie do oddzia≈Çu szczƒôkowo-twarzowego"
 },
 /* =========================
-   STOMATOLOGIA ó PRYWATNIE (OPOLE)
+   STOMATOLOGIA ‚Äî PRYWATNIE (OPOLE)
 ========================= */
 
 {
 id:7201,
-name:"Ambasada Uúmiechu",
+name:"Ambasada U≈õmiechu",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -10976,7 +10976,7 @@ privateVisit:true,
 homeVisit:false,
 rating:4.8,
 featured:true,
-note:"Duøa klinika stomatologiczna ñ implanty, ortodoncja, leczenie kompleksowe"
+note:"Du≈ºa klinika stomatologiczna ‚Äì implanty, ortodoncja, leczenie kompleksowe"
 },
 
 {
@@ -11023,7 +11023,7 @@ note:"Implanty i trudne ekstrakcje"
 
 {
 id:7205,
-name:"Opolskie Centrum Stomatologiczne TaÒczak i S-ka",
+name:"Opolskie Centrum Stomatologiczne Ta≈Ñczak i S-ka",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -11032,12 +11032,12 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Duøa przychodnia stomatologiczna dla doros≥ych i dzieci"
+note:"Du≈ºa przychodnia stomatologiczna dla doros≈Çych i dzieci"
 },
 
 {
 id:7206,
-name:"Galeria Uúmiechu Opole",
+name:"Galeria U≈õmiechu Opole",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -11046,7 +11046,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.9,
-note:"Bardzo wysokie opinie ñ leczenie estetyczne i zachowawcze"
+note:"Bardzo wysokie opinie ‚Äì leczenie estetyczne i zachowawcze"
 },
 
 {
@@ -11060,7 +11060,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Takøe pogotowie stomatologiczne"
+note:"Tak≈ºe pogotowie stomatologiczne"
 },
 
 {
@@ -11102,7 +11102,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.8,
-note:"Chirurgiczne usuwanie Ûsemek i implanty"
+note:"Chirurgiczne usuwanie √≥semek i implanty"
 },
 
 {
@@ -11119,7 +11119,7 @@ rating:4.9,
 note:"Implanty i rekonstrukcje zgryzu"
 },
 /* =========================
-   STOMATOLOGIA ó NFZ (OPOLE)
+   STOMATOLOGIA ‚Äî NFZ (OPOLE)
 ========================= */
 
 {
@@ -11134,7 +11134,7 @@ privateVisit:false,
 homeVisit:false,
 rating:4.4,
 featured:true,
-note:"Stomatologia ogÛlna NFZ ñ leczenie doros≥ych i dzieci, wype≥nienia i ekstrakcje"
+note:"Stomatologia og√≥lna NFZ ‚Äì leczenie doros≈Çych i dzieci, wype≈Çnienia i ekstrakcje"
 },
 
 {
@@ -11148,7 +11148,7 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.3,
-note:"Podstawowa stomatologia NFZ ñ leczenie zachowawcze i kontrole"
+note:"Podstawowa stomatologia NFZ ‚Äì leczenie zachowawcze i kontrole"
 },
 
 {
@@ -11162,12 +11162,12 @@ nfz:true,
 privateVisit:true,
 homeVisit:false,
 rating:4.5,
-note:"Leczenie stomatologiczne NFZ, czÍúciowo ortodoncja dzieciÍca"
+note:"Leczenie stomatologiczne NFZ, czƒô≈õciowo ortodoncja dzieciƒôca"
 },
 
 {
 id:7304,
-name:"Opolskie Centrum Stomatologiczne TaÒczak i S-ka",
+name:"Opolskie Centrum Stomatologiczne Ta≈Ñczak i S-ka",
 specialization:"Dentysta",
 
 city:"Opole",
@@ -11176,10 +11176,10 @@ nfz:true,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Duøa poradnia ñ úwiadczenia NFZ dla doros≥ych i dzieci"
+note:"Du≈ºa poradnia ‚Äì ≈õwiadczenia NFZ dla doros≈Çych i dzieci"
 },
 /* ==========================================
-   CHIRURGIA URAZOWO-ORTOPEDYCZNA ó PRYWATNIE (OPOLE)
+   CHIRURGIA URAZOWO-ORTOPEDYCZNA ‚Äî PRYWATNIE (OPOLE)
 ========================================== */
 
 {
@@ -11208,7 +11208,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Leczenie urazÛw stawÛw, konsultacje przedoperacyjne"
+note:"Leczenie uraz√≥w staw√≥w, konsultacje przedoperacyjne"
 },
 
 {
@@ -11222,7 +11222,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Diagnostyka pourazowa doros≥ych i dzieci, szybkie terminy"
+note:"Diagnostyka pourazowa doros≈Çych i dzieci, szybkie terminy"
 },
 
 {
@@ -11250,7 +11250,7 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.5,
-note:"Kontrole po urazach, leczenie bÛlu krÍgos≥upa i stawÛw"
+note:"Kontrole po urazach, leczenie b√≥lu krƒôgos≈Çupa i staw√≥w"
 },
 
 {
@@ -11264,12 +11264,12 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.7,
-note:"Ortopedia urazowa, kontuzje sportowe i przeciπøeniowe"
+note:"Ortopedia urazowa, kontuzje sportowe i przeciƒÖ≈ºeniowe"
 },
 
 {
 id:7407,
-name:"Mariusz Ciszewski ñ Ortopeda",
+name:"Mariusz Ciszewski ‚Äì Ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11278,12 +11278,12 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.6,
-note:"Zwyrodnienia stawÛw, kwalifikacje operacyjne"
+note:"Zwyrodnienia staw√≥w, kwalifikacje operacyjne"
 },
 
 {
 id:7408,
-name:"Jakub Bednarek ñ Ortopeda",
+name:"Jakub Bednarek ‚Äì Ortopeda",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11292,12 +11292,12 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.5,
-note:"Urazy koÒczyn, diagnostyka ortopedyczna"
+note:"Urazy ko≈Ñczyn, diagnostyka ortopedyczna"
 },
 
 {
 id:7409,
-name:"Prywatna Praktyka Lekarska Ewa BobiÒska Andrzej BobiÒski",
+name:"Prywatna Praktyka Lekarska Ewa Bobi≈Ñska Andrzej Bobi≈Ñski",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11306,12 +11306,12 @@ nfz:false,
 privateVisit:true,
 homeVisit:false,
 rating:4.5,
-note:"Ortopedia doros≥ych i dzieci, urazy i wady narzπdu ruchu"
+note:"Ortopedia doros≈Çych i dzieci, urazy i wady narzƒÖdu ruchu"
 },
 
 {
 id:7410,
-name:"Swaton Rafa≥ Gabinet Ortopedyczny",
+name:"Swaton Rafa≈Ç Gabinet Ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11323,7 +11323,7 @@ rating:4.4,
 note:"Konsultacje ortopedyczne, leczenie pourazowe i zachowawcze"
 },
 /* ==========================================
-   CHIRURGIA URAZOWO-ORTOPEDYCZNA ó NFZ (OPOLE)
+   CHIRURGIA URAZOWO-ORTOPEDYCZNA ‚Äî NFZ (OPOLE)
 ========================================== */
 
 {
@@ -11338,12 +11338,12 @@ privateVisit:false,
 homeVisit:false,
 rating:4.6,
 featured:true,
-note:"G≥Ûwny oúrodek ortopedii w regionie, operacje, kwalifikacje i kontrole po zabiegach"
+note:"G≈Ç√≥wny o≈õrodek ortopedii w regionie, operacje, kwalifikacje i kontrole po zabiegach"
 },
 
 {
 id:7502,
-name:"Szpital WojewÛdzki w Opolu",
+name:"Szpital Wojew√≥dzki w Opolu",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11352,12 +11352,12 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.5,
-note:"Oddzia≥ urazowo-ortopedyczny, leczenie urazÛw i hospitalizacja"
+note:"Oddzia≈Ç urazowo-ortopedyczny, leczenie uraz√≥w i hospitalizacja"
 },
 
 {
 id:7503,
-name:"Oddzia≥ Chirurgii Urazowo-Ortopedycznej ñ Szpital WojewÛdzki",
+name:"Oddzia≈Ç Chirurgii Urazowo-Ortopedycznej ‚Äì Szpital Wojew√≥dzki",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11366,7 +11366,7 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.5,
-note:"Ca≥odobowe leczenie urazÛw, z≥amania, operacje pourazowe"
+note:"Ca≈Çodobowe leczenie uraz√≥w, z≈Çamania, operacje pourazowe"
 },
 
 {
@@ -11380,12 +11380,12 @@ nfz:true,
 privateVisit:false,
 homeVisit:false,
 rating:4.4,
-note:"Ambulatoryjna ortopedia NFZ, czÍsto krÛtsze kolejki"
+note:"Ambulatoryjna ortopedia NFZ, czƒôsto kr√≥tsze kolejki"
 },
 
 {
 id:7505,
-name:"Centrum Medyczne Na Dobre i Na Z≥e",
+name:"Centrum Medyczne Na Dobre i Na Z≈Çe",
 specialization:"Ortopeda",
 
 city:"Opole",
@@ -11397,9 +11397,9 @@ rating:4.4,
 note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 },
 {
-  name: "SzymaÒska Antonina, lek. med. alergolog",
+  name: "Szyma≈Ñska Antonina, lek. med. alergolog",
   specialization: "Alergolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11407,16 +11407,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "602 746 177",
   reviews: [
-    "Konsultacje alergologiczne dla doros≥ych i dzieci.",
+    "Konsultacje alergologiczne dla doros≈Çych i dzieci.",
     "Diagnostyka alergii wziewnych i pokarmowych.",
     "Leczenie astmy, kataru alergicznego, AZS i wysypek.",
-    "Jedyny typowo alergologiczny prywatny gabinet w mieúcie."
+    "Jedyny typowo alergologiczny prywatny gabinet w mie≈õcie."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Alergolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11425,15 +11425,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Konsultacje alergologiczne prywatnie.",
-    "Testy alergiczne dla dzieci i doros≥ych.",
-    "Terminy zaleøne od grafiku specjalistÛw.",
-    "CzÍsto najszybsza dostÍpnoúÊ wizyt prywatnych."
+    "Testy alergiczne dla dzieci i doros≈Çych.",
+    "Terminy zale≈ºne od grafiku specjalist√≥w.",
+    "Czƒôsto najszybsza dostƒôpno≈õƒá wizyt prywatnych."
   ]
 },
 {
-  name: "Poradnia Alergologiczna dla Dzieci ñ Specjalistyczny ZespÛ≥ Opieki Zdrowotnej",
+  name: "Poradnia Alergologiczna dla Dzieci ‚Äì Specjalistyczny Zesp√≥≈Ç Opieki Zdrowotnej",
   specialization: "Alergolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11441,16 +11441,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 483 46 02",
   reviews: [
-    "Alergolog dzieciÍcy w ramach NFZ.",
+    "Alergolog dzieciƒôcy w ramach NFZ.",
     "Diagnostyka astmy oraz alergii pokarmowych i wziewnych.",
     "Testy alergiczne u dzieci.",
-    "Poradnia dzia≥a okresowo ñ warto wczeúniej potwierdziÊ dostÍpnoúÊ wizyt."
+    "Poradnia dzia≈Ça okresowo ‚Äì warto wcze≈õniej potwierdziƒá dostƒôpno≈õƒá wizyt."
   ]
 },
 {
   name: "Przychodnia Harcerska",
   specialization: "Alergolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11458,15 +11458,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.2,
   phone: "77 483 35 01",
   reviews: [
-    "Lekarz rodzinny prowadzπcy leczenie alergii w ramach NFZ.",
-    "Wystawianie skierowaÒ do alergologa.",
+    "Lekarz rodzinny prowadzƒÖcy leczenie alergii w ramach NFZ.",
+    "Wystawianie skierowa≈Ñ do alergologa.",
     "Podstawowa diagnostyka i leczenie alergii."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Anestezjolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11476,13 +11476,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje anestezjologiczne przed zabiegami prywatnymi.",
     "Kwalifikacja do operacji i ocena ryzyka znieczulenia.",
-    "Wizyta ustalana przez chirurga, ortopedÍ lub ginekologa przed zabiegiem."
+    "Wizyta ustalana przez chirurga, ortopedƒô lub ginekologa przed zabiegiem."
   ]
 },
 {
-  name: "Samodzielny Publiczny ZespÛ≥ Opieki Zdrowotnej w KÍdzierzynie-Koülu",
+  name: "Samodzielny Publiczny Zesp√≥≈Ç Opieki Zdrowotnej w Kƒôdzierzynie-Ko≈∫lu",
   specialization: "Anestezjolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11491,14 +11491,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje anestezjologiczne wykonywane w ramach przygotowania do operacji.",
-    "Opieka anestezjologiczna podczas hospitalizacji i zabiegÛw.",
+    "Opieka anestezjologiczna podczas hospitalizacji i zabieg√≥w.",
     "Brak samodzielnych wizyt ambulatoryjnych."
   ]
 },
 {
-  name: "Szpital ñ oddzia≥y zabiegowe (ul. Judyma 4)",
+  name: "Szpital ‚Äì oddzia≈Çy zabiegowe (ul. Judyma 4)",
   specialization: "Anestezjolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11506,14 +11506,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.2,
   phone: "696 930 474",
   reviews: [
-    "Konsultacje anestezjologiczne wy≥πcznie do leczenia szpitalnego.",
-    "Przygotowanie pacjentÛw do zabiegÛw operacyjnych."
+    "Konsultacje anestezjologiczne wy≈ÇƒÖcznie do leczenia szpitalnego.",
+    "Przygotowanie pacjent√≥w do zabieg√≥w operacyjnych."
   ]
 },
 {
-  name: "Samodzielny Publiczny ZespÛ≥ Opieki Zdrowotnej w KÍdzierzynie-Koülu",
+  name: "Samodzielny Publiczny Zesp√≥≈Ç Opieki Zdrowotnej w Kƒôdzierzynie-Ko≈∫lu",
   specialization: "Anestezjolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11523,14 +11523,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje anestezjologiczne NFZ przed planowanymi operacjami.",
     "Kwalifikacja do znieczulenia oraz opieka na bloku operacyjnym i OIOM.",
-    "Konsultacja odbywa siÍ wy≥πcznie w ramach przygotowania do hospitalizacji.",
-    "Brak zapisÛw ambulatoryjnych bez skierowania na zabieg."
+    "Konsultacja odbywa siƒô wy≈ÇƒÖcznie w ramach przygotowania do hospitalizacji.",
+    "Brak zapis√≥w ambulatoryjnych bez skierowania na zabieg."
   ]
 },
 {
-  name: "Szpital ñ oddzia≥y zabiegowe (ul. Judyma 4)",
+  name: "Szpital ‚Äì oddzia≈Çy zabiegowe (ul. Judyma 4)",
   specialization: "Anestezjolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11538,15 +11538,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.2,
   phone: "600 266 994",
   reviews: [
-    "Anestezjolog dostÍpny w ramach leczenia szpitalnego NFZ.",
-    "Konsultacje przedoperacyjne podczas przygotowania do zabiegÛw.",
-    "Opieka anestezjologiczna przy oddzia≥ach zabiegowych."
+    "Anestezjolog dostƒôpny w ramach leczenia szpitalnego NFZ.",
+    "Konsultacje przedoperacyjne podczas przygotowania do zabieg√≥w.",
+    "Opieka anestezjologiczna przy oddzia≈Çach zabiegowych."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Chirurg naczyniowy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11555,14 +11555,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Prywatne konsultacje chirurgii naczyniowej.",
-    "Diagnostyka øylakÛw, miaødøycy i zakrzepicy.",
-    "USG Doppler naczyÒ wykonywane na miejscu."
+    "Diagnostyka ≈ºylak√≥w, mia≈ºd≈ºycy i zakrzepicy.",
+    "USG Doppler naczy≈Ñ wykonywane na miejscu."
   ]
 },
 {
-  name: "Medicus ñ centrum medyczne",
+  name: "Medicus ‚Äì centrum medyczne",
   specialization: "Chirurg naczyniowy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11571,14 +11571,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 53 98",
   reviews: [
     "Konsultacje chirurgii naczyniowej prywatnie.",
-    "Diagnostyka chorÛb øy≥ i tÍtnic.",
-    "Terminy zaleøne od grafiku lekarza."
+    "Diagnostyka chor√≥b ≈ºy≈Ç i tƒôtnic.",
+    "Terminy zale≈ºne od grafiku lekarza."
   ]
 },
 {
-  name: "Prywatne gabinety chirurgiczne ñ centrum miasta",
+  name: "Prywatne gabinety chirurgiczne ‚Äì centrum miasta",
   specialization: "Chirurg naczyniowy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11586,15 +11586,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "502 816 743",
   reviews: [
-    "Okresowe konsultacje naczyniowe u chirurgÛw ogÛlnych.",
-    "Kwalifikacja do leczenia øylakÛw.",
-    "Wizyty dostÍpne w rejonie al. Jana Paw≥a II."
+    "Okresowe konsultacje naczyniowe u chirurg√≥w og√≥lnych.",
+    "Kwalifikacja do leczenia ≈ºylak√≥w.",
+    "Wizyty dostƒôpne w rejonie al. Jana Paw≈Ça II."
   ]
 },
 {
   name: "Klinika Nova",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11603,15 +11603,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Prywatne konsultacje chirurgiczne.",
-    "Leczenie przepuklin, torbieli i zmian skÛrnych.",
-    "Kwalifikacje do zabiegÛw chirurgicznych.",
-    "Pomoc przy wrastajπcych paznokciach."
+    "Leczenie przepuklin, torbieli i zmian sk√≥rnych.",
+    "Kwalifikacje do zabieg√≥w chirurgicznych.",
+    "Pomoc przy wrastajƒÖcych paznokciach."
   ]
 },
 {
-  name: "Medicus ñ Centrum Medyczne",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  name: "Medicus ‚Äì Centrum Medyczne",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11619,15 +11619,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "77 483 53 98",
   reviews: [
-    "Konsultacje chirurgii ogÛlnej prywatnie.",
+    "Konsultacje chirurgii og√≥lnej prywatnie.",
     "Drobne zabiegi chirurgiczne ambulatoryjne.",
-    "Diagnostyka i leczenie zmian skÛrnych."
+    "Diagnostyka i leczenie zmian sk√≥rnych."
   ]
 },
 {
-  name: "Indywidualne gabinety chirurgiczne ñ centrum miasta",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  name: "Indywidualne gabinety chirurgiczne ‚Äì centrum miasta",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11635,16 +11635,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "661 430 555",
   reviews: [
-    "Usuwanie zmian skÛrnych i szycie ran.",
+    "Usuwanie zmian sk√≥rnych i szycie ran.",
     "Prywatne konsultacje chirurgiczne.",
-    "Terminy wizyt zaleøne od lekarza.",
-    "Gabinet w rejonie al. Jana Paw≥a II."
+    "Terminy wizyt zale≈ºne od lekarza.",
+    "Gabinet w rejonie al. Jana Paw≈Ça II."
   ]
 },
 {
-  name: "Poradnia Chirurgii OgÛlnej ñ SP ZOZ",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  name: "Poradnia Chirurgii Og√≥lnej ‚Äì SP ZOZ",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11659,9 +11659,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11670,14 +11670,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "695 640 190",
   reviews: [
     "Poradnia chirurgiczna NFZ.",
-    "Leczenie ran, przepuklin i zmian skÛrnych.",
+    "Leczenie ran, przepuklin i zmian sk√≥rnych.",
     "Konsultacje w ramach leczenia szpitalnego."
   ]
 },
 {
   name: "IS-MED-PS",
-  specialization: "Chirurg ogÛlny",
-  city: "KÍdzierzyn-Koüle",
+  specialization: "Chirurg og√≥lny",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11685,15 +11685,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.2,
   phone: "77 540 50 70",
   reviews: [
-    "Ambulatoryjna poradnia chirurgii ogÛlnej NFZ.",
+    "Ambulatoryjna poradnia chirurgii og√≥lnej NFZ.",
     "Konsultacje i leczenie chirurgiczne.",
-    "CzÍsto krÛtszy czas oczekiwania niø w szpitalu."
+    "Czƒôsto kr√≥tszy czas oczekiwania ni≈º w szpitalu."
   ]
 },
 {
   name: "Prywatny Gabinet Chirurgiczny Marek Rak",
   specialization: "Chirurg onkologiczny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11703,14 +11703,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje chirurgiczno-onkologiczne.",
     "Kwalifikacje do leczenia operacyjnego zmian nowotworowych.",
-    "Usuwanie zmian skÛrnych i guzkÛw.",
+    "Usuwanie zmian sk√≥rnych i guzk√≥w.",
     "Diagnostyka chirurgiczna zmian podejrzanych."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Chirurg onkologiczny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11720,13 +11720,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Prywatne konsultacje chirurgiczne w kierunku zmian onkologicznych.",
     "Ocena zmian podejrzanych nowotworowo.",
-    "Kwalifikacja do zabiegÛw i dalszego leczenia."
+    "Kwalifikacja do zabieg√≥w i dalszego leczenia."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Chirurg onkologiczny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11735,14 +11735,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Prywatne konsultacje chirurgiczne.",
-    "Diagnostyka zmian guzowatych skÛry i tkanek miÍkkich.",
-    "Ocena zmian wymagajπcych leczenia operacyjnego."
+    "Diagnostyka zmian guzowatych sk√≥ry i tkanek miƒôkkich.",
+    "Ocena zmian wymagajƒÖcych leczenia operacyjnego."
   ]
 },
 {
   name: "Mocek Z., lek. med. ortopeda",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11750,15 +11750,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Ortopedia i traumatologia narzπdu ruchu.",
-    "Leczenie urazÛw, bÛlu stawÛw i krÍgos≥upa.",
-    "Kwalifikacje do zabiegÛw ortopedycznych."
+    "Ortopedia i traumatologia narzƒÖdu ruchu.",
+    "Leczenie uraz√≥w, b√≥lu staw√≥w i krƒôgos≈Çupa.",
+    "Kwalifikacje do zabieg√≥w ortopedycznych."
   ]
 },
 {
   name: "Felsz Marcin, lek. med. ortopeda",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11768,13 +11768,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Prywatne konsultacje ortopedyczne.",
     "Leczenie kontuzji i zmian zwyrodnieniowych.",
-    "Diagnostyka bÛlu kolan i barkÛw."
+    "Diagnostyka b√≥lu kolan i bark√≥w."
   ]
 },
 {
-  name: "Ireneusz £otecki ñ Prywatny Gabinet Ortopedyczny",
+  name: "Ireneusz ≈Åotecki ‚Äì Prywatny Gabinet Ortopedyczny",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11782,15 +11782,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Diagnostyka i leczenie schorzeÒ narzπdu ruchu.",
+    "Diagnostyka i leczenie schorze≈Ñ narzƒÖdu ruchu.",
     "Leczenie pourazowe.",
     "Konsultacje ortopedyczne prywatnie."
   ]
 },
 {
-  name: "Gabinet Lekarski Grzegorz åwiÍtek ñ Porady Ortopedyczne",
+  name: "Gabinet Lekarski Grzegorz ≈öwiƒôtek ‚Äì Porady Ortopedyczne",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11799,13 +11799,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Ambulatoryjne konsultacje ortopedyczne.",
-    "Leczenie urazÛw sportowych i bÛlu stawÛw."
+    "Leczenie uraz√≥w sportowych i b√≥lu staw√≥w."
   ]
 },
 {
-  name: "Betlej Mieczys≥aw, lek. med. ortopeda",
+  name: "Betlej Mieczys≈Çaw, lek. med. ortopeda",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11814,13 +11814,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Prywatne konsultacje ortopedyczne.",
-    "Diagnostyka schorzeÒ narzπdu ruchu."
+    "Diagnostyka schorze≈Ñ narzƒÖdu ruchu."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11829,15 +11829,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Konsultacje ortopedyczne prywatnie.",
-    "USG stawÛw i blokady przeciwbÛlowe.",
+    "USG staw√≥w i blokady przeciwb√≥lowe.",
     "Kwalifikacje do operacji ortopedycznych.",
     "Zwykle najszybsze terminy wizyt."
   ]
 },
 {
-  name: "Poradnia Ortopedyczna ñ SP ZOZ",
+  name: "Poradnia Ortopedyczna ‚Äì SP ZOZ",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11846,15 +11846,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje ortopedyczne w ramach NFZ.",
-    "Leczenie urazÛw, zmian zwyrodnieniowych i bÛlu stawÛw.",
+    "Leczenie uraz√≥w, zmian zwyrodnieniowych i b√≥lu staw√≥w.",
     "Kontrole po operacjach oraz kwalifikacje do leczenia operacyjnego.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11870,7 +11870,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "IS-MED-PS",
   specialization: "Chirurgia urazowo-ortopedyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -11879,14 +11879,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje ortopedyczne NFZ.",
-    "Diagnostyka i leczenie schorzeÒ narzπdu ruchu.",
-    "CzÍsto krÛtszy czas oczekiwania niø w poradni szpitalnej."
+    "Diagnostyka i leczenie schorze≈Ñ narzƒÖdu ruchu.",
+    "Czƒôsto kr√≥tszy czas oczekiwania ni≈º w poradni szpitalnej."
   ]
 },
 {
   name: "Stomatologia Cybulscy",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11896,13 +11896,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Leczenie zachowawcze, protetyka i implanty.",
     "Chirurgia stomatologiczna.",
-    "Duøy zespÛ≥ lekarzy i ≥atwiejsza dostÍpnoúÊ terminÛw."
+    "Du≈ºy zesp√≥≈Ç lekarzy i ≈Çatwiejsza dostƒôpno≈õƒá termin√≥w."
   ]
 },
 {
-  name: "Gabinet Stomatologiczny Microestetic ñ Grzegorz SkupiÒski",
+  name: "Gabinet Stomatologiczny Microestetic ‚Äì Grzegorz Skupi≈Ñski",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11910,15 +11910,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.9,
   phone: "",
   reviews: [
-    "Stomatologia estetyczna i leczenie kana≥owe.",
-    "Odbudowy zÍbÛw.",
-    "Bardzo wysokie opinie pacjentÛw."
+    "Stomatologia estetyczna i leczenie kana≈Çowe.",
+    "Odbudowy zƒôb√≥w.",
+    "Bardzo wysokie opinie pacjent√≥w."
   ]
 },
 {
   name: "Stomatologia Rogala",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11927,14 +11927,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Endodoncja i protetyka.",
-    "Wybielanie zÍbÛw.",
+    "Wybielanie zƒôb√≥w.",
     "Konsultacje stomatologiczne prywatnie."
   ]
 },
 {
-  name: "FR•dent Gabinet Stomatologiczny Jerzy Frπczek",
+  name: "FRƒÑdent Gabinet Stomatologiczny Jerzy FrƒÖczek",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11942,14 +11942,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Leczenie ogÛlne i profilaktyka stomatologiczna.",
+    "Leczenie og√≥lne i profilaktyka stomatologiczna.",
     "Prywatne wizyty dentystyczne."
   ]
 },
 {
   name: "ImplantDent",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11962,9 +11962,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "£obodziÒski Marek ñ Gabinet stomatologiczny",
+  name: "≈Åobodzi≈Ñski Marek ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11979,7 +11979,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Prywatny Gabinet Stomatologiczny Joanna Joszko",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -11987,14 +11987,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "",
   reviews: [
-    "Leczenie doros≥ych i dzieci.",
-    "Stomatologia ogÛlna."
+    "Leczenie doros≈Çych i dzieci.",
+    "Stomatologia og√≥lna."
   ]
 },
 {
-  name: "OlszaÒski Dariusz ñ Gabinet stomatologiczny",
+  name: "Olsza≈Ñski Dariusz ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12003,13 +12003,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Leczenie zachowawcze i konsultacje stomatologiczne.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "Gabinet stomatologiczny Donata Ha≥aburdo",
+  name: "Gabinet stomatologiczny Donata Ha≈Çaburdo",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12017,14 +12017,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "",
   reviews: [
-    "Stomatologia ogÛlna.",
+    "Stomatologia og√≥lna.",
     "Prywatne wizyty dentystyczne."
   ]
 },
 {
-  name: "Gabinet stomatologiczny Agnieszka KaroÒ",
+  name: "Gabinet stomatologiczny Agnieszka Karo≈Ñ",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12037,9 +12037,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Agnieszka Olejnik ñ Gabinet stomatologiczny",
+  name: "Agnieszka Olejnik ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12047,14 +12047,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "",
   reviews: [
-    "Stomatologia ogÛlna.",
-    "Profilaktyka i leczenie zÍbÛw."
+    "Stomatologia og√≥lna.",
+    "Profilaktyka i leczenie zƒôb√≥w."
   ]
 },
 {
-  name: "Alicja JÍdrzejas-Sokulska ñ Gabinet stomatologiczny",
+  name: "Alicja Jƒôdrzejas-Sokulska ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12067,9 +12067,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "MÛj Dentysta ñ J. Mrozek",
+  name: "M√≥j Dentysta ‚Äì J. Mrozek",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12078,13 +12078,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Leczenie stomatologiczne prywatnie.",
-    "Diagnostyka i leczenie prÛchnicy."
+    "Diagnostyka i leczenie pr√≥chnicy."
   ]
 },
 {
-  name: "Barbara Mi≥kowska-Bura ñ Gabinet stomatologiczny",
+  name: "Barbara Mi≈Çkowska-Bura ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12092,14 +12092,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "",
   reviews: [
-    "Stomatologia ogÛlna.",
+    "Stomatologia og√≥lna.",
     "Prywatne wizyty dentystyczne."
   ]
 },
 {
-  name: "Wiktor BukowiÒski ñ Gabinet stomatologiczny",
+  name: "Wiktor Bukowi≈Ñski ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12112,9 +12112,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Lidia Sosnowska ñ Gabinet stomatologiczny",
+  name: "Lidia Sosnowska ‚Äì Gabinet stomatologiczny",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12123,13 +12123,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Prywatne leczenie stomatologiczne.",
-    "Profilaktyka i leczenie zÍbÛw."
+    "Profilaktyka i leczenie zƒôb√≥w."
   ]
 },
 {
   name: "Przychodnia Stomatologiczna SP ZOZ",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12137,16 +12137,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 1.9,
   phone: "77 483 35 01",
   reviews: [
-    "Stomatolog NFZ dla doros≥ych i dzieci.",
-    "Leczenie zachowawcze oraz ekstrakcje zÍbÛw.",
-    "Wymagana wczeúniejsza rejestracja.",
-    "åwiadczenia refundowane w ramach NFZ."
+    "Stomatolog NFZ dla doros≈Çych i dzieci.",
+    "Leczenie zachowawcze oraz ekstrakcje zƒôb√≥w.",
+    "Wymagana wcze≈õniejsza rejestracja.",
+    "≈öwiadczenia refundowane w ramach NFZ."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12162,7 +12162,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Wybrane gabinety stomatologiczne z kontraktem NFZ",
   specialization: "Dentysta",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12170,15 +12170,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.0,
   phone: "",
   reviews: [
-    "åwiadczenia stomatologiczne NFZ w wybrane dni.",
-    "Leczenie prÛchnicy i usuwanie zÍbÛw.",
+    "≈öwiadczenia stomatologiczne NFZ w wybrane dni.",
+    "Leczenie pr√≥chnicy i usuwanie zƒôb√≥w.",
     "Ograniczona liczba miejsc refundowanych."
   ]
 },
 {
   name: "Prywatny Gabinet Dermatologii Leczniczej i Estetycznej Laserderm",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12188,13 +12188,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje dermatologiczne prywatnie.",
     "Dermatoskopia znamion.",
-    "Leczenie trπdziku, ≥uszczycy, alergii skÛrnych i grzybic."
+    "Leczenie trƒÖdziku, ≈Çuszczycy, alergii sk√≥rnych i grzybic."
   ]
 },
 {
-  name: "Wilgorska-Dorau Iwona ñ Indywidualna specjalistyczna praktyka lekarska",
+  name: "Wilgorska-Dorau Iwona ‚Äì Indywidualna specjalistyczna praktyka lekarska",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12203,14 +12203,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "501 201 933",
   reviews: [
     "Dermatolog-wenerolog.",
-    "Diagnostyka zmian skÛrnych i chorÛb przewlek≥ych skÛry.",
+    "Diagnostyka zmian sk√≥rnych i chor√≥b przewlek≈Çych sk√≥ry.",
     "Prywatne konsultacje dermatologiczne."
   ]
 },
 {
-  name: "Bal-Nierych≥o Aleksandra ñ Prywatny Gabinet Dermatologiczny",
+  name: "Bal-Nierych≈Ço Aleksandra ‚Äì Prywatny Gabinet Dermatologiczny",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12218,15 +12218,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "663 834 300",
   reviews: [
-    "Diagnostyka zmian skÛrnych.",
-    "Leczenie przewlek≥ych chorÛb dermatologicznych.",
+    "Diagnostyka zmian sk√≥rnych.",
+    "Leczenie przewlek≈Çych chor√≥b dermatologicznych.",
     "Prywatne konsultacje dermatologiczne."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12236,13 +12236,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje dermatologiczne prywatnie.",
     "Badania i zabiegi dermatologiczne na miejscu.",
-    "RÛøni specjaliúci i ≥atwiejsza dostÍpnoúÊ terminÛw."
+    "R√≥≈ºni specjali≈õci i ≈Çatwiejsza dostƒôpno≈õƒá termin√≥w."
   ]
 },
 {
-  name: "Poradnia SkÛrno-Wenerologiczna ñ SP ZOZ",
+  name: "Poradnia Sk√≥rno-Wenerologiczna ‚Äì SP ZOZ",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12251,15 +12251,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 27 50",
   reviews: [
     "Konsultacje dermatologiczne w ramach NFZ.",
-    "Diagnostyka znamion, wysypek, ≥uszczycy i trπdziku.",
-    "Leczenie chorÛb skÛry.",
+    "Diagnostyka znamion, wysypek, ≈Çuszczycy i trƒÖdziku.",
+    "Leczenie chor√≥b sk√≥ry.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Szpital ñ poradnia specjalistyczna (ul. Judyma 4)",
+  name: "Szpital ‚Äì poradnia specjalistyczna (ul. Judyma 4)",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12268,14 +12268,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Poradnia dermatologiczna NFZ.",
-    "Diagnostyka i leczenie chorÛb skÛry.",
+    "Diagnostyka i leczenie chor√≥b sk√≥ry.",
     "Konsultacje w ramach leczenia specjalistycznego."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Dermatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12284,14 +12284,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje dermatologiczne NFZ.",
-    "Diagnostyka i leczenie chorÛb skÛry.",
-    "CzÍsto krÛtszy czas oczekiwania niø w poradni szpitalnej."
+    "Diagnostyka i leczenie chor√≥b sk√≥ry.",
+    "Czƒôsto kr√≥tszy czas oczekiwania ni≈º w poradni szpitalnej."
   ]
 },
 {
-  name: "Poradnia Diabetologiczna ñ al. Jana Paw≥a II 4",
+  name: "Poradnia Diabetologiczna ‚Äì al. Jana Paw≈Ça II 4",
   specialization: "Diabetolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12301,14 +12301,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Prywatne konsultacje diabetologiczne.",
     "Leczenie cukrzycy typu 1 i 2.",
-    "DobÛr lekÛw oraz insulinoterapii.",
-    "Kontrola powik≥aÒ cukrzycy."
+    "Dob√≥r lek√≥w oraz insulinoterapii.",
+    "Kontrola powik≈Ça≈Ñ cukrzycy."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Diabetolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12318,14 +12318,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje diabetologiczne prywatnie.",
     "Prowadzenie leczenia cukrzycy.",
-    "MoøliwoúÊ wykonania badaÒ laboratoryjnych na miejscu.",
-    "CzÍsto szybsze terminy wizyt."
+    "Mo≈ºliwo≈õƒá wykonania bada≈Ñ laboratoryjnych na miejscu.",
+    "Czƒôsto szybsze terminy wizyt."
   ]
 },
 {
-  name: "Poradnia Diabetologiczna ñ SP ZOZ",
+  name: "Poradnia Diabetologiczna ‚Äì SP ZOZ",
   specialization: "Diabetolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12335,14 +12335,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje diabetologiczne w ramach NFZ.",
     "Leczenie cukrzycy typu 1 i 2.",
-    "Kontrola powik≥aÒ oraz dobÛr leczenia.",
+    "Kontrola powik≈Ça≈Ñ oraz dob√≥r leczenia.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Diabetolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12352,13 +12352,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Ambulatoryjna poradnia diabetologiczna NFZ.",
     "Diagnostyka i prowadzenie leczenia cukrzycy.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "HELIMED KÍdzierzyn-Koüle II ñ Rezonans Magnetyczny, Tomografia Komputerowa",
+  name: "HELIMED Kƒôdzierzyn-Ko≈∫le II ‚Äì Rezonans Magnetyczny, Tomografia Komputerowa",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12368,13 +12368,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Rezonans magnetyczny (MRI) oraz tomografia komputerowa (TK).",
     "Badania prywatne bez skierowania NFZ.",
-    "Bardzo dobre opinie pacjentÛw i szybkie terminy."
+    "Bardzo dobre opinie pacjent√≥w i szybkie terminy."
   ]
 },
 {
-  name: "HELIMED KÍdzierzyn-Koüle ñ Rezonans Magnetyczny",
+  name: "HELIMED Kƒôdzierzyn-Ko≈∫le ‚Äì Rezonans Magnetyczny",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12383,13 +12383,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "32 355 95 10",
   reviews: [
     "Rezonans magnetyczny wykonywany prywatnie.",
-    "Szybkie terminy badaÒ diagnostycznych."
+    "Szybkie terminy bada≈Ñ diagnostycznych."
   ]
 },
 {
   name: "ForestMed Sp. z o.o.",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12404,7 +12404,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Klinika Nova",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12414,13 +12414,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "USG specjalistyczne i RTG.",
     "Diagnostyka obrazowa wykonywana przy konsultacjach lekarskich.",
-    "Badania dostÍpne prywatnie."
+    "Badania dostƒôpne prywatnie."
   ]
 },
 {
-  name: "Samodzielny Publiczny ZespÛ≥ Opieki Zdrowotnej ñ Zak≥ad Diagnostyki Obrazowej",
+  name: "Samodzielny Publiczny Zesp√≥≈Ç Opieki Zdrowotnej ‚Äì Zak≈Çad Diagnostyki Obrazowej",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12434,9 +12434,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Pracownia diagnostyki ñ ul. Judyma 4",
+  name: "Pracownia diagnostyki ‚Äì ul. Judyma 4",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12445,13 +12445,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Badania RTG i USG w ramach NFZ.",
-    "Diagnostyka dla poradni specjalistycznych i pacjentÛw ambulatoryjnych."
+    "Diagnostyka dla poradni specjalistycznych i pacjent√≥w ambulatoryjnych."
   ]
 },
 {
-  name: "HELIMED ñ Rezonans Magnetyczny",
+  name: "HELIMED ‚Äì Rezonans Magnetyczny",
   specialization: "Diagnostyka obrazowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12465,9 +12465,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "S≥awomir Gudaniec ñ Endokrynolog, Internista",
+  name: "S≈Çawomir Gudaniec ‚Äì Endokrynolog, Internista",
   specialization: "Endokrynolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12476,15 +12476,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "662 252 789",
   reviews: [
     "Prywatne konsultacje endokrynologiczne.",
-    "Diagnostyka chorÛb tarczycy, Hashimoto oraz zaburzeÒ hormonalnych.",
-    "Leczenie nadczynnoúci i niedoczynnoúci tarczycy.",
-    "MoøliwoúÊ konsultacji internistycznych."
+    "Diagnostyka chor√≥b tarczycy, Hashimoto oraz zaburze≈Ñ hormonalnych.",
+    "Leczenie nadczynno≈õci i niedoczynno≈õci tarczycy.",
+    "Mo≈ºliwo≈õƒá konsultacji internistycznych."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Endokrynolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12494,13 +12494,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje endokrynologiczne prywatnie.",
     "Diagnostyka laboratoryjna i badania USG na miejscu.",
-    "RÛøni specjaliúci oraz ≥atwiejsza dostÍpnoúÊ terminÛw."
+    "R√≥≈ºni specjali≈õci oraz ≈Çatwiejsza dostƒôpno≈õƒá termin√≥w."
   ]
 },
 {
-  name: "Poradnia Endokrynologiczna ñ SP ZOZ",
+  name: "Poradnia Endokrynologiczna ‚Äì SP ZOZ",
   specialization: "Endokrynolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12509,7 +12509,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje endokrynologiczne w ramach NFZ.",
-    "Diagnostyka chorÛb tarczycy, Hashimoto i zaburzeÒ hormonalnych.",
+    "Diagnostyka chor√≥b tarczycy, Hashimoto i zaburze≈Ñ hormonalnych.",
     "Kontrola leczenia hormonalnego.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
@@ -12517,7 +12517,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "IS-MED-PS",
   specialization: "Endokrynolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12527,13 +12527,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Ambulatoryjna poradnia endokrynologiczna NFZ.",
     "Diagnostyka i prowadzenie leczenia hormonalnego.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12542,15 +12542,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Prywatne konsultacje gastroenterologiczne.",
-    "Diagnostyka bÛlu brzucha, refluksu i chorÛb jelit.",
+    "Diagnostyka b√≥lu brzucha, refluksu i chor√≥b jelit.",
     "Kwalifikacja do gastroskopii i kolonoskopii.",
-    "Regularne przyjÍcia kilku specjalistÛw."
+    "Regularne przyjƒôcia kilku specjalist√≥w."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12559,14 +12559,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Konsultacje internistyczno-gastrologiczne.",
-    "Diagnostyka chorÛb przewodu pokarmowego.",
-    "Prowadzenie leczenia chorÛb øo≥πdka i jelit."
+    "Diagnostyka chor√≥b przewodu pokarmowego.",
+    "Prowadzenie leczenia chor√≥b ≈ºo≈ÇƒÖdka i jelit."
   ]
 },
 {
   name: "Medicus",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12575,14 +12575,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 53 98",
   reviews: [
     "Konsultacje specjalistyczne gastroenterologiczne.",
-    "Diagnostyka problemÛw øo≥πdkowo-jelitowych.",
+    "Diagnostyka problem√≥w ≈ºo≈ÇƒÖdkowo-jelitowych.",
     "Kierowanie na badania endoskopowe."
   ]
 },
 {
-  name: "Poradnia Gastroenterologiczna ñ SP ZOZ",
+  name: "Poradnia Gastroenterologiczna ‚Äì SP ZOZ",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12591,15 +12591,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje gastroenterologiczne w ramach NFZ.",
-    "Diagnostyka chorÛb øo≥πdka, jelit, wπtroby i trzustki.",
+    "Diagnostyka chor√≥b ≈ºo≈ÇƒÖdka, jelit, wƒÖtroby i trzustki.",
     "Kwalifikacja do gastroskopii i kolonoskopii.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Pracownia endoskopii ñ ul. Judyma 4",
+  name: "Pracownia endoskopii ‚Äì ul. Judyma 4",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12614,7 +12614,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "IS-MED-PS",
   specialization: "Gastroenterolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12623,14 +12623,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje gastroenterologiczne NFZ.",
-    "Diagnostyka i leczenie chorÛb uk≥adu pokarmowego.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie chor√≥b uk≈Çadu pokarmowego.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "KaroÒ Jaros≥aw, lek. med. ginekolog ñ Gabinet",
+  name: "Karo≈Ñ Jaros≈Çaw, lek. med. ginekolog ‚Äì Gabinet",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12638,15 +12638,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "602 611 804",
   reviews: [
-    "Prowadzenie ciπøy oraz konsultacje ginekologiczne.",
+    "Prowadzenie ciƒÖ≈ºy oraz konsultacje ginekologiczne.",
     "Badania profilaktyczne i USG ginekologiczne.",
     "Bardzo dobre opinie pacjentek."
   ]
 },
 {
-  name: "Wyrwo≥-Gromek Renata ñ Gabinet ginekologiczno-po≥oøniczy",
+  name: "Wyrwo≈Ç-Gromek Renata ‚Äì Gabinet ginekologiczno-po≈Ço≈ºniczy",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12654,15 +12654,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "77 483 25 42",
   reviews: [
-    "Konsultacje ginekologiczno-po≥oønicze.",
+    "Konsultacje ginekologiczno-po≈Ço≈ºnicze.",
     "Cytologia i kontrolne badania ginekologiczne.",
-    "Prowadzenie ciπøy prywatnie."
+    "Prowadzenie ciƒÖ≈ºy prywatnie."
   ]
 },
 {
-  name: "lek. Jaros≥aw G≥owacki ñ ginekolog",
+  name: "lek. Jaros≈Çaw G≈Çowacki ‚Äì ginekolog",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12671,14 +12671,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 443 96 35",
   reviews: [
     "Prywatne konsultacje ginekologiczne.",
-    "Diagnostyka i leczenie schorzeÒ kobiecych.",
+    "Diagnostyka i leczenie schorze≈Ñ kobiecych.",
     "Badania kontrolne i profilaktyczne."
   ]
 },
 {
-  name: "Paku≥o Ryszard ñ Gabinet ginekologiczno-po≥oøniczy",
+  name: "Paku≈Ço Ryszard ‚Äì Gabinet ginekologiczno-po≈Ço≈ºniczy",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12686,15 +12686,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "603 118 450",
   reviews: [
-    "Opieka ginekologiczna i po≥oønicza.",
+    "Opieka ginekologiczna i po≈Ço≈ºnicza.",
     "Prywatne wizyty kontrolne.",
-    "Prowadzenie ciπøy."
+    "Prowadzenie ciƒÖ≈ºy."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12703,7 +12703,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Konsultacje ginekologiczne prywatnie.",
-    "USG i prowadzenie ciπøy.",
+    "USG i prowadzenie ciƒÖ≈ºy.",
     "Badania wykonywane na miejscu.",
     "Zwykle szybkie terminy wizyt."
   ]
@@ -12711,7 +12711,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "MediSan sp. z o.o.",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12727,7 +12727,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Piast-Med Przychodnia",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12735,14 +12735,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 483 40 02",
   reviews: [
-    "Wizyty ginekologiczne prywatnie wed≥ug grafiku lekarzy.",
+    "Wizyty ginekologiczne prywatnie wed≈Çug grafiku lekarzy.",
     "Diagnostyka i konsultacje specjalistyczne."
   ]
 },
 {
-  name: "Poradnia Ginekologiczno-Po≥oønicza ñ SP ZOZ",
+  name: "Poradnia Ginekologiczno-Po≈Ço≈ºnicza ‚Äì SP ZOZ",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12752,14 +12752,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje ginekologiczne w ramach NFZ.",
     "Badania kontrolne oraz cytologia.",
-    "Prowadzenie ciπøy i leczenie chorÛb ginekologicznych.",
+    "Prowadzenie ciƒÖ≈ºy i leczenie chor√≥b ginekologicznych.",
     "Skierowanie zazwyczaj nie jest wymagane."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12768,14 +12768,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Poradnia ginekologiczna NFZ.",
-    "Opieka nad kobietπ w ciπøy.",
+    "Opieka nad kobietƒÖ w ciƒÖ≈ºy.",
     "Leczenie ambulatoryjne i diagnostyka."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12784,14 +12784,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje ginekologiczne NFZ.",
-    "Diagnostyka i leczenie schorzeÒ ginekologicznych.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie schorze≈Ñ ginekologicznych.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
   name: "Piast-Med",
   specialization: "Ginekolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12799,14 +12799,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 483 40 02",
   reviews: [
-    "Poradnia ginekologiczna NFZ wed≥ug harmonogramu.",
+    "Poradnia ginekologiczna NFZ wed≈Çug harmonogramu.",
     "Konsultacje i opieka ginekologiczna ambulatoryjna."
   ]
 },
 {
-  name: "S≥awomir Gudaniec ñ Endokrynolog, Internista",
+  name: "S≈Çawomir Gudaniec ‚Äì Endokrynolog, Internista",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12815,14 +12815,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "662 252 789",
   reviews: [
     "Konsultacje internistyczne prywatnie.",
-    "Diagnostyka chorÛb ogÛlnych i przewlek≥ych.",
-    "Leczenie nadciúnienia, zaburzeÒ hormonalnych i os≥abienia."
+    "Diagnostyka chor√≥b og√≥lnych i przewlek≈Çych.",
+    "Leczenie nadci≈õnienia, zaburze≈Ñ hormonalnych i os≈Çabienia."
   ]
 },
 {
-  name: "Marcyniuk Andrzej, lek. med. chorÛb wewnÍtrznych",
+  name: "Marcyniuk Andrzej, lek. med. chor√≥b wewnƒôtrznych",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12830,15 +12830,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "77 484 44 97",
   reviews: [
-    "Specjalista chorÛb wewnÍtrznych.",
+    "Specjalista chor√≥b wewnƒôtrznych.",
     "Konsultacje internistyczne oraz badania USG.",
-    "Diagnostyka chorÛb przewlek≥ych."
+    "Diagnostyka chor√≥b przewlek≈Çych."
   ]
 },
 {
   name: "HiB-MED Mazur Henryk",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12847,14 +12847,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 482 81 16",
   reviews: [
     "Internista oraz lekarz rodzinny prywatnie.",
-    "Diagnostyka i leczenie chorÛb ogÛlnych.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Diagnostyka i leczenie chor√≥b og√≥lnych.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "Falba Andrzej ñ Praktyka lekarska na wezwanie",
+  name: "Falba Andrzej ‚Äì Praktyka lekarska na wezwanie",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12863,14 +12863,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 82 25",
   reviews: [
     "Prywatne konsultacje internistyczne.",
-    "MoøliwoúÊ wizyt domowych.",
-    "Diagnostyka chorÛb ogÛlnych."
+    "Mo≈ºliwo≈õƒá wizyt domowych.",
+    "Diagnostyka chor√≥b og√≥lnych."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12880,13 +12880,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje internistyczne prywatnie.",
     "Kilku lekarzy i szybkie terminy wizyt.",
-    "MoøliwoúÊ wykonania badaÒ na miejscu."
+    "Mo≈ºliwo≈õƒá wykonania bada≈Ñ na miejscu."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12895,14 +12895,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Prywatne konsultacje internistyczne.",
-    "Diagnostyka i leczenie chorÛb przewlek≥ych.",
+    "Diagnostyka i leczenie chor√≥b przewlek≈Çych.",
     "Kontrola leczenia farmakologicznego."
   ]
 },
 {
   name: "Centrum Medyczne PZU Zdrowie Mostowa",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12912,13 +12912,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje internistyczne prywatnie.",
     "Badania laboratoryjne i wizyty kontrolne.",
-    "Diagnostyka chorÛb ogÛlnych."
+    "Diagnostyka chor√≥b og√≥lnych."
   ]
 },
 {
   name: "Przychodnia Harcerska",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12927,15 +12927,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Podstawowa opieka zdrowotna NFZ.",
-    "Leczenie chorÛb wewnÍtrznych, infekcji i nadciúnienia.",
-    "Wystawianie skierowaÒ do specjalistÛw.",
+    "Leczenie chor√≥b wewnƒôtrznych, infekcji i nadci≈õnienia.",
+    "Wystawianie skierowa≈Ñ do specjalist√≥w.",
     "Opieka lekarza rodzinnego i internisty."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12944,14 +12944,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Poradnia POZ w ramach NFZ.",
-    "Diagnostyka i leczenie chorÛb przewlek≥ych.",
+    "Diagnostyka i leczenie chor√≥b przewlek≈Çych.",
     "Opieka internistyczna i lekarza rodzinnego."
   ]
 },
 {
   name: "Piast-Med",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12960,14 +12960,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Podstawowa opieka zdrowotna NFZ.",
-    "Leczenie chorÛb wewnÍtrznych oraz kontrole zdrowotne.",
-    "MoøliwoúÊ zapisania deklaracji POZ."
+    "Leczenie chor√≥b wewnƒôtrznych oraz kontrole zdrowotne.",
+    "Mo≈ºliwo≈õƒá zapisania deklaracji POZ."
   ]
 },
 {
-  name: "Poradnia ChorÛb WewnÍtrznych ñ SP ZOZ",
+  name: "Poradnia Chor√≥b Wewnƒôtrznych ‚Äì SP ZOZ",
   specialization: "Internista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -12975,15 +12975,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 406 24 00",
   reviews: [
-    "Specjalistyczna poradnia chorÛb wewnÍtrznych NFZ.",
-    "Diagnostyka chorÛb przewlek≥ych.",
+    "Specjalistyczna poradnia chor√≥b wewnƒôtrznych NFZ.",
+    "Diagnostyka chor√≥b przewlek≈Çych.",
     "Konsultacje internistyczne ze skierowaniem."
   ]
 },
 {
-  name: "Przemys≥aw Lipski ñ Gabinet Kardiologiczny",
+  name: "Przemys≈Çaw Lipski ‚Äì Gabinet Kardiologiczny",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -12992,15 +12992,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "511 236 279",
   reviews: [
     "Prywatne konsultacje kardiologiczne.",
-    "Diagnostyka nadciúnienia, arytmii i bÛlu w klatce piersiowej.",
-    "Kontrola leczenia chorÛb serca.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Diagnostyka nadci≈õnienia, arytmii i b√≥lu w klatce piersiowej.",
+    "Kontrola leczenia chor√≥b serca.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
   name: "Puls-Medica Gabinet Kardiologiczny",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13008,15 +13008,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "501 540 124",
   reviews: [
-    "Diagnostyka chorÛb serca.",
+    "Diagnostyka chor√≥b serca.",
     "Konsultacje kardiologiczne oraz EKG.",
-    "Wysokie oceny pacjentÛw."
+    "Wysokie oceny pacjent√≥w."
   ]
 },
 {
-  name: "dr hab. n. med. Jacek Kowalczyk ñ Indywidualna Specjalistyczna Praktyka Lekarska",
+  name: "dr hab. n. med. Jacek Kowalczyk ‚Äì Indywidualna Specjalistyczna Praktyka Lekarska",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13025,14 +13025,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "600 779 968",
   reviews: [
     "Specjalistyczne konsultacje kardiologiczne.",
-    "Leczenie choroby wieÒcowej i zaburzeÒ rytmu serca.",
-    "Kontrola pacjentÛw po hospitalizacji."
+    "Leczenie choroby wie≈Ñcowej i zaburze≈Ñ rytmu serca.",
+    "Kontrola pacjent√≥w po hospitalizacji."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13042,13 +13042,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje kardiologiczne prywatnie.",
     "Diagnostyka EKG i echo serca na miejscu.",
-    "Kilku specjalistÛw i szybkie terminy wizyt."
+    "Kilku specjalist√≥w i szybkie terminy wizyt."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13057,14 +13057,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Prywatne konsultacje kardiologiczne.",
-    "Kontrola nadciúnienia i chorÛb sercowo-naczyniowych.",
+    "Kontrola nadci≈õnienia i chor√≥b sercowo-naczyniowych.",
     "Diagnostyka i prowadzenie leczenia."
   ]
 },
 {
-  name: "Polsko-AmerykaÒskie Kliniki Serca ñ Centrum Sercowo-Naczyniowe",
+  name: "Polsko-Ameryka≈Ñskie Kliniki Serca ‚Äì Centrum Sercowo-Naczyniowe",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13073,14 +13073,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 443 93 00",
   reviews: [
     "Specjalistyczna diagnostyka kardiologiczna.",
-    "Konsultacje i leczenie chorÛb serca.",
-    "MoøliwoúÊ dalszego leczenia zabiegowego."
+    "Konsultacje i leczenie chor√≥b serca.",
+    "Mo≈ºliwo≈õƒá dalszego leczenia zabiegowego."
   ]
 },
 {
-  name: "Poradnia Kardiologiczna ñ SP ZOZ",
+  name: "Poradnia Kardiologiczna ‚Äì SP ZOZ",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13089,16 +13089,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje kardiologiczne w ramach NFZ.",
-    "Leczenie nadciúnienia, choroby wieÒcowej i arytmii.",
+    "Leczenie nadci≈õnienia, choroby wie≈Ñcowej i arytmii.",
     "Kontrole po hospitalizacji.",
-    "Badania EKG oraz echo serca wed≥ug wskazaÒ.",
+    "Badania EKG oraz echo serca wed≈Çug wskaza≈Ñ.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Polsko-AmerykaÒskie Kliniki Serca ñ Centrum Sercowo-Naczyniowe",
+  name: "Polsko-Ameryka≈Ñskie Kliniki Serca ‚Äì Centrum Sercowo-Naczyniowe",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13107,15 +13107,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 443 93 00",
   reviews: [
     "Konsultacje kardiologiczne NFZ.",
-    "Diagnostyka i leczenie chorÛb serca.",
-    "MoøliwoúÊ leczenia interwencyjnego.",
+    "Diagnostyka i leczenie chor√≥b serca.",
+    "Mo≈ºliwo≈õƒá leczenia interwencyjnego.",
     "Specjalistyczne centrum kardiologiczne."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Kardiolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13124,14 +13124,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjna poradnia kardiologiczna NFZ.",
-    "Diagnostyka i kontrola chorÛb sercowo-naczyniowych.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i kontrola chor√≥b sercowo-naczyniowych.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "Grzegorz Duszel ñ Gabinet Laryngologiczny",
+  name: "Grzegorz Duszel ‚Äì Gabinet Laryngologiczny",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13139,15 +13139,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "784 357 144",
   reviews: [
-    "Diagnostyka chorÛb uszu, nosa i gard≥a.",
-    "Leczenie zapaleÒ zatok, szumÛw usznych i niedos≥uchu.",
-    "Konsultacje dla doros≥ych i dzieci."
+    "Diagnostyka chor√≥b uszu, nosa i gard≈Ça.",
+    "Leczenie zapale≈Ñ zatok, szum√≥w usznych i niedos≈Çuchu.",
+    "Konsultacje dla doros≈Çych i dzieci."
   ]
 },
 {
-  name: "Gabinet Laryngologiczny Anna £uczyÒska-Sopel ñ Centrum Medyczne Na≥kowskiej 13",
+  name: "Gabinet Laryngologiczny Anna ≈Åuczy≈Ñska-Sopel ‚Äì Centrum Medyczne Na≈Çkowskiej 13",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13155,15 +13155,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.9,
   phone: "602 220 033",
   reviews: [
-    "Pe≥na diagnostyka laryngologiczna.",
-    "Problemy z g≥osem, gard≥em i zatokami.",
-    "Badania s≥uchu oraz konsultacje specjalistyczne."
+    "Pe≈Çna diagnostyka laryngologiczna.",
+    "Problemy z g≈Çosem, gard≈Çem i zatokami.",
+    "Badania s≈Çuchu oraz konsultacje specjalistyczne."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13173,13 +13173,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje laryngologiczne prywatnie.",
     "Diagnostyka wykonywana na miejscu.",
-    "CzÍsto szybkie terminy wizyt."
+    "Czƒôsto szybkie terminy wizyt."
   ]
 },
 {
   name: "Medicus",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13188,13 +13188,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 53 98",
   reviews: [
     "Okresowe konsultacje laryngologiczne prywatnie.",
-    "Diagnostyka i leczenie chorÛb laryngologicznych."
+    "Diagnostyka i leczenie chor√≥b laryngologicznych."
   ]
 },
 {
-  name: "Poradnia Otolaryngologiczna ñ SP ZOZ",
+  name: "Poradnia Otolaryngologiczna ‚Äì SP ZOZ",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13203,15 +13203,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje laryngologiczne w ramach NFZ.",
-    "Diagnostyka chorÛb uszu, nosa, gard≥a i zatok.",
-    "Ocena niedos≥uchu oraz zawrotÛw g≥owy.",
+    "Diagnostyka chor√≥b uszu, nosa, gard≈Ça i zatok.",
+    "Ocena niedos≈Çuchu oraz zawrot√≥w g≈Çowy.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13221,13 +13221,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Poradnia laryngologiczna NFZ.",
     "Leczenie ambulatoryjne oraz wizyty kontrolne.",
-    "Diagnostyka chorÛb laryngologicznych."
+    "Diagnostyka chor√≥b laryngologicznych."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Laryngolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13236,14 +13236,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje laryngologiczne NFZ.",
-    "Diagnostyka i leczenie chorÛb uszu, nosa i gard≥a.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie chor√≥b uszu, nosa i gard≈Ça.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "HiB-MED Mazur Henryk ñ Specjalista medycyny rodzinnej",
+  name: "HiB-MED Mazur Henryk ‚Äì Specjalista medycyny rodzinnej",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13252,15 +13252,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 482 81 16",
   reviews: [
     "Prywatne wizyty lekarza rodzinnego.",
-    "Leczenie infekcji, nadciúnienia i chorÛb przewlek≥ych.",
-    "Wystawianie recept oraz skierowaÒ.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Leczenie infekcji, nadci≈õnienia i chor√≥b przewlek≈Çych.",
+    "Wystawianie recept oraz skierowa≈Ñ.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "Corrigo Medical ñ Rodzinna Przychodnia Lekarska",
+  name: "Corrigo Medical ‚Äì Rodzinna Przychodnia Lekarska",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13268,15 +13268,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "77 481 38 81",
   reviews: [
-    "Prywatne wizyty lekarza rodzinnego dla doros≥ych i dzieci.",
+    "Prywatne wizyty lekarza rodzinnego dla doros≈Çych i dzieci.",
     "Szybkie konsultacje ambulatoryjne.",
-    "Diagnostyka podstawowych schorzeÒ."
+    "Diagnostyka podstawowych schorze≈Ñ."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13285,14 +13285,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Prywatne konsultacje lekarza rodzinnego.",
-    "MoøliwoúÊ wykonania badaÒ na miejscu.",
-    "£atwy dostÍp do specjalistÛw."
+    "Mo≈ºliwo≈õƒá wykonania bada≈Ñ na miejscu.",
+    "≈Åatwy dostƒôp do specjalist√≥w."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13301,14 +13301,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Konsultacje lekarza rodzinnego prywatnie.",
-    "Diagnostyka i leczenie chorÛb przewlek≥ych.",
+    "Diagnostyka i leczenie chor√≥b przewlek≈Çych.",
     "Kontrole zdrowotne."
   ]
 },
 {
   name: "Centrum Medyczne PZU Zdrowie Mostowa",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13323,7 +13323,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Przychodnia Medicogen",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13332,13 +13332,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Komercyjne wizyty lekarza rodzinnego.",
-    "Diagnostyka i leczenie podstawowych schorzeÒ."
+    "Diagnostyka i leczenie podstawowych schorze≈Ñ."
   ]
 },
 {
   name: "Optima Medycyna",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13353,7 +13353,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "IS-MED-PS",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13361,14 +13361,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "",
   reviews: [
-    "MoøliwoúÊ wizyt komercyjnych lekarza rodzinnego.",
-    "Diagnostyka i leczenie chorÛb ogÛlnych."
+    "Mo≈ºliwo≈õƒá wizyt komercyjnych lekarza rodzinnego.",
+    "Diagnostyka i leczenie chor√≥b og√≥lnych."
   ]
 },
 {
   name: "Przychodnia Harcerska",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13376,15 +13376,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 483 35 01",
   reviews: [
-    "Podstawowa opieka zdrowotna NFZ dla doros≥ych i dzieci.",
-    "Badania, recepty oraz skierowania do specjalistÛw.",
-    "Sta≥a opieka lekarza rodzinnego."
+    "Podstawowa opieka zdrowotna NFZ dla doros≈Çych i dzieci.",
+    "Badania, recepty oraz skierowania do specjalist√≥w.",
+    "Sta≈Ça opieka lekarza rodzinnego."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13393,14 +13393,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Poradnia POZ w ramach NFZ.",
-    "Diagnostyka i leczenie chorÛb ogÛlnych.",
+    "Diagnostyka i leczenie chor√≥b og√≥lnych.",
     "Opieka lekarza rodzinnego."
   ]
 },
 {
   name: "Piast-Med",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13410,13 +13410,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Lekarz rodzinny NFZ.",
     "Podstawowa opieka medyczna i profilaktyka.",
-    "MoøliwoúÊ z≥oøenia deklaracji POZ."
+    "Mo≈ºliwo≈õƒá z≈Ço≈ºenia deklaracji POZ."
   ]
 },
 {
   name: "Corrigo Medical",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13424,15 +13424,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 481 38 81",
   reviews: [
-    "POZ NFZ dla doros≥ych i dzieci.",
+    "POZ NFZ dla doros≈Çych i dzieci.",
     "Konsultacje lekarza rodzinnego.",
     "Diagnostyka oraz leczenie ambulatoryjne."
   ]
 },
 {
-  name: "Medyk / Medicogen ñ POZ",
+  name: "Medyk / Medicogen ‚Äì POZ",
   specialization: "Lekarz rodzinny",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13442,13 +13442,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Lekarz rodzinny w ramach NFZ.",
     "Podstawowa opieka zdrowotna.",
-    "Leczenie chorÛb ogÛlnych i profilaktyka."
+    "Leczenie chor√≥b og√≥lnych i profilaktyka."
   ]
 },
 {
   name: "Medycyna Pracy A-Test",
   specialization: "Medycyna pracy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13456,16 +13456,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "887 789 777",
   reviews: [
-    "Badania wstÍpne, okresowe i kontrolne.",
-    "Badania kierowcÛw oraz pracownikÛw.",
+    "Badania wstƒôpne, okresowe i kontrolne.",
+    "Badania kierowc√≥w oraz pracownik√≥w.",
     "Szybkie terminy wizyt prywatnych.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "M4 Med Mroczek ñ Medycyna Pracy",
+  name: "M4 Med Mroczek ‚Äì Medycyna Pracy",
   specialization: "Medycyna pracy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13474,14 +13474,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "534 835 036",
   reviews: [
     "Badania medycyny pracy.",
-    "Badania dla kierowcÛw i pracownikÛw.",
-    "Wydawanie orzeczeÒ lekarskich."
+    "Badania dla kierowc√≥w i pracownik√≥w.",
+    "Wydawanie orzecze≈Ñ lekarskich."
   ]
 },
 {
   name: "Centrum Medyczne PZU Zdrowie Mostowa",
   specialization: "Medycyna pracy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13490,14 +13490,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "571 171 040",
   reviews: [
     "Kompleksowa medycyna pracy.",
-    "Pakiety badaÒ dla firm i osÛb prywatnych.",
+    "Pakiety bada≈Ñ dla firm i os√≥b prywatnych.",
     "Badania laboratoryjne wykonywane na miejscu."
   ]
 },
 {
-  name: "Poradnia Medycyny Pracy ñ ul. Mostowa 30",
+  name: "Poradnia Medycyny Pracy ‚Äì ul. Mostowa 30",
   specialization: "Medycyna pracy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13510,9 +13510,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Wis≥awiczek Eløbieta ñ lekarz medycyny pracy",
+  name: "Wis≈Çawiczek El≈ºbieta ‚Äì lekarz medycyny pracy",
   specialization: "Medycyna pracy",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13525,9 +13525,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Szpitalny Oddzia≥ Ratunkowy ñ SP ZOZ",
+  name: "Szpitalny Oddzia≈Ç Ratunkowy ‚Äì SP ZOZ",
   specialization: "Medycyna ratunkowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13535,16 +13535,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 406 24 00",
   reviews: [
-    "Pomoc medyczna dostÍpna 24 godziny na dobÍ.",
-    "PrzyjÍcia w nag≥ych zachorowaniach i urazach.",
-    "Leczenie stanÛw zagroøenia øycia: zawa≥, udar, dusznoúÊ, utrata przytomnoúci.",
-    "PrzyjÍcie bez skierowania."
+    "Pomoc medyczna dostƒôpna 24 godziny na dobƒô.",
+    "Przyjƒôcia w nag≈Çych zachorowaniach i urazach.",
+    "Leczenie stan√≥w zagro≈ºenia ≈ºycia: zawa≈Ç, udar, duszno≈õƒá, utrata przytomno≈õci.",
+    "Przyjƒôcie bez skierowania."
   ]
 },
 {
-  name: "Zespo≥y Ratownictwa Medycznego ñ Pogotowie Ratunkowe",
+  name: "Zespo≈Çy Ratownictwa Medycznego ‚Äì Pogotowie Ratunkowe",
   specialization: "Medycyna ratunkowa",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13552,15 +13552,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "112 / 999",
   reviews: [
-    "Wyjazdy karetek do nag≥ych stanÛw zagroøenia øycia.",
-    "Transport pacjentÛw do Szpitalnego Oddzia≥u Ratunkowego.",
+    "Wyjazdy karetek do nag≈Çych stan√≥w zagro≈ºenia ≈ºycia.",
+    "Transport pacjent√≥w do Szpitalnego Oddzia≈Çu Ratunkowego.",
     "Pomoc medyczna w sytuacjach pilnych."
   ]
 },
 {
-  name: "Boøena Wπsiak ñ Specjalista neurolog",
+  name: "Bo≈ºena WƒÖsiak ‚Äì Specjalista neurolog",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13569,14 +13569,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 482 47 52",
   reviews: [
     "Konsultacje neurologiczne prywatnie.",
-    "Leczenie bÛlÛw g≥owy, migren i zawrotÛw g≥owy.",
-    "Diagnostyka drÍtwieÒ, rwy kulszowej i chorÛb uk≥adu nerwowego."
+    "Leczenie b√≥l√≥w g≈Çowy, migren i zawrot√≥w g≈Çowy.",
+    "Diagnostyka drƒôtwie≈Ñ, rwy kulszowej i chor√≥b uk≈Çadu nerwowego."
   ]
 },
 {
-  name: "Jan JÍdruú ñ Specjalista neurolog",
+  name: "Jan Jƒôdru≈õ ‚Äì Specjalista neurolog",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13585,14 +13585,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 482 40 89",
   reviews: [
     "Prywatne konsultacje neurologiczne.",
-    "Diagnostyka chorÛb neurologicznych.",
+    "Diagnostyka chor√≥b neurologicznych.",
     "Kontrole i prowadzenie leczenia."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13602,13 +13602,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje neurologiczne prywatnie.",
     "Diagnostyka neurologiczna na miejscu.",
-    "Kilku specjalistÛw i szybkie terminy wizyt."
+    "Kilku specjalist√≥w i szybkie terminy wizyt."
   ]
 },
 {
-  name: "Poradnia Neurologiczna ñ SP ZOZ",
+  name: "Poradnia Neurologiczna ‚Äì SP ZOZ",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13617,15 +13617,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje neurologiczne w ramach NFZ.",
-    "Diagnostyka bÛlÛw g≥owy, zawrotÛw i drÍtwieÒ.",
-    "Leczenie chorÛb krÍgos≥upa i uk≥adu nerwowego.",
+    "Diagnostyka b√≥l√≥w g≈Çowy, zawrot√≥w i drƒôtwie≈Ñ.",
+    "Leczenie chor√≥b krƒôgos≈Çupa i uk≈Çadu nerwowego.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13635,13 +13635,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje neurologiczne NFZ.",
     "Leczenie ambulatoryjne oraz wizyty kontrolne.",
-    "Diagnostyka chorÛb neurologicznych."
+    "Diagnostyka chor√≥b neurologicznych."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Neurolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13651,13 +13651,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Ambulatoryjne konsultacje neurologiczne NFZ.",
     "Diagnostyka i prowadzenie leczenia neurologicznego.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "Myszka-Kulesza J., Gertchen-Krawiecka D. ñ Gabinet Okulistyczny",
+  name: "Myszka-Kulesza J., Gertchen-Krawiecka D. ‚Äì Gabinet Okulistyczny",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13666,14 +13666,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 19 89",
   reviews: [
     "Prywatne konsultacje okulistyczne.",
-    "Badanie wzroku i diagnostyka chorÛb oczu.",
+    "Badanie wzroku i diagnostyka chor√≥b oczu.",
     "Kontrola leczenia okulistycznego."
   ]
 },
 {
-  name: "lek. Andrzej Drukowski ñ Gabinet Okulistyczny",
+  name: "lek. Andrzej Drukowski ‚Äì Gabinet Okulistyczny",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13681,15 +13681,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "784 288 355",
   reviews: [
-    "Diagnostyka chorÛb oczu.",
-    "DobÛr leczenia oraz wizyty kontrolne.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Diagnostyka chor√≥b oczu.",
+    "Dob√≥r leczenia oraz wizyty kontrolne.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "G≥owacka Marzanna ñ Prywatna praktyka okulistyczna",
+  name: "G≈Çowacka Marzanna ‚Äì Prywatna praktyka okulistyczna",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13699,13 +13699,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Prywatne wizyty okulistyczne.",
     "Badania wzroku i konsultacje specjalistyczne.",
-    "Diagnostyka schorzeÒ okulistycznych."
+    "Diagnostyka schorze≈Ñ okulistycznych."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13715,13 +13715,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje okulistyczne prywatnie.",
     "Badania diagnostyczne wykonywane na miejscu.",
-    "£atwiejsza dostÍpnoúÊ terminÛw."
+    "≈Åatwiejsza dostƒôpno≈õƒá termin√≥w."
   ]
 },
 {
-  name: "Poradnia Okulistyczna ñ SP ZOZ",
+  name: "Poradnia Okulistyczna ‚Äì SP ZOZ",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13730,15 +13730,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje okulistyczne w ramach NFZ.",
-    "Diagnostyka chorÛb oczu, jaskry i zaÊmy.",
+    "Diagnostyka chor√≥b oczu, jaskry i zaƒámy.",
     "Kontrole pogorszenia widzenia.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13748,13 +13748,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Poradnia okulistyczna NFZ.",
     "Leczenie ambulatoryjne oraz wizyty kontrolne.",
-    "Diagnostyka schorzeÒ okulistycznych."
+    "Diagnostyka schorze≈Ñ okulistycznych."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Okulista",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13763,14 +13763,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje okulistyczne NFZ.",
-    "Diagnostyka i leczenie chorÛb oczu.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie chor√≥b oczu.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
   name: "Mocek Z., lek. med. ortopeda",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13778,15 +13778,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "77 481 10 85",
   reviews: [
-    "Ortopedia i traumatologia narzπdu ruchu.",
-    "Leczenie bÛlu stawÛw, urazÛw i zmian zwyrodnieniowych.",
-    "Kwalifikacje do zabiegÛw ortopedycznych."
+    "Ortopedia i traumatologia narzƒÖdu ruchu.",
+    "Leczenie b√≥lu staw√≥w, uraz√≥w i zmian zwyrodnieniowych.",
+    "Kwalifikacje do zabieg√≥w ortopedycznych."
   ]
 },
 {
   name: "Felsz Marcin, lek. med. ortopeda",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13795,14 +13795,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "530 038 039",
   reviews: [
     "Prywatne konsultacje ortopedyczne.",
-    "Diagnostyka problemÛw kolan, barkÛw i krÍgos≥upa.",
-    "Leczenie kontuzji oraz zmian przeciπøeniowych."
+    "Diagnostyka problem√≥w kolan, bark√≥w i krƒôgos≈Çupa.",
+    "Leczenie kontuzji oraz zmian przeciƒÖ≈ºeniowych."
   ]
 },
 {
-  name: "Ireneusz £otecki ñ Prywatny Gabinet Ortopedyczny",
+  name: "Ireneusz ≈Åotecki ‚Äì Prywatny Gabinet Ortopedyczny",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13811,14 +13811,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "606 489 683",
   reviews: [
     "Leczenie pourazowe.",
-    "Diagnostyka schorzeÒ narzπdu ruchu.",
+    "Diagnostyka schorze≈Ñ narzƒÖdu ruchu.",
     "Konsultacje ortopedyczne prywatnie."
   ]
 },
 {
-  name: "Gabinet Lekarski Grzegorz åwiÍtek ñ Porady Ortopedyczne",
+  name: "Gabinet Lekarski Grzegorz ≈öwiƒôtek ‚Äì Porady Ortopedyczne",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13827,13 +13827,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "510 936 632",
   reviews: [
     "Ambulatoryjne konsultacje ortopedyczne.",
-    "Leczenie urazÛw sportowych i bÛlu stawÛw."
+    "Leczenie uraz√≥w sportowych i b√≥lu staw√≥w."
   ]
 },
 {
-  name: "Betlej Mieczys≥aw, lek. med. ortopeda",
+  name: "Betlej Mieczys≈Çaw, lek. med. ortopeda",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13842,13 +13842,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 481 82 51",
   reviews: [
     "Konsultacje ortopedyczne prywatnie.",
-    "Diagnostyka i leczenie schorzeÒ narzπdu ruchu."
+    "Diagnostyka i leczenie schorze≈Ñ narzƒÖdu ruchu."
   ]
 },
 {
-  name: "Porady Ortopedyczne Wojciech Stochmia≥ek",
+  name: "Porady Ortopedyczne Wojciech Stochmia≈Çek",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13857,13 +13857,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 481 05 92",
   reviews: [
     "Prywatne konsultacje ortopedyczne.",
-    "Diagnostyka urazÛw i schorzeÒ narzπdu ruchu."
+    "Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu."
   ]
 },
 {
-  name: "Poradnia Ortopedyczna ñ SP ZOZ",
+  name: "Poradnia Ortopedyczna ‚Äì SP ZOZ",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13872,15 +13872,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje ortopedyczne w ramach NFZ.",
-    "Leczenie urazÛw, bÛlu stawÛw i zmian zwyrodnieniowych.",
+    "Leczenie uraz√≥w, b√≥lu staw√≥w i zmian zwyrodnieniowych.",
     "Kontrole po operacjach ortopedycznych.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13890,13 +13890,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Poradnia ortopedyczna NFZ.",
     "Leczenie pourazowe oraz wizyty kontrolne.",
-    "Diagnostyka schorzeÒ narzπdu ruchu."
+    "Diagnostyka schorze≈Ñ narzƒÖdu ruchu."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Ortopeda",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -13905,14 +13905,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje ortopedyczne NFZ.",
-    "Diagnostyka i leczenie chorÛb narzπdu ruchu.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie chor√≥b narzƒÖdu ruchu.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "dr n. med. Danuta Gmyrek ñ Specjalista Pediatra",
+  name: "dr n. med. Danuta Gmyrek ‚Äì Specjalista Pediatra",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13920,16 +13920,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.8,
   phone: "603 666 123",
   reviews: [
-    "Opieka pediatryczna dla noworodkÛw i dzieci.",
+    "Opieka pediatryczna dla noworodk√≥w i dzieci.",
     "Leczenie infekcji oraz kontrole rozwoju.",
     "Szczepienia i konsultacje prywatne.",
-    "Bardzo dobre opinie rodzicÛw."
+    "Bardzo dobre opinie rodzic√≥w."
   ]
 },
 {
-  name: "CywiÒski Mariusz ñ Gabinet Pediatryczny i USG",
+  name: "Cywi≈Ñski Mariusz ‚Äì Gabinet Pediatryczny i USG",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13938,14 +13938,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Konsultacje pediatryczne oraz USG dzieci.",
-    "Diagnostyka niemowlπt i starszych dzieci.",
-    "Kontrola rozwoju i diagnostyka problemÛw brzusznych."
+    "Diagnostyka niemowlƒÖt i starszych dzieci.",
+    "Kontrola rozwoju i diagnostyka problem√≥w brzusznych."
   ]
 },
 {
-  name: "Chamerska-Gπdek Ewa ñ Specjalista Pediatra",
+  name: "Chamerska-GƒÖdek Ewa ‚Äì Specjalista Pediatra",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13958,9 +13958,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Kuczera Barbara ñ Pediatra, lekarz rodzinny",
+  name: "Kuczera Barbara ‚Äì Pediatra, lekarz rodzinny",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13969,13 +13969,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Konsultacje pediatryczne prywatnie.",
-    "Opieka nad dzieÊmi oraz leczenie chorÛb wieku dzieciÍcego."
+    "Opieka nad dzieƒámi oraz leczenie chor√≥b wieku dzieciƒôcego."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -13985,13 +13985,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Prywatne konsultacje pediatryczne.",
     "Szybkie terminy wizyt.",
-    "MoøliwoúÊ wykonania badaÒ i konsultacji specjalistycznych na miejscu."
+    "Mo≈ºliwo≈õƒá wykonania bada≈Ñ i konsultacji specjalistycznych na miejscu."
   ]
 },
 {
   name: "MediSan sp. z o.o.",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14000,14 +14000,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "533 071 663",
   reviews: [
     "Konsultacje pediatryczne prywatnie.",
-    "Diagnostyka i leczenie chorÛb dzieciÍcych.",
-    "Opieka ambulatoryjna nad dzieÊmi."
+    "Diagnostyka i leczenie chor√≥b dzieciƒôcych.",
+    "Opieka ambulatoryjna nad dzieƒámi."
   ]
 },
 {
   name: "Przychodnia Harcerska",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14015,7 +14015,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 483 35 01",
   reviews: [
-    "Opieka pediatryczna NFZ dla noworodkÛw, dzieci i m≥odzieøy.",
+    "Opieka pediatryczna NFZ dla noworodk√≥w, dzieci i m≈Çodzie≈ºy.",
     "Szczepienia ochronne i bilanse zdrowia.",
     "Leczenie infekcji oraz konsultacje pediatryczne."
   ]
@@ -14023,7 +14023,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "IS-MED-PS",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14032,14 +14032,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Podstawowa opieka pediatryczna NFZ.",
-    "Diagnostyka i leczenie chorÛb wieku dzieciÍcego.",
-    "Regularna opieka nad dzieÊmi."
+    "Diagnostyka i leczenie chor√≥b wieku dzieciƒôcego.",
+    "Regularna opieka nad dzieƒámi."
   ]
 },
 {
   name: "Piast-Med",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14047,15 +14047,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 483 40 02",
   reviews: [
-    "Poradnia dzieciÍca NFZ.",
+    "Poradnia dzieciƒôca NFZ.",
     "Konsultacje pediatryczne i leczenie ambulatoryjne.",
-    "Opieka profilaktyczna nad dzieÊmi."
+    "Opieka profilaktyczna nad dzieƒámi."
   ]
 },
 {
   name: "Corrigo Medical",
   specialization: "Pediatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14063,15 +14063,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 481 38 81",
   reviews: [
-    "Pediatra NFZ dla niemowlπt i starszych dzieci.",
+    "Pediatra NFZ dla niemowlƒÖt i starszych dzieci.",
     "Opieka podstawowa i leczenie infekcji.",
     "Konsultacje oraz kontrola rozwoju dziecka."
   ]
 },
 {
-  name: "Agnieszka åciera-Ganobis ñ Gabinet Psychiatryczny",
+  name: "Agnieszka ≈öciera-Ganobis ‚Äì Gabinet Psychiatryczny",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14080,14 +14080,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "512 438 442",
   reviews: [
     "Konsultacje psychiatryczne prywatne.",
-    "Leczenie depresji, zaburzeÒ lÍkowych i bezsennoúci.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Leczenie depresji, zaburze≈Ñ lƒôkowych i bezsenno≈õci.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "lek. Magdalena Szwach-Kasperska ñ Gabinet Psychiatryczny",
+  name: "lek. Magdalena Szwach-Kasperska ‚Äì Gabinet Psychiatryczny",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14095,15 +14095,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "789 598 264",
   reviews: [
-    "Leczenie depresji i zaburzeÒ lÍkowych.",
-    "Konsultacje psychiatryczne dla doros≥ych.",
-    "Diagnostyka ADHD u doros≥ych."
+    "Leczenie depresji i zaburze≈Ñ lƒôkowych.",
+    "Konsultacje psychiatryczne dla doros≈Çych.",
+    "Diagnostyka ADHD u doros≈Çych."
   ]
 },
 {
-  name: "Adrianna Wantu≥a ñ Konsultacje Psychiatryczne",
+  name: "Adrianna Wantu≈Ça ‚Äì Konsultacje Psychiatryczne",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14116,9 +14116,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "Maria Krajewska ñ Gabinet Psychiatryczny",
+  name: "Maria Krajewska ‚Äì Gabinet Psychiatryczny",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14134,7 +14134,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "SensiMed Centrum Terapii i Psychoprofilaktyki",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14143,14 +14143,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 403 63 70",
   reviews: [
     "Konsultacje psychiatryczne oraz psychoterapia.",
-    "Wsparcie w leczeniu zaburzeÒ nastroju i stresu.",
-    "ZespÛ≥ specjalistÛw zdrowia psychicznego."
+    "Wsparcie w leczeniu zaburze≈Ñ nastroju i stresu.",
+    "Zesp√≥≈Ç specjalist√≥w zdrowia psychicznego."
   ]
 },
 {
-  name: "Poradnia Zdrowia Psychicznego ñ SP ZOZ",
+  name: "Poradnia Zdrowia Psychicznego ‚Äì SP ZOZ",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14159,7 +14159,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 27 60",
   reviews: [
     "Konsultacje psychiatryczne w ramach NFZ.",
-    "Leczenie depresji, zaburzeÒ lÍkowych i bezsennoúci.",
+    "Leczenie depresji, zaburze≈Ñ lƒôkowych i bezsenno≈õci.",
     "Kontrole leczenia farmakologicznego.",
     "Skierowanie nie jest wymagane."
   ]
@@ -14167,7 +14167,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "Centrum Zdrowia Psychicznego (CZP)",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14177,13 +14177,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Szybka pomoc psychiatryczna NFZ.",
     "Konsultacje psychiatryczne i psychologiczne.",
-    "MoøliwoúÊ zg≥oszenia siÍ bezpoúrednio bez skierowania."
+    "Mo≈ºliwo≈õƒá zg≈Çoszenia siƒô bezpo≈õrednio bez skierowania."
   ]
 },
 {
-  name: "Poradnia Zdrowia Psychicznego dla Dzieci i M≥odzieøy",
+  name: "Poradnia Zdrowia Psychicznego dla Dzieci i M≈Çodzie≈ºy",
   specialization: "Psychiatra",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14191,15 +14191,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "",
   reviews: [
-    "Psychiatra dzieciÍcy w ramach NFZ.",
-    "Pomoc dla dzieci i m≥odzieøy.",
-    "Diagnostyka oraz leczenie zaburzeÒ psychicznych u m≥odszych pacjentÛw."
+    "Psychiatra dzieciƒôcy w ramach NFZ.",
+    "Pomoc dla dzieci i m≈Çodzie≈ºy.",
+    "Diagnostyka oraz leczenie zaburze≈Ñ psychicznych u m≈Çodszych pacjent√≥w."
   ]
 },
 {
   name: "SensiMed Centrum Terapii i Psychoprofilaktyki",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14207,16 +14207,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "77 403 63 70",
   reviews: [
-    "Konsultacje psychiatryczne dla dzieci i m≥odzieøy.",
-    "Wsparcie przy ADHD, lÍkach i depresji.",
-    "ZespÛ≥ specjalistÛw: psychiatra, psycholog i terapeuta.",
-    "NajczÍúciej wybierane centrum terapii w mieúcie."
+    "Konsultacje psychiatryczne dla dzieci i m≈Çodzie≈ºy.",
+    "Wsparcie przy ADHD, lƒôkach i depresji.",
+    "Zesp√≥≈Ç specjalist√≥w: psychiatra, psycholog i terapeuta.",
+    "Najczƒô≈õciej wybierane centrum terapii w mie≈õcie."
   ]
 },
 {
-  name: "lek. Magdalena Szwach-Kasperska ñ Gabinet Psychiatryczny",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  name: "lek. Magdalena Szwach-Kasperska ‚Äì Gabinet Psychiatryczny",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14224,15 +14224,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "789 598 264",
   reviews: [
-    "Konsultacje psychiatryczne dla m≥odzieøy.",
-    "Pomoc w zaburzeniach nastroju i lÍkach.",
+    "Konsultacje psychiatryczne dla m≈Çodzie≈ºy.",
+    "Pomoc w zaburzeniach nastroju i lƒôkach.",
     "Wsparcie w kryzysach wieku nastoletniego."
   ]
 },
 {
-  name: "Adrianna Wantu≥a ñ Konsultacje Psychiatryczne",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  name: "Adrianna Wantu≈Ça ‚Äì Konsultacje Psychiatryczne",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14240,15 +14240,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Konsultacje psychiatryczne dla starszej m≥odzieøy.",
+    "Konsultacje psychiatryczne dla starszej m≈Çodzie≈ºy.",
     "Diagnostyka oraz leczenie farmakologiczne.",
-    "Wizyty po wczeúniejszym ustaleniu zakresu konsultacji."
+    "Wizyty po wcze≈õniejszym ustaleniu zakresu konsultacji."
   ]
 },
 {
-  name: "PrzystaÒ ñ Psychoterapia Dzieci i M≥odzieøy",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  name: "Przysta≈Ñ ‚Äì Psychoterapia Dzieci i M≈Çodzie≈ºy",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14256,15 +14256,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "",
   reviews: [
-    "Wsparcie terapeutyczne dzieci i m≥odzieøy.",
+    "Wsparcie terapeutyczne dzieci i m≈Çodzie≈ºy.",
     "Diagnoza rozwojowa i terapia psychologiczna.",
-    "CzÍsto pierwszy etap przed konsultacjπ psychiatrycznπ."
+    "Czƒôsto pierwszy etap przed konsultacjƒÖ psychiatrycznƒÖ."
   ]
 },
 {
-  name: "Poradnia Zdrowia Psychicznego dla Dzieci i M≥odzieøy ñ SP ZOZ",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  name: "Poradnia Zdrowia Psychicznego dla Dzieci i M≈Çodzie≈ºy ‚Äì SP ZOZ",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14272,16 +14272,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.4,
   phone: "77 406 27 60",
   reviews: [
-    "Psychiatra dzieciÍcy w ramach NFZ.",
-    "Pomoc przy depresji, lÍkach, ADHD i zaburzeniach zachowania.",
+    "Psychiatra dzieciƒôcy w ramach NFZ.",
+    "Pomoc przy depresji, lƒôkach, ADHD i zaburzeniach zachowania.",
     "Konsultacje psychiatryczne i psychologiczne.",
-    "MoøliwoúÊ zg≥oszenia bez skierowania przez rodzica lub opiekuna."
+    "Mo≈ºliwo≈õƒá zg≈Çoszenia bez skierowania przez rodzica lub opiekuna."
   ]
 },
 {
   name: "Centrum Zdrowia Psychicznego (CZP)",
-  specialization: "Psychiatra dzieci i m≥odzieøy",
-  city: "KÍdzierzyn-Koüle",
+  specialization: "Psychiatra dzieci i m≈Çodzie≈ºy",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14289,15 +14289,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Szybka úcieøka pomocy psychicznej dla dzieci i m≥odzieøy.",
+    "Szybka ≈õcie≈ºka pomocy psychicznej dla dzieci i m≈Çodzie≈ºy.",
     "Wsparcie psychiatryczne i psychologiczne w ramach NFZ.",
-    "Pomoc w sytuacjach kryzysowych oraz nag≥ych problemach emocjonalnych."
+    "Pomoc w sytuacjach kryzysowych oraz nag≈Çych problemach emocjonalnych."
   ]
 },
 {
-  name: "Gabinet ChorÛb P≥uc ñ al. Jana Paw≥a II 4",
+  name: "Gabinet Chor√≥b P≈Çuc ‚Äì al. Jana Paw≈Ça II 4",
   specialization: "Pulmonolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14306,15 +14306,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Prywatne konsultacje pulmonologiczne.",
-    "Diagnostyka astmy, POChP i przewlek≥ego kaszlu.",
-    "Ocena dusznoúci oraz chorÛb uk≥adu oddechowego.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Diagnostyka astmy, POChP i przewlek≈Çego kaszlu.",
+    "Ocena duszno≈õci oraz chor√≥b uk≈Çadu oddechowego.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Pulmonolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14323,14 +14323,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 707 01 00",
   reviews: [
     "Konsultacje pulmonologiczne prywatnie.",
-    "Diagnostyka chorÛb p≥uc oraz badania na miejscu.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka chor√≥b p≈Çuc oraz badania na miejscu.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
-  name: "Poradnia Gruülicy i ChorÛb P≥uc ñ SP ZOZ",
+  name: "Poradnia Gru≈∫licy i Chor√≥b P≈Çuc ‚Äì SP ZOZ",
   specialization: "Pulmonolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14339,15 +14339,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje pulmonologiczne w ramach NFZ.",
-    "Diagnostyka astmy, POChP i przewlek≥ego kaszlu.",
-    "Leczenie dusznoúci oraz chorÛb uk≥adu oddechowego.",
+    "Diagnostyka astmy, POChP i przewlek≈Çego kaszlu.",
+    "Leczenie duszno≈õci oraz chor√≥b uk≈Çadu oddechowego.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia Specjalistyczna ñ ul. Judyma 4",
+  name: "Przychodnia Specjalistyczna ‚Äì ul. Judyma 4",
   specialization: "Pulmonolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14356,14 +14356,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Konsultacje pulmonologiczne NFZ.",
-    "Leczenie ambulatoryjne oraz kontrole chorÛb p≥uc.",
-    "Diagnostyka schorzeÒ uk≥adu oddechowego."
+    "Leczenie ambulatoryjne oraz kontrole chor√≥b p≈Çuc.",
+    "Diagnostyka schorze≈Ñ uk≈Çadu oddechowego."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Pulmonolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14372,14 +14372,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 540 50 70",
   reviews: [
     "Ambulatoryjne konsultacje pulmonologiczne NFZ.",
-    "Diagnostyka i leczenie chorÛb p≥uc.",
-    "CzÍsto krÛtszy czas oczekiwania na wizytÍ."
+    "Diagnostyka i leczenie chor√≥b p≈Çuc.",
+    "Czƒôsto kr√≥tszy czas oczekiwania na wizytƒô."
   ]
 },
 {
   name: "Reh-Medica Rehabilitacja",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14388,14 +14388,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 556 06 19",
   reviews: [
     "Rehabilitacja ortopedyczna i neurologiczna.",
-    "Fizykoterapia, masaøe i Êwiczenia lecznicze.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Fizykoterapia, masa≈ºe i ƒáwiczenia lecznicze.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
   name: "Centrum Medyczne OLMED",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14404,14 +14404,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "799 055 360",
   reviews: [
     "Rehabilitacja medyczna i fizjoterapia.",
-    "Leczenie bÛlu krÍgos≥upa i wad postawy.",
+    "Leczenie b√≥lu krƒôgos≈Çupa i wad postawy.",
     "Indywidualnie dobierane programy terapii."
   ]
 },
 {
   name: "Centrum Nowoczesnej Rehabilitacji",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14419,14 +14419,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "533 311 953",
   reviews: [
-    "Rehabilitacja pourazowa i przeciwbÛlowa.",
+    "Rehabilitacja pourazowa i przeciwb√≥lowa.",
     "Terapia manualna oraz fizjoterapia funkcjonalna."
   ]
 },
 {
   name: "Pro Corde Centrum Rehabilitacji",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14434,15 +14434,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "77 540 78 80",
   reviews: [
-    "Rehabilitacja kardiologiczna i ogÛlna.",
-    "∆wiczenia lecznicze oraz fizjoterapia.",
+    "Rehabilitacja kardiologiczna i og√≥lna.",
+    "ƒÜwiczenia lecznicze oraz fizjoterapia.",
     "Programy usprawniania po chorobach i operacjach."
   ]
 },
 {
-  name: "FIZJO-ZDROWIE £ukasz Szczotka",
+  name: "FIZJO-ZDROWIE ≈Åukasz Szczotka",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14451,14 +14451,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Terapia manualna i osteopatia.",
-    "Fala uderzeniowa oraz leczenie bÛlu.",
-    "Bardzo wysokie oceny pacjentÛw."
+    "Fala uderzeniowa oraz leczenie b√≥lu.",
+    "Bardzo wysokie oceny pacjent√≥w."
   ]
 },
 {
-  name: "Fizjomed ñ Gabinet Rehabilitacji",
+  name: "Fizjomed ‚Äì Gabinet Rehabilitacji",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14473,7 +14473,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
 {
   name: "ORTO-FIZJO Fizjoterapia Marcelin Korycki",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14482,13 +14482,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Rehabilitacja po operacjach i urazach sportowych.",
-    "Leczenie bÛlu stawÛw i przeciπøeÒ."
+    "Leczenie b√≥lu staw√≥w i przeciƒÖ≈ºe≈Ñ."
   ]
 },
 {
   name: "Rehab Centrum Fizjoterapia",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14497,13 +14497,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Rehabilitacja ruchowa i fizjoterapia.",
-    "Wsparcie w powrocie do sprawnoúci po urazach."
+    "Wsparcie w powrocie do sprawno≈õci po urazach."
   ]
 },
 {
-  name: "SALUS Fizjoterapia & Masaø",
+  name: "SALUS Fizjoterapia & Masa≈º",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14511,14 +14511,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "",
   reviews: [
-    "Terapia manualna i masaøe lecznicze.",
-    "Kinesiotaping oraz rehabilitacja przeciwbÛlowa."
+    "Terapia manualna i masa≈ºe lecznicze.",
+    "Kinesiotaping oraz rehabilitacja przeciwb√≥lowa."
   ]
 },
 {
-  name: "Zak≥ad Rehabilitacji ñ SP ZOZ",
+  name: "Zak≈Çad Rehabilitacji ‚Äì SP ZOZ",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14527,15 +14527,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Rehabilitacja ambulatoryjna w ramach NFZ.",
-    "Kinezyterapia, fizykoterapia i Êwiczenia lecznicze.",
+    "Kinezyterapia, fizykoterapia i ƒáwiczenia lecznicze.",
     "Rehabilitacja po urazach i operacjach.",
     "Wymagane skierowanie od lekarza."
   ]
 },
 {
-  name: "Przychodnia Rehabilitacyjna ñ ul. Judyma 4",
+  name: "Przychodnia Rehabilitacyjna ‚Äì ul. Judyma 4",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14544,14 +14544,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Zabiegi fizjoterapeutyczne NFZ.",
-    "Leczenie bÛlu krÍgos≥upa i stawÛw.",
+    "Leczenie b√≥lu krƒôgos≈Çupa i staw√≥w.",
     "Rehabilitacja ambulatoryjna."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14561,13 +14561,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Rehabilitacja ambulatoryjna NFZ.",
     "Zabiegi fizjoterapeutyczne i usprawnianie ruchowe.",
-    "CzÍsto krÛtszy czas oczekiwania na rehabilitacjÍ."
+    "Czƒôsto kr√≥tszy czas oczekiwania na rehabilitacjƒô."
   ]
 },
 {
   name: "OLMED Centrum Medyczne",
   specialization: "Rehabilitacja medyczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14577,13 +14577,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Rehabilitacja w ramach kontraktu NFZ.",
     "Zabiegi fizjoterapeutyczne i usprawnianie ruchowe.",
-    "Leczenie dolegliwoúci bÛlowych narzπdu ruchu."
+    "Leczenie dolegliwo≈õci b√≥lowych narzƒÖdu ruchu."
   ]
 },
 {
-  name: "Kozakiewicz E. ñ Prywatny Gabinet Internistyczno-Reumatologiczny",
+  name: "Kozakiewicz E. ‚Äì Prywatny Gabinet Internistyczno-Reumatologiczny",
   specialization: "Reumatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14592,15 +14592,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 483 13 90",
   reviews: [
     "Specjalistyczne konsultacje reumatologiczne.",
-    "Leczenie chorÛb stawÛw i tkanki ≥πcznej.",
+    "Leczenie chor√≥b staw√≥w i tkanki ≈ÇƒÖcznej.",
     "Pomoc przy RZS, dnie moczanowej i osteoporozie.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Reumatolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14608,15 +14608,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "77 707 01 00",
   reviews: [
-    "Konsultacje specjalistyczne wed≥ug grafiku lekarzy.",
+    "Konsultacje specjalistyczne wed≈Çug grafiku lekarzy.",
     "Diagnostyka laboratoryjna i obrazowa na miejscu.",
-    "MoøliwoúÊ kwalifikacji reumatologicznej przez internistÍ."
+    "Mo≈ºliwo≈õƒá kwalifikacji reumatologicznej przez internistƒô."
   ]
 },
 {
   name: "Stomatologia Cybulscy",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14625,14 +14625,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Leczenie zachowawcze, protetyka i implanty.",
-    "Duøy zespÛ≥ lekarzy i ≥atwiejszy dostÍp do terminÛw.",
+    "Du≈ºy zesp√≥≈Ç lekarzy i ≈Çatwiejszy dostƒôp do termin√≥w.",
     "Kompleksowa opieka stomatologiczna."
   ]
 },
 {
-  name: "Microestetic ñ Grzegorz SkupiÒski",
+  name: "Microestetic ‚Äì Grzegorz Skupi≈Ñski",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14640,15 +14640,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.9,
   phone: "",
   reviews: [
-    "Nowoczesne leczenie kana≥owe i stomatologia estetyczna.",
-    "Rekonstrukcje i odbudowy zÍbÛw.",
-    "Bardzo wysokie oceny pacjentÛw."
+    "Nowoczesne leczenie kana≈Çowe i stomatologia estetyczna.",
+    "Rekonstrukcje i odbudowy zƒôb√≥w.",
+    "Bardzo wysokie oceny pacjent√≥w."
   ]
 },
 {
   name: "Stomatologia Rogala",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14661,9 +14661,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "FR•dent Gabinet Stomatologiczny Jerzy Frπczek",
+  name: "FRƒÑdent Gabinet Stomatologiczny Jerzy FrƒÖczek",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14676,9 +14676,9 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   ]
 },
 {
-  name: "OlszaÒski Dariusz ñ Gabinet stomatologiczny",
+  name: "Olsza≈Ñski Dariusz ‚Äì Gabinet stomatologiczny",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14686,14 +14686,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 5.0,
   phone: "",
   reviews: [
-    "Leczenie prÛchnicy i konsultacje stomatologiczne.",
-    "Bardzo dobre opinie pacjentÛw."
+    "Leczenie pr√≥chnicy i konsultacje stomatologiczne.",
+    "Bardzo dobre opinie pacjent√≥w."
   ]
 },
 {
-  name: "£obodziÒski Marek ñ Gabinet stomatologiczny",
+  name: "≈Åobodzi≈Ñski Marek ‚Äì Gabinet stomatologiczny",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14701,14 +14701,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.9,
   phone: "",
   reviews: [
-    "Stomatologia ogÛlna.",
+    "Stomatologia og√≥lna.",
     "Diagnostyka i leczenie zachowawcze."
   ]
 },
 {
   name: "Prywatny Gabinet Stomatologiczny Joanna Joszko",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14716,14 +14716,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "",
   reviews: [
-    "Leczenie stomatologiczne doros≥ych i dzieci.",
-    "Profilaktyka i leczenie prÛchnicy."
+    "Leczenie stomatologiczne doros≈Çych i dzieci.",
+    "Profilaktyka i leczenie pr√≥chnicy."
   ]
 },
 {
-  name: "Stomatologia dzieciÍca Milena StefaÒczyk",
+  name: "Stomatologia dzieciƒôca Milena Stefa≈Ñczyk",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14731,15 +14731,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "",
   reviews: [
-    "Stomatologia dzieciÍca.",
-    "Leczenie najm≥odszych pacjentÛw.",
+    "Stomatologia dzieciƒôca.",
+    "Leczenie najm≈Çodszych pacjent√≥w.",
     "Profilaktyka i adaptacja dzieci do wizyt dentystycznych."
   ]
 },
 {
-  name: "Przychodnia Stomatologiczna ñ SP ZOZ",
+  name: "Przychodnia Stomatologiczna ‚Äì SP ZOZ",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14747,15 +14747,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.3,
   phone: "77 483 35 01",
   reviews: [
-    "Stomatolog NFZ dla doros≥ych i dzieci.",
-    "Leczenie prÛchnicy oraz usuwanie zÍbÛw.",
-    "åwiadczenia stomatologiczne refundowane przez NFZ."
+    "Stomatolog NFZ dla doros≈Çych i dzieci.",
+    "Leczenie pr√≥chnicy oraz usuwanie zƒôb√≥w.",
+    "≈öwiadczenia stomatologiczne refundowane przez NFZ."
   ]
 },
 {
   name: "IS-MED-PS",
   specialization: "Stomatologia",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14765,13 +14765,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Podstawowe leczenie stomatologiczne NFZ.",
     "Ambulatoryjne wizyty dentystyczne.",
-    "åwiadczenia gwarantowane w ramach NFZ."
+    "≈öwiadczenia gwarantowane w ramach NFZ."
   ]
 },
 {
-  name: "dr n. med. Piotr Dπbrowski ñ Specjalista Urolog",
+  name: "dr n. med. Piotr DƒÖbrowski ‚Äì Specjalista Urolog",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14779,16 +14779,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 5.0,
   phone: "720 860 803",
   reviews: [
-    "Diagnostyka chorÛb prostaty i uk≥adu moczowego.",
-    "Leczenie problemÛw z oddawaniem moczu.",
+    "Diagnostyka chor√≥b prostaty i uk≈Çadu moczowego.",
+    "Leczenie problem√≥w z oddawaniem moczu.",
     "Konsultacje urologiczne prywatne.",
-    "Bardzo wysokie opinie pacjentÛw."
+    "Bardzo wysokie opinie pacjent√≥w."
   ]
 },
 {
-  name: "KÍdzierski Andrzej ñ Gabinet Urologiczny",
+  name: "Kƒôdzierski Andrzej ‚Äì Gabinet Urologiczny",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14797,13 +14797,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "602 624 497",
   reviews: [
     "Prywatne konsultacje urologiczne.",
-    "Diagnostyka i leczenie schorzeÒ uk≥adu moczowego."
+    "Diagnostyka i leczenie schorze≈Ñ uk≈Çadu moczowego."
   ]
 },
 {
   name: "Indywidualna Praktyka Lekarska Dawid Muszkiet",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14812,13 +14812,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "455 511 775",
   reviews: [
     "Konsultacje urologiczne prywatnie.",
-    "Diagnostyka i kontrola leczenia chorÛb urologicznych."
+    "Diagnostyka i kontrola leczenia chor√≥b urologicznych."
   ]
 },
 {
   name: "Medycyna Grzegorz Ledniowski",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14827,13 +14827,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "606 511 598",
   reviews: [
     "Konsultacje urologiczne.",
-    "Diagnostyka problemÛw prostaty i uk≥adu moczowego."
+    "Diagnostyka problem√≥w prostaty i uk≈Çadu moczowego."
   ]
 },
 {
   name: "Klinika Nova",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14843,13 +14843,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Konsultacje urologiczne prywatnie.",
     "Diagnostyka i zabiegi urologiczne.",
-    "CzÍsto naj≥atwiejszy dostÍp do szybkich terminÛw."
+    "Czƒôsto naj≈Çatwiejszy dostƒôp do szybkich termin√≥w."
   ]
 },
 {
-  name: "Poradnia Urologiczna ñ Samodzielny Publiczny ZespÛ≥ Opieki Zdrowotnej",
+  name: "Poradnia Urologiczna ‚Äì Samodzielny Publiczny Zesp√≥≈Ç Opieki Zdrowotnej",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14858,16 +14858,16 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "77 406 24 00",
   reviews: [
     "Konsultacje urologiczne w ramach NFZ.",
-    "Diagnostyka chorÛb prostaty i uk≥adu moczowego.",
+    "Diagnostyka chor√≥b prostaty i uk≈Çadu moczowego.",
     "Leczenie kamicy nerkowej oraz infekcji.",
-    "Kwalifikacje do zabiegÛw urologicznych.",
+    "Kwalifikacje do zabieg√≥w urologicznych.",
     "Wymagane skierowanie od lekarza rodzinnego."
   ]
 },
 {
-  name: "Przychodnia przyszpitalna NZOZ ñ ul. Judyma 4",
+  name: "Przychodnia przyszpitalna NZOZ ‚Äì ul. Judyma 4",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14877,13 +14877,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Ambulatoryjne konsultacje urologiczne NFZ.",
     "Kontrole po leczeniu szpitalnym.",
-    "Diagnostyka i leczenie chorÛb uk≥adu moczowego."
+    "Diagnostyka i leczenie chor√≥b uk≈Çadu moczowego."
   ]
 },
 {
-  name: "Szpital Koüle ñ Oddzia≥ Urologiczny",
+  name: "Szpital Ko≈∫le ‚Äì Oddzia≈Ç Urologiczny",
   specialization: "Urolog",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: true,
   privateVisit: false,
@@ -14892,14 +14892,14 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "",
   reviews: [
     "Zabiegi urologiczne w ramach NFZ.",
-    "Hospitalizacja wed≥ug wskazaÒ specjalisty.",
-    "Leczenie operacyjne schorzeÒ urologicznych."
+    "Hospitalizacja wed≈Çug wskaza≈Ñ specjalisty.",
+    "Leczenie operacyjne schorze≈Ñ urologicznych."
   ]
 },
 {
-  name: "Projekt Zdrowie ñ Dietetyk KÍdzierzyn-Koüle",
+  name: "Projekt Zdrowie ‚Äì Dietetyk Kƒôdzierzyn-Ko≈∫le",
   specialization: "Dietetyka kliniczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14908,15 +14908,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "519 826 266",
   reviews: [
     "Dietetyka kliniczna i prowadzenie dietoterapii.",
-    "Wsparcie przy oty≥oúci, insulinoopornoúci i cukrzycy.",
-    "Analiza sk≥adu cia≥a i indywidualne plany øywieniowe.",
-    "Bardzo duøa liczba pozytywnych opinii."
+    "Wsparcie przy oty≈Ço≈õci, insulinooporno≈õci i cukrzycy.",
+    "Analiza sk≈Çadu cia≈Ça i indywidualne plany ≈ºywieniowe.",
+    "Bardzo du≈ºa liczba pozytywnych opinii."
   ]
 },
 {
-  name: "Dietetriki ñ Prywatna Poradnia Dietetyczna Katarzyna Kupiec",
+  name: "Dietetriki ‚Äì Prywatna Poradnia Dietetyczna Katarzyna Kupiec",
   specialization: "Dietetyka kliniczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14926,13 +14926,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Dietetyk kliniczny.",
     "Wsparcie przy chorobach jelit i tarczycy.",
-    "Indywidualne plany øywieniowe i redukcja masy cia≥a."
+    "Indywidualne plany ≈ºywieniowe i redukcja masy cia≈Ça."
   ]
 },
 {
-  name: "KLASYCZNIE-DIETETYCZNIE Agnieszka GÛrska",
+  name: "KLASYCZNIE-DIETETYCZNIE Agnieszka G√≥rska",
   specialization: "Dietetyka kliniczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14940,15 +14940,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "500 035 061",
   reviews: [
-    "Dietoterapia chorÛb przewlek≥ych.",
+    "Dietoterapia chor√≥b przewlek≈Çych.",
     "Wsparcie przy problemach hormonalnych i metabolicznych.",
     "Konsultacje dietetyczne prywatnie."
   ]
 },
 {
-  name: "Poradnia DOBRY DIETETYK ñ Renata Jeruzalska",
+  name: "Poradnia DOBRY DIETETYK ‚Äì Renata Jeruzalska",
   specialization: "Dietetyka kliniczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14956,15 +14956,15 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "500 149 618",
   reviews: [
-    "Dietetyka kliniczna i leczenie dietπ.",
+    "Dietetyka kliniczna i leczenie dietƒÖ.",
     "Pomoc przy alergiach pokarmowych i chorobach metabolicznych.",
-    "Indywidualne programy redukcji masy cia≥a."
+    "Indywidualne programy redukcji masy cia≈Ça."
   ]
 },
 {
-  name: "Helena Niemeczek ñ Dietetyk kliniczny i psychodietetyk",
+  name: "Helena Niemeczek ‚Äì Dietetyk kliniczny i psychodietetyk",
   specialization: "Dietetyka kliniczna",
-  city: "KÍdzierzyn-Koüle",
+  city: "Kƒôdzierzyn-Ko≈∫le",
 
   nfz: false,
   privateVisit: true,
@@ -14973,12 +14973,12 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "725 494 088",
   reviews: [
     "Dietetyka kliniczna i psychodietetyka.",
-    "Wsparcie przy zaburzeniach odøywiania.",
-    "Praca nad nawykami øywieniowymi i chorobami przewlek≥ymi."
+    "Wsparcie przy zaburzeniach od≈ºywiania.",
+    "Praca nad nawykami ≈ºywieniowymi i chorobami przewlek≈Çymi."
   ]
 },
 {
-  name: "Sandra Stanis≥awek ñ DietaNieCud",
+  name: "Sandra Stanis≈Çawek ‚Äì DietaNieCud",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -14989,13 +14989,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "696 930 474",
   reviews: [
     "Dietetyka kliniczna i psychodietetyka.",
-    "Wsparcie przy insulinoopornoúci, Hashimoto i chorobach jelit.",
-    "Indywidualne prowadzenie redukcji masy cia≥a.",
-    "Bardzo duøa liczba pozytywnych opinii."
+    "Wsparcie przy insulinooporno≈õci, Hashimoto i chorobach jelit.",
+    "Indywidualne prowadzenie redukcji masy cia≈Ça.",
+    "Bardzo du≈ºa liczba pozytywnych opinii."
   ]
 },
 {
-  name: "Karolina Gadawska ñ Dietetyk kliniczny",
+  name: "Karolina Gadawska ‚Äì Dietetyk kliniczny",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -15005,13 +15005,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 5.0,
   phone: "600 266 994",
   reviews: [
-    "Dietoterapia chorÛb metabolicznych.",
+    "Dietoterapia chor√≥b metabolicznych.",
     "Wsparcie hormonalne i jelitowe.",
-    "Indywidualne plany øywieniowe."
+    "Indywidualne plany ≈ºywieniowe."
   ]
 },
 {
-  name: "Poradnia Dietetyczna Anethum ñ Anna WilczyÒska-DuszyÒska",
+  name: "Poradnia Dietetyczna Anethum ‚Äì Anna Wilczy≈Ñska-Duszy≈Ñska",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -15023,7 +15023,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   reviews: [
     "Dietetyka kliniczna.",
     "Wsparcie przy chorobach przewodu pokarmowego.",
-    "Dietoterapia chorÛb autoimmunologicznych."
+    "Dietoterapia chor√≥b autoimmunologicznych."
   ]
 },
 {
@@ -15037,13 +15037,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "603 703 026",
   reviews: [
-    "Dietetyka kliniczna i leczenie dietπ.",
-    "Wsparcie przy cukrzycy, oty≥oúci i chorobach metabolicznych.",
-    "Sta≥e prowadzenie dietetyczne."
+    "Dietetyka kliniczna i leczenie dietƒÖ.",
+    "Wsparcie przy cukrzycy, oty≈Ço≈õci i chorobach metabolicznych.",
+    "Sta≈Çe prowadzenie dietetyczne."
   ]
 },
 {
-  name: "Opolskie Centrum Dietetyki Pe≥nia Zdrowia",
+  name: "Opolskie Centrum Dietetyki Pe≈Çnia Zdrowia",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -15053,12 +15053,12 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.6,
   phone: "661 430 555",
   reviews: [
-    "Kompleksowa dietoterapia chorÛb przewlek≥ych.",
+    "Kompleksowa dietoterapia chor√≥b przewlek≈Çych.",
     "Indywidualne konsultacje dietetyczne."
   ]
 },
 {
-  name: "Centrum Leczenia Oty≥oúci SABA",
+  name: "Centrum Leczenia Oty≈Ço≈õci SABA",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -15068,13 +15068,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.7,
   phone: "516 289 230",
   reviews: [
-    "Leczenie oty≥oúci klinicznej.",
-    "WspÛ≥praca dietetyka i lekarza.",
-    "Programy redukcji masy cia≥a."
+    "Leczenie oty≈Ço≈õci klinicznej.",
+    "Wsp√≥≈Çpraca dietetyka i lekarza.",
+    "Programy redukcji masy cia≈Ça."
   ]
 },
 {
-  name: "PrzestrzeÒ Dietetyczna Anna Giesa-Tulej",
+  name: "Przestrze≈Ñ Dietetyczna Anna Giesa-Tulej",
   specialization: "Dietetyka kliniczna",
   city: "Opole",
 
@@ -15085,7 +15085,7 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   phone: "695 640 190",
   reviews: [
     "Indywidualne konsultacje dietetyczne.",
-    "Wsparcie w zmianie nawykÛw øywieniowych."
+    "Wsparcie w zmianie nawyk√≥w ≈ºywieniowych."
   ]
 },
 {
@@ -15099,13 +15099,13 @@ note:"Konsultacje ortopedyczne NFZ, kontrole pourazowe i kwalifikacje"
   rating: 4.5,
   phone: "668 523 833",
   reviews: [
-    "Konsultacje dietetyczne i kontrola masy cia≥a.",
-    "Programy øywieniowe dopasowane indywidualnie."
+    "Konsultacje dietetyczne i kontrola masy cia≈Ça.",
+    "Programy ≈ºywieniowe dopasowane indywidualnie."
   ]
 },
 {
 id:1514,
-name:"Robotycka-Lenczuk Iwona ñ Gabinet alergologiczno-pulmonologiczny",
+name:"Robotycka-Lenczuk Iwona ‚Äì Gabinet alergologiczno-pulmonologiczny",
 specialization:"Pulmonolog",
 
 city:"Nysa",
@@ -15116,14 +15116,14 @@ privateVisit:true,
 featured:true,
 rating:4.6,
 reviews:[
-"Doúwiadczony specjalista alergologii i pulmonologii",
+"Do≈õwiadczony specjalista alergologii i pulmonologii",
 "Sprawna rejestracja telefoniczna",
-"Indywidualne podejúcie do pacjenta"
+"Indywidualne podej≈õcie do pacjenta"
 ]
 },
 {
 id:1515,
-name:"NZOZ Nowa-Med ñ poradnia alergologiczna",
+name:"NZOZ Nowa-Med ‚Äì poradnia alergologiczna",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15136,12 +15136,12 @@ rating:4.3,
 reviews:[
 "Nowoczesna poradnia specjalistyczna",
 "Dobra organizacja wizyt",
-"MoøliwoúÊ szybkiej konsultacji prywatnej"
+"Mo≈ºliwo≈õƒá szybkiej konsultacji prywatnej"
 ]
 },
 {
 id:1516,
-name:"Gabinet alergologiczny ñ ul. Koúciuszki",
+name:"Gabinet alergologiczny ‚Äì ul. Ko≈õciuszki",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15153,13 +15153,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Indywidualny gabinet lekarski",
-"KrÛtszy czas oczekiwania na wizytÍ",
-"Bezpoúredni kontakt z lekarzem"
+"Kr√≥tszy czas oczekiwania na wizytƒô",
+"Bezpo≈õredni kontakt z lekarzem"
 ]
 },
 {
 id:1517,
-name:"Przychodnia Marcinkowskiego ñ konsultacje alergologiczne",
+name:"Przychodnia Marcinkowskiego ‚Äì konsultacje alergologiczne",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15171,13 +15171,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Poradnie specjalistyczne w jednej lokalizacji",
-"Moøliwe wizyty komercyjne",
+"Mo≈ºliwe wizyty komercyjne",
 "Dogodna lokalizacja w centrum miasta"
 ]
 },
 {
 id:1518,
-name:"Przychodnia Rondo Nysa ñ konsultacje alergologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje alergologiczne",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15188,14 +15188,14 @@ privateVisit:true,
 featured:false,
 rating:4.2,
 reviews:[
-"Specjaliúci chorÛb alergicznych i pulmonologii",
-"PlacÛwka ≥atwo dostÍpna komunikacyjnie",
-"MoøliwoúÊ prywatnych konsultacji"
+"Specjali≈õci chor√≥b alergicznych i pulmonologii",
+"Plac√≥wka ≈Çatwo dostƒôpna komunikacyjnie",
+"Mo≈ºliwo≈õƒá prywatnych konsultacji"
 ]
 },
 {
 id:1519,
-name:"NZOZ Nowa-Med ñ poradnia alergologiczna",
+name:"NZOZ Nowa-Med ‚Äì poradnia alergologiczna",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15206,14 +15206,14 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"PlacÛwka z kontraktem NFZ",
-"NajczÍúciej wybierana poradnia alergologiczna w Nysie",
+"Plac√≥wka z kontraktem NFZ",
+"Najczƒô≈õciej wybierana poradnia alergologiczna w Nysie",
 "Wymagane skierowanie od lekarza POZ"
 ]
 },
 {
 id:1520,
-name:"Przychodnia Marcinkowskiego ñ poradnia alergologiczna",
+name:"Przychodnia Marcinkowskiego ‚Äì poradnia alergologiczna",
 specialization:"Alergolog",
 
 city:"Nysa",
@@ -15225,13 +15225,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Poradnie specjalistyczne w ramach NFZ",
-"Alergolog dostÍpny okresowo",
+"Alergolog dostƒôpny okresowo",
 "Rejestracja telefoniczna na aktualne terminy"
 ]
 },
 {
 id:1521,
-name:"Robotycka-Lenczuk Iwona ñ Gabinet alergologiczno-pulmonologiczny",
+name:"Robotycka-Lenczuk Iwona ‚Äì Gabinet alergologiczno-pulmonologiczny",
 specialization:"Pulmonolog",
 
 city:"Nysa",
@@ -15242,14 +15242,14 @@ privateVisit:false,
 featured:false,
 rating:4.4,
 reviews:[
-"Wizyty realizowane takøe w ramach NFZ",
-"Ograniczona liczba terminÛw",
-"Doúwiadczony specjalista alergologii i pulmonologii"
+"Wizyty realizowane tak≈ºe w ramach NFZ",
+"Ograniczona liczba termin√≥w",
+"Do≈õwiadczony specjalista alergologii i pulmonologii"
 ]
 },
 {
 id:1522,
-name:"Przychodnia Rondo Nysa ñ konsultacje anestezjologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje anestezjologiczne",
 specialization:"Anestezjolog",
 
 city:"Nysa",
@@ -15261,7 +15261,7 @@ featured:true,
 rating:4.2,
 reviews:[
 "Konsultacje przed zabiegami operacyjnymi",
-"Specjaliúci wspÛ≥pracujπcy ze szpitalem",
+"Specjali≈õci wsp√≥≈ÇpracujƒÖcy ze szpitalem",
 "Sprawna rejestracja wizyt prywatnych"
 ]
 },
@@ -15278,14 +15278,14 @@ privateVisit:true,
 featured:false,
 rating:4.1,
 reviews:[
-"Konsultacje przedzabiegowe po wczeúniejszym umÛwieniu",
-"PlacÛwka z poradniami specjalistycznymi",
-"Dogodna lokalizacja w mieúcie"
+"Konsultacje przedzabiegowe po wcze≈õniejszym um√≥wieniu",
+"Plac√≥wka z poradniami specjalistycznymi",
+"Dogodna lokalizacja w mie≈õcie"
 ]
 },
 {
 id:1524,
-name:"City Hospital Health Care Center ñ konsultacje anestezjologiczne",
+name:"City Hospital Health Care Center ‚Äì konsultacje anestezjologiczne",
 specialization:"Anestezjolog",
 
 city:"Nysa",
@@ -15296,14 +15296,14 @@ privateVisit:true,
 featured:false,
 rating:4.3,
 reviews:[
-"Specjaliúci oddzia≥u anestezjologii",
-"Konsultacje prywatne po wczeúniejszym kontakcie",
-"Doúwiadczenie szpitalne lekarzy"
+"Specjali≈õci oddzia≈Çu anestezjologii",
+"Konsultacje prywatne po wcze≈õniejszym kontakcie",
+"Do≈õwiadczenie szpitalne lekarzy"
 ]
 },
 {
 id:1525,
-name:"City Hospital Health Care Center ñ konsultacje anestezjologiczne",
+name:"City Hospital Health Care Center ‚Äì konsultacje anestezjologiczne",
 specialization:"Anestezjolog",
 
 city:"Nysa",
@@ -15315,13 +15315,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje przed operacjami w ramach NFZ",
-"Kwalifikacje do znieczulenia i zabiegÛw",
-"Opieka specjalistÛw oddzia≥u anestezjologii"
+"Kwalifikacje do znieczulenia i zabieg√≥w",
+"Opieka specjalist√≥w oddzia≈Çu anestezjologii"
 ]
 },
 {
 id:1526,
-name:"Poradnia Leczenia BÛlu ñ konsultacje anestezjologiczne",
+name:"Poradnia Leczenia B√≥lu ‚Äì konsultacje anestezjologiczne",
 specialization:"Anestezjolog",
 
 city:"Nysa",
@@ -15332,14 +15332,14 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Leczenie przewlek≥ego bÛlu w ramach NFZ",
-"Specjaliúci anestezjologii",
-"Konsultacje przy neuralgiach i bÛlu pooperacyjnym"
+"Leczenie przewlek≈Çego b√≥lu w ramach NFZ",
+"Specjali≈õci anestezjologii",
+"Konsultacje przy neuralgiach i b√≥lu pooperacyjnym"
 ]
 },
 {
 id:1527,
-name:"Przychodnia Marcinkowskiego ñ konsultacje anestezjologiczne",
+name:"Przychodnia Marcinkowskiego ‚Äì konsultacje anestezjologiczne",
 specialization:"Anestezjolog",
 
 city:"Nysa",
@@ -15350,14 +15350,14 @@ privateVisit:false,
 featured:false,
 rating:4.0,
 reviews:[
-"Rejestracja do specjalistÛw wspÛ≥pracujπcych ze szpitalem",
-"Kwalifikacje do zabiegÛw NFZ",
+"Rejestracja do specjalist√≥w wsp√≥≈ÇpracujƒÖcych ze szpitalem",
+"Kwalifikacje do zabieg√≥w NFZ",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1528,
-name:"Jacek Polewiak ñ Chirurg Naczyniowy Nysa",
+name:"Jacek Polewiak ‚Äì Chirurg Naczyniowy Nysa",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15368,14 +15368,14 @@ privateVisit:true,
 featured:true,
 rating:4.7,
 reviews:[
-"Specjalista chirurgii naczyniowej z duøym doúwiadczeniem",
-"Konsultacje w zakresie øylakÛw i chorÛb tÍtnic",
-"Bardzo dobre opinie pacjentÛw"
+"Specjalista chirurgii naczyniowej z du≈ºym do≈õwiadczeniem",
+"Konsultacje w zakresie ≈ºylak√≥w i chor√≥b tƒôtnic",
+"Bardzo dobre opinie pacjent√≥w"
 ]
 },
 {
 id:1529,
-name:"Polsko-AmerykaÒskie Kliniki Serca ñ Centrum Sercowo-Naczyniowe",
+name:"Polsko-Ameryka≈Ñskie Kliniki Serca ‚Äì Centrum Sercowo-Naczyniowe",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15386,14 +15386,14 @@ privateVisit:true,
 featured:true,
 rating:4.5,
 reviews:[
-"Diagnostyka naczyÒ i USG Doppler",
+"Diagnostyka naczy≈Ñ i USG Doppler",
 "Nowoczesne centrum sercowo-naczyniowe",
-"MoøliwoúÊ dalszego leczenia zabiegowego"
+"Mo≈ºliwo≈õƒá dalszego leczenia zabiegowego"
 ]
 },
 {
 id:1530,
-name:"City Hospital Health Care Center ñ konsultacje chirurgii naczyniowej",
+name:"City Hospital Health Care Center ‚Äì konsultacje chirurgii naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15404,14 +15404,14 @@ privateVisit:true,
 featured:false,
 rating:4.3,
 reviews:[
-"Konsultacje specjalistÛw oddzia≥u szpitalnego",
+"Konsultacje specjalist√≥w oddzia≈Çu szpitalnego",
 "Kwalifikacje do operacji naczyniowych",
-"Diagnostyka problemÛw krπøeniowych"
+"Diagnostyka problem√≥w krƒÖ≈ºeniowych"
 ]
 },
 {
 id:1531,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ konsultacje chirurgii naczyniowej",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì konsultacje chirurgii naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15422,14 +15422,14 @@ privateVisit:false,
 featured:true,
 rating:4.3,
 reviews:[
-"Konsultacje i leczenie chorÛb naczyÒ w ramach NFZ",
+"Konsultacje i leczenie chor√≥b naczy≈Ñ w ramach NFZ",
 "Kwalifikacje do leczenia operacyjnego",
-"Diagnostyka øylakÛw i chorÛb tÍtnic"
+"Diagnostyka ≈ºylak√≥w i chor√≥b tƒôtnic"
 ]
 },
 {
 id:1532,
-name:"Poradnia chirurgiczna ñ ZOZ Nysa",
+name:"Poradnia chirurgiczna ‚Äì ZOZ Nysa",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15441,13 +15441,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Poradnia chirurgiczna w ramach NFZ",
-"Konsultacje dotyczπce problemÛw naczyniowych",
+"Konsultacje dotyczƒÖce problem√≥w naczyniowych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1533,
-name:"Gabinet Laryngologiczny VERTIGO ñ dr n. med. Dariusz Polaczkiewicz",
+name:"Gabinet Laryngologiczny VERTIGO ‚Äì dr n. med. Dariusz Polaczkiewicz",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15458,14 +15458,14 @@ privateVisit:true,
 featured:true,
 rating:4.7,
 reviews:[
-"Diagnostyka s≥uchu i zaburzeÒ g≥osu",
-"Doúwiadczony specjalista laryngologii",
-"CzÍsto wybierana konsultacja prywatna w Nysie"
+"Diagnostyka s≈Çuchu i zaburze≈Ñ g≈Çosu",
+"Do≈õwiadczony specjalista laryngologii",
+"Czƒôsto wybierana konsultacja prywatna w Nysie"
 ]
 },
 {
 id:1534,
-name:"Gabinet laryngologiczny ñ lek. Alina Wo≥yniec",
+name:"Gabinet laryngologiczny ‚Äì lek. Alina Wo≈Çyniec",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15476,14 +15476,14 @@ privateVisit:true,
 featured:false,
 rating:4.3,
 reviews:[
-"Konsultacje problemÛw g≥osu i gard≥a",
-"Diagnostyka s≥uchu i chorÛb laryngologicznych",
-"Indywidualne podejúcie do pacjenta"
+"Konsultacje problem√≥w g≈Çosu i gard≈Ça",
+"Diagnostyka s≈Çuchu i chor√≥b laryngologicznych",
+"Indywidualne podej≈õcie do pacjenta"
 ]
 },
 {
 id:1535,
-name:"Przychodnia Rondo Nysa ñ konsultacje audiologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje audiologiczne",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15494,14 +15494,14 @@ privateVisit:true,
 featured:false,
 rating:4.2,
 reviews:[
-"Poradnie specjalistyczne w jednej placÛwce",
-"MoøliwoúÊ dalszej diagnostyki s≥uchu",
+"Poradnie specjalistyczne w jednej plac√≥wce",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki s≈Çuchu",
 "Prywatne wizyty laryngologiczne"
 ]
 },
 {
 id:1536,
-name:"Audiofon ñ badanie s≥uchu i aparaty s≥uchowe",
+name:"Audiofon ‚Äì badanie s≈Çuchu i aparaty s≈Çuchowe",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15512,14 +15512,14 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Profesjonalne badania s≥uchu",
-"DobÛr aparatÛw s≥uchowych",
+"Profesjonalne badania s≈Çuchu",
+"Dob√≥r aparat√≥w s≈Çuchowych",
 "Szybkie terminy wizyt"
 ]
 },
 {
 id:1537,
-name:"AUDIKA ñ Aparaty s≥uchowe Nysa",
+name:"AUDIKA ‚Äì Aparaty s≈Çuchowe Nysa",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15530,14 +15530,14 @@ privateVisit:true,
 featured:false,
 rating:4.3,
 reviews:[
-"Diagnostyka s≥uchu dla doros≥ych i dzieci",
-"Nowoczesne rozwiπzania protetyki s≥uchu",
-"MoøliwoúÊ konsultacji specjalistycznej"
+"Diagnostyka s≈Çuchu dla doros≈Çych i dzieci",
+"Nowoczesne rozwiƒÖzania protetyki s≈Çuchu",
+"Mo≈ºliwo≈õƒá konsultacji specjalistycznej"
 ]
 },
 {
 id:1538,
-name:"M. £uczak ñ Aparaty S≥uchowe",
+name:"M. ≈Åuczak ‚Äì Aparaty S≈Çuchowe",
 specialization:"Audiolog",
 
 city:"Nysa",
@@ -15548,14 +15548,14 @@ privateVisit:true,
 featured:false,
 rating:4.2,
 reviews:[
-"Badania s≥uchu i konsultacje protetyczne",
-"Indywidualny dobÛr aparatÛw s≥uchowych",
-"Lokalna placÛwka z doúwiadczeniem"
+"Badania s≈Çuchu i konsultacje protetyczne",
+"Indywidualny dob√≥r aparat√≥w s≈Çuchowych",
+"Lokalna plac√≥wka z do≈õwiadczeniem"
 ]
 },
 {
 id:1539,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Laryngologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Laryngologiczna",
 specialization:"Laryngolog",
 
 city:"Nysa",
@@ -15567,13 +15567,13 @@ featured:true,
 rating:4.2,
 reviews:[
 "Poradnia laryngologiczna w ramach NFZ",
-"Diagnostyka problemÛw s≥uchu i zaburzeÒ g≥osu",
-"MoøliwoúÊ skierowania do dalszego leczenia specjalistycznego"
+"Diagnostyka problem√≥w s≈Çuchu i zaburze≈Ñ g≈Çosu",
+"Mo≈ºliwo≈õƒá skierowania do dalszego leczenia specjalistycznego"
 ]
 },
 {
 id:1540,
-name:"Gabinet Chirurgii Naczyniowej ñ Jacek Polewiak",
+name:"Gabinet Chirurgii Naczyniowej ‚Äì Jacek Polewiak",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15585,13 +15585,13 @@ featured:true,
 rating:4.7,
 reviews:[
 "Prywatne konsultacje chirurga naczyniowego",
-"Diagnostyka chorÛb øy≥ i tÍtnic",
-"Doúwiadczony specjalista z dobrymi opiniami pacjentÛw"
+"Diagnostyka chor√≥b ≈ºy≈Ç i tƒôtnic",
+"Do≈õwiadczony specjalista z dobrymi opiniami pacjent√≥w"
 ]
 },
 {
 id:1541,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Chirurgii (chirurgia naczyniowa)",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Chirurgii (chirurgia naczyniowa)",
 specialization:"Chirurg naczyniowy",
 
 city:"Nysa",
@@ -15604,13 +15604,13 @@ rating:4.3,
 reviews:[
 "Konsultacje chirurgii naczyniowej w ramach NFZ",
 "Diagnostyka i kwalifikacje do leczenia operacyjnego",
-"Opieka specjalistÛw oddzia≥u chirurgicznego"
+"Opieka specjalist√≥w oddzia≈Çu chirurgicznego"
 ]
 },
 {
 id:1542,
-name:"Poradnia Chirurgiczna ñ konsultacje chirurgii ogÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"Poradnia Chirurgiczna ‚Äì konsultacje chirurgii og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Nysa",
 phone:"",
@@ -15620,15 +15620,15 @@ privateVisit:true,
 featured:false,
 rating:4.1,
 reviews:[
-"Prywatne konsultacje chirurga ogÛlnego",
-"Kwalifikacje do zabiegÛw chirurgicznych",
-"Dogodna lokalizacja placÛwki"
+"Prywatne konsultacje chirurga og√≥lnego",
+"Kwalifikacje do zabieg√≥w chirurgicznych",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1543,
-name:"City Hospital Health Care Center ñ konsultacje chirurgii ogÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"City Hospital Health Care Center ‚Äì konsultacje chirurgii og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Nysa",
 phone:"",
@@ -15639,14 +15639,14 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje chirurgiczne prywatnie",
-"Specjaliúci pracujπcy w oddziale szpitalnym",
-"MoøliwoúÊ dalszej diagnostyki i leczenia"
+"Specjali≈õci pracujƒÖcy w oddziale szpitalnym",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki i leczenia"
 ]
 },
 {
 id:1544,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Nysa",
 phone:"",
@@ -15656,14 +15656,14 @@ privateVisit:false,
 featured:true,
 rating:4.2,
 reviews:[
-"Konsultacje chirurga ogÛlnego w ramach NFZ",
+"Konsultacje chirurga og√≥lnego w ramach NFZ",
 "Kwalifikacje do leczenia operacyjnego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1547,
-name:"City Hospital Health Care Center ñ konsultacje chirurgii urazowo-ortopedycznej",
+name:"City Hospital Health Care Center ‚Äì konsultacje chirurgii urazowo-ortopedycznej",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -15675,13 +15675,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Konsultacje chirurgii urazowo-ortopedycznej prywatnie",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
-"Specjaliúci pracujπcy w oddziale szpitalnym"
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
+"Specjali≈õci pracujƒÖcy w oddziale szpitalnym"
 ]
 },
 {
 id:1548,
-name:"Przychodnia Rondo Nysa ñ chirurg urazowo-ortopedyczny",
+name:"Przychodnia Rondo Nysa ‚Äì chirurg urazowo-ortopedyczny",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -15693,13 +15693,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Prywatne konsultacje ortopedyczne",
-"Leczenie urazÛw i przeciπøeÒ stawÛw",
-"MoøliwoúÊ dalszej diagnostyki"
+"Leczenie uraz√≥w i przeciƒÖ≈ºe≈Ñ staw√≥w",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki"
 ]
 },
 {
 id:1549,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Urazowo-Ortopedyczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -15711,13 +15711,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje chirurgii urazowo-ortopedycznej w ramach NFZ",
-"Diagnostyka urazÛw i chorÛb narzπdu ruchu",
+"Diagnostyka uraz√≥w i chor√≥b narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1550,
-name:"ProDent ñ gabinet stomatologiczny",
+name:"ProDent ‚Äì gabinet stomatologiczny",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -15730,12 +15730,12 @@ rating:4.5,
 reviews:[
 "Prywatne leczenie stomatologiczne",
 "Nowoczesny gabinet dentystyczny",
-"Szeroki zakres us≥ug stomatologicznych"
+"Szeroki zakres us≈Çug stomatologicznych"
 ]
 },
 {
 id:1551,
-name:"Gabinet stomatologiczny Ma≥gorzata Ignerska",
+name:"Gabinet stomatologiczny Ma≈Çgorzata Ignerska",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -15746,7 +15746,7 @@ privateVisit:true,
 featured:false,
 rating:4.4,
 reviews:[
-"Indywidualne podejúcie do pacjenta",
+"Indywidualne podej≈õcie do pacjenta",
 "Profilaktyka i leczenie zachowawcze",
 "Spokojna atmosfera wizyt"
 ]
@@ -15765,8 +15765,8 @@ featured:true,
 rating:4.6,
 reviews:[
 "Nowoczesna stomatologia prywatna",
-"Szeroki zakres zabiegÛw dentystycznych",
-"Doúwiadczenie zespo≥u lekarskiego"
+"Szeroki zakres zabieg√≥w dentystycznych",
+"Do≈õwiadczenie zespo≈Çu lekarskiego"
 ]
 },
 {
@@ -15789,7 +15789,7 @@ reviews:[
 },
 {
 id:1554,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Stomatologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -15802,12 +15802,12 @@ rating:4.2,
 reviews:[
 "Leczenie stomatologiczne w ramach NFZ",
 "Podstawowa opieka dentystyczna",
-"Wymagane wczeúniejsze zapisanie na wizytÍ"
+"Wymagane wcze≈õniejsze zapisanie na wizytƒô"
 ]
 },
 {
 id:1555,
-name:"NZOZ Nowa-Med ñ poradnia stomatologiczna",
+name:"NZOZ Nowa-Med ‚Äì poradnia stomatologiczna",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -15820,12 +15820,12 @@ rating:4.1,
 reviews:[
 "Stomatolog w ramach NFZ",
 "Profilaktyka i leczenie zachowawcze",
-"PlacÛwka z poradniami specjalistycznymi"
+"Plac√≥wka z poradniami specjalistycznymi"
 ]
 },
 {
 id:1556,
-name:"NZOZ Nowa-Med ñ konsultacje dermatologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje dermatologiczne",
 specialization:"Dermatolog",
 
 city:"Nysa",
@@ -15837,13 +15837,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne konsultacje dermatologiczne",
-"Diagnostyka chorÛb skÛry",
-"MoøliwoúÊ szybkiego terminu wizyty"
+"Diagnostyka chor√≥b sk√≥ry",
+"Mo≈ºliwo≈õƒá szybkiego terminu wizyty"
 ]
 },
 {
 id:1557,
-name:"Przychodnia Rondo Nysa ñ konsultacje dermatologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje dermatologiczne",
 specialization:"Dermatolog",
 
 city:"Nysa",
@@ -15855,13 +15855,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje dermatologiczne prywatnie",
-"Leczenie problemÛw skÛrnych",
-"Dogodna lokalizacja placÛwki"
+"Leczenie problem√≥w sk√≥rnych",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1558,
-name:"NZOZ Nowa-Med ñ Poradnia Dermatologiczna",
+name:"NZOZ Nowa-Med ‚Äì Poradnia Dermatologiczna",
 specialization:"Dermatolog",
 
 city:"Nysa",
@@ -15873,13 +15873,13 @@ featured:true,
 rating:4.2,
 reviews:[
 "Konsultacje dermatologiczne w ramach NFZ",
-"Diagnostyka chorÛb skÛry",
+"Diagnostyka chor√≥b sk√≥ry",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1559,
-name:"NZOZ Nowa-Med ñ konsultacje diabetologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje diabetologiczne",
 specialization:"Diabetolog",
 
 city:"Nysa",
@@ -15892,12 +15892,12 @@ rating:4.3,
 reviews:[
 "Prywatne konsultacje diabetologiczne",
 "Diagnostyka i leczenie cukrzycy",
-"Sta≥a opieka specjalistyczna"
+"Sta≈Ça opieka specjalistyczna"
 ]
 },
 {
 id:1560,
-name:"NZOZ Nowa-Med ñ Pracownia Diagnostyki Obrazowej",
+name:"NZOZ Nowa-Med ‚Äì Pracownia Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Nysa",
@@ -15910,12 +15910,12 @@ rating:4.4,
 reviews:[
 "Badania RTG i USG prywatnie",
 "Nowoczesna diagnostyka obrazowa",
-"Sprawna realizacja badaÒ"
+"Sprawna realizacja bada≈Ñ"
 ]
 },
 {
 id:1561,
-name:"City Hospital Health Care Center ñ badania diagnostyki obrazowej",
+name:"City Hospital Health Care Center ‚Äì badania diagnostyki obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Nysa",
@@ -15928,12 +15928,12 @@ rating:4.5,
 reviews:[
 "RTG, USG oraz tomografia komputerowa",
 "Diagnostyka w warunkach szpitalnych",
-"MoøliwoúÊ szybkiego wykonania badaÒ"
+"Mo≈ºliwo≈õƒá szybkiego wykonania bada≈Ñ"
 ]
 },
 {
 id:1562,
-name:"Przychodnia Rondo Nysa ñ USG diagnostyczne",
+name:"Przychodnia Rondo Nysa ‚Äì USG diagnostyczne",
 specialization:"Diagnostyka obrazowa",
 
 city:"Nysa",
@@ -15945,13 +15945,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Prywatne badania USG",
-"KrÛtki czas oczekiwania",
-"Dogodna lokalizacja placÛwki"
+"Kr√≥tki czas oczekiwania",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1563,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Zak≥ad Diagnostyki Obrazowej",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Nysa",
@@ -15969,7 +15969,7 @@ reviews:[
 },
 {
 id:1564,
-name:"NZOZ Nowa-Med ñ konsultacje endokrynologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje endokrynologiczne",
 specialization:"Endokrynolog",
 
 city:"Nysa",
@@ -15981,13 +15981,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne konsultacje endokrynologiczne",
-"Diagnostyka chorÛb tarczycy i zaburzeÒ hormonalnych",
-"MoøliwoúÊ sta≥ej kontroli leczenia"
+"Diagnostyka chor√≥b tarczycy i zaburze≈Ñ hormonalnych",
+"Mo≈ºliwo≈õƒá sta≈Çej kontroli leczenia"
 ]
 },
 {
 id:1565,
-name:"Przychodnia Rondo Nysa ñ konsultacje endokrynologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje endokrynologiczne",
 specialization:"Endokrynolog",
 
 city:"Nysa",
@@ -15999,13 +15999,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje endokrynologiczne prywatnie",
-"Diagnostyka zaburzeÒ hormonalnych",
-"Dogodna lokalizacja placÛwki"
+"Diagnostyka zaburze≈Ñ hormonalnych",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1566,
-name:"NZOZ Nowa-Med ñ Poradnia Endokrynologiczna",
+name:"NZOZ Nowa-Med ‚Äì Poradnia Endokrynologiczna",
 specialization:"Endokrynolog",
 
 city:"Nysa",
@@ -16017,13 +16017,13 @@ featured:true,
 rating:4.2,
 reviews:[
 "Konsultacje endokrynologiczne w ramach NFZ",
-"Diagnostyka chorÛb tarczycy i zaburzeÒ hormonalnych",
+"Diagnostyka chor√≥b tarczycy i zaburze≈Ñ hormonalnych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1567,
-name:"NZOZ Nowa-Med ñ konsultacje ginekologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje ginekologiczne",
 specialization:"Ginekolog",
 
 city:"Nysa",
@@ -16035,13 +16035,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje ginekologiczne",
-"Profilaktyka i diagnostyka chorÛb kobiecych",
-"MoøliwoúÊ sta≥ej opieki specjalistycznej"
+"Profilaktyka i diagnostyka chor√≥b kobiecych",
+"Mo≈ºliwo≈õƒá sta≈Çej opieki specjalistycznej"
 ]
 },
 {
 id:1568,
-name:"Przychodnia Rondo Nysa ñ konsultacje ginekologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje ginekologiczne",
 specialization:"Ginekolog",
 
 city:"Nysa",
@@ -16054,12 +16054,12 @@ rating:4.2,
 reviews:[
 "Konsultacje ginekologiczne prywatnie",
 "Diagnostyka i kontrolne wizyty lekarskie",
-"Dogodna lokalizacja placÛwki"
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1569,
-name:"City Hospital Health Care Center ñ konsultacje ginekologiczne",
+name:"City Hospital Health Care Center ‚Äì konsultacje ginekologiczne",
 specialization:"Ginekolog",
 
 city:"Nysa",
@@ -16070,14 +16070,14 @@ privateVisit:true,
 featured:true,
 rating:4.5,
 reviews:[
-"Konsultacje ginekologiczne w placÛwce szpitalnej",
-"Doúwiadczeni specjaliúci",
-"MoøliwoúÊ dalszej diagnostyki i leczenia"
+"Konsultacje ginekologiczne w plac√≥wce szpitalnej",
+"Do≈õwiadczeni specjali≈õci",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki i leczenia"
 ]
 },
 {
 id:1570,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Nysa",
@@ -16089,13 +16089,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje ginekologiczne w ramach NFZ",
-"Opieka ginekologiczno-po≥oønicza",
+"Opieka ginekologiczno-po≈Ço≈ºnicza",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1571,
-name:"NZOZ Nowa-Med ñ konsultacje internistyczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje internistyczne",
 specialization:"Internista",
 
 city:"Nysa",
@@ -16106,14 +16106,14 @@ privateVisit:true,
 featured:true,
 rating:4.3,
 reviews:[
-"Prywatne konsultacje lekarza chorÛb wewnÍtrznych",
-"Diagnostyka i leczenie chorÛb przewlek≥ych",
-"MoøliwoúÊ szybkiego terminu wizyty"
+"Prywatne konsultacje lekarza chor√≥b wewnƒôtrznych",
+"Diagnostyka i leczenie chor√≥b przewlek≈Çych",
+"Mo≈ºliwo≈õƒá szybkiego terminu wizyty"
 ]
 },
 {
 id:1572,
-name:"Przychodnia Rondo Nysa ñ konsultacje internistyczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje internistyczne",
 specialization:"Internista",
 
 city:"Nysa",
@@ -16125,13 +16125,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje internistyczne prywatnie",
-"Ocena stanu zdrowia i diagnostyka ogÛlna",
-"Dogodna lokalizacja placÛwki"
+"Ocena stanu zdrowia i diagnostyka og√≥lna",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1573,
-name:"NZOZ Nowa-Med ñ Poradnia POZ",
+name:"NZOZ Nowa-Med ‚Äì Poradnia POZ",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16144,12 +16144,12 @@ rating:4.2,
 reviews:[
 "Poradnia lekarza rodzinnego w ramach NFZ",
 "Podstawowa opieka zdrowotna",
-"MoøliwoúÊ sta≥ej opieki internistycznej"
+"Mo≈ºliwo≈õƒá sta≈Çej opieki internistycznej"
 ]
 },
 {
 id:1574,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Lekarza Rodzinnego",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16167,7 +16167,7 @@ reviews:[
 },
 {
 id:1575,
-name:"NZOZ Nowa-Med ñ konsultacje kardiologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje kardiologiczne",
 specialization:"Kardiolog",
 
 city:"Nysa",
@@ -16179,13 +16179,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje kardiologiczne",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
-"MoøliwoúÊ dalszych badaÒ specjalistycznych"
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
+"Mo≈ºliwo≈õƒá dalszych bada≈Ñ specjalistycznych"
 ]
 },
 {
 id:1576,
-name:"Polsko-AmerykaÒskie Kliniki Serca ñ Centrum Kardiologiczne",
+name:"Polsko-Ameryka≈Ñskie Kliniki Serca ‚Äì Centrum Kardiologiczne",
 specialization:"Kardiolog",
 
 city:"Nysa",
@@ -16198,12 +16198,12 @@ rating:4.6,
 reviews:[
 "Specjalistyczna opieka kardiologiczna",
 "Nowoczesna diagnostyka sercowo-naczyniowa",
-"MoøliwoúÊ wykonania badaÒ i zabiegÛw"
+"Mo≈ºliwo≈õƒá wykonania bada≈Ñ i zabieg√≥w"
 ]
 },
 {
 id:1577,
-name:"Przychodnia Rondo Nysa ñ konsultacje kardiologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje kardiologiczne",
 specialization:"Kardiolog",
 
 city:"Nysa",
@@ -16215,13 +16215,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Konsultacje kardiologiczne prywatnie",
-"Diagnostyka nadciúnienia i chorÛb serca",
-"Dogodna lokalizacja placÛwki"
+"Diagnostyka nadci≈õnienia i chor√≥b serca",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1578,
-name:"Polsko-AmerykaÒskie Kliniki Serca ñ Poradnia Kardiologiczna",
+name:"Polsko-Ameryka≈Ñskie Kliniki Serca ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Nysa",
@@ -16233,13 +16233,13 @@ featured:true,
 rating:4.5,
 reviews:[
 "Konsultacje kardiologiczne w ramach NFZ",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Nowoczesne zaplecze diagnostyczne"
 ]
 },
 {
 id:1579,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Kardiologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Nysa",
@@ -16251,13 +16251,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Kardiolog w ramach NFZ",
-"Diagnostyka i leczenie chorÛb serca",
+"Diagnostyka i leczenie chor√≥b serca",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1580,
-name:"Gabinet Laryngologiczny VERTIGO ñ konsultacje laryngologiczne",
+name:"Gabinet Laryngologiczny VERTIGO ‚Äì konsultacje laryngologiczne",
 specialization:"Laryngolog",
 
 city:"Nysa",
@@ -16269,13 +16269,13 @@ featured:true,
 rating:4.6,
 reviews:[
 "Prywatne konsultacje laryngologiczne",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
-"Doúwiadczony specjalista"
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
+"Do≈õwiadczony specjalista"
 ]
 },
 {
 id:1581,
-name:"Przychodnia Rondo Nysa ñ konsultacje laryngologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje laryngologiczne",
 specialization:"Laryngolog",
 
 city:"Nysa",
@@ -16287,13 +16287,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Konsultacje laryngologiczne prywatnie",
-"Diagnostyka problemÛw s≥uchu i zatok",
-"Dogodna lokalizacja placÛwki"
+"Diagnostyka problem√≥w s≈Çuchu i zatok",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1582,
-name:"NZOZ Nowa-Med ñ konsultacje laryngologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje laryngologiczne",
 specialization:"Laryngolog",
 
 city:"Nysa",
@@ -16305,13 +16305,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne wizyty u laryngologa",
-"Diagnostyka chorÛb gÛrnych drÛg oddechowych",
-"MoøliwoúÊ dalszej diagnostyki specjalistycznej"
+"Diagnostyka chor√≥b g√≥rnych dr√≥g oddechowych",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki specjalistycznej"
 ]
 },
 {
 id:1583,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Laryngologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Laryngologiczna",
 specialization:"Laryngolog",
 
 city:"Nysa",
@@ -16323,13 +16323,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje laryngologiczne w ramach NFZ",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1584,
-name:"NZOZ Nowa-Med ñ konsultacje lekarza rodzinnego",
+name:"NZOZ Nowa-Med ‚Äì konsultacje lekarza rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16341,13 +16341,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne wizyty lekarza rodzinnego",
-"Konsultacje ogÛlnomedyczne",
-"MoøliwoúÊ szybkiego terminu wizyty"
+"Konsultacje og√≥lnomedyczne",
+"Mo≈ºliwo≈õƒá szybkiego terminu wizyty"
 ]
 },
 {
 id:1585,
-name:"Przychodnia Rondo Nysa ñ konsultacje lekarza rodzinnego",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje lekarza rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16360,12 +16360,12 @@ rating:4.2,
 reviews:[
 "Prywatne konsultacje lekarza rodzinnego",
 "Ocena stanu zdrowia i podstawowa diagnostyka",
-"Dogodna lokalizacja placÛwki"
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1586,
-name:"NZOZ Nowa-Med ñ POZ",
+name:"NZOZ Nowa-Med ‚Äì POZ",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16377,13 +16377,13 @@ featured:true,
 rating:4.2,
 reviews:[
 "Podstawowa opieka zdrowotna w ramach NFZ",
-"Sta≥a opieka lekarza rodzinnego",
-"MoøliwoúÊ sk≥adania deklaracji POZ"
+"Sta≈Ça opieka lekarza rodzinnego",
+"Mo≈ºliwo≈õƒá sk≈Çadania deklaracji POZ"
 ]
 },
 {
 id:1587,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ POZ",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì POZ",
 specialization:"Lekarz rodzinny",
 
 city:"Nysa",
@@ -16401,7 +16401,7 @@ reviews:[
 },
 {
 id:1588,
-name:"NZOZ Nowa-Med ñ Medycyna Pracy",
+name:"NZOZ Nowa-Med ‚Äì Medycyna Pracy",
 specialization:"Medycyna pracy",
 
 city:"Nysa",
@@ -16413,13 +16413,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Badania medycyny pracy prywatnie",
-"Orzeczenia do pracy i badaÒ okresowych",
-"Sprawna realizacja badaÒ"
+"Orzeczenia do pracy i bada≈Ñ okresowych",
+"Sprawna realizacja bada≈Ñ"
 ]
 },
 {
 id:1589,
-name:"Przychodnia Rondo Nysa ñ badania medycyny pracy",
+name:"Przychodnia Rondo Nysa ‚Äì badania medycyny pracy",
 specialization:"Medycyna pracy",
 
 city:"Nysa",
@@ -16430,14 +16430,14 @@ privateVisit:true,
 featured:false,
 rating:4.2,
 reviews:[
-"Badania wstÍpne i kontrolne pracownikÛw",
-"KrÛtkie terminy realizacji",
-"Dogodna lokalizacja placÛwki"
+"Badania wstƒôpne i kontrolne pracownik√≥w",
+"Kr√≥tkie terminy realizacji",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1590,
-name:"NZOZ Nowa-Med ñ konsultacje neurologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje neurologiczne",
 specialization:"Neurolog",
 
 city:"Nysa",
@@ -16449,13 +16449,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje neurologiczne",
-"Diagnostyka bÛlÛw g≥owy i schorzeÒ uk≥adu nerwowego",
-"MoøliwoúÊ dalszej diagnostyki specjalistycznej"
+"Diagnostyka b√≥l√≥w g≈Çowy i schorze≈Ñ uk≈Çadu nerwowego",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki specjalistycznej"
 ]
 },
 {
 id:1591,
-name:"Przychodnia Rondo Nysa ñ konsultacje neurologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje neurologiczne",
 specialization:"Neurolog",
 
 city:"Nysa",
@@ -16467,13 +16467,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje neurologiczne prywatnie",
-"Diagnostyka zawrotÛw g≥owy i zaburzeÒ neurologicznych",
-"Dogodna lokalizacja placÛwki"
+"Diagnostyka zawrot√≥w g≈Çowy i zaburze≈Ñ neurologicznych",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1592,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Neurologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Neurologiczna",
 specialization:"Neurolog",
 
 city:"Nysa",
@@ -16485,13 +16485,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje neurologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu nerwowego",
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1593,
-name:"NZOZ Nowa-Med ñ konsultacje okulistyczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje okulistyczne",
 specialization:"Okulista",
 
 city:"Nysa",
@@ -16503,13 +16503,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje okulistyczne",
-"Diagnostyka wad wzroku i chorÛb oczu",
-"MoøliwoúÊ dalszych badaÒ specjalistycznych"
+"Diagnostyka wad wzroku i chor√≥b oczu",
+"Mo≈ºliwo≈õƒá dalszych bada≈Ñ specjalistycznych"
 ]
 },
 {
 id:1594,
-name:"Przychodnia Rondo Nysa ñ konsultacje okulistyczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje okulistyczne",
 specialization:"Okulista",
 
 city:"Nysa",
@@ -16522,12 +16522,12 @@ rating:4.2,
 reviews:[
 "Konsultacje okulistyczne prywatnie",
 "Badania wzroku i diagnostyka okulistyczna",
-"Dogodna lokalizacja placÛwki"
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1595,
-name:"VisionOptyk ñ Gabinet Okulistyczny",
+name:"VisionOptyk ‚Äì Gabinet Okulistyczny",
 specialization:"Okulista",
 
 city:"Nysa",
@@ -16545,7 +16545,7 @@ reviews:[
 },
 {
 id:1596,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Okulistyczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Nysa",
@@ -16557,13 +16557,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje okulistyczne w ramach NFZ",
-"Diagnostyka chorÛb oczu i wad wzroku",
+"Diagnostyka chor√≥b oczu i wad wzroku",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1597,
-name:"City Hospital Health Care Center ñ konsultacje ortopedyczne",
+name:"City Hospital Health Care Center ‚Äì konsultacje ortopedyczne",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -16575,13 +16575,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje ortopedyczne",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
-"Specjaliúci pracujπcy w oddziale szpitalnym"
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
+"Specjali≈õci pracujƒÖcy w oddziale szpitalnym"
 ]
 },
 {
 id:1598,
-name:"Przychodnia Rondo Nysa ñ konsultacje ortopedyczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje ortopedyczne",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -16593,13 +16593,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje ortopedyczne prywatnie",
-"Leczenie bÛlu stawÛw i urazÛw",
-"Dogodna lokalizacja placÛwki"
+"Leczenie b√≥lu staw√≥w i uraz√≥w",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1599,
-name:"NZOZ Nowa-Med ñ konsultacje ortopedyczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje ortopedyczne",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -16611,13 +16611,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne wizyty ortopedyczne",
-"Diagnostyka schorzeÒ narzπdu ruchu",
-"MoøliwoúÊ dalszej diagnostyki specjalistycznej"
+"Diagnostyka schorze≈Ñ narzƒÖdu ruchu",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki specjalistycznej"
 ]
 },
 {
 id:1600,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Urazowo-Ortopedyczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Nysa",
@@ -16629,13 +16629,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i chorÛb narzπdu ruchu",
+"Diagnostyka uraz√≥w i chor√≥b narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1601,
-name:"NZOZ Nowa-Med ñ konsultacje pediatryczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje pediatryczne",
 specialization:"Pediatra",
 
 city:"Nysa",
@@ -16647,13 +16647,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje pediatryczne",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
-"MoøliwoúÊ szybkiego terminu wizyty"
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
+"Mo≈ºliwo≈õƒá szybkiego terminu wizyty"
 ]
 },
 {
 id:1602,
-name:"Przychodnia Rondo Nysa ñ konsultacje pediatryczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje pediatryczne",
 specialization:"Pediatra",
 
 city:"Nysa",
@@ -16665,13 +16665,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Konsultacje pediatryczne prywatnie",
-"Opieka nad dzieÊmi i niemowlÍtami",
-"Dogodna lokalizacja placÛwki"
+"Opieka nad dzieƒámi i niemowlƒôtami",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1603,
-name:"NZOZ Nowa-Med ñ Poradnia Pediatryczna",
+name:"NZOZ Nowa-Med ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
 city:"Nysa",
@@ -16683,13 +16683,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Opieka pediatryczna w ramach NFZ",
-"Konsultacje dzieci i niemowlπt",
-"MoøliwoúÊ sta≥ej opieki lekarza pediatry"
+"Konsultacje dzieci i niemowlƒÖt",
+"Mo≈ºliwo≈õƒá sta≈Çej opieki lekarza pediatry"
 ]
 },
 {
 id:1604,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Pediatryczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
 city:"Nysa",
@@ -16701,13 +16701,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Konsultacje pediatryczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Wymagane zapisanie dziecka do poradni"
 ]
 },
 {
 id:1605,
-name:"NZOZ Nowa-Med ñ konsultacje psychiatryczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje psychiatryczne",
 specialization:"Psychiatra",
 
 city:"Nysa",
@@ -16719,13 +16719,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne konsultacje psychiatryczne",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"MoøliwoúÊ kontynuacji leczenia farmakologicznego"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Mo≈ºliwo≈õƒá kontynuacji leczenia farmakologicznego"
 ]
 },
 {
 id:1606,
-name:"Centrum Zdrowia Psychicznego ñ konsultacje psychiatryczne",
+name:"Centrum Zdrowia Psychicznego ‚Äì konsultacje psychiatryczne",
 specialization:"Psychiatra",
 
 city:"Nysa",
@@ -16737,13 +16737,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Konsultacje psychiatryczne prywatnie",
-"Wsparcie w leczeniu depresji i zaburzeÒ lÍkowych",
-"Doúwiadczeni specjaliúci zdrowia psychicznego"
+"Wsparcie w leczeniu depresji i zaburze≈Ñ lƒôkowych",
+"Do≈õwiadczeni specjali≈õci zdrowia psychicznego"
 ]
 },
 {
 id:1607,
-name:"Centrum Zdrowia Psychicznego ñ Poradnia Psychiatryczna",
+name:"Centrum Zdrowia Psychicznego ‚Äì Poradnia Psychiatryczna",
 specialization:"Psychiatra",
 
 city:"Nysa",
@@ -16755,13 +16755,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje psychiatryczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"MoøliwoúÊ dalszej opieki terapeutycznej"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Mo≈ºliwo≈õƒá dalszej opieki terapeutycznej"
 ]
 },
 {
 id:1608,
-name:"NZOZ Nowa-Med ñ konsultacje pulmonologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje pulmonologiczne",
 specialization:"Pulmonolog",
 
 city:"Nysa",
@@ -16773,13 +16773,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne konsultacje pulmonologiczne",
-"Diagnostyka chorÛb p≥uc i uk≥adu oddechowego",
+"Diagnostyka chor√≥b p≈Çuc i uk≈Çadu oddechowego",
 "Kontrola leczenia astmy i POChP"
 ]
 },
 {
 id:1609,
-name:"NZOZ Nowa-Med ñ Poradnia Pulmonologiczna",
+name:"NZOZ Nowa-Med ‚Äì Poradnia Pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Nysa",
@@ -16791,13 +16791,13 @@ featured:true,
 rating:4.2,
 reviews:[
 "Konsultacje pulmonologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu oddechowego",
+"Diagnostyka chor√≥b uk≈Çadu oddechowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1610,
-name:"Przychodnia Rondo Nysa ñ Rehabilitacja",
+name:"Przychodnia Rondo Nysa ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Nysa",
@@ -16809,13 +16809,13 @@ featured:true,
 rating:4.3,
 reviews:[
 "Prywatne zabiegi rehabilitacyjne",
-"Fizjoterapia pourazowa i przeciwbÛlowa",
-"Dogodna lokalizacja placÛwki"
+"Fizjoterapia pourazowa i przeciwb√≥lowa",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1611,
-name:"NZOZ Nowa-Med ñ Rehabilitacja",
+name:"NZOZ Nowa-Med ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Nysa",
@@ -16833,7 +16833,7 @@ reviews:[
 },
 {
 id:1612,
-name:"City Hospital Health Care Center ñ Rehabilitacja",
+name:"City Hospital Health Care Center ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Nysa",
@@ -16851,7 +16851,7 @@ reviews:[
 },
 {
 id:1613,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Rehabilitacja Medyczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Rehabilitacja Medyczna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Nysa",
@@ -16869,7 +16869,7 @@ reviews:[
 },
 {
 id:1614,
-name:"NZOZ Nowa-Med ñ Rehabilitacja",
+name:"NZOZ Nowa-Med ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Nysa",
@@ -16882,12 +16882,12 @@ rating:4.2,
 reviews:[
 "Zabiegi rehabilitacyjne w ramach NFZ",
 "Fizjoterapia i kinezyterapia",
-"MoøliwoúÊ kontynuacji leczenia usprawniajπcego"
+"Mo≈ºliwo≈õƒá kontynuacji leczenia usprawniajƒÖcego"
 ]
 },
 {
 id:1615,
-name:"ProDent ñ gabinet stomatologiczny",
+name:"ProDent ‚Äì gabinet stomatologiczny",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -16900,7 +16900,7 @@ rating:4.5,
 reviews:[
 "Prywatne leczenie stomatologiczne",
 "Nowoczesny gabinet dentystyczny",
-"Szeroki zakres us≥ug stomatologicznych"
+"Szeroki zakres us≈Çug stomatologicznych"
 ]
 },
 {
@@ -16917,8 +16917,8 @@ featured:true,
 rating:4.6,
 reviews:[
 "Nowoczesna stomatologia prywatna",
-"Szeroki zakres zabiegÛw dentystycznych",
-"Doúwiadczony zespÛ≥ lekarzy"
+"Szeroki zakres zabieg√≥w dentystycznych",
+"Do≈õwiadczony zesp√≥≈Ç lekarzy"
 ]
 },
 {
@@ -16941,7 +16941,7 @@ reviews:[
 },
 {
 id:1618,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Stomatologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -16954,12 +16954,12 @@ rating:4.2,
 reviews:[
 "Leczenie stomatologiczne w ramach NFZ",
 "Podstawowa opieka dentystyczna",
-"Wymagane wczeúniejsze zapisanie na wizytÍ"
+"Wymagane wcze≈õniejsze zapisanie na wizytƒô"
 ]
 },
 {
 id:1619,
-name:"NZOZ Nowa-Med ñ poradnia stomatologiczna",
+name:"NZOZ Nowa-Med ‚Äì poradnia stomatologiczna",
 specialization:"Dentysta",
 
 city:"Nysa",
@@ -16972,12 +16972,12 @@ rating:4.1,
 reviews:[
 "Stomatolog w ramach NFZ",
 "Profilaktyka i leczenie zachowawcze",
-"PlacÛwka z poradniami specjalistycznymi"
+"Plac√≥wka z poradniami specjalistycznymi"
 ]
 },
 {
 id:1620,
-name:"NZOZ Nowa-Med ñ konsultacje urologiczne",
+name:"NZOZ Nowa-Med ‚Äì konsultacje urologiczne",
 specialization:"Urolog",
 
 city:"Nysa",
@@ -16989,13 +16989,13 @@ featured:true,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje urologiczne",
-"Diagnostyka chorÛb uk≥adu moczowego",
-"MoøliwoúÊ dalszej diagnostyki specjalistycznej"
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
+"Mo≈ºliwo≈õƒá dalszej diagnostyki specjalistycznej"
 ]
 },
 {
 id:1621,
-name:"Przychodnia Rondo Nysa ñ konsultacje urologiczne",
+name:"Przychodnia Rondo Nysa ‚Äì konsultacje urologiczne",
 specialization:"Urolog",
 
 city:"Nysa",
@@ -17007,13 +17007,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje urologiczne prywatnie",
-"Diagnostyka problemÛw urologicznych",
-"Dogodna lokalizacja placÛwki"
+"Diagnostyka problem√≥w urologicznych",
+"Dogodna lokalizacja plac√≥wki"
 ]
 },
 {
 id:1622,
-name:"ZespÛ≥ Opieki Zdrowotnej w Nysie ñ Poradnia Urologiczna",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Nysie ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Nysa",
@@ -17025,7 +17025,7 @@ featured:true,
 rating:4.3,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17043,13 +17043,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje alergologiczne prywatne",
-"Diagnostyka i leczenie chorÛb alergicznych",
-"MoøliwoúÊ wykonania testÛw alergicznych"
+"Diagnostyka i leczenie chor√≥b alergicznych",
+"Mo≈ºliwo≈õƒá wykonania test√≥w alergicznych"
 ]
 },
 {
 id:1624,
-name:"Gabinet alergologiczny ñ lek. Katarzyna Bryk-Øakowicz",
+name:"Gabinet alergologiczny ‚Äì lek. Katarzyna Bryk-≈ªakowicz",
 specialization:"Alergolog",
 
 city:"Brzeg",
@@ -17061,13 +17061,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Konsultacje alergologiczne i pulmonologiczne",
-"Diagnostyka astmy i chorÛb uk≥adu oddechowego",
-"Indywidualne podejúcie do pacjenta"
+"Diagnostyka astmy i chor√≥b uk≈Çadu oddechowego",
+"Indywidualne podej≈õcie do pacjenta"
 ]
 },
 {
 id:1625,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Alergologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Alergologiczna",
 specialization:"Alergolog",
 
 city:"Brzeg",
@@ -17079,7 +17079,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje alergologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb alergicznych",
+"Diagnostyka i leczenie chor√≥b alergicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17097,13 +17097,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje chirurga naczyniowego prywatne",
-"Diagnostyka chorÛb øy≥ i tÍtnic",
-"USG Doppler naczyÒ"
+"Diagnostyka chor√≥b ≈ºy≈Ç i tƒôtnic",
+"USG Doppler naczy≈Ñ"
 ]
 },
 {
 id:1627,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Chirurgii Naczyniowej",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Chirurgii Naczyniowej",
 specialization:"Chirurg naczyniowy",
 
 city:"Brzeg",
@@ -17115,14 +17115,14 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje chirurgii naczyniowej w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu naczyniowego",
+"Diagnostyka chor√≥b uk≈Çadu naczyniowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1628,
 name:"Centrum Medyczne ARS-MED",
-specialization:"Chirurg ogÛlny",
+specialization:"Chirurg og√≥lny",
 
 city:"Brzeg",
 phone:"",
@@ -17133,14 +17133,14 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje chirurgiczne prywatne",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
-"Kwalifikacja do zabiegÛw operacyjnych"
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
+"Kwalifikacja do zabieg√≥w operacyjnych"
 ]
 },
 {
 id:1629,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Brzeg",
 phone:"",
@@ -17151,7 +17151,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje chirurgiczne w ramach NFZ",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17169,13 +17169,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje ortopedyczne prywatne",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
-"Kwalifikacja do zabiegÛw operacyjnych"
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
+"Kwalifikacja do zabieg√≥w operacyjnych"
 ]
 },
 {
 id:1631,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Urazowo-Ortopedyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Brzeg",
@@ -17187,7 +17187,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17205,13 +17205,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje w zakresie chirurgii urazowo-ortopedycznej",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Kwalifikacja do leczenia operacyjnego"
 ]
 },
 {
 id:1633,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Urazowo-Ortopedyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Brzeg",
@@ -17223,7 +17223,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje w zakresie chirurgii urazowo-ortopedycznej w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17242,7 +17242,7 @@ rating:4.6,
 reviews:[
 "Konsultacje stomatologiczne prywatne",
 "Leczenie zachowawcze i profilaktyka",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
@@ -17259,13 +17259,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Prywatne leczenie stomatologiczne",
-"Diagnostyka i leczenie prÛchnicy",
-"Indywidualne podejúcie do pacjenta"
+"Diagnostyka i leczenie pr√≥chnicy",
+"Indywidualne podej≈õcie do pacjenta"
 ]
 },
 {
 id:1636,
-name:"Stomatologia Rodzinna ñ lek. dent. A. Borys",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. A. Borys",
 specialization:"Dentysta",
 
 city:"Brzeg",
@@ -17277,13 +17277,13 @@ featured:false,
 rating:4.7,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
+"Leczenie doros≈Çych i dzieci",
 "Profilaktyka i leczenie zachowawcze"
 ]
 },
 {
 id:1637,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Stomatologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Brzeg",
@@ -17313,7 +17313,7 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje dermatologiczne prywatne",
-"Diagnostyka i leczenie chorÛb skÛry",
+"Diagnostyka i leczenie chor√≥b sk√≥ry",
 "Porady w zakresie dermatologii estetycznej"
 ]
 },
@@ -17337,7 +17337,7 @@ reviews:[
 },
 {
 id:1640,
-name:"Brzeskie Centrum Medyczne ñ Zak≥ad Diagnostyki Obrazowej",
+name:"Brzeskie Centrum Medyczne ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Brzeg",
@@ -17355,7 +17355,7 @@ reviews:[
 },
 {
 id:1641,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Diabetologiczna / Edukacja dietetyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Diabetologiczna / Edukacja dietetyczna",
 specialization:"Dietetyk",
 
 city:"Brzeg",
@@ -17367,13 +17367,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje dietetyczne w ramach NFZ",
-"Edukacja øywieniowa dla pacjentÛw diabetologicznych",
+"Edukacja ≈ºywieniowa dla pacjent√≥w diabetologicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1642,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Gastroenterologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Gastroenterologiczna",
 specialization:"Gastroenterolog",
 
 city:"Brzeg",
@@ -17385,7 +17385,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje gastroenterologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu pokarmowego",
+"Diagnostyka chor√≥b uk≈Çadu pokarmowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17403,13 +17403,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje ginekologiczne prywatne",
-"Diagnostyka i leczenie chorÛb kobiecych",
+"Diagnostyka i leczenie chor√≥b kobiecych",
 "Profilaktyka i badania kontrolne"
 ]
 },
 {
 id:1644,
-name:"Gabinet Ginekologiczno-Po≥oøniczy",
+name:"Gabinet Ginekologiczno-Po≈Ço≈ºniczy",
 specialization:"Ginekolog",
 
 city:"Brzeg",
@@ -17420,14 +17420,14 @@ privateVisit:true,
 featured:false,
 rating:4.5,
 reviews:[
-"Prywatne konsultacje ginekologiczno-po≥oønicze",
-"Opieka nad kobietami w kaødym wieku",
+"Prywatne konsultacje ginekologiczno-po≈Ço≈ºnicze",
+"Opieka nad kobietami w ka≈ºdym wieku",
 "Diagnostyka i profilaktyka ginekologiczna"
 ]
 },
 {
 id:1645,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Brzeg",
@@ -17438,8 +17438,8 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Konsultacje ginekologiczno-po≥oønicze w ramach NFZ",
-"Opieka profilaktyczna i diagnostyka chorÛb kobiecych",
+"Konsultacje ginekologiczno-po≈Ço≈ºnicze w ramach NFZ",
+"Opieka profilaktyczna i diagnostyka chor√≥b kobiecych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
@@ -17457,13 +17457,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje internistyczne prywatne",
-"Diagnostyka i leczenie chorÛb wewnÍtrznych",
+"Diagnostyka i leczenie chor√≥b wewnƒôtrznych",
 "Profilaktyka zdrowotna i badania kontrolne"
 ]
 },
 {
 id:1647,
-name:"Brzeskie Centrum Medyczne ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"Brzeskie Centrum Medyczne ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Brzeg",
@@ -17475,8 +17475,8 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje internistyczne w ramach NFZ",
-"Podstawowa opieka zdrowotna dla doros≥ych",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla doros≈Çych",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
@@ -17493,13 +17493,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje kardiologiczne prywatne",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Profilaktyka i kontrola leczenia kardiologicznego"
 ]
 },
 {
 id:1649,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Kardiologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Brzeg",
@@ -17511,7 +17511,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje kardiologiczne w ramach NFZ",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17529,13 +17529,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje laryngologiczne prywatne",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
-"Leczenie infekcji i schorzeÒ laryngologicznych"
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
+"Leczenie infekcji i schorze≈Ñ laryngologicznych"
 ]
 },
 {
 id:1651,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Otolaryngologiczna (Laryngologiczna)",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Otolaryngologiczna (Laryngologiczna)",
 specialization:"Laryngolog",
 
 city:"Brzeg",
@@ -17547,7 +17547,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje laryngologiczne w ramach NFZ",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17565,13 +17565,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje lekarza rodzinnego prywatne",
-"Diagnostyka i leczenie chorÛb ogÛlnych",
-"Porady profilaktyczne i wystawianie skierowaÒ"
+"Diagnostyka i leczenie chor√≥b og√≥lnych",
+"Porady profilaktyczne i wystawianie skierowa≈Ñ"
 ]
 },
 {
 id:1653,
-name:"Brzeskie Centrum Medyczne ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"Brzeskie Centrum Medyczne ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Brzeg",
@@ -17583,13 +17583,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje lekarza rodzinnego w ramach NFZ",
-"Podstawowa opieka zdrowotna dla ca≥ej rodziny",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla ca≈Çej rodziny",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1654,
-name:"Brzeskie Centrum Medyczne ñ Oddzia≥ Medycyny Paliatywnej / Hospicjum",
+name:"Brzeskie Centrum Medyczne ‚Äì Oddzia≈Ç Medycyny Paliatywnej / Hospicjum",
 specialization:"Medycyna paliatywna",
 
 city:"Brzeg",
@@ -17601,7 +17601,7 @@ featured:false,
 rating:4.4,
 reviews:[
 "Opieka paliatywna w ramach NFZ",
-"Leczenie objawowe i wsparcie pacjentÛw przewlekle chorych",
+"Leczenie objawowe i wsparcie pacjent√≥w przewlekle chorych",
 "Opieka hospicyjna i wsparcie dla rodzin"
 ]
 },
@@ -17619,13 +17619,13 @@ featured:false,
 rating:4.4,
 reviews:[
 "Badania z zakresu medycyny pracy",
-"Badania wstÍpne, okresowe i kontrolne",
-"Orzeczenia lekarskie dla pracownikÛw"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Orzeczenia lekarskie dla pracownik√≥w"
 ]
 },
 {
 id:1656,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Nefrologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Brzeg",
@@ -17637,13 +17637,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje nefrologiczne w ramach NFZ",
-"Diagnostyka chorÛb nerek i uk≥adu moczowego",
+"Diagnostyka chor√≥b nerek i uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1657,
-name:"Brzeskie Centrum Medyczne ñ Oddzia≥ Neonatologiczny",
+name:"Brzeskie Centrum Medyczne ‚Äì Oddzia≈Ç Neonatologiczny",
 specialization:"Neonatolog",
 
 city:"Brzeg",
@@ -17656,7 +17656,7 @@ rating:4.4,
 reviews:[
 "Opieka neonatologiczna w ramach NFZ",
 "Diagnostyka i opieka nad noworodkami",
-"Monitorowanie zdrowia wczeúniakÛw i noworodkÛw"
+"Monitorowanie zdrowia wcze≈õniak√≥w i noworodk√≥w"
 ]
 },
 {
@@ -17673,13 +17673,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje neurologiczne prywatne",
-"Diagnostyka chorÛb uk≥adu nerwowego",
-"Leczenie bÛlÛw g≥owy i schorzeÒ neurologicznych"
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
+"Leczenie b√≥l√≥w g≈Çowy i schorze≈Ñ neurologicznych"
 ]
 },
 {
 id:1659,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Neurologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Neurologiczna",
 specialization:"Neurolog",
 
 city:"Brzeg",
@@ -17691,7 +17691,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje neurologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu nerwowego",
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17709,13 +17709,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje okulistyczne prywatne",
-"Diagnostyka wad wzroku i chorÛb oczu",
-"Badania kontrolne i dobÛr korekcji wzroku"
+"Diagnostyka wad wzroku i chor√≥b oczu",
+"Badania kontrolne i dob√≥r korekcji wzroku"
 ]
 },
 {
 id:1661,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Okulistyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Brzeg",
@@ -17727,7 +17727,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje okulistyczne w ramach NFZ",
-"Diagnostyka chorÛb oczu i wad wzroku",
+"Diagnostyka chor√≥b oczu i wad wzroku",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17745,13 +17745,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje ortopedyczne prywatne",
-"Diagnostyka schorzeÒ i urazÛw narzπdu ruchu",
+"Diagnostyka schorze≈Ñ i uraz√≥w narzƒÖdu ruchu",
 "Kwalifikacja do leczenia zachowawczego i operacyjnego"
 ]
 },
 {
 id:1663,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Urazowo-Ortopedyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Brzeg",
@@ -17763,7 +17763,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17781,13 +17781,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Konsultacje pediatryczne prywatne",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Profilaktyka i bilanse zdrowia dziecka"
 ]
 },
 {
 id:1665,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Pediatryczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
 city:"Brzeg",
@@ -17799,13 +17799,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje pediatryczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1666,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Zdrowia Psychicznego",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Zdrowia Psychicznego",
 specialization:"Psychiatra",
 
 city:"Brzeg",
@@ -17817,13 +17817,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje psychiatryczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"Opieka specjalistyczna bez koniecznoúci hospitalizacji"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Opieka specjalistyczna bez konieczno≈õci hospitalizacji"
 ]
 },
 {
 id:1667,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Pulmonologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Brzeg",
@@ -17835,13 +17835,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje pulmonologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu oddechowego",
+"Diagnostyka chor√≥b uk≈Çadu oddechowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1668,
-name:"Centrum Medyczne ARS-MED ñ Rehabilitacja",
+name:"Centrum Medyczne ARS-MED ‚Äì Rehabilitacja",
 specialization:"Rehabilitacja medyczna",
 
 city:"Brzeg",
@@ -17859,7 +17859,7 @@ reviews:[
 },
 {
 id:1669,
-name:"Brzeskie Centrum Medyczne ñ Rehabilitacja Medyczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Rehabilitacja Medyczna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Brzeg",
@@ -17871,13 +17871,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Rehabilitacja medyczna w ramach NFZ",
-"Zabiegi fizjoterapeutyczne i usprawniajπce",
+"Zabiegi fizjoterapeutyczne i usprawniajƒÖce",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1670,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Reumatologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Reumatologiczna",
 specialization:"Reumatolog",
 
 city:"Brzeg",
@@ -17889,7 +17889,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje reumatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb reumatycznych",
+"Diagnostyka i leczenie chor√≥b reumatycznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -17908,7 +17908,7 @@ rating:4.6,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i profilaktyka",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
@@ -17925,13 +17925,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje stomatologiczne prywatne",
-"Diagnostyka i leczenie prÛchnicy",
-"Indywidualne podejúcie do pacjenta"
+"Diagnostyka i leczenie pr√≥chnicy",
+"Indywidualne podej≈õcie do pacjenta"
 ]
 },
 {
 id:1673,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Stomatologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Brzeg",
@@ -17949,7 +17949,7 @@ reviews:[
 },
 {
 id:1674,
-name:"Brzeskie Centrum Medyczne ñ Poradnia Urologiczna",
+name:"Brzeskie Centrum Medyczne ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Brzeg",
@@ -17961,13 +17961,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1677,
-name:"NZOZ ÑMEDYKî ñ Poradnia Alergologiczna",
+name:"NZOZ ‚ÄûMEDYK‚Äù ‚Äì Poradnia Alergologiczna",
 specialization:"Alergolog",
 
 city:"Kluczbork",
@@ -17979,14 +17979,14 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje alergologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb alergicznych",
+"Diagnostyka i leczenie chor√≥b alergicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1678,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Chirurgiczna",
-specialization:"Chirurg ogÛlny",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Chirurgiczna",
+specialization:"Chirurg og√≥lny",
 
 city:"Kluczbork",
 phone:"",
@@ -17997,14 +17997,14 @@ featured:false,
 rating:4.4,
 reviews:[
 "Prywatne konsultacje chirurgiczne",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
-"Kwalifikacja do zabiegÛw operacyjnych"
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
+"Kwalifikacja do zabieg√≥w operacyjnych"
 ]
 },
 {
 id:1679,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Kluczbork",
 phone:"",
@@ -18015,13 +18015,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje chirurgiczne w ramach NFZ",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1680,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Urazowo-Ortopedyczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Kluczbork",
@@ -18033,7 +18033,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje w zakresie chirurgii urazowo-ortopedycznej w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -18052,12 +18052,12 @@ rating:4.6,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1682,
-name:"Stomatologia Rodzinna ñ lek. dent. M. Kaczmarek",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. M. Kaczmarek",
 specialization:"Dentysta",
 
 city:"Kluczbork",
@@ -18069,13 +18069,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1683,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Stomatologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Kluczbork",
@@ -18106,12 +18106,12 @@ rating:4.6,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1685,
-name:"Stomatologia Rodzinna ñ lek. dent. M. Kaczmarek",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. M. Kaczmarek",
 specialization:"Dentysta",
 
 city:"Kluczbork",
@@ -18123,13 +18123,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1686,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Stomatologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Kluczbork",
@@ -18147,7 +18147,7 @@ reviews:[
 },
 {
 id:1687,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Dermatologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Dermatologiczna",
 specialization:"Dermatolog",
 
 city:"Kluczbork",
@@ -18159,13 +18159,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje dermatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb skÛry",
+"Diagnostyka i leczenie chor√≥b sk√≥ry",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1688,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Diabetologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Diabetologiczna",
 specialization:"Diabetolog",
 
 city:"Kluczbork",
@@ -18183,7 +18183,7 @@ reviews:[
 },
 {
 id:1689,
-name:"Kluczborskie Centrum Medyczne ñ Zak≥ad Diagnostyki Obrazowej",
+name:"Kluczborskie Centrum Medyczne ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Kluczbork",
@@ -18201,7 +18201,7 @@ reviews:[
 },
 {
 id:1690,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Endokrynologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Endokrynologiczna",
 specialization:"Endokrynolog",
 
 city:"Kluczbork",
@@ -18213,13 +18213,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje endokrynologiczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ hormonalnych",
+"Diagnostyka i leczenie zaburze≈Ñ hormonalnych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1691,
-name:"Gabinet Ginekologiczno-Po≥oøniczy ñ lek. med. A. Nowak",
+name:"Gabinet Ginekologiczno-Po≈Ço≈ºniczy ‚Äì lek. med. A. Nowak",
 specialization:"Ginekolog",
 
 city:"Kluczbork",
@@ -18230,8 +18230,8 @@ privateVisit:true,
 featured:false,
 rating:4.6,
 reviews:[
-"Prywatne konsultacje ginekologiczno-po≥oønicze",
-"Diagnostyka i leczenie chorÛb kobiecych",
+"Prywatne konsultacje ginekologiczno-po≈Ço≈ºnicze",
+"Diagnostyka i leczenie chor√≥b kobiecych",
 "Profilaktyka i badania kontrolne"
 ]
 },
@@ -18249,13 +18249,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Konsultacje ginekologiczne prywatne",
-"Opieka nad kobietami w kaødym wieku",
+"Opieka nad kobietami w ka≈ºdym wieku",
 "Badania profilaktyczne i diagnostyczne"
 ]
 },
 {
 id:1693,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Kluczbork",
@@ -18266,8 +18266,8 @@ privateVisit:false,
 featured:false,
 rating:4.2,
 reviews:[
-"Konsultacje ginekologiczno-po≥oønicze w ramach NFZ",
-"Opieka profilaktyczna i diagnostyka chorÛb kobiecych",
+"Konsultacje ginekologiczno-po≈Ço≈ºnicze w ramach NFZ",
+"Opieka profilaktyczna i diagnostyka chor√≥b kobiecych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
@@ -18285,13 +18285,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Prywatne konsultacje internistyczne",
-"Diagnostyka i leczenie chorÛb wewnÍtrznych",
+"Diagnostyka i leczenie chor√≥b wewnƒôtrznych",
 "Profilaktyka zdrowotna i badania kontrolne"
 ]
 },
 {
 id:1695,
-name:"Kluczborskie Centrum Medyczne ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"Kluczborskie Centrum Medyczne ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Kluczbork",
@@ -18303,13 +18303,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje internistyczne w ramach NFZ",
-"Podstawowa opieka zdrowotna dla doros≥ych",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla doros≈Çych",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1696,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Kardiologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Kluczbork",
@@ -18321,13 +18321,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje kardiologiczne w ramach NFZ",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1697,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Otolaryngologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Otolaryngologiczna",
 specialization:"Laryngolog",
 
 city:"Kluczbork",
@@ -18339,7 +18339,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje laryngologiczne w ramach NFZ",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -18357,13 +18357,13 @@ featured:false,
 rating:4.5,
 reviews:[
 "Prywatne konsultacje lekarza rodzinnego",
-"Diagnostyka i leczenie chorÛb ogÛlnych",
-"Porady profilaktyczne i wystawianie skierowaÒ"
+"Diagnostyka i leczenie chor√≥b og√≥lnych",
+"Porady profilaktyczne i wystawianie skierowa≈Ñ"
 ]
 },
 {
 id:1699,
-name:"Kluczborskie Centrum Medyczne ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"Kluczborskie Centrum Medyczne ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Kluczbork",
@@ -18375,13 +18375,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje lekarza rodzinnego w ramach NFZ",
-"Podstawowa opieka zdrowotna dla ca≥ej rodziny",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla ca≈Çej rodziny",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1700,
-name:"Kluczborskie Centrum Medyczne ñ Oddzia≥ Medycyny Paliatywnej / Hospicjum",
+name:"Kluczborskie Centrum Medyczne ‚Äì Oddzia≈Ç Medycyny Paliatywnej / Hospicjum",
 specialization:"Medycyna paliatywna",
 
 city:"Kluczbork",
@@ -18393,13 +18393,13 @@ featured:false,
 rating:4.4,
 reviews:[
 "Opieka paliatywna w ramach NFZ",
-"Leczenie objawowe i wsparcie pacjentÛw przewlekle chorych",
+"Leczenie objawowe i wsparcie pacjent√≥w przewlekle chorych",
 "Opieka hospicyjna i wsparcie dla rodzin"
 ]
 },
 {
 id:1701,
-name:"Centrum Medyczne Salus ñ Medycyna Pracy",
+name:"Centrum Medyczne Salus ‚Äì Medycyna Pracy",
 specialization:"Medycyna pracy",
 
 city:"Kluczbork",
@@ -18411,13 +18411,13 @@ featured:false,
 rating:4.4,
 reviews:[
 "Badania z zakresu medycyny pracy",
-"Badania wstÍpne, okresowe i kontrolne",
-"Orzeczenia lekarskie dla pracownikÛw"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Orzeczenia lekarskie dla pracownik√≥w"
 ]
 },
 {
 id:1702,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Nefrologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Kluczbork",
@@ -18429,13 +18429,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje nefrologiczne w ramach NFZ",
-"Diagnostyka chorÛb nerek i uk≥adu moczowego",
+"Diagnostyka chor√≥b nerek i uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1703,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Neurologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Neurologiczna",
 specialization:"Neurolog",
 
 city:"Kluczbork",
@@ -18447,13 +18447,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje neurologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu nerwowego",
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1704,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Okulistyczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Kluczbork",
@@ -18465,13 +18465,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje okulistyczne w ramach NFZ",
-"Diagnostyka chorÛb oczu i wad wzroku",
+"Diagnostyka chor√≥b oczu i wad wzroku",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1705,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Urazowo-Ortopedyczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Kluczbork",
@@ -18483,7 +18483,7 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -18501,13 +18501,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Prywatne konsultacje pediatryczne",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Profilaktyka i bilanse zdrowia dziecka"
 ]
 },
 {
 id:1707,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Pediatryczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
 city:"Kluczbork",
@@ -18519,13 +18519,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje pediatryczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1708,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Zdrowia Psychicznego",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Zdrowia Psychicznego",
 specialization:"Psychiatra",
 
 city:"Kluczbork",
@@ -18537,13 +18537,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje psychiatryczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"Opieka specjalistyczna bez koniecznoúci hospitalizacji"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Opieka specjalistyczna bez konieczno≈õci hospitalizacji"
 ]
 },
 {
 id:1709,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Pulmonologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Kluczbork",
@@ -18555,13 +18555,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje pulmonologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu oddechowego",
+"Diagnostyka chor√≥b uk≈Çadu oddechowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1710,
-name:"Kluczborskie Centrum Medyczne ñ Rehabilitacja Medyczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Rehabilitacja Medyczna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Kluczbork",
@@ -18573,13 +18573,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Rehabilitacja medyczna w ramach NFZ",
-"Zabiegi fizjoterapeutyczne i usprawniajπce",
+"Zabiegi fizjoterapeutyczne i usprawniajƒÖce",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1711,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Urologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Kluczbork",
@@ -18591,13 +18591,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1712,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Alergologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Alergologiczna",
 specialization:"Alergolog",
 
 city:"Kluczbork",
@@ -18609,13 +18609,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje alergologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb alergicznych",
+"Diagnostyka i leczenie chor√≥b alergicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1713,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Gastroenterologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Gastroenterologiczna",
 specialization:"Gastroenterolog",
 
 city:"Kluczbork",
@@ -18627,13 +18627,13 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje gastroenterologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu pokarmowego",
+"Diagnostyka chor√≥b uk≈Çadu pokarmowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1714,
-name:"Kluczborskie Centrum Medyczne ñ Poradnia Reumatologiczna",
+name:"Kluczborskie Centrum Medyczne ‚Äì Poradnia Reumatologiczna",
 specialization:"Reumatolog",
 
 city:"Kluczbork",
@@ -18645,14 +18645,14 @@ featured:false,
 rating:4.2,
 reviews:[
 "Konsultacje reumatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb reumatycznych",
+"Diagnostyka i leczenie chor√≥b reumatycznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1715,
-name:"SP ZOZ w Prudniku ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
 city:"Prudnik",
 phone:"",
@@ -18663,13 +18663,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje chirurgiczne w ramach NFZ",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1716,
-name:"SP ZOZ w Prudniku ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Prudnik",
@@ -18681,13 +18681,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1717,
-name:"SP ZOZ w Prudniku ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Prudnik",
@@ -18699,13 +18699,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje w zakresie chirurgii urazowo-ortopedycznej w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1718,
-name:"Stomatologia Rodzinna ñ lek. dent. A. Kaczmarek",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. A. Kaczmarek",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18717,13 +18717,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1719,
-name:"Gabinet Stomatologiczny ñ lek. dent. M. Nowak",
+name:"Gabinet Stomatologiczny ‚Äì lek. dent. M. Nowak",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18736,12 +18736,12 @@ rating:4.5,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1720,
-name:"SP ZOZ w Prudniku ñ Poradnia Stomatologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18759,7 +18759,7 @@ reviews:[
 },
 {
 id:1721,
-name:"Gabinet Stomatologiczny ñ lek. dent. M. Nowak",
+name:"Gabinet Stomatologiczny ‚Äì lek. dent. M. Nowak",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18772,12 +18772,12 @@ rating:4.5,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1722,
-name:"Stomatologia Rodzinna ñ lek. dent. A. Kaczmarek",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. A. Kaczmarek",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18789,13 +18789,13 @@ featured:false,
 rating:4.6,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1723,
-name:"SP ZOZ w Prudniku ñ Poradnia Stomatologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
 city:"Prudnik",
@@ -18813,7 +18813,7 @@ reviews:[
 },
 {
 id:1724,
-name:"SP ZOZ w Prudniku ñ Poradnia Dermatologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Dermatologiczna",
 specialization:"Dermatolog",
 
 city:"Prudnik",
@@ -18825,13 +18825,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje dermatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb skÛry",
+"Diagnostyka i leczenie chor√≥b sk√≥ry",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1725,
-name:"SP ZOZ w Prudniku ñ Zak≥ad Diagnostyki Obrazowej",
+name:"SP ZOZ w Prudniku ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
 city:"Prudnik",
@@ -18849,7 +18849,7 @@ reviews:[
 },
 {
 id:1726,
-name:"SP ZOZ w Prudniku ñ Poradnia Endokrynologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Endokrynologiczna",
 specialization:"Endokrynolog",
 
 city:"Prudnik",
@@ -18861,13 +18861,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje endokrynologiczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ hormonalnych",
+"Diagnostyka i leczenie zaburze≈Ñ hormonalnych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1727,
-name:"SP ZOZ w Prudniku ñ Poradnia Gastroenterologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Gastroenterologiczna",
 specialization:"Gastroenterolog",
 
 city:"Prudnik",
@@ -18879,13 +18879,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje gastroenterologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu pokarmowego",
+"Diagnostyka chor√≥b uk≈Çadu pokarmowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1728,
-name:"SP ZOZ w Prudniku ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Prudnik",
@@ -18896,14 +18896,14 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Konsultacje ginekologiczno-po≥oønicze w ramach NFZ",
-"Opieka profilaktyczna i diagnostyka chorÛb kobiecych",
+"Konsultacje ginekologiczno-po≈Ço≈ºnicze w ramach NFZ",
+"Opieka profilaktyczna i diagnostyka chor√≥b kobiecych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1729,
-name:"SP ZOZ w Prudniku ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"SP ZOZ w Prudniku ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Prudnik",
@@ -18915,13 +18915,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje internistyczne w ramach NFZ",
-"Podstawowa opieka zdrowotna dla doros≥ych",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla doros≈Çych",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1730,
-name:"SP ZOZ w Prudniku ñ Poradnia Kardiologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
 city:"Prudnik",
@@ -18933,13 +18933,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje kardiologiczne w ramach NFZ",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1731,
-name:"SP ZOZ w Prudniku ñ Poradnia Otolaryngologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Otolaryngologiczna",
 specialization:"Laryngolog",
 
 city:"Prudnik",
@@ -18951,13 +18951,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje laryngologiczne w ramach NFZ",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1732,
-name:"SP ZOZ w Prudniku ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"SP ZOZ w Prudniku ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
 city:"Prudnik",
@@ -18969,13 +18969,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje lekarza rodzinnego w ramach NFZ",
-"Podstawowa opieka zdrowotna dla ca≥ej rodziny",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla ca≈Çej rodziny",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1733,
-name:"SP ZOZ w Prudniku ñ Oddzia≥ Medycyny Paliatywnej / Hospicjum",
+name:"SP ZOZ w Prudniku ‚Äì Oddzia≈Ç Medycyny Paliatywnej / Hospicjum",
 specialization:"Medycyna paliatywna",
 
 city:"Prudnik",
@@ -18987,7 +18987,7 @@ featured:false,
 rating:4.3,
 reviews:[
 "Opieka paliatywna w ramach NFZ",
-"Leczenie objawowe i wsparcie pacjentÛw przewlekle chorych",
+"Leczenie objawowe i wsparcie pacjent√≥w przewlekle chorych",
 "Opieka hospicyjna i wsparcie dla rodzin"
 ]
 },
@@ -19005,13 +19005,13 @@ featured:false,
 rating:4.3,
 reviews:[
 "Badania z zakresu medycyny pracy",
-"Badania wstÍpne, okresowe i kontrolne",
-"Orzeczenia lekarskie dla pracownikÛw"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Orzeczenia lekarskie dla pracownik√≥w"
 ]
 },
 {
 id:1735,
-name:"SP ZOZ w Prudniku ñ Poradnia Nefrologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Nefrologiczna",
 specialization:"Nefrolog",
 
 city:"Prudnik",
@@ -19023,13 +19023,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje nefrologiczne w ramach NFZ",
-"Diagnostyka chorÛb nerek i uk≥adu moczowego",
+"Diagnostyka chor√≥b nerek i uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1736,
-name:"SP ZOZ w Prudniku ñ Poradnia Neurologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Neurologiczna",
 specialization:"Neurolog",
 
 city:"Prudnik",
@@ -19041,13 +19041,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje neurologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu nerwowego",
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1737,
-name:"SP ZOZ w Prudniku ñ Poradnia Okulistyczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
 city:"Prudnik",
@@ -19059,13 +19059,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje okulistyczne w ramach NFZ",
-"Diagnostyka chorÛb oczu i wad wzroku",
+"Diagnostyka chor√≥b oczu i wad wzroku",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1738,
-name:"SP ZOZ w Prudniku ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
 city:"Prudnik",
@@ -19077,13 +19077,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1739,
-name:"SP ZOZ w Prudniku ñ Poradnia Pediatryczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
 city:"Prudnik",
@@ -19095,13 +19095,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje pediatryczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1740,
-name:"SP ZOZ w Prudniku ñ Poradnia Zdrowia Psychicznego",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Zdrowia Psychicznego",
 specialization:"Psychiatra",
 
 city:"Prudnik",
@@ -19113,13 +19113,13 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje psychiatryczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"Opieka specjalistyczna bez koniecznoúci hospitalizacji"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Opieka specjalistyczna bez konieczno≈õci hospitalizacji"
 ]
 },
 {
 id:1741,
-name:"SP ZOZ w Prudniku ñ Poradnia Pulmonologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Pulmonologiczna",
 specialization:"Pulmonolog",
 
 city:"Prudnik",
@@ -19131,13 +19131,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje pulmonologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu oddechowego",
+"Diagnostyka chor√≥b uk≈Çadu oddechowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1742,
-name:"SP ZOZ w Prudniku ñ Rehabilitacja Medyczna",
+name:"SP ZOZ w Prudniku ‚Äì Rehabilitacja Medyczna",
 specialization:"Rehabilitacja medyczna",
 
 city:"Prudnik",
@@ -19149,13 +19149,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Rehabilitacja medyczna w ramach NFZ",
-"Zabiegi fizjoterapeutyczne i usprawniajπce",
+"Zabiegi fizjoterapeutyczne i usprawniajƒÖce",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1743,
-name:"SP ZOZ w Prudniku ñ Poradnia Reumatologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Reumatologiczna",
 specialization:"Reumatolog",
 
 city:"Prudnik",
@@ -19167,13 +19167,13 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje reumatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb reumatycznych",
+"Diagnostyka i leczenie chor√≥b reumatycznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1744,
-name:"SP ZOZ w Prudniku ñ Poradnia Urologiczna",
+name:"SP ZOZ w Prudniku ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
 city:"Prudnik",
@@ -19185,16 +19185,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1745,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Chirurgii OgÛlnej",
-specialization:"Chirurg ogÛlny",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Chirurgii Og√≥lnej",
+specialization:"Chirurg og√≥lny",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19203,16 +19203,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje chirurgiczne w ramach NFZ",
-"Diagnostyka i leczenie schorzeÒ chirurgicznych",
+"Diagnostyka i leczenie schorze≈Ñ chirurgicznych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1746,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19221,16 +19221,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1747,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19239,16 +19239,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje w zakresie chirurgii urazowo-ortopedycznej w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1748,
-name:"Gabinet Stomatologiczny ñ lek. dent. A. Krawczyk",
+name:"Gabinet Stomatologiczny ‚Äì lek. dent. A. Krawczyk",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:180,
 nfz:false,
@@ -19258,15 +19258,15 @@ rating:4.6,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1749,
-name:"Stomatologia Rodzinna ñ lek. dent. M. Nowak",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. M. Nowak",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:170,
 nfz:false,
@@ -19275,16 +19275,16 @@ featured:false,
 rating:4.5,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1750,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Stomatologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19299,10 +19299,10 @@ reviews:[
 },
 {
 id:1751,
-name:"Gabinet Stomatologiczny ñ lek. dent. A. Krawczyk",
+name:"Gabinet Stomatologiczny ‚Äì lek. dent. A. Krawczyk",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:180,
 nfz:false,
@@ -19312,15 +19312,15 @@ rating:4.6,
 reviews:[
 "Prywatne konsultacje stomatologiczne",
 "Leczenie zachowawcze i estetyczne",
-"Nowoczesne metody leczenia zÍbÛw"
+"Nowoczesne metody leczenia zƒôb√≥w"
 ]
 },
 {
 id:1752,
-name:"Stomatologia Rodzinna ñ lek. dent. M. Nowak",
+name:"Stomatologia Rodzinna ‚Äì lek. dent. M. Nowak",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:170,
 nfz:false,
@@ -19329,16 +19329,16 @@ featured:false,
 rating:4.5,
 reviews:[
 "Rodzinna opieka stomatologiczna",
-"Leczenie doros≥ych i dzieci",
-"Profilaktyka i leczenie prÛchnicy"
+"Leczenie doros≈Çych i dzieci",
+"Profilaktyka i leczenie pr√≥chnicy"
 ]
 },
 {
 id:1753,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Stomatologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Stomatologiczna",
 specialization:"Dentysta",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19353,10 +19353,10 @@ reviews:[
 },
 {
 id:1754,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Dermatologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Dermatologiczna",
 specialization:"Dermatolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19365,16 +19365,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje dermatologiczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb skÛry",
+"Diagnostyka i leczenie chor√≥b sk√≥ry",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1755,
-name:"SP ZOZ w G≥ubczycach ñ Zak≥ad Diagnostyki Obrazowej",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Zak≈Çad Diagnostyki Obrazowej",
 specialization:"Diagnostyka obrazowa",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19389,10 +19389,10 @@ reviews:[
 },
 {
 id:1756,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Endokrynologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Endokrynologiczna",
 specialization:"Endokrynolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19401,16 +19401,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje endokrynologiczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ hormonalnych",
+"Diagnostyka i leczenie zaburze≈Ñ hormonalnych",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1757,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19418,17 +19418,17 @@ privateVisit:false,
 featured:false,
 rating:4.1,
 reviews:[
-"Konsultacje ginekologiczno-po≥oønicze w ramach NFZ",
-"Opieka profilaktyczna i diagnostyka chorÛb kobiecych",
+"Konsultacje ginekologiczno-po≈Ço≈ºnicze w ramach NFZ",
+"Opieka profilaktyczna i diagnostyka chor√≥b kobiecych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1758,
-name:"SP ZOZ w G≥ubczycach ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"SP ZOZ w G≈Çubczycach ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19437,16 +19437,16 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje internistyczne w ramach NFZ",
-"Podstawowa opieka zdrowotna dla doros≥ych",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla doros≈Çych",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1759,
-name:"SP ZOZ w G≥ubczycach ñ POZ / Poradnia Lekarza Rodzinnego",
+name:"SP ZOZ w G≈Çubczycach ‚Äì POZ / Poradnia Lekarza Rodzinnego",
 specialization:"Lekarz rodzinny",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19455,16 +19455,16 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje lekarza rodzinnego w ramach NFZ",
-"Podstawowa opieka zdrowotna dla ca≥ej rodziny",
-"Skierowania na badania diagnostyczne i do specjalistÛw"
+"Podstawowa opieka zdrowotna dla ca≈Çej rodziny",
+"Skierowania na badania diagnostyczne i do specjalist√≥w"
 ]
 },
 {
 id:1760,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Kardiologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Kardiologiczna",
 specialization:"Kardiolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19473,16 +19473,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje kardiologiczne w ramach NFZ",
-"Diagnostyka chorÛb serca i uk≥adu krπøenia",
+"Diagnostyka chor√≥b serca i uk≈Çadu krƒÖ≈ºenia",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1761,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Otolaryngologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Otolaryngologiczna",
 specialization:"Laryngolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19491,16 +19491,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje laryngologiczne w ramach NFZ",
-"Diagnostyka chorÛb uszu, nosa i gard≥a",
+"Diagnostyka chor√≥b uszu, nosa i gard≈Ça",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1762,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Neurologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Neurologiczna",
 specialization:"Neurolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19509,16 +19509,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje neurologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu nerwowego",
+"Diagnostyka chor√≥b uk≈Çadu nerwowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1763,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Okulistyczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Okulistyczna",
 specialization:"Okulista",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19527,16 +19527,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje okulistyczne w ramach NFZ",
-"Diagnostyka chorÛb oczu i wad wzroku",
+"Diagnostyka chor√≥b oczu i wad wzroku",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1764,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Urazowo-Ortopedyczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Urazowo-Ortopedyczna",
 specialization:"Ortopeda",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19545,16 +19545,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje ortopedyczne w ramach NFZ",
-"Diagnostyka urazÛw i schorzeÒ narzπdu ruchu",
+"Diagnostyka uraz√≥w i schorze≈Ñ narzƒÖdu ruchu",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1765,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Pediatryczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Pediatryczna",
 specialization:"Pediatra",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19563,16 +19563,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje pediatryczne w ramach NFZ",
-"Diagnostyka i leczenie chorÛb dzieciÍcych",
+"Diagnostyka i leczenie chor√≥b dzieciƒôcych",
 "Wymagane skierowanie zgodnie z zasadami NFZ"
 ]
 },
 {
 id:1766,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Zdrowia Psychicznego",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Zdrowia Psychicznego",
 specialization:"Psychiatra",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19581,16 +19581,16 @@ featured:false,
 rating:4.0,
 reviews:[
 "Konsultacje psychiatryczne w ramach NFZ",
-"Diagnostyka i leczenie zaburzeÒ psychicznych",
-"Opieka specjalistyczna bez koniecznoúci hospitalizacji"
+"Diagnostyka i leczenie zaburze≈Ñ psychicznych",
+"Opieka specjalistyczna bez konieczno≈õci hospitalizacji"
 ]
 },
 {
 id:1767,
-name:"SP ZOZ w G≥ubczycach ñ Rehabilitacja Medyczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Rehabilitacja Medyczna",
 specialization:"Rehabilitacja medyczna",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19599,16 +19599,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Rehabilitacja medyczna w ramach NFZ",
-"Zabiegi fizjoterapeutyczne i usprawniajπce",
+"Zabiegi fizjoterapeutyczne i usprawniajƒÖce",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1768,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Urologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19617,16 +19617,16 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
 {
 id:1768,
-name:"SP ZOZ w G≥ubczycach ñ Poradnia Urologiczna",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Poradnia Urologiczna",
 specialization:"Urolog",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19635,7 +19635,7 @@ featured:false,
 rating:4.1,
 reviews:[
 "Konsultacje urologiczne w ramach NFZ",
-"Diagnostyka chorÛb uk≥adu moczowego",
+"Diagnostyka chor√≥b uk≈Çadu moczowego",
 "Wymagane skierowanie lekarskie"
 ]
 },
@@ -19644,7 +19644,7 @@ id:1769,
 name:"NZOZ Medycyna Pracy",
 specialization:"Medycyna pracy",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:150,
 nfz:false,
@@ -19653,16 +19653,16 @@ featured:false,
 rating:4.3,
 reviews:[
 "Badania z zakresu medycyny pracy",
-"Badania wstÍpne, okresowe i kontrolne",
-"Orzeczenia lekarskie dla pracownikÛw"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Orzeczenia lekarskie dla pracownik√≥w"
 ]
 },
 {
 id:1770,
-name:"SP ZOZ w G≥ubczycach ñ Oddzia≥ Medycyny Paliatywnej / Hospicjum",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Oddzia≈Ç Medycyny Paliatywnej / Hospicjum",
 specialization:"Medycyna paliatywna",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19671,16 +19671,16 @@ featured:false,
 rating:4.3,
 reviews:[
 "Opieka paliatywna w ramach NFZ",
-"Leczenie objawowe i wsparcie pacjentÛw przewlekle chorych",
+"Leczenie objawowe i wsparcie pacjent√≥w przewlekle chorych",
 "Opieka hospicyjna i wsparcie dla rodzin"
 ]
 },
 {
 id:1771,
-name:"Punkt PobraÒ ALAB Laboratoria",
+name:"Punkt Pobra≈Ñ ALAB Laboratoria",
 specialization:"Diagnostyka laboratoryjna",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:50,
 nfz:false,
@@ -19689,16 +19689,16 @@ featured:false,
 rating:4.4,
 reviews:[
 "Prywatne badania laboratoryjne",
-"Szeroki zakres badaÒ diagnostycznych",
-"Szybkie wyniki badaÒ"
+"Szeroki zakres bada≈Ñ diagnostycznych",
+"Szybkie wyniki bada≈Ñ"
 ]
 },
 {
 id:1772,
-name:"SP ZOZ w G≥ubczycach ñ Laboratorium Analityczne",
+name:"SP ZOZ w G≈Çubczycach ‚Äì Laboratorium Analityczne",
 specialization:"Diagnostyka laboratoryjna",
 
-city:"G≥ubczyce",
+city:"G≈Çubczyce",
 phone:"",
 price:null,
 nfz:true,
@@ -19713,57 +19713,57 @@ reviews:[
 },
 {
 id:1773,
-name:"Namys≥owskie Centrum Zdrowia Sp. z o.o.",
+name:"Namys≈Çowskie Centrum Zdrowia Sp. z o.o.",
 specialization:"Szpital wielospecjalistyczny",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"77 404 02 00",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.5,
-address:"ul. Oleúnicka 4, 46-100 Namys≥Ûw",
-mapsQuery:"Namys≥owskie Centrum Zdrowia, ul. Oleúnicka 4, Namys≥Ûw",
+address:"ul. Ole≈õnicka 4, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Namys≈Çowskie Centrum Zdrowia, ul. Ole≈õnicka 4, Namys≈Ç√≥w",
 reviews:[
-"Szpital powiatowy z wieloma oddzia≥ami",
+"Szpital powiatowy z wieloma oddzia≈Çami",
 "Rejestracja i leczenie w ramach NFZ",
-"NajwiÍksza placÛwka medyczna w Namys≥owie"
+"Najwiƒôksza plac√≥wka medyczna w Namys≈Çowie"
 ]
 },
 {
 id:1774,
-name:"Namys≥owskie Centrum Zdrowia ñ Poradnia Chirurgiczna",
+name:"Namys≈Çowskie Centrum Zdrowia ‚Äì Poradnia Chirurgiczna",
 specialization:"Chirurg",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"77 404 02 00",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.2,
-address:"ul. Oleúnicka 4, 46-100 Namys≥Ûw",
-mapsQuery:"NCZ Poradnia Chirurgiczna, ul. Oleúnicka 4, Namys≥Ûw",
+address:"ul. Ole≈õnicka 4, 46-100 Namys≈Ç√≥w",
+mapsQuery:"NCZ Poradnia Chirurgiczna, ul. Ole≈õnicka 4, Namys≈Ç√≥w",
 reviews:[
-"Poradnia chirurgii ogÛlnej NFZ",
-"Konsultacje i kwalifikacje do zabiegÛw"
+"Poradnia chirurgii og√≥lnej NFZ",
+"Konsultacje i kwalifikacje do zabieg√≥w"
 ]
 },
 {
 id:1775,
-name:"Namys≥owskie Centrum Zdrowia ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Namys≈Çowskie Centrum Zdrowia ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"77 404 02 00",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.3,
-address:"ul. Oleúnicka 4, 46-100 Namys≥Ûw",
-mapsQuery:"NCZ Poradnia Ginekologiczno-Po≥oønicza, ul. Oleúnicka 4, Namys≥Ûw",
+address:"ul. Ole≈õnicka 4, 46-100 Namys≈Ç√≥w",
+mapsQuery:"NCZ Poradnia Ginekologiczno-Po≈Ço≈ºnicza, ul. Ole≈õnicka 4, Namys≈Ç√≥w",
 reviews:[
 "Poradnia ginekologiczna przy szpitalu",
 "Opieka ambulatoryjna i kontrolna"
@@ -19771,38 +19771,38 @@ reviews:[
 },
 {
 id:1776,
-name:"Pro Familia ñ Przychodnia",
+name:"Pro Familia ‚Äì Przychodnia",
 specialization:"Lekarz rodzinny",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"77 410 04 68",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:true,
 rating:4.6,
-address:"ul. Pocztowa 7, 46-100 Namys≥Ûw",
-mapsQuery:"Pro Familia, ul. Pocztowa 7, Namys≥Ûw",
+address:"ul. Pocztowa 7, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Pro Familia, ul. Pocztowa 7, Namys≈Ç√≥w",
 reviews:[
 "POZ i konsultacje specjalistyczne",
-"Dobra dostÍpnoúÊ lekarza rodzinnego",
-"PlacÛwka znana lokalnie"
+"Dobra dostƒôpno≈õƒá lekarza rodzinnego",
+"Plac√≥wka znana lokalnie"
 ]
 },
 {
 id:1777,
-name:"Tlenosfera Namys≥Ûw",
+name:"Tlenosfera Namys≈Ç√≥w",
 specialization:"Pulmonolog",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"730 835 935",
 price:220,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.7,
-address:"ul. Koúcielna 2, 46-100 Namys≥Ûw",
-mapsQuery:"Tlenosfera, ul. Koúcielna 2, Namys≥Ûw",
+address:"ul. Ko≈õcielna 2, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Tlenosfera, ul. Ko≈õcielna 2, Namys≈Ç√≥w",
 reviews:[
 "Konsultacje oddechowe i opieka specjalistyczna",
 "Rejestracja telefoniczna sprawna"
@@ -19813,72 +19813,72 @@ id:1778,
 name:"Gabinet Stomatologiczny Barbara Felbel",
 specialization:"Dentysta",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"77 410 11 25",
 price:180,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.5,
-address:"ul. Fabryczna 5, 46-100 Namys≥Ûw",
-mapsQuery:"Gabinet Stomatologiczny Barbara Felbel, ul. Fabryczna 5, Namys≥Ûw",
+address:"ul. Fabryczna 5, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Gabinet Stomatologiczny Barbara Felbel, ul. Fabryczna 5, Namys≈Ç√≥w",
 reviews:[
-"Stomatologia ogÛlna i protetyka",
-"Sta≥y gabinet w centrum Namys≥owa"
+"Stomatologia og√≥lna i protetyka",
+"Sta≈Çy gabinet w centrum Namys≈Çowa"
 ]
 },
 {
 id:1779,
-name:"Gabinet Stomatologiczny Anna Jaworska-Bia≥owπs",
+name:"Gabinet Stomatologiczny Anna Jaworska-Bia≈ÇowƒÖs",
 specialization:"Dentysta",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"508 439 549",
 price:170,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.4,
-address:"ul. Pocztowa 7, 46-100 Namys≥Ûw",
-mapsQuery:"Gabinet Stomatologiczny Anna Jaworska-Bia≥owπs, ul. Pocztowa 7, Namys≥Ûw",
+address:"ul. Pocztowa 7, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Gabinet Stomatologiczny Anna Jaworska-Bia≈ÇowƒÖs, ul. Pocztowa 7, Namys≈Ç√≥w",
 reviews:[
-"Stomatologia dla doros≥ych i dzieci",
-"Wizyty prywatne oraz úwiadczenia NFZ"
+"Stomatologia dla doros≈Çych i dzieci",
+"Wizyty prywatne oraz ≈õwiadczenia NFZ"
 ]
 },
 {
 id:1780,
-name:"Gabinet Stomatologiczny Barbara GÛrska",
+name:"Gabinet Stomatologiczny Barbara G√≥rska",
 specialization:"Dentysta",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"603 633 894",
 price:160,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.2,
-address:"ul. 3 Maja 7/1, 46-100 Namys≥Ûw",
-mapsQuery:"Gabinet Stomatologiczny Barbara GÛrska, ul. 3 Maja 7/1, Namys≥Ûw",
+address:"ul. 3 Maja 7/1, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Gabinet Stomatologiczny Barbara G√≥rska, ul. 3 Maja 7/1, Namys≈Ç√≥w",
 reviews:[
 "Konsultacje stomatologiczne i leczenie zachowawcze",
-"Gabinet dzia≥ajπcy lokalnie od lat"
+"Gabinet dzia≈ÇajƒÖcy lokalnie od lat"
 ]
 },
 {
 id:1781,
-name:"MILADENT ñ Jolanta £uszczyÒska",
+name:"MILADENT ‚Äì Jolanta ≈Åuszczy≈Ñska",
 specialization:"Dentysta",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"608 751 847",
 price:190,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.3,
-address:"ul. Koúcielna 2, 46-100 Namys≥Ûw",
-mapsQuery:"MILADENT, ul. Koúcielna 2, Namys≥Ûw",
+address:"ul. Ko≈õcielna 2, 46-100 Namys≈Ç√≥w",
+mapsQuery:"MILADENT, ul. Ko≈õcielna 2, Namys≈Ç√≥w",
 reviews:[
 "Stomatologia estetyczna i zachowawcza",
 "Prywatny gabinet w budynku TEMED"
@@ -19886,18 +19886,18 @@ reviews:[
 },
 {
 id:1782,
-name:"Rehapro Fizjoterapia Namys≥Ûw",
+name:"Rehapro Fizjoterapia Namys≈Ç√≥w",
 specialization:"Rehabilitacja",
 
-city:"Namys≥Ûw",
+city:"Namys≈Ç√≥w",
 phone:"602 611 818",
 price:150,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-address:"ul. Kresowa 10, 46-100 Namys≥Ûw",
-mapsQuery:"Rehapro Fizjoterapia, ul. Kresowa 10, Namys≥Ûw",
+address:"ul. Kresowa 10, 46-100 Namys≈Ç√≥w",
+mapsQuery:"Rehapro Fizjoterapia, ul. Kresowa 10, Namys≈Ç√≥w",
 reviews:[
 "Fizjoterapia ortopedyczna i pourazowa",
 "Dobry kontakt i sprawna rejestracja"
@@ -19905,7 +19905,7 @@ reviews:[
 },
 {
 id:1783,
-name:"Szpital Powiatowy im. Pra≥ata J. Glowatzkiego",
+name:"Szpital Powiatowy im. Pra≈Çata J. Glowatzkiego",
 specialization:"Szpital wielospecjalistyczny",
 
 city:"Strzelce Opolskie",
@@ -19918,13 +19918,13 @@ rating:4.4,
 address:"ul. Opolska 36A, 47-100 Strzelce Opolskie",
 mapsQuery:"Szpital Powiatowy, ul. Opolska 36A, Strzelce Opolskie",
 reviews:[
-"NajwiÍksza placÛwka medyczna w powiecie strzeleckim",
+"Najwiƒôksza plac√≥wka medyczna w powiecie strzeleckim",
 "Leczenie szpitalne i poradnie specjalistyczne"
 ]
 },
 {
 id:1784,
-name:"Szpital Powiatowy ñ Poradnia Chirurgiczna",
+name:"Szpital Powiatowy ‚Äì Poradnia Chirurgiczna",
 specialization:"Chirurg",
 
 city:"Strzelce Opolskie",
@@ -19937,13 +19937,13 @@ rating:4.2,
 address:"ul. Opolska 36A, 47-100 Strzelce Opolskie",
 mapsQuery:"Poradnia Chirurgiczna, ul. Opolska 36A, Strzelce Opolskie",
 reviews:[
-"Poradnia chirurgii ogÛlnej",
+"Poradnia chirurgii og√≥lnej",
 "Konsultacje ambulatoryjne NFZ"
 ]
 },
 {
 id:1785,
-name:"Szpital Powiatowy ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Szpital Powiatowy ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Strzelce Opolskie",
@@ -19956,7 +19956,7 @@ rating:4.3,
 address:"ul. Opolska 36A, 47-100 Strzelce Opolskie",
 mapsQuery:"Poradnia Ginekologiczna, ul. Opolska 36A, Strzelce Opolskie",
 reviews:[
-"Konsultacje ginekologiczne i po≥oønicze",
+"Konsultacje ginekologiczne i po≈Ço≈ºnicze",
 "Opieka specjalistyczna w ramach NFZ"
 ]
 },
@@ -19976,7 +19976,7 @@ address:"ul. Opolska 36A, 47-100 Strzelce Opolskie",
 mapsQuery:"Przychodnia Rejonowo-Specjalistyczna, ul. Opolska 36A, Strzelce Opolskie",
 reviews:[
 "Podstawowa opieka zdrowotna i poradnie",
-"Dobra dostÍpnoúÊ lekarza rodzinnego"
+"Dobra dostƒôpno≈õƒá lekarza rodzinnego"
 ]
 },
 {
@@ -20010,8 +20010,8 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.5,
-address:"ul. PowstaÒcÛw ålπskich 11, 47-100 Strzelce Opolskie",
-mapsQuery:"Dentica, ul. PowstaÒcÛw ålπskich 11, Strzelce Opolskie",
+address:"ul. Powsta≈Ñc√≥w ≈ölƒÖskich 11, 47-100 Strzelce Opolskie",
+mapsQuery:"Dentica, ul. Powsta≈Ñc√≥w ≈ölƒÖskich 11, Strzelce Opolskie",
 reviews:[
 "Stomatologia zachowawcza i profilaktyka",
 "Wizyty NFZ i prywatne"
@@ -20033,7 +20033,7 @@ address:"ul. Ligonia 7, 47-100 Strzelce Opolskie",
 mapsQuery:"Gabinet Stomatologiczny M. Pysz, ul. Ligonia 7, Strzelce Opolskie",
 reviews:[
 "Leczenie stomatologiczne prywatnie",
-"Dobre opinie pacjentÛw lokalnych"
+"Dobre opinie pacjent√≥w lokalnych"
 ]
 },
 {
@@ -20051,8 +20051,8 @@ rating:4.2,
 address:"ul. Rynek 8, 47-100 Strzelce Opolskie",
 mapsQuery:"VisionMed, ul. Rynek 8, Strzelce Opolskie",
 reviews:[
-"Konsultacje okulistyczne i dobÛr korekcji",
-"Wizyty prywatne po wczeúniejszym zapisie"
+"Konsultacje okulistyczne i dob√≥r korekcji",
+"Wizyty prywatne po wcze≈õniejszym zapisie"
 ]
 },
 {
@@ -20067,8 +20067,8 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-address:"ul. GogoliÒska 2, 47-100 Strzelce Opolskie",
-mapsQuery:"ActiveMed, ul. GogoliÒska 2, Strzelce Opolskie",
+address:"ul. Gogoli≈Ñska 2, 47-100 Strzelce Opolskie",
+mapsQuery:"ActiveMed, ul. Gogoli≈Ñska 2, Strzelce Opolskie",
 reviews:[
 "Fizjoterapia pourazowa i ortopedyczna",
 "Indywidualna terapia i szybkie terminy"
@@ -20089,8 +20089,8 @@ rating:4.1,
 address:"ul. Krakowska 20, 47-100 Strzelce Opolskie",
 mapsQuery:"NZOZ Medycyna Pracy, ul. Krakowska 20, Strzelce Opolskie",
 reviews:[
-"Badania wstÍpne, okresowe i kontrolne",
-"Obs≥uga firm i pracownikÛw indywidualnych"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Obs≈Çuga firm i pracownik√≥w indywidualnych"
 ]
 },
 {
@@ -20105,16 +20105,16 @@ nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.4,
-address:"ul. M.C. Sk≥odowskiej 23, 47-300 Krapkowice",
-mapsQuery:"Krapkowickie Centrum Zdrowia, ul. M.C. Sk≥odowskiej 23, Krapkowice",
+address:"ul. M.C. Sk≈Çodowskiej 23, 47-300 Krapkowice",
+mapsQuery:"Krapkowickie Centrum Zdrowia, ul. M.C. Sk≈Çodowskiej 23, Krapkowice",
 reviews:[
-"G≥Ûwna placÛwka szpitalna powiatu krapkowickiego",
+"G≈Ç√≥wna plac√≥wka szpitalna powiatu krapkowickiego",
 "Poradnie specjalistyczne i leczenie szpitalne NFZ"
 ]
 },
 {
 id:1794,
-name:"Krapkowickie Centrum Zdrowia ñ Poradnia Chirurgiczna",
+name:"Krapkowickie Centrum Zdrowia ‚Äì Poradnia Chirurgiczna",
 specialization:"Chirurg",
 
 city:"Krapkowice",
@@ -20124,16 +20124,16 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.2,
-address:"ul. M.C. Sk≥odowskiej 23, 47-300 Krapkowice",
-mapsQuery:"Poradnia Chirurgiczna, ul. M.C. Sk≥odowskiej 23, Krapkowice",
+address:"ul. M.C. Sk≈Çodowskiej 23, 47-300 Krapkowice",
+mapsQuery:"Poradnia Chirurgiczna, ul. M.C. Sk≈Çodowskiej 23, Krapkowice",
 reviews:[
-"Konsultacje chirurgii ogÛlnej",
-"åwiadczenia ambulatoryjne w ramach NFZ"
+"Konsultacje chirurgii og√≥lnej",
+"≈öwiadczenia ambulatoryjne w ramach NFZ"
 ]
 },
 {
 id:1795,
-name:"Krapkowickie Centrum Zdrowia ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"Krapkowickie Centrum Zdrowia ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Krapkowice",
@@ -20143,16 +20143,16 @@ nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.3,
-address:"ul. M.C. Sk≥odowskiej 23, 47-300 Krapkowice",
-mapsQuery:"Poradnia Ginekologiczna, ul. M.C. Sk≥odowskiej 23, Krapkowice",
+address:"ul. M.C. Sk≈Çodowskiej 23, 47-300 Krapkowice",
+mapsQuery:"Poradnia Ginekologiczna, ul. M.C. Sk≈Çodowskiej 23, Krapkowice",
 reviews:[
-"Konsultacje ginekologiczne i po≥oønicze",
-"Poradnia dzia≥ajπca przy szpitalu"
+"Konsultacje ginekologiczne i po≈Ço≈ºnicze",
+"Poradnia dzia≈ÇajƒÖca przy szpitalu"
 ]
 },
 {
 id:1796,
-name:"SP ZOZ Krapkowice ñ Przychodnia POZ",
+name:"SP ZOZ Krapkowice ‚Äì Przychodnia POZ",
 specialization:"Lekarz rodzinny",
 
 city:"Krapkowice",
@@ -20162,8 +20162,8 @@ nfz:true,
 privateVisit:true,
 featured:true,
 rating:4.5,
-address:"ul. M.C. Sk≥odowskiej 23, 47-300 Krapkowice",
-mapsQuery:"Przychodnia POZ, ul. M.C. Sk≥odowskiej 23, Krapkowice",
+address:"ul. M.C. Sk≈Çodowskiej 23, 47-300 Krapkowice",
+mapsQuery:"Przychodnia POZ, ul. M.C. Sk≈Çodowskiej 23, Krapkowice",
 reviews:[
 "Lekarz rodzinny i opieka podstawowa",
 "Sprawna rejestracja wizyt"
@@ -20200,8 +20200,8 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.4,
-address:"ul. KiliÒskiego 4, 47-300 Krapkowice",
-mapsQuery:"Dentica, ul. KiliÒskiego 4, Krapkowice",
+address:"ul. Kili≈Ñskiego 4, 47-300 Krapkowice",
+mapsQuery:"Dentica, ul. Kili≈Ñskiego 4, Krapkowice",
 reviews:[
 "Stomatologia zachowawcza i profilaktyka",
 "Wizyty NFZ oraz prywatne"
@@ -20242,7 +20242,7 @@ address:"ul. Prudnicka 8, 47-300 Krapkowice",
 mapsQuery:"VisionOptyk, ul. Prudnicka 8, Krapkowice",
 reviews:[
 "Konsultacje okulistyczne i diagnostyka wzroku",
-"Prywatne wizyty po wczeúniejszej rejestracji"
+"Prywatne wizyty po wcze≈õniejszej rejestracji"
 ]
 },
 {
@@ -20279,13 +20279,13 @@ rating:4.1,
 address:"ul. Opolska 12, 47-300 Krapkowice",
 mapsQuery:"NZOZ Medycyna Pracy, ul. Opolska 12, Krapkowice",
 reviews:[
-"Badania okresowe i wstÍpne",
-"Obs≥uga pracownikÛw i firm"
+"Badania okresowe i wstƒôpne",
+"Obs≈Çuga pracownik√≥w i firm"
 ]
 },
 {
 id:1803,
-name:"ZespÛ≥ Opieki Zdrowotnej w Oleúnie",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w Ole≈õnie",
 specialization:"Szpital wielospecjalistyczny",
 
 city:"Olesno",
@@ -20296,15 +20296,15 @@ privateVisit:false,
 featured:true,
 rating:4.4,
 address:"ul. Klonowa 1, 46-300 Olesno",
-mapsQuery:"ZespÛ≥ Opieki Zdrowotnej w Oleúnie, ul. Klonowa 1, Olesno",
+mapsQuery:"Zesp√≥≈Ç Opieki Zdrowotnej w Ole≈õnie, ul. Klonowa 1, Olesno",
 reviews:[
-"G≥Ûwna placÛwka medyczna powiatu oleskiego",
-"Oddzia≥y szpitalne i poradnie specjalistyczne"
+"G≈Ç√≥wna plac√≥wka medyczna powiatu oleskiego",
+"Oddzia≈Çy szpitalne i poradnie specjalistyczne"
 ]
 },
 {
 id:1804,
-name:"ZOZ Olesno ñ Poradnia Chirurgiczna",
+name:"ZOZ Olesno ‚Äì Poradnia Chirurgiczna",
 specialization:"Chirurg",
 
 city:"Olesno",
@@ -20323,7 +20323,7 @@ reviews:[
 },
 {
 id:1805,
-name:"ZOZ Olesno ñ Poradnia Ginekologiczno-Po≥oønicza",
+name:"ZOZ Olesno ‚Äì Poradnia Ginekologiczno-Po≈Ço≈ºnicza",
 specialization:"Ginekolog",
 
 city:"Olesno",
@@ -20352,11 +20352,11 @@ nfz:true,
 privateVisit:true,
 featured:true,
 rating:4.5,
-address:"ul. PowstaÒcÛw ålπskich 8, 46-300 Olesno",
-mapsQuery:"Przychodnia Rodzinna, ul. PowstaÒcÛw ålπskich 8, Olesno",
+address:"ul. Powsta≈Ñc√≥w ≈ölƒÖskich 8, 46-300 Olesno",
+mapsQuery:"Przychodnia Rodzinna, ul. Powsta≈Ñc√≥w ≈ölƒÖskich 8, Olesno",
 reviews:[
 "Podstawowa opieka zdrowotna",
-"Dobra dostÍpnoúÊ lekarza rodzinnego"
+"Dobra dostƒôpno≈õƒá lekarza rodzinnego"
 ]
 },
 {
@@ -20371,8 +20371,8 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.3,
-address:"ul. Wielkie Przedmieúcie 20, 46-300 Olesno",
-mapsQuery:"NZOZ Medicus, ul. Wielkie Przedmieúcie 20, Olesno",
+address:"ul. Wielkie Przedmie≈õcie 20, 46-300 Olesno",
+mapsQuery:"NZOZ Medicus, ul. Wielkie Przedmie≈õcie 20, Olesno",
 reviews:[
 "Konsultacje internistyczne prywatnie",
 "Szybka rejestracja i diagnostyka"
@@ -20390,8 +20390,8 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.4,
-address:"ul. Sπdowa 5, 46-300 Olesno",
-mapsQuery:"Dentica Olesno, ul. Sπdowa 5, Olesno",
+address:"ul. SƒÖdowa 5, 46-300 Olesno",
+mapsQuery:"Dentica Olesno, ul. SƒÖdowa 5, Olesno",
 reviews:[
 "Stomatologia zachowawcza i profilaktyka",
 "Wizyty NFZ i prywatne"
@@ -20431,7 +20431,7 @@ rating:4.3,
 address:"ul. Krakowska 9, 46-300 Olesno",
 mapsQuery:"VisionOptyk, ul. Krakowska 9, Olesno",
 reviews:[
-"Konsultacje okulistyczne i dobÛr korekcji",
+"Konsultacje okulistyczne i dob√≥r korekcji",
 "Wizyty prywatne po zapisie"
 ]
 },
@@ -20447,8 +20447,8 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.6,
-address:"ul. S≥owackiego 3, 46-300 Olesno",
-mapsQuery:"RehaMed Olesno, ul. S≥owackiego 3, Olesno",
+address:"ul. S≈Çowackiego 3, 46-300 Olesno",
+mapsQuery:"RehaMed Olesno, ul. S≈Çowackiego 3, Olesno",
 reviews:[
 "Fizjoterapia ortopedyczna i neurologiczna",
 "Indywidualna terapia i szybkie terminy"
@@ -20466,46 +20466,46 @@ nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. PowstaÒcÛw ålπskich 10, 46-300 Olesno",
-mapsQuery:"NZOZ Medycyna Pracy, ul. PowstaÒcÛw ålπskich 10, Olesno",
+address:"ul. Powsta≈Ñc√≥w ≈ölƒÖskich 10, 46-300 Olesno",
+mapsQuery:"NZOZ Medycyna Pracy, ul. Powsta≈Ñc√≥w ≈ölƒÖskich 10, Olesno",
 reviews:[
-"Badania wstÍpne, okresowe i kontrolne",
-"Obs≥uga pracownikÛw i zak≥adÛw pracy"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Obs≈Çuga pracownik√≥w i zak≈Çad√≥w pracy"
 ]
 },
 {
 id:1813,
-name:"ZespÛ≥ Opieki Zdrowotnej w G≥ucho≥azach",
+name:"Zesp√≥≈Ç Opieki Zdrowotnej w G≈Çucho≈Çazach",
 specialization:"Szpital wielospecjalistyczny",
-city:"G≥ucho≥azy",
+city:"G≈Çucho≈Çazy",
 phone:"77 409 21 31",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.3,
-address:"ul. M. Sk≥odowskiej-Curie 16, 48-340 G≥ucho≥azy",
-mapsQuery:"ZespÛ≥ Opieki Zdrowotnej w G≥ucho≥azach, ul. M. Sk≥odowskiej-Curie 16, G≥ucho≥azy",
-reviews:["Szpital i poradnie specjalistyczne","åwiadczenia w ramach NFZ"]
+address:"ul. M. Sk≈Çodowskiej-Curie 16, 48-340 G≈Çucho≈Çazy",
+mapsQuery:"Zesp√≥≈Ç Opieki Zdrowotnej w G≈Çucho≈Çazach, ul. M. Sk≈Çodowskiej-Curie 16, G≈Çucho≈Çazy",
+reviews:["Szpital i poradnie specjalistyczne","≈öwiadczenia w ramach NFZ"]
 },
 {
 id:1814,
-name:"Przychodnia Rodzinna G≥ucho≥azy",
+name:"Przychodnia Rodzinna G≈Çucho≈Çazy",
 specialization:"Lekarz rodzinny",
-city:"G≥ucho≥azy",
+city:"G≈Çucho≈Çazy",
 phone:"77 439 18 25",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.4,
-address:"ul. BohaterÛw Warszawy 7, 48-340 G≥ucho≥azy",
-mapsQuery:"Przychodnia Rodzinna, ul. BohaterÛw Warszawy 7, G≥ucho≥azy",
-reviews:["POZ i opieka podstawowa","Dobra dostÍpnoúÊ terminÛw"]
+address:"ul. Bohater√≥w Warszawy 7, 48-340 G≈Çucho≈Çazy",
+mapsQuery:"Przychodnia Rodzinna, ul. Bohater√≥w Warszawy 7, G≈Çucho≈Çazy",
+reviews:["POZ i opieka podstawowa","Dobra dostƒôpno≈õƒá termin√≥w"]
 },
 {
 id:1815,
-name:"Szpital úw. Rocha w Ozimku",
+name:"Szpital ≈õw. Rocha w Ozimku",
 specialization:"Szpital wielospecjalistyczny",
 city:"Ozimek",
 phone:"77 465 14 31",
@@ -20514,9 +20514,9 @@ nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.2,
-address:"ul. CzÍstochowska 31, 46-040 Ozimek",
-mapsQuery:"Szpital úw. Rocha, ul. CzÍstochowska 31, Ozimek",
-reviews:["Szpital miejski z oddzia≥ami","Diagnostyka i poradnie"]
+address:"ul. Czƒôstochowska 31, 46-040 Ozimek",
+mapsQuery:"Szpital ≈õw. Rocha, ul. Czƒôstochowska 31, Ozimek",
+reviews:["Szpital miejski z oddzia≈Çami","Diagnostyka i poradnie"]
 },
 {
 id:1816,
@@ -20529,38 +20529,38 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.3,
-address:"ul. PowstaÒcÛw ålπskich 3, 46-040 Ozimek",
-mapsQuery:"NZOZ Ozimek, ul. PowstaÒcÛw ålπskich 3, Ozimek",
-reviews:["Lekarz rodzinny i POZ","Opieka dla doros≥ych i dzieci"]
+address:"ul. Powsta≈Ñc√≥w ≈ölƒÖskich 3, 46-040 Ozimek",
+mapsQuery:"NZOZ Ozimek, ul. Powsta≈Ñc√≥w ≈ölƒÖskich 3, Ozimek",
+reviews:["Lekarz rodzinny i POZ","Opieka dla doros≈Çych i dzieci"]
 },
 {
 id:1817,
-name:"Samodzielny Publiczny ZOZ GrodkÛw",
+name:"Samodzielny Publiczny ZOZ Grodk√≥w",
 specialization:"Szpital wielospecjalistyczny",
-city:"GrodkÛw",
+city:"Grodk√≥w",
 phone:"77 415 33 11",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:true,
 rating:4.2,
-address:"ul. Krakowska 44, 49-200 GrodkÛw",
-mapsQuery:"SP ZOZ GrodkÛw, ul. Krakowska 44, GrodkÛw",
+address:"ul. Krakowska 44, 49-200 Grodk√≥w",
+mapsQuery:"SP ZOZ Grodk√≥w, ul. Krakowska 44, Grodk√≥w",
 reviews:["Szpital i poradnie specjalistyczne","Leczenie ambulatoryjne NFZ"]
 },
 {
 id:1818,
-name:"Przychodnia Rodzinna GrodkÛw",
+name:"Przychodnia Rodzinna Grodk√≥w",
 specialization:"Lekarz rodzinny",
-city:"GrodkÛw",
+city:"Grodk√≥w",
 phone:"77 415 54 65",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.3,
-address:"ul. Sienkiewicza 9, 49-200 GrodkÛw",
-mapsQuery:"Przychodnia Rodzinna, ul. Sienkiewicza 9, GrodkÛw",
+address:"ul. Sienkiewicza 9, 49-200 Grodk√≥w",
+mapsQuery:"Przychodnia Rodzinna, ul. Sienkiewicza 9, Grodk√≥w",
 reviews:["POZ i opieka internistyczna","Szybka rejestracja"]
 },
 {
@@ -20574,8 +20574,8 @@ nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.2,
-address:"ul. BohaterÛw PowstaÒ ålπskich 37, 49-100 Niemodlin",
-mapsQuery:"NZOZ Przychodnia, ul. BohaterÛw PowstaÒ ålπskich 37, Niemodlin",
+address:"ul. Bohater√≥w Powsta≈Ñ ≈ölƒÖskich 37, 49-100 Niemodlin",
+mapsQuery:"NZOZ Przychodnia, ul. Bohater√≥w Powsta≈Ñ ≈ölƒÖskich 37, Niemodlin",
 reviews:["Podstawowa opieka zdrowotna","Konsultacje lekarza rodzinnego"]
 },
 {
@@ -20591,7 +20591,7 @@ featured:false,
 rating:4.1,
 address:"ul. Rynek 12, 49-340 Lewin Brzeski",
 mapsQuery:"Przychodnia Lekarska, Rynek 12, Lewin Brzeski",
-reviews:["POZ i opieka úrodowiskowa","Przychodnia lokalna"]
+reviews:["POZ i opieka ≈õrodowiskowa","Przychodnia lokalna"]
 },
 {
 id:1821,
@@ -20606,7 +20606,7 @@ featured:false,
 rating:4.2,
 address:"ul. Filarskiego 15, 47-330 Zdzieszowice",
 mapsQuery:"Przychodnia Rodzinna, ul. Filarskiego 15, Zdzieszowice",
-reviews:["POZ i konsultacje internistyczne","åwiadczenia NFZ"]
+reviews:["POZ i konsultacje internistyczne","≈öwiadczenia NFZ"]
 },
 {
 id:1822,
@@ -20625,17 +20625,17 @@ reviews:["Przychodnia POZ","Leczenie ambulatoryjne"]
 },
 {
 id:1823,
-name:"Przychodnia Zdrowie DobrodzieÒ",
+name:"Przychodnia Zdrowie Dobrodzie≈Ñ",
 specialization:"Lekarz rodzinny",
-city:"DobrodzieÒ",
+city:"Dobrodzie≈Ñ",
 phone:"34 357 53 27",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. Oleska 2, 46-380 DobrodzieÒ",
-mapsQuery:"Przychodnia Zdrowie, ul. Oleska 2, DobrodzieÒ",
+address:"ul. Oleska 2, 46-380 Dobrodzie≈Ñ",
+mapsQuery:"Przychodnia Zdrowie, ul. Oleska 2, Dobrodzie≈Ñ",
 reviews:["POZ i opieka rodzinna","Przychodnia lokalna"]
 },
 {
@@ -20651,7 +20651,7 @@ featured:false,
 rating:4.0,
 address:"ul. Warszawska 6, 46-320 Praszka",
 mapsQuery:"NZOZ Przychodnia, ul. Warszawska 6, Praszka",
-reviews:["Podstawowa opieka zdrowotna","Opieka dla mieszkaÒcÛw gminy"]
+reviews:["Podstawowa opieka zdrowotna","Opieka dla mieszka≈Ñc√≥w gminy"]
 },
 {
 id:1825,
@@ -20670,48 +20670,48 @@ reviews:["POZ i opieka internistyczna","Przychodnia miejska"]
 },
 {
 id:1826,
-name:"NZOZ Przychodnia KorfantÛw",
+name:"NZOZ Przychodnia Korfant√≥w",
 specialization:"Lekarz rodzinny",
-city:"KorfantÛw",
+city:"Korfant√≥w",
 phone:"77 431 51 44",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.0,
-address:"ul. Rynek 4, 48-317 KorfantÛw",
-mapsQuery:"NZOZ Przychodnia, Rynek 4, KorfantÛw",
+address:"ul. Rynek 4, 48-317 Korfant√≥w",
+mapsQuery:"NZOZ Przychodnia, Rynek 4, Korfant√≥w",
 reviews:["Podstawowa opieka medyczna","Konsultacje lekarza rodzinnego"]
 },
 {
 id:1827,
-name:"NZOZ Przychodnia PaczkÛw",
+name:"NZOZ Przychodnia Paczk√≥w",
 specialization:"Lekarz rodzinny",
-city:"PaczkÛw",
+city:"Paczk√≥w",
 phone:"77 431 69 90",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. Wojska Polskiego 33, 48-370 PaczkÛw",
-mapsQuery:"NZOZ Przychodnia, ul. Wojska Polskiego 33, PaczkÛw",
+address:"ul. Wojska Polskiego 33, 48-370 Paczk√≥w",
+mapsQuery:"NZOZ Przychodnia, ul. Wojska Polskiego 33, Paczk√≥w",
 reviews:["POZ i konsultacje internistyczne","Leczenie ambulatoryjne"]
 },
 {
 id:1828,
-name:"NZOZ Przychodnia OtmuchÛw",
+name:"NZOZ Przychodnia Otmuch√≥w",
 specialization:"Lekarz rodzinny",
-city:"OtmuchÛw",
+city:"Otmuch√≥w",
 phone:"77 431 50 25",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. Zamkowa 6, 48-385 OtmuchÛw",
-mapsQuery:"NZOZ Przychodnia, ul. Zamkowa 6, OtmuchÛw",
-reviews:["POZ dla mieszkaÒcÛw gminy","Przychodnia lokalna"]
+address:"ul. Zamkowa 6, 48-385 Otmuch√≥w",
+mapsQuery:"NZOZ Przychodnia, ul. Zamkowa 6, Otmuch√≥w",
+reviews:["POZ dla mieszka≈Ñc√≥w gminy","Przychodnia lokalna"]
 },
 {
 id:1829,
@@ -20732,54 +20732,54 @@ reviews:["POZ i porady internistyczne","Opieka podstawowa NFZ"]
 id:1830,
 name:"NZOZ MediSan",
 specialization:"Lekarz rodzinny",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.2,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ MediSan, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ MediSan, Babor√≥w",
 reviews:[
 "Medycyna rodzinna (POZ) i opieka internistyczna",
-"Punkt pobraÒ krwi, szczepienia i profilaktyka zdrowotna",
-"Opieka dla dzieci i doros≥ych"
+"Punkt pobra≈Ñ krwi, szczepienia i profilaktyka zdrowotna",
+"Opieka dla dzieci i doros≈Çych"
 ]
 },
 {
 id:1831,
 name:"NZOZ MediSan",
 specialization:"Internista",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ MediSan, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ MediSan, Babor√≥w",
 reviews:[
-"Konsultacje chorÛb wewnÍtrznych",
-"Opieka internistyczna dla doros≥ych"
+"Konsultacje chor√≥b wewnƒôtrznych",
+"Opieka internistyczna dla doros≈Çych"
 ]
 },
 {
 id:1838,
 name:"NZOZ MediSan",
 specialization:"Ginekolog",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.2,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ MediSan, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ MediSan, Babor√≥w",
 reviews:[
-"Poradnia po≥oøniczo-ginekologiczna",
+"Poradnia po≈Ço≈ºniczo-ginekologiczna",
 "Profilaktyka raka szyjki macicy"
 ]
 },
@@ -20787,15 +20787,15 @@ reviews:[
 id:1832,
 name:"NZOZ Caritas Diecezji Opolskiej",
 specialization:"Pediatra",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.1,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ Caritas Diecezji Opolskiej, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ Caritas Diecezji Opolskiej, Babor√≥w",
 reviews:[
 "Opieka pediatryczna dla dzieci",
 "Szczepienia i wizyty kontrolne"
@@ -20803,91 +20803,91 @@ reviews:[
 },
 {
 id:1833,
-name:"Primed ñ Wiejska 2B",
+name:"Primed ‚Äì Wiejska 2B",
 specialization:"Medycyna pracy",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:130,
 nfz:false,
 privateVisit:true,
 featured:false,
 rating:4.0,
-address:"ul. Wiejska 2B, 48-120 BaborÛw",
-mapsQuery:"Primed, ul. Wiejska 2B, BaborÛw",
+address:"ul. Wiejska 2B, 48-120 Babor√≥w",
+mapsQuery:"Primed, ul. Wiejska 2B, Babor√≥w",
 reviews:[
-"Badania wstÍpne, okresowe i kontrolne",
-"Obs≥uga medycyny pracy dla pracownikÛw",
-"Punkt pobraÒ krwi, profilaktyka i opieka dla dzieci i doros≥ych"
+"Badania wstƒôpne, okresowe i kontrolne",
+"Obs≈Çuga medycyny pracy dla pracownik√≥w",
+"Punkt pobra≈Ñ krwi, profilaktyka i opieka dla dzieci i doros≈Çych"
 ]
 },
 {
 id:1839,
 name:"PRIMED",
 specialization:"Lekarz rodzinny",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. Wiejska 2B, 48-120 BaborÛw",
-mapsQuery:"PRIMED, ul. Wiejska 2B, BaborÛw",
+address:"ul. Wiejska 2B, 48-120 Babor√≥w",
+mapsQuery:"PRIMED, ul. Wiejska 2B, Babor√≥w",
 reviews:[
 "Medycyna rodzinna (POZ) i opieka internistyczna",
-"Punkt pobraÒ krwi, szczepienia i profilaktyka zdrowotna",
-"Opieka dla dzieci i doros≥ych"
+"Punkt pobra≈Ñ krwi, szczepienia i profilaktyka zdrowotna",
+"Opieka dla dzieci i doros≈Çych"
 ]
 },
 {
 id:1840,
 name:"PRIMED",
 specialization:"Internista",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.1,
-address:"ul. Wiejska 2B, 48-120 BaborÛw",
-mapsQuery:"PRIMED, ul. Wiejska 2B, BaborÛw",
+address:"ul. Wiejska 2B, 48-120 Babor√≥w",
+mapsQuery:"PRIMED, ul. Wiejska 2B, Babor√≥w",
 reviews:[
-"Leczenie internistyczne i konsultacje ogÛlne",
-"Opieka dla pacjentÛw doros≥ych"
+"Leczenie internistyczne i konsultacje og√≥lne",
+"Opieka dla pacjent√≥w doros≈Çych"
 ]
 },
 {
 id:1834,
-name:"Leúniak S.C.",
+name:"Le≈õniak S.C.",
 specialization:"Lekarz rodzinny",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.0,
-address:"BaborÛw, 48-120",
-mapsQuery:"Leúniak S.C., BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"Le≈õniak S.C., Babor√≥w",
 reviews:[
 "Podstawowa opieka zdrowotna (POZ)",
-"Wizyty rodzinne i leczenie ogÛlne (internistyczne)"
+"Wizyty rodzinne i leczenie og√≥lne (internistyczne)"
 ]
 },
 {
 id:1835,
-name:"Leúniak S.C. Graøyna Leúniak, Paulina Leúniak",
+name:"Le≈õniak S.C. Gra≈ºyna Le≈õniak, Paulina Le≈õniak",
 specialization:"Internista",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.0,
-address:"BaborÛw, 48-120",
-mapsQuery:"Leúniak S.C., BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"Le≈õniak S.C., Babor√≥w",
 reviews:[
 "Porady internistyczne i leczenie ambulatoryjne",
 "Podstawowa diagnostyka"
@@ -20895,35 +20895,35 @@ reviews:[
 },
 {
 id:1836,
-name:"NZOZ Stomadent A.A. Wo≥oszyn",
+name:"NZOZ Stomadent A.A. Wo≈Çoszyn",
 specialization:"Dentysta",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:180,
 nfz:true,
 privateVisit:true,
 featured:false,
 rating:4.2,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ Stomadent A.A. Wo≥oszyn, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ Stomadent A.A. Wo≈Çoszyn, Babor√≥w",
 reviews:[
-"Stomatologia, leczenie zÍbÛw i profilaktyka stomatologiczna",
-"Gabinet dentystyczny dla doros≥ych i dzieci"
+"Stomatologia, leczenie zƒôb√≥w i profilaktyka stomatologiczna",
+"Gabinet dentystyczny dla doros≈Çych i dzieci"
 ]
 },
 {
 id:1837,
 name:"NZOZ Caritas Diecezji Opolskiej",
 specialization:"Lekarz rodzinny",
-city:"BaborÛw",
+city:"Babor√≥w",
 phone:"",
 price:null,
 nfz:true,
 privateVisit:false,
 featured:false,
 rating:4.1,
-address:"BaborÛw, 48-120",
-mapsQuery:"NZOZ Caritas Diecezji Opolskiej, BaborÛw",
+address:"Babor√≥w, 48-120",
+mapsQuery:"NZOZ Caritas Diecezji Opolskiej, Babor√≥w",
 reviews:[
 "Medycyna rodzinna i opieka POZ",
 "Podstawowa opieka zdrowotna i leczenie internistyczne"
