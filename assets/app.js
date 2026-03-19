@@ -1161,7 +1161,7 @@
         <div class="triage-head">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;">
             <div>
-	              <p class="triage-title">Asystent objawów (beta)</p>
+	              <p class="triage-title">Asystent objawów</p>
 	              <p class="triage-sub">Tryb: dopytuję i analizuję objawy (tylko tematy zdrowotne).</p>
             </div>
             <button id="triageClose" class="triage-close" type="button" aria-label="Zamknij">×</button>
@@ -1962,9 +1962,9 @@ class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
 <div class="filters-shell p-3 sm:p-4 space-y-3">
 
 <!-- GŁÓWNA WYSZUKIWARKA -->
-<div class="flex flex-col md:flex-row md:items-end gap-3">
+<div class="search-row flex flex-col md:flex-row md:items-end gap-3">
 
-<div class="relative flex-1 min-w-[260px]">
+<div class="search-col search-col-spec relative flex-1 min-w-[260px]">
 <label for="spec" class="field-label">
 Specjalizacja
 </label>
@@ -1977,7 +1977,7 @@ placeholder="Jakiego specjalisty szukasz?">
 class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
 </div>
 
-<div id="cityDropdownWrap" class="relative min-w-[220px]">
+<div id="cityDropdownWrap" class="search-col search-col-city relative min-w-[220px]">
 <label for="city" class="field-label">
 Miasto
 </label>
@@ -1995,7 +1995,7 @@ Wszystkie miasta
 </div>
 
 <button id="searchBtn" onclick="search()"
-class="btn-primary h-[46px] w-full md:w-auto px-6">
+class="search-submit btn-primary h-[46px] w-full md:w-auto px-6">
 Szukaj
 </button>
 
@@ -2871,17 +2871,17 @@ if(document.body){
 }
 
 box.innerHTML = `
-<div onclick="closeFacility()" class="fixed inset-0 bg-slate-900/65 p-2 sm:p-6 flex items-start sm:items-center justify-center overflow-y-auto" style="z-index:1000;">
+<div onclick="closeFacility()" class="facility-modal-backdrop fixed inset-0 p-2 sm:p-6 flex items-start sm:items-center justify-center overflow-y-auto" style="z-index:1000;">
 
-<div onclick="event.stopPropagation()" class="bg-white rounded-3xl shadow-2xl overflow-y-auto relative border border-slate-200 w-full max-w-3xl max-h-[92vh] mt-2 sm:mt-0" style="width:min(960px,calc(100vw - 16px));max-height:92vh;">
+<div onclick="event.stopPropagation()" class="facility-modal-card bg-white overflow-y-auto relative w-full max-w-3xl max-h-[92vh] mt-2 sm:mt-0" style="width:min(960px,calc(100vw - 16px));max-height:92vh;">
 
-<div class="sticky top-0 z-20 flex justify-end p-2 bg-white/95 backdrop-blur border-b border-slate-200">
+<div class="sticky top-0 z-20 flex justify-end p-2.5 bg-white/95 backdrop-blur border-b border-slate-200">
 <button onclick="closeFacility()"
-class="h-11 w-11 inline-flex items-center justify-center rounded-full bg-white text-slate-700 hover:bg-slate-100 shadow border border-slate-200 font-bold">✕</button>
+class="h-11 w-11 inline-flex items-center justify-center rounded-full bg-white text-slate-700 hover:bg-slate-100 shadow border border-slate-200 font-bold transition">✕</button>
 </div>
 
-<div class="bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-700 p-5 sm:p-6">
-<p class="text-xs uppercase tracking-wide font-semibold text-blue-200 mb-1">Placówka medyczna</p>
+<div class="facility-modal-hero p-5 sm:p-6">
+<p class="text-xs uppercase tracking-wide font-semibold text-blue-200/95 mb-1">Placówka medyczna</p>
 <h2 class="text-2xl sm:text-3xl font-bold text-white leading-tight">
 ${name}
 </h2>
@@ -2891,7 +2891,7 @@ ${name}
 <div class="p-4 sm:p-6 space-y-5">
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-<div class="bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-4 shadow-sm">
+<div class="facility-info-card bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 inline-flex items-center justify-center text-sm">📞</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-blue-700">Kontakt</p>
@@ -2899,7 +2899,7 @@ ${name}
 <p class="text-slate-800 text-lg font-semibold leading-tight">${phoneHtml}</p>
 <p class="text-xs text-slate-500 mt-2">Kliknij numer, aby od razu zadzwonić.</p>
 </div>
-<div class="bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-4 shadow-sm">
+<div class="facility-info-card bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center justify-center text-sm">📍</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-emerald-700">Lokalizacja</p>
@@ -2928,7 +2928,7 @@ ${s}
 <h3 class="text-sm uppercase tracking-wide font-semibold text-slate-500 mb-2">Opinie pacjentów</h3>
 <div class="space-y-2">
 ${reviews.map(r=>`
-<div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm text-slate-700">
+<div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm text-slate-700">
 "${r}"
 </div>`).join("")}
 </div>
