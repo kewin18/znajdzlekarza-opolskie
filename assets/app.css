@@ -797,6 +797,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
   border:1px solid rgba(129,159,205,.36);
   border-radius:24px;
   box-shadow:0 38px 90px -56px rgba(5,18,46,.86);
+  animation:facilityModalIn .22s var(--ease-smooth);
 }
 .facility-modal-hero{
   background:
@@ -805,6 +806,107 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
 }
 .facility-info-card{
   box-shadow:0 18px 38px -30px rgba(5,18,46,.30);
+  transition:transform .16s var(--ease-smooth), box-shadow .16s var(--ease-smooth), border-color .16s var(--ease-smooth);
+}
+.facility-info-card:hover{
+  transform:translateY(-1px);
+  box-shadow:0 24px 46px -34px rgba(5,18,46,.38);
+}
+.facility-info-card--phone:hover{
+  border-color:rgba(59,130,246,.42) !important;
+}
+.facility-info-card--map:hover{
+  border-color:rgba(16,185,129,.42) !important;
+}
+.facility-modal-body{
+  background:
+    radial-gradient(640px 180px at 14% 0%, rgba(31,78,216,.05), transparent 64%),
+    radial-gradient(620px 180px at 88% 0%, rgba(14,165,233,.06), transparent 62%),
+    #fff;
+}
+.facility-phone-link{
+  color:#1d4ed8;
+  font-weight:800;
+  text-decoration:none;
+  transition:color .16s var(--ease-smooth), text-decoration-color .16s var(--ease-smooth);
+}
+.facility-phone-link:hover{
+  color:#1e40af;
+  text-decoration:underline;
+}
+.facility-reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(1,minmax(0,1fr));
+  gap:10px;
+}
+.facility-review-card{
+  position:relative;
+  border:1px solid rgba(129,159,205,.34);
+  background:
+    radial-gradient(360px 120px at 0% 0%, rgba(59,130,246,.08), transparent 65%),
+    #f8fbff;
+  border-radius:14px;
+  padding:12px 13px;
+  box-shadow:0 16px 30px -28px rgba(5,18,46,.38);
+  animation:resultReveal .26s var(--ease-smooth) both;
+}
+.facility-review-card::before{
+  content:"“";
+  position:absolute;
+  top:6px;
+  right:12px;
+  font-size:28px;
+  line-height:1;
+  color:rgba(37,99,235,.26);
+  font-weight:800;
+}
+.facility-review-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-bottom:6px;
+}
+.facility-review-stars{
+  font-size:12px;
+  letter-spacing:1px;
+  color:#d97706;
+}
+.facility-review-label{
+  font-size:11px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:#64748b;
+}
+.facility-review-text{
+  margin:0;
+  font-size:14px;
+  line-height:1.5;
+  color:#1f2937;
+}
+.facility-review-empty{
+  border:1px dashed rgba(148,163,184,.55);
+  background:#f8fafc;
+  border-radius:14px;
+  padding:12px 13px;
+  color:#64748b;
+  font-size:14px;
+}
+@keyframes facilityModalIn{
+  from{
+    opacity:0;
+    transform:translateY(6px) scale(.994);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+@media (min-width:700px){
+  .facility-reviews-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
 }
 .triage-panel[hidden]{
   display:none;

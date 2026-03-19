@@ -2901,7 +2901,7 @@ const telPhone = normalizePhoneForTel(phone);
 const facilityNameEncoded = encodeURIComponent(String(name || ""));
 const cityEncoded = encodeURIComponent(String(city || ""));
 const phoneHtml = telPhone
-  ? `<a href="tel:${telPhone}" onclick="trackPhoneClick('facility_modal','${facilityNameEncoded}','${cityEncoded}')" class="text-blue-700 hover:underline">📞 ${phone}</a>`
+  ? `<a href="tel:${telPhone}" onclick="trackPhoneClick('facility_modal','${facilityNameEncoded}','${cityEncoded}')" class="facility-phone-link">📞 ${phone}</a>`
   : "📞 Brak numeru";
 
 trackGaEvent("open_facility", {
@@ -2932,10 +2932,10 @@ ${name}
 <p class="text-blue-100 mt-2">📍 ${city}</p>
 </div>
 
-<div class="p-4 sm:p-6 space-y-5">
+<div class="facility-modal-body p-4 sm:p-6 space-y-5">
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-<div class="facility-info-card bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-4 shadow-sm">
+<div class="facility-info-card facility-info-card--phone bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-blue-100 text-blue-700 inline-flex items-center justify-center text-sm">📞</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-blue-700">Kontakt</p>
@@ -2943,7 +2943,7 @@ ${name}
 <p class="text-slate-800 text-lg font-semibold leading-tight">${phoneHtml}</p>
 <p class="text-xs text-slate-500 mt-2">Kliknij numer, aby od razu zadzwonić.</p>
 </div>
-<div class="facility-info-card bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-4 shadow-sm">
+<div class="facility-info-card facility-info-card--map bg-gradient-to-br from-emerald-50 to-white border border-emerald-200 rounded-2xl p-4 shadow-sm">
 <div class="flex items-center gap-2 mb-2">
 <span class="h-7 w-7 rounded-full bg-emerald-100 text-emerald-700 inline-flex items-center justify-center text-sm">📍</span>
 <p class="text-xs uppercase tracking-wide font-semibold text-emerald-700">Lokalizacja</p>
@@ -2970,11 +2970,18 @@ ${s}
 
 <div>
 <h3 class="text-sm uppercase tracking-wide font-semibold text-slate-500 mb-2">Opinie pacjentów</h3>
-<div class="space-y-2">
-${reviews.map(r=>`
-<div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm text-slate-700">
-"${r}"
-</div>`).join("")}
+<div class="facility-reviews-grid">
+${reviews.length ? reviews.map((r, i)=>`
+<article class="facility-review-card" style="animation-delay:${Math.min(i*45,180)}ms">
+  <div class="facility-review-head">
+    <span class="facility-review-stars">★★★★★</span>
+    <span class="facility-review-label">Opinia pacjenta</span>
+  </div>
+  <p class="facility-review-text">„${r}”</p>
+</article>`).join("") : `
+<article class="facility-review-empty">
+  <p>Brak dodanych opinii dla tej placówki.</p>
+</article>`}
 </div>
 </div>
 
