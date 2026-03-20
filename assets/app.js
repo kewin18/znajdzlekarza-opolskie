@@ -2497,6 +2497,7 @@ function chooseCity(value,label){
   cityInput.value = value;
   button.textContent = label;
   menu.classList.add("hidden");
+  search();
 }
 function initCityDropdown(){
   const cityInput = document.getElementById("city");
@@ -2541,6 +2542,15 @@ function buildResultCard(d,index){
   if(index === 0) rank = "🥇 Najlepszy wybór";
   else if(index === 1) rank = "🥈 Popularny";
   else if(index === 2) rank = "🥉 Polecany";
+
+  const reviewList = (Array.isArray(d.reviews) ? d.reviews : []).filter(Boolean);
+  const reviewStartIndex = reviewList.length
+    ? (Math.floor(Date.now() / 7000) + index) % reviewList.length
+    : 0;
+  const reviewPayload = encodeURIComponent(JSON.stringify(reviewList));
+  const initialReview = reviewList.length
+    ? `„${reviewList[reviewStartIndex]}”`
+    : "Brak opinii dla tej placówki.";
 
   return `
   <div onclick="openFacilityById(${Number(d.id)})"
@@ -3081,13 +3091,3 @@ setTimeout(()=>{
 },100);
 
 document.addEventListener("keydown", handleModalEsc);
-
-
-  const reviewList = (Array.isArray(d.reviews) ? d.reviews : []).filter(Boolean);
-  const reviewStartIndex = reviewList.length
-    ? (Math.floor(Date.now() / 7000) + index) % reviewList.length
-    : 0;
-  const reviewPayload = encodeURIComponent(JSON.stringify(reviewList));
-  const initialReview = reviewList.length
-    ? `„${reviewList[reviewStartIndex]}”`
-    : "Brak opinii dla tej placówki.";
