@@ -459,6 +459,17 @@ a:hover{
     linear-gradient(180deg, rgba(247,250,255,.94), rgba(238,245,255,.90));
   padding:14px;
 }
+.search-core-hero .filter-panel-hero{
+  border-radius:18px;
+  border:1px solid rgba(148,177,233,.48);
+  background:
+    radial-gradient(520px 180px at 50% 0%, rgba(255,255,255,.10), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.08));
+  padding:14px;
+}
+.search-core-hero .filter-panel-hero p{
+  color:rgba(219,234,254,.95);
+}
 .filter-pill{
   display:inline-flex;
   align-items:center;

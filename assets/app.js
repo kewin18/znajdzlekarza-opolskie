@@ -1946,7 +1946,7 @@ Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojaz
 </div>
 
 <div class="hero-search-wrap mt-5" id="searchPanelStart">
-<div class="search-core search-core-hero p-4 sm:p-5 space-y-3">
+<div class="search-core-hero p-4 sm:p-5 space-y-3">
 <div class="search-core-head">
 <p class="search-core-kicker">Wyszukiwarka</p>
 <h2 class="search-core-title">Wybierz miasto i specjalizację</h2>
