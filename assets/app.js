@@ -2580,9 +2580,15 @@ function buildResultCard(d,index){
   </span>` : ""}
   </div>
 
-  <p class="result-quote">
-  "${d.reviews?.[0] || 'Brak opinii'}"
-  </p>
+  <article class="result-quote-card">
+    <div class="result-quote-head">
+      <span class="result-quote-stars">★★★★★</span>
+      <span class="result-quote-label">Opinia pacjenta</span>
+    </div>
+    <p class="result-quote">
+      ${d.reviews?.[0] ? `„${d.reviews[0]}”` : "Brak opinii dla tej placówki."}
+    </p>
+  </article>
 
   <p class="result-phone">
   ${phoneHtml}
