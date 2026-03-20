@@ -1225,6 +1225,7 @@ let facilityRecords = [];
 let facilityById = new Map();
 let searchCache = new Map();
 let activeSearchRunId = 0;
+let reviewRotateTimer = null;
 let searchWorker = null;
 let searchWorkerReadyPromise = null;
 let searchWorkerRequestSeq = 0;
@@ -1943,10 +1944,99 @@ Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojaz
 <span class="hero-chip">NFZ i prywatnie</span>
 <span class="hero-chip">Najważniejsze miasta regionu</span>
 </div>
-<div class="hero-cta-row mt-4 flex flex-wrap gap-2">
-<button type="button" onclick="scrollToSearchPanel()" class="btn-primary text-sm">
-Zacznij wyszukiwanie
+
+<div class="hero-search-wrap mt-5" id="searchPanelStart">
+<div class="search-core search-core-hero p-4 sm:p-5 space-y-3">
+<div class="search-core-head">
+<p class="search-core-kicker">Wyszukiwarka</p>
+<h2 class="search-core-title">Wybierz miasto i specjalizację</h2>
+</div>
+
+<div id="specButtons"
+class="flex gap-2 overflow-x-auto pb-2 [scrollbar-width:thin] hero-spec-strip">
+</div>
+
+<!-- GŁÓWNA WYSZUKIWARKA -->
+<div class="search-row flex flex-col md:flex-row md:items-end gap-3">
+
+<div class="search-col search-col-spec relative flex-1 min-w-[260px]">
+<label for="spec" class="field-label">
+Specjalizacja
+</label>
+<input id="spec"
+oninput="showSpecSuggestions()"
+class="field-control"
+placeholder="Jakiego specjalisty szukasz?">
+
+<div id="specSuggestions"
+class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
+</div>
+
+<div id="cityDropdownWrap" class="search-col search-col-city relative min-w-[220px]">
+<label for="city" class="field-label">
+Miasto
+</label>
+<select id="city" class="hidden">
+  <option value="">Wszystkie miasta</option>
+</select>
+<button id="cityDropdownButton" type="button" onclick="toggleCityDropdown()"
+class="field-control has-icon text-left pr-12">
+Wszystkie miasta
 </button>
+<span class="field-icon">📍</span>
+<span class="pointer-events-none absolute right-4 top-[38px] text-slate-400">▾</span>
+
+<div id="cityDropdownMenu" class="menu hidden absolute left-0 right-0 top-full mt-2 z-20 max-h-72 overflow-auto"></div>
+</div>
+
+<button id="searchBtn" onclick="search()"
+class="search-submit btn-primary h-[46px] w-full md:w-auto px-6">
+Szukaj
+</button>
+
+</div>
+<p class="text-xs text-blue-100/95">Możesz zostawić specjalizację pustą i wyszukać tylko po mieście.</p>
+
+<!-- FILTRY -->
+<div class="filter-panel filter-panel-hero space-y-3">
+
+<p class="text-xs font-semibold uppercase tracking-wide text-blue-100">
+Filtry wyników
+</p>
+
+<div class="flex flex-col lg:flex-row gap-3 lg:items-center">
+
+<select id="visitType"
+class="field-control">
+<option value="all">NFZ + Prywatnie</option>
+<option value="nfz">Tylko NFZ</option>
+<option value="private">Tylko prywatnie</option>
+</select>
+
+<div class="flex flex-wrap gap-2">
+
+<label data-filter-card="sortBest" class="filter-pill">
+<input type="checkbox" id="sortBest" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
+<span class="font-medium text-slate-700">⭐ Najlepiej oceniani</span>
+</label>
+
+<label data-filter-card="sortDistance" class="filter-pill">
+<input type="checkbox" id="sortDistance" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
+<span class="font-medium text-slate-700">📍 Najbliżej</span>
+</label>
+
+<label data-filter-card="sortPrice" class="filter-pill">
+<input type="checkbox" id="sortPrice" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
+<span class="font-medium text-slate-700">💰 Najtaniej</span>
+</label>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="hero-cta-row mt-4 flex flex-wrap gap-2">
 <a href="poradnik-zdrowia.html" class="btn-secondary text-sm hero-btn-light">
 Czytaj poradnik
 </a>
@@ -1992,100 +2082,6 @@ Zgłoś błąd
 <p class="mt-1 text-sm text-slate-700">Serwis skupia się na województwie opolskim, więc wyniki są konkretne i lokalne.</p>
 </article>
 </section>
-
-<div id="specButtons"
-class="flex gap-2 overflow-x-auto pb-3 mb-4 sm:mb-5 [scrollbar-width:thin]">
-</div>
-
-<div class="mb-5" id="searchPanelStart">
-<div class="-mx-1 px-1">
-<div class="filters-shell search-core p-4 sm:p-5 space-y-3">
-<div class="search-core-head">
-<p class="search-core-kicker">Wyszukiwarka</p>
-<h2 class="search-core-title">Wybierz miasto i specjalizację</h2>
-</div>
-
-<!-- GŁÓWNA WYSZUKIWARKA -->
-<div class="search-row flex flex-col md:flex-row md:items-end gap-3">
-
-<div class="search-col search-col-spec relative flex-1 min-w-[260px]">
-<label for="spec" class="field-label">
-Specjalizacja
-</label>
-<input id="spec"
-oninput="showSpecSuggestions()"
-class="field-control"
-placeholder="Jakiego specjalisty szukasz?">
-
-<div id="specSuggestions"
-class="menu absolute left-0 right-0 top-full mt-2 hidden z-10 max-h-56 overflow-auto"></div>
-</div>
-
-<div id="cityDropdownWrap" class="search-col search-col-city relative min-w-[220px]">
-<label for="city" class="field-label">
-Miasto
-</label>
-<select id="city" class="hidden">
-  <option value="">Wszystkie miasta</option>
-</select>
-<button id="cityDropdownButton" type="button" onclick="toggleCityDropdown()"
-class="field-control has-icon text-left pr-12">
-Wszystkie miasta
-</button>
-<span class="field-icon">📍</span>
-<span class="pointer-events-none absolute right-4 top-[38px] text-slate-400">▾</span>
-
-<div id="cityDropdownMenu" class="menu hidden absolute left-0 right-0 top-full mt-2 z-20 max-h-72 overflow-auto"></div>
-</div>
-
-<button id="searchBtn" onclick="search()"
-class="search-submit btn-primary h-[46px] w-full md:w-auto px-6">
-Szukaj
-</button>
-
-</div>
-<p class="text-xs text-slate-500">Możesz zostawić specjalizację pustą i wyszukać tylko po mieście.</p>
-
-<!-- FILTRY -->
-<div class="filter-panel space-y-3">
-
-<p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
-Filtry wyników
-</p>
-
-<div class="flex flex-col lg:flex-row gap-3 lg:items-center">
-
-<select id="visitType"
-class="field-control">
-<option value="all">NFZ + Prywatnie</option>
-<option value="nfz">Tylko NFZ</option>
-<option value="private">Tylko prywatnie</option>
-</select>
-
-<div class="flex flex-wrap gap-2">
-
-<label data-filter-card="sortBest" class="filter-pill">
-<input type="checkbox" id="sortBest" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
-<span class="font-medium text-slate-700">⭐ Najlepiej oceniani</span>
-</label>
-
-<label data-filter-card="sortDistance" class="filter-pill">
-<input type="checkbox" id="sortDistance" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
-<span class="font-medium text-slate-700">📍 Najbliżej</span>
-</label>
-
-<label data-filter-card="sortPrice" class="filter-pill">
-<input type="checkbox" id="sortPrice" onchange="syncSortFilterStyles()" class="h-4 w-4 accent-blue-600">
-<span class="font-medium text-slate-700">💰 Najtaniej</span>
-</label>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
 
 <section class="popular-searches-section mt-6 p-4 sm:p-5">
 <div class="flex items-center gap-2 mb-3">
@@ -2585,8 +2581,8 @@ function buildResultCard(d,index){
       <span class="result-quote-stars">★★★★★</span>
       <span class="result-quote-label">Opinia pacjenta</span>
     </div>
-    <p class="result-quote">
-      ${d.reviews?.[0] ? `„${d.reviews[0]}”` : "Brak opinii dla tej placówki."}
+    <p class="result-quote js-rotating-review" data-reviews="${reviewPayload}" data-review-index="${reviewStartIndex}">
+      ${initialReview}
     </p>
   </article>
 
@@ -2663,6 +2659,45 @@ async function renderResultsBatch(reset = false){
     await nextFrame();
   }
   moreHost.innerHTML = moreButton;
+  initReviewRotation();
+}
+
+function stopReviewRotation(){
+  if(reviewRotateTimer){
+    clearInterval(reviewRotateTimer);
+    reviewRotateTimer = null;
+  }
+}
+
+function initReviewRotation(){
+  stopReviewRotation();
+  const nodes = document.querySelectorAll(".js-rotating-review");
+  if(!nodes.length) return;
+
+  reviewRotateTimer = setInterval(()=>{
+    const currentNodes = document.querySelectorAll(".js-rotating-review");
+    currentNodes.forEach((node)=>{
+      const payload = node.getAttribute("data-reviews") || "";
+      let reviews = [];
+      try{
+        reviews = JSON.parse(decodeURIComponent(payload));
+      }
+      catch{
+        reviews = [];
+      }
+      if(!Array.isArray(reviews) || reviews.length < 2) return;
+
+      const currentIndex = Number(node.getAttribute("data-review-index") || 0);
+      const nextIndex = (currentIndex + 1) % reviews.length;
+      node.setAttribute("data-review-index", String(nextIndex));
+
+      node.classList.remove("result-quote--swap");
+      // force reflow to replay animation
+      void node.offsetWidth;
+      node.textContent = `„${reviews[nextIndex]}”`;
+      node.classList.add("result-quote--swap");
+    });
+  }, 6500);
 }
 
 async function search(){
@@ -2682,6 +2717,12 @@ const sortBest = document.getElementById("sortBest").checked;
 const sortDistance = document.getElementById("sortDistance").checked;
 const sortPrice = document.getElementById("sortPrice").checked;
 const cacheKey = `${specNorm}__${cityVal}__${visit}__${sortBest ? 1 : 0}${sortDistance ? 1 : 0}${sortPrice ? 1 : 0}`;
+const scrollToResults = ()=>{
+  if(!resultsDiv) return;
+  requestAnimationFrame(()=>{
+    resultsDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+};
 
 if(!specNorm && !cityVal){
   resultsTitle.innerHTML = "Wyszukaj lekarza";
@@ -2691,7 +2732,7 @@ if(!specNorm && !cityVal){
   <p class="text-base font-semibold text-red-700">Wybierz specjalizację lub miasto.</p>
   </div>
   `;
-  resultsDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+  scrollToResults();
   return;
 }
 
@@ -2796,6 +2837,7 @@ else{
 }
 
 if(!lastSearchResults.length){
+  stopReviewRotation();
   renderedResultsCount = 0;
   resultsDiv.innerHTML = `
   <div class="bg-white border border-slate-200 rounded-xl p-7 text-center shadow-sm">
@@ -2803,10 +2845,12 @@ if(!lastSearchResults.length){
   <p class="text-sm text-slate-500">Spróbuj wybrać inne miasto, specjalizację albo odznaczyć część filtrów.</p>
   </div>
   `;
+  scrollToResults();
   return;
 }
 
 await renderResultsBatch(true);
+scrollToResults();
 }
 finally{
   if(runId === activeSearchRunId){
@@ -3039,3 +3083,11 @@ setTimeout(()=>{
 document.addEventListener("keydown", handleModalEsc);
 
 
+  const reviewList = (Array.isArray(d.reviews) ? d.reviews : []).filter(Boolean);
+  const reviewStartIndex = reviewList.length
+    ? (Math.floor(Date.now() / 7000) + index) % reviewList.length
+    : 0;
+  const reviewPayload = encodeURIComponent(JSON.stringify(reviewList));
+  const initialReview = reviewList.length
+    ? `„${reviewList[reviewStartIndex]}”`
+    : "Brak opinii dla tej placówki.";
