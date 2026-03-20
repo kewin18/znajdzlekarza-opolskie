@@ -71,7 +71,7 @@ a:hover{
   inset:0;
   pointer-events:none;
   background:linear-gradient(135deg, rgba(31,78,216,.13), rgba(31,78,216,.10) 44%, rgba(31,78,216,.09));
-  opacity:.78;
+  opacity:.38;
 }
 .card{
   background:var(--brand-card);
@@ -216,13 +216,13 @@ a:hover{
   margin-top:16px;
 }
 .search-core-hero{
-  border:1px solid rgba(255,255,255,.30);
+  border:1px solid rgba(255,255,255,.22);
   background:
-    radial-gradient(760px 260px at 50% 0%, rgba(255,255,255,.18), transparent 68%),
-    linear-gradient(180deg, rgba(8,19,44,.52), rgba(9,31,88,.46));
-  box-shadow:0 28px 66px -44px rgba(2,8,23,.90);
+    radial-gradient(760px 260px at 50% 0%, rgba(255,255,255,.10), transparent 68%),
+    linear-gradient(180deg, rgba(5,16,42,.72), rgba(7,31,90,.66));
+  box-shadow:0 28px 66px -44px rgba(2,8,23,.92);
   border-radius:20px;
-  backdrop-filter:blur(2px);
+  backdrop-filter:blur(1px);
 }
 .search-core-hero .search-row{
   display:grid !important;
@@ -241,7 +241,7 @@ a:hover{
 }
 .search-core-hero .field-control{
   border-color:rgba(148,177,233,.70);
-  background:rgba(255,255,255,.96);
+  background:rgba(255,255,255,.98);
   box-shadow:0 14px 32px -22px rgba(5,18,46,.58);
 }
 .search-core-hero .field-control:focus{
@@ -270,10 +270,10 @@ a:hover{
   color:#fff;
 }
 .filter-panel-hero{
-  border-color:rgba(148,177,233,.56);
+  border-color:rgba(148,177,233,.48);
   background:
-    radial-gradient(520px 180px at 50% 0%, rgba(255,255,255,.14), transparent 70%),
-    linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.10));
+    radial-gradient(520px 180px at 50% 0%, rgba(255,255,255,.10), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.08));
 }
 .search-core-hero .filter-pill{
   border-color:rgba(148,177,233,.75);
@@ -727,10 +727,10 @@ header a[href], header button{
   }
 }
 .glass-panel{
-  background:rgba(255,255,255,.84);
+  background:rgba(255,255,255,.98);
   backdrop-filter:none;
-  border:1px solid rgba(141,169,214,.26);
-  box-shadow:0 16px 48px -34px rgba(5,18,46,.48);
+  border:1px solid rgba(141,169,214,.34);
+  box-shadow:0 12px 32px -24px rgba(5,18,46,.28);
 }
 .brand-logo-shell{
   position:relative;
