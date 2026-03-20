@@ -1934,7 +1934,7 @@ app.innerHTML=`
 <div class="hero mb-5">
 <div class="absolute right-7 bottom-5 hidden lg:block text-7xl text-white/15 font-black select-none">OPOLSKIE</div>
 <h1 class="hero-title">
-Znajdź lekarza w woj. opolskim w 10 sekund
+Znajdź lekarza i placówkę w woj. opolskim
 </h1>
 <p class="hero-sub">
 Jedna wyszukiwarka, która łączy specjalizacje, numery telefonu i szybki dojazd do placówki.
