@@ -1989,7 +1989,7 @@ Wszystkie miasta
 <div id="cityDropdownMenu" class="menu hidden absolute left-0 right-0 top-full mt-2 z-20 max-h-72 overflow-auto"></div>
 </div>
 
-<button id="searchBtn" onclick="search()"
+<button id="searchBtn" onclick="search(true)"
 class="search-submit btn-primary h-[46px] w-full md:w-auto px-6">
 Szukaj
 </button>
@@ -2710,7 +2710,7 @@ function initReviewRotation(){
   }, 6500);
 }
 
-async function search(){
+async function search(shouldScrollToResults = false){
 const runId = ++activeSearchRunId;
 setSearchBusy(true);
 try{
@@ -2728,6 +2728,7 @@ const sortDistance = document.getElementById("sortDistance").checked;
 const sortPrice = document.getElementById("sortPrice").checked;
 const cacheKey = `${specNorm}__${cityVal}__${visit}__${sortBest ? 1 : 0}${sortDistance ? 1 : 0}${sortPrice ? 1 : 0}`;
 const scrollToResults = ()=>{
+  if(!shouldScrollToResults) return;
   if(!resultsDiv) return;
   requestAnimationFrame(()=>{
     resultsDiv.scrollIntoView({ behavior: "smooth", block: "start" });
